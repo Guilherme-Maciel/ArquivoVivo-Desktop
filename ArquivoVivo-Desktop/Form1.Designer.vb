@@ -29,16 +29,16 @@ Partial Class Form1
         Me.btnLogar = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.btnMinimize = New System.Windows.Forms.PictureBox()
         Me.btnEnd = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnMinimize = New System.Windows.Forms.PictureBox()
+        CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnEnd, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -108,6 +108,16 @@ Partial Class Form1
         Me.TextBox2.Size = New System.Drawing.Size(504, 22)
         Me.TextBox2.TabIndex = 9
         '
+        'btnMinimize
+        '
+        Me.btnMinimize.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.minimize
+        Me.btnMinimize.Location = New System.Drawing.Point(922, 12)
+        Me.btnMinimize.Name = "btnMinimize"
+        Me.btnMinimize.Size = New System.Drawing.Size(30, 30)
+        Me.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnMinimize.TabIndex = 11
+        Me.btnMinimize.TabStop = False
+        '
         'btnEnd
         '
         Me.btnEnd.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources._end
@@ -146,16 +156,6 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
-        'btnMinimize
-        '
-        Me.btnMinimize.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.minimize
-        Me.btnMinimize.Location = New System.Drawing.Point(922, 12)
-        Me.btnMinimize.Name = "btnMinimize"
-        Me.btnMinimize.Size = New System.Drawing.Size(30, 30)
-        Me.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnMinimize.TabIndex = 11
-        Me.btnMinimize.TabStop = False
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(21.0!, 48.0!)
@@ -181,11 +181,11 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
+        CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnEnd, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

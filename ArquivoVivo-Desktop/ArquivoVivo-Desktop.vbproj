@@ -143,5 +143,11 @@
   <ItemGroup>
     <None Include="Resources\logo_home.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backSearch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

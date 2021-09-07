@@ -47,4 +47,9 @@
     Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
         Me.WindowState = System.Windows.Forms.FormWindowState.Minimized
     End Sub
+
+    Private Sub btnLogar_Click(sender As Object, e As EventArgs) Handles btnLogar.Click
+        FormHome.Show()
+        Me.Close()
+    End Sub
 End Class
