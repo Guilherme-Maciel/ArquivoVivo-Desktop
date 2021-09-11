@@ -4,10 +4,19 @@ Public Class FormHome
     Private Sub FormHome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SendMessage(Me.txtSearchPedidos.Handle, &H1501, 0, "PESQUISAR...")
         SendMessage(Me.txtSearchCliente.Handle, &H1501, 0, "PESQUISAR...")
+        SendMessage(Me.txtSearchMoveis.Handle, &H1501, 0, "PESQUISAR...")
+        SendMessage(Me.txtSearchDesigners.Handle, &H1501, 0, "PESQUISAR...")
+        SendMessage(Me.txtSearchFuncionarios.Handle, &H1501, 0, "PESQUISAR...")
+
 
         panelHomePedidos.Visible = False
         panelHomeCliente.Visible = False
         panelMainPage.Visible = True
+        panelHomeMoveis.Visible = False
+        panelHomeDesigners.Visible = False
+        panelHomeFuncionarios.Visible = False
+
+
     End Sub
     Private Sub btnEnd_Click(sender As Object, e As EventArgs) Handles btnEnd.Click
         End
@@ -25,6 +34,10 @@ Public Class FormHome
         panelHomePedidos.Visible = True
         panelMainPage.Visible = False
         panelHomeCliente.Visible = False
+        panelHomeMoveis.Visible = False
+        panelHomeDesigners.Visible = False
+        panelHomeFuncionarios.Visible = False
+
 
     End Sub
 
@@ -33,6 +46,11 @@ Public Class FormHome
         panelHomePedidos.Visible = False
         panelMainPage.Visible = True
         panelHomeCliente.Visible = False
+        panelHomeMoveis.Visible = False
+        panelHomeDesigners.Visible = False
+        panelHomeFuncionarios.Visible = False
+
+
 
     End Sub
 
@@ -40,5 +58,39 @@ Public Class FormHome
         panelHomePedidos.Visible = False
         panelMainPage.Visible = False
         panelHomeCliente.Visible = True
+        panelHomeMoveis.Visible = False
+        panelHomeDesigners.Visible = False
+        panelHomeFuncionarios.Visible = False
+
+
+    End Sub
+
+    Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
+        panelHomePedidos.Visible = False
+        panelMainPage.Visible = False
+        panelHomeCliente.Visible = False
+        panelHomeMoveis.Visible = True
+        panelHomeDesigners.Visible = False
+        panelHomeFuncionarios.Visible = False
+
+
+    End Sub
+
+    Private Sub btnDesigners_Click(sender As Object, e As EventArgs) Handles btnDesigners.Click
+        panelHomePedidos.Visible = False
+        panelMainPage.Visible = False
+        panelHomeCliente.Visible = False
+        panelHomeMoveis.Visible = False
+        panelHomeDesigners.Visible = True
+        panelHomeFuncionarios.Visible = False
+    End Sub
+
+    Private Sub btnFuncionario_Click(sender As Object, e As EventArgs) Handles btnFuncionario.Click
+        panelHomePedidos.Visible = False
+        panelMainPage.Visible = False
+        panelHomeCliente.Visible = False
+        panelHomeMoveis.Visible = False
+        panelHomeDesigners.Visible = False
+        panelHomeFuncionarios.Visible = True
     End Sub
 End Class

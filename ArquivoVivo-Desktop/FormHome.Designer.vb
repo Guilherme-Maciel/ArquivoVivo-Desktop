@@ -26,9 +26,9 @@ Partial Class FormHome
         Me.btnHome = New System.Windows.Forms.PictureBox()
         Me.btnPedidos = New System.Windows.Forms.Button()
         Me.btnCliente = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.btnSearch = New System.Windows.Forms.Button()
+        Me.btnDesigners = New System.Windows.Forms.Button()
+        Me.btnFuncionario = New System.Windows.Forms.Button()
         Me.panelMainPage = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Label17 = New System.Windows.Forms.Label()
@@ -101,6 +101,132 @@ Partial Class FormHome
         Me.Panel16 = New System.Windows.Forms.Panel()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
+        Me.panelHomeMoveis = New System.Windows.Forms.Panel()
+        Me.Panel17 = New System.Windows.Forms.Panel()
+        Me.Panel18 = New System.Windows.Forms.Panel()
+        Me.Panel19 = New System.Windows.Forms.Panel()
+        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.RadioButton11 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton12 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton13 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton14 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton15 = New System.Windows.Forms.RadioButton()
+        Me.Panel20 = New System.Windows.Forms.Panel()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.Panel21 = New System.Windows.Forms.Panel()
+        Me.Label39 = New System.Windows.Forms.Label()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.Panel22 = New System.Windows.Forms.Panel()
+        Me.Label42 = New System.Windows.Forms.Label()
+        Me.Label43 = New System.Windows.Forms.Label()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.Panel23 = New System.Windows.Forms.Panel()
+        Me.Label45 = New System.Windows.Forms.Label()
+        Me.Label46 = New System.Windows.Forms.Label()
+        Me.Label47 = New System.Windows.Forms.Label()
+        Me.DataGridView4 = New System.Windows.Forms.DataGridView()
+        Me.Label48 = New System.Windows.Forms.Label()
+        Me.RadioButton17 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton18 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton19 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton20 = New System.Windows.Forms.RadioButton()
+        Me.Panel24 = New System.Windows.Forms.Panel()
+        Me.txtSearchMoveis = New System.Windows.Forms.TextBox()
+        Me.btnSearchMoveis = New System.Windows.Forms.PictureBox()
+        Me.Label49 = New System.Windows.Forms.Label()
+        Me.Panel25 = New System.Windows.Forms.Panel()
+        Me.Label50 = New System.Windows.Forms.Label()
+        Me.Label51 = New System.Windows.Forms.Label()
+        Me.Panel26 = New System.Windows.Forms.Panel()
+        Me.Label52 = New System.Windows.Forms.Label()
+        Me.Label53 = New System.Windows.Forms.Label()
+        Me.Panel27 = New System.Windows.Forms.Panel()
+        Me.Label54 = New System.Windows.Forms.Label()
+        Me.Label55 = New System.Windows.Forms.Label()
+        Me.panelHomeDesigners = New System.Windows.Forms.Panel()
+        Me.Panel29 = New System.Windows.Forms.Panel()
+        Me.Panel30 = New System.Windows.Forms.Panel()
+        Me.Panel31 = New System.Windows.Forms.Panel()
+        Me.DataGridView5 = New System.Windows.Forms.DataGridView()
+        Me.Label58 = New System.Windows.Forms.Label()
+        Me.RadioButton16 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton21 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton22 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton23 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton24 = New System.Windows.Forms.RadioButton()
+        Me.Panel32 = New System.Windows.Forms.Panel()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.Label59 = New System.Windows.Forms.Label()
+        Me.Panel33 = New System.Windows.Forms.Panel()
+        Me.Label60 = New System.Windows.Forms.Label()
+        Me.Label61 = New System.Windows.Forms.Label()
+        Me.Label62 = New System.Windows.Forms.Label()
+        Me.Panel34 = New System.Windows.Forms.Panel()
+        Me.Label63 = New System.Windows.Forms.Label()
+        Me.Label64 = New System.Windows.Forms.Label()
+        Me.Label65 = New System.Windows.Forms.Label()
+        Me.Panel35 = New System.Windows.Forms.Panel()
+        Me.Label66 = New System.Windows.Forms.Label()
+        Me.Label67 = New System.Windows.Forms.Label()
+        Me.Label68 = New System.Windows.Forms.Label()
+        Me.DataGridView6 = New System.Windows.Forms.DataGridView()
+        Me.Label69 = New System.Windows.Forms.Label()
+        Me.RadioButton25 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton26 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton27 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton28 = New System.Windows.Forms.RadioButton()
+        Me.Panel36 = New System.Windows.Forms.Panel()
+        Me.txtSearchDesigners = New System.Windows.Forms.TextBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.Label70 = New System.Windows.Forms.Label()
+        Me.Panel38 = New System.Windows.Forms.Panel()
+        Me.Label73 = New System.Windows.Forms.Label()
+        Me.Label74 = New System.Windows.Forms.Label()
+        Me.panelHomeFuncionarios = New System.Windows.Forms.Panel()
+        Me.Panel28 = New System.Windows.Forms.Panel()
+        Me.Panel37 = New System.Windows.Forms.Panel()
+        Me.Panel39 = New System.Windows.Forms.Panel()
+        Me.DataGridView7 = New System.Windows.Forms.DataGridView()
+        Me.Label56 = New System.Windows.Forms.Label()
+        Me.RadioButton29 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton30 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton31 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton32 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton33 = New System.Windows.Forms.RadioButton()
+        Me.Panel40 = New System.Windows.Forms.Panel()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.Label57 = New System.Windows.Forms.Label()
+        Me.Panel41 = New System.Windows.Forms.Panel()
+        Me.Label71 = New System.Windows.Forms.Label()
+        Me.Label72 = New System.Windows.Forms.Label()
+        Me.Label75 = New System.Windows.Forms.Label()
+        Me.Panel42 = New System.Windows.Forms.Panel()
+        Me.Label76 = New System.Windows.Forms.Label()
+        Me.Label77 = New System.Windows.Forms.Label()
+        Me.Label78 = New System.Windows.Forms.Label()
+        Me.Panel43 = New System.Windows.Forms.Panel()
+        Me.Label79 = New System.Windows.Forms.Label()
+        Me.Label80 = New System.Windows.Forms.Label()
+        Me.Label81 = New System.Windows.Forms.Label()
+        Me.DataGridView8 = New System.Windows.Forms.DataGridView()
+        Me.Label82 = New System.Windows.Forms.Label()
+        Me.RadioButton34 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton35 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton36 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton37 = New System.Windows.Forms.RadioButton()
+        Me.Panel44 = New System.Windows.Forms.Panel()
+        Me.txtSearchFuncionarios = New System.Windows.Forms.TextBox()
+        Me.btnSearchFuncionarios = New System.Windows.Forms.PictureBox()
+        Me.Label83 = New System.Windows.Forms.Label()
+        Me.Panel45 = New System.Windows.Forms.Panel()
+        Me.Label84 = New System.Windows.Forms.Label()
+        Me.Label85 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.btnHome, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelMainPage.SuspendLayout()
@@ -125,6 +251,44 @@ Partial Class FormHome
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel15.SuspendLayout()
         Me.Panel16.SuspendLayout()
+        Me.panelHomeMoveis.SuspendLayout()
+        Me.Panel18.SuspendLayout()
+        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel20.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel21.SuspendLayout()
+        Me.Panel22.SuspendLayout()
+        Me.Panel23.SuspendLayout()
+        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel24.SuspendLayout()
+        CType(Me.btnSearchMoveis, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel25.SuspendLayout()
+        Me.Panel26.SuspendLayout()
+        Me.Panel27.SuspendLayout()
+        Me.panelHomeDesigners.SuspendLayout()
+        Me.Panel30.SuspendLayout()
+        CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel32.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel33.SuspendLayout()
+        Me.Panel34.SuspendLayout()
+        Me.Panel35.SuspendLayout()
+        CType(Me.DataGridView6, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel36.SuspendLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel38.SuspendLayout()
+        Me.panelHomeFuncionarios.SuspendLayout()
+        Me.Panel37.SuspendLayout()
+        CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel40.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel41.SuspendLayout()
+        Me.Panel42.SuspendLayout()
+        Me.Panel43.SuspendLayout()
+        CType(Me.DataGridView8, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel44.SuspendLayout()
+        CType(Me.btnSearchFuncionarios, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel45.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -176,50 +340,50 @@ Partial Class FormHome
         Me.btnCliente.Text = "CLIENTE"
         Me.btnCliente.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnSearch
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(0, 344)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(263, 57)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "MÓVEIS"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnSearch.FlatAppearance.BorderSize = 0
+        Me.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSearch.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSearch.ForeColor = System.Drawing.Color.White
+        Me.btnSearch.Location = New System.Drawing.Point(0, 344)
+        Me.btnSearch.Name = "btnSearch"
+        Me.btnSearch.Size = New System.Drawing.Size(263, 57)
+        Me.btnSearch.TabIndex = 3
+        Me.btnSearch.Text = "MÓVEIS"
+        Me.btnSearch.UseVisualStyleBackColor = False
         '
-        'Button4
+        'btnDesigners
         '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(0, 412)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(263, 57)
-        Me.Button4.TabIndex = 4
-        Me.Button4.Text = "DESIGNERS"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btnDesigners.BackColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.btnDesigners.FlatAppearance.BorderSize = 0
+        Me.btnDesigners.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnDesigners.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDesigners.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDesigners.ForeColor = System.Drawing.Color.White
+        Me.btnDesigners.Location = New System.Drawing.Point(0, 412)
+        Me.btnDesigners.Name = "btnDesigners"
+        Me.btnDesigners.Size = New System.Drawing.Size(263, 57)
+        Me.btnDesigners.TabIndex = 4
+        Me.btnDesigners.Text = "DESIGNERS"
+        Me.btnDesigners.UseVisualStyleBackColor = False
         '
-        'Button5
+        'btnFuncionario
         '
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(0, 480)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(263, 57)
-        Me.Button5.TabIndex = 5
-        Me.Button5.Text = "FUNCIONÁRIOS"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.btnFuncionario.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnFuncionario.FlatAppearance.BorderSize = 0
+        Me.btnFuncionario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnFuncionario.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFuncionario.ForeColor = System.Drawing.Color.White
+        Me.btnFuncionario.Location = New System.Drawing.Point(0, 480)
+        Me.btnFuncionario.Name = "btnFuncionario"
+        Me.btnFuncionario.Size = New System.Drawing.Size(263, 57)
+        Me.btnFuncionario.TabIndex = 5
+        Me.btnFuncionario.Text = "FUNCIONÁRIOS"
+        Me.btnFuncionario.UseVisualStyleBackColor = False
         '
         'panelMainPage
         '
@@ -617,6 +781,7 @@ Partial Class FormHome
         'panelSearchPedidos
         '
         Me.panelSearchPedidos.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.panelSearchPedidos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.panelSearchPedidos.Controls.Add(Me.txtSearchPedidos)
         Me.panelSearchPedidos.Controls.Add(Me.PictureBox2)
         Me.panelSearchPedidos.Location = New System.Drawing.Point(43, 71)
@@ -628,11 +793,11 @@ Partial Class FormHome
         '
         Me.txtSearchPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.txtSearchPedidos.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtSearchPedidos.Font = New System.Drawing.Font("Raleway Light", 16.0!)
+        Me.txtSearchPedidos.Font = New System.Drawing.Font("Arial", 16.0!)
         Me.txtSearchPedidos.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.txtSearchPedidos.Location = New System.Drawing.Point(47, 10)
         Me.txtSearchPedidos.Name = "txtSearchPedidos"
-        Me.txtSearchPedidos.Size = New System.Drawing.Size(593, 26)
+        Me.txtSearchPedidos.Size = New System.Drawing.Size(593, 25)
         Me.txtSearchPedidos.TabIndex = 21
         '
         'PictureBox2
@@ -927,11 +1092,11 @@ Partial Class FormHome
         '
         Me.txtSearchCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.txtSearchCliente.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtSearchCliente.Font = New System.Drawing.Font("Raleway Light", 16.0!)
+        Me.txtSearchCliente.Font = New System.Drawing.Font("Arial", 16.0!)
         Me.txtSearchCliente.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.txtSearchCliente.Location = New System.Drawing.Point(47, 10)
         Me.txtSearchCliente.Name = "txtSearchCliente"
-        Me.txtSearchCliente.Size = New System.Drawing.Size(593, 26)
+        Me.txtSearchCliente.Size = New System.Drawing.Size(593, 25)
         Me.txtSearchCliente.TabIndex = 21
         '
         'PictureBox1
@@ -1019,19 +1184,1426 @@ Partial Class FormHome
         Me.Label32.Text = "REG. TOTAL"
         Me.Label32.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
+        'panelHomeMoveis
+        '
+        Me.panelHomeMoveis.Controls.Add(Me.Panel27)
+        Me.panelHomeMoveis.Controls.Add(Me.Panel17)
+        Me.panelHomeMoveis.Controls.Add(Me.Panel18)
+        Me.panelHomeMoveis.Controls.Add(Me.DataGridView4)
+        Me.panelHomeMoveis.Controls.Add(Me.Label48)
+        Me.panelHomeMoveis.Controls.Add(Me.RadioButton17)
+        Me.panelHomeMoveis.Controls.Add(Me.RadioButton18)
+        Me.panelHomeMoveis.Controls.Add(Me.RadioButton19)
+        Me.panelHomeMoveis.Controls.Add(Me.RadioButton20)
+        Me.panelHomeMoveis.Controls.Add(Me.Panel24)
+        Me.panelHomeMoveis.Controls.Add(Me.Label49)
+        Me.panelHomeMoveis.Controls.Add(Me.Panel25)
+        Me.panelHomeMoveis.Controls.Add(Me.Panel26)
+        Me.panelHomeMoveis.Location = New System.Drawing.Point(266, 48)
+        Me.panelHomeMoveis.Name = "panelHomeMoveis"
+        Me.panelHomeMoveis.Size = New System.Drawing.Size(730, 652)
+        Me.panelHomeMoveis.TabIndex = 17
+        '
+        'Panel17
+        '
+        Me.Panel17.BackColor = System.Drawing.Color.Black
+        Me.Panel17.Location = New System.Drawing.Point(18, 56)
+        Me.Panel17.Name = "Panel17"
+        Me.Panel17.Size = New System.Drawing.Size(704, 2)
+        Me.Panel17.TabIndex = 19
+        '
+        'Panel18
+        '
+        Me.Panel18.Controls.Add(Me.Panel19)
+        Me.Panel18.Controls.Add(Me.DataGridView3)
+        Me.Panel18.Controls.Add(Me.Label27)
+        Me.Panel18.Controls.Add(Me.RadioButton11)
+        Me.Panel18.Controls.Add(Me.RadioButton12)
+        Me.Panel18.Controls.Add(Me.RadioButton13)
+        Me.Panel18.Controls.Add(Me.RadioButton14)
+        Me.Panel18.Controls.Add(Me.RadioButton15)
+        Me.Panel18.Controls.Add(Me.Panel20)
+        Me.Panel18.Controls.Add(Me.Label30)
+        Me.Panel18.Controls.Add(Me.Panel21)
+        Me.Panel18.Controls.Add(Me.Panel22)
+        Me.Panel18.Controls.Add(Me.Panel23)
+        Me.Panel18.Location = New System.Drawing.Point(809, 246)
+        Me.Panel18.Name = "Panel18"
+        Me.Panel18.Size = New System.Drawing.Size(730, 652)
+        Me.Panel18.TabIndex = 15
+        '
+        'Panel19
+        '
+        Me.Panel19.BackColor = System.Drawing.Color.Black
+        Me.Panel19.Location = New System.Drawing.Point(18, 56)
+        Me.Panel19.Name = "Panel19"
+        Me.Panel19.Size = New System.Drawing.Size(704, 2)
+        Me.Panel19.TabIndex = 19
+        '
+        'DataGridView3
+        '
+        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView3.Location = New System.Drawing.Point(18, 389)
+        Me.DataGridView3.Name = "DataGridView3"
+        Me.DataGridView3.Size = New System.Drawing.Size(692, 251)
+        Me.DataGridView3.TabIndex = 26
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.Label27.Location = New System.Drawing.Point(14, 364)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(61, 22)
+        Me.Label27.TabIndex = 25
+        Me.Label27.Text = "Total: 4"
+        '
+        'RadioButton11
+        '
+        Me.RadioButton11.AutoSize = True
+        Me.RadioButton11.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton11.Location = New System.Drawing.Point(631, 127)
+        Me.RadioButton11.Name = "RadioButton11"
+        Me.RadioButton11.Size = New System.Drawing.Size(60, 26)
+        Me.RadioButton11.TabIndex = 24
+        Me.RadioButton11.TabStop = True
+        Me.RadioButton11.Text = "TEL."
+        Me.RadioButton11.UseVisualStyleBackColor = True
+        '
+        'RadioButton12
+        '
+        Me.RadioButton12.AutoSize = True
+        Me.RadioButton12.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton12.Location = New System.Drawing.Point(511, 127)
+        Me.RadioButton12.Name = "RadioButton12"
+        Me.RadioButton12.Size = New System.Drawing.Size(61, 26)
+        Me.RadioButton12.TabIndex = 23
+        Me.RadioButton12.TabStop = True
+        Me.RadioButton12.Text = "CEL."
+        Me.RadioButton12.UseVisualStyleBackColor = True
+        '
+        'RadioButton13
+        '
+        Me.RadioButton13.AutoSize = True
+        Me.RadioButton13.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton13.Location = New System.Drawing.Point(368, 127)
+        Me.RadioButton13.Name = "RadioButton13"
+        Me.RadioButton13.Size = New System.Drawing.Size(84, 26)
+        Me.RadioButton13.TabIndex = 22
+        Me.RadioButton13.TabStop = True
+        Me.RadioButton13.Text = "MÓVEL"
+        Me.RadioButton13.UseVisualStyleBackColor = True
+        '
+        'RadioButton14
+        '
+        Me.RadioButton14.AutoSize = True
+        Me.RadioButton14.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton14.Location = New System.Drawing.Point(215, 127)
+        Me.RadioButton14.Name = "RadioButton14"
+        Me.RadioButton14.Size = New System.Drawing.Size(94, 26)
+        Me.RadioButton14.TabIndex = 21
+        Me.RadioButton14.TabStop = True
+        Me.RadioButton14.Text = "CLIENTE"
+        Me.RadioButton14.UseVisualStyleBackColor = True
+        '
+        'RadioButton15
+        '
+        Me.RadioButton15.AutoSize = True
+        Me.RadioButton15.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton15.Location = New System.Drawing.Point(44, 126)
+        Me.RadioButton15.Name = "RadioButton15"
+        Me.RadioButton15.Size = New System.Drawing.Size(112, 26)
+        Me.RadioButton15.TabIndex = 20
+        Me.RadioButton15.TabStop = True
+        Me.RadioButton15.Text = "N°PEDIDOS"
+        Me.RadioButton15.UseVisualStyleBackColor = True
+        '
+        'Panel20
+        '
+        Me.Panel20.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel20.Controls.Add(Me.TextBox1)
+        Me.Panel20.Controls.Add(Me.PictureBox3)
+        Me.Panel20.Location = New System.Drawing.Point(43, 71)
+        Me.Panel20.Name = "Panel20"
+        Me.Panel20.Size = New System.Drawing.Size(650, 47)
+        Me.Panel20.TabIndex = 19
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox1.Font = New System.Drawing.Font("Raleway Light", 16.0!)
+        Me.TextBox1.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.TextBox1.Location = New System.Drawing.Point(47, 10)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(593, 26)
+        Me.TextBox1.TabIndex = 21
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.PictureBox3.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.PictureBox3.Location = New System.Drawing.Point(7, 8)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 20
+        Me.PictureBox3.TabStop = False
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Raleway Light", 24.0!)
+        Me.Label30.Location = New System.Drawing.Point(10, 3)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(157, 44)
+        Me.Label30.TabIndex = 18
+        Me.Label30.Text = "PEDIDOS"
+        '
+        'Panel21
+        '
+        Me.Panel21.BackColor = System.Drawing.Color.FromArgb(CType(CType(124, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(231, Byte), Integer))
+        Me.Panel21.Controls.Add(Me.Label39)
+        Me.Panel21.Controls.Add(Me.Label40)
+        Me.Panel21.Controls.Add(Me.Label41)
+        Me.Panel21.Location = New System.Drawing.Point(278, 166)
+        Me.Panel21.Name = "Panel21"
+        Me.Panel21.Size = New System.Drawing.Size(181, 181)
+        Me.Panel21.TabIndex = 16
+        '
+        'Label39
+        '
+        Me.Label39.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label39.ForeColor = System.Drawing.Color.White
+        Me.Label39.Location = New System.Drawing.Point(3, 99)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(175, 33)
+        Me.Label39.TabIndex = 2
+        Me.Label39.Text = "200000"
+        Me.Label39.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label40
+        '
+        Me.Label40.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label40.ForeColor = System.Drawing.Color.White
+        Me.Label40.Location = New System.Drawing.Point(3, 42)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(175, 57)
+        Me.Label40.TabIndex = 1
+        Me.Label40.Text = "R$"
+        Me.Label40.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label41
+        '
+        Me.Label41.Font = New System.Drawing.Font("Raleway Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label41.ForeColor = System.Drawing.Color.White
+        Me.Label41.Location = New System.Drawing.Point(3, 2)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(175, 33)
+        Me.Label41.TabIndex = 0
+        Me.Label41.Text = "LUCRO MENSAL"
+        Me.Label41.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Panel22
+        '
+        Me.Panel22.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Panel22.Controls.Add(Me.Label42)
+        Me.Panel22.Controls.Add(Me.Label43)
+        Me.Panel22.Controls.Add(Me.Label44)
+        Me.Panel22.Location = New System.Drawing.Point(509, 166)
+        Me.Panel22.Name = "Panel22"
+        Me.Panel22.Size = New System.Drawing.Size(181, 187)
+        Me.Panel22.TabIndex = 17
+        '
+        'Label42
+        '
+        Me.Label42.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label42.ForeColor = System.Drawing.Color.White
+        Me.Label42.Location = New System.Drawing.Point(3, 99)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(175, 33)
+        Me.Label42.TabIndex = 2
+        Me.Label42.Text = "200000"
+        Me.Label42.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label43
+        '
+        Me.Label43.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label43.ForeColor = System.Drawing.Color.White
+        Me.Label43.Location = New System.Drawing.Point(3, 42)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(175, 57)
+        Me.Label43.TabIndex = 1
+        Me.Label43.Text = "R$"
+        Me.Label43.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label44
+        '
+        Me.Label44.Font = New System.Drawing.Font("Raleway Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label44.ForeColor = System.Drawing.Color.White
+        Me.Label44.Location = New System.Drawing.Point(3, 2)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(175, 33)
+        Me.Label44.TabIndex = 0
+        Me.Label44.Text = "LUCRO MENSAL"
+        Me.Label44.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Panel23
+        '
+        Me.Panel23.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(238, Byte), Integer))
+        Me.Panel23.Controls.Add(Me.Label45)
+        Me.Panel23.Controls.Add(Me.Label46)
+        Me.Panel23.Controls.Add(Me.Label47)
+        Me.Panel23.Location = New System.Drawing.Point(46, 166)
+        Me.Panel23.Name = "Panel23"
+        Me.Panel23.Size = New System.Drawing.Size(181, 181)
+        Me.Panel23.TabIndex = 15
+        '
+        'Label45
+        '
+        Me.Label45.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label45.ForeColor = System.Drawing.Color.White
+        Me.Label45.Location = New System.Drawing.Point(3, 99)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(175, 33)
+        Me.Label45.TabIndex = 2
+        Me.Label45.Text = "200000"
+        Me.Label45.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label46
+        '
+        Me.Label46.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label46.ForeColor = System.Drawing.Color.White
+        Me.Label46.Location = New System.Drawing.Point(3, 42)
+        Me.Label46.Name = "Label46"
+        Me.Label46.Size = New System.Drawing.Size(175, 57)
+        Me.Label46.TabIndex = 1
+        Me.Label46.Text = "R$"
+        Me.Label46.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label47
+        '
+        Me.Label47.Font = New System.Drawing.Font("Raleway Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label47.ForeColor = System.Drawing.Color.White
+        Me.Label47.Location = New System.Drawing.Point(3, 2)
+        Me.Label47.Name = "Label47"
+        Me.Label47.Size = New System.Drawing.Size(175, 33)
+        Me.Label47.TabIndex = 0
+        Me.Label47.Text = "LUCRO SEMANAL"
+        Me.Label47.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'DataGridView4
+        '
+        Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView4.Location = New System.Drawing.Point(18, 389)
+        Me.DataGridView4.Name = "DataGridView4"
+        Me.DataGridView4.Size = New System.Drawing.Size(692, 251)
+        Me.DataGridView4.TabIndex = 26
+        '
+        'Label48
+        '
+        Me.Label48.AutoSize = True
+        Me.Label48.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.Label48.Location = New System.Drawing.Point(14, 364)
+        Me.Label48.Name = "Label48"
+        Me.Label48.Size = New System.Drawing.Size(61, 22)
+        Me.Label48.TabIndex = 25
+        Me.Label48.Text = "Total: 4"
+        '
+        'RadioButton17
+        '
+        Me.RadioButton17.AutoSize = True
+        Me.RadioButton17.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton17.Location = New System.Drawing.Point(482, 127)
+        Me.RadioButton17.Name = "RadioButton17"
+        Me.RadioButton17.Size = New System.Drawing.Size(117, 26)
+        Me.RadioButton17.TabIndex = 23
+        Me.RadioButton17.TabStop = True
+        Me.RadioButton17.Text = "CATEGORIA"
+        Me.RadioButton17.UseVisualStyleBackColor = True
+        '
+        'RadioButton18
+        '
+        Me.RadioButton18.AutoSize = True
+        Me.RadioButton18.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton18.Location = New System.Drawing.Point(333, 127)
+        Me.RadioButton18.Name = "RadioButton18"
+        Me.RadioButton18.Size = New System.Drawing.Size(106, 26)
+        Me.RadioButton18.TabIndex = 22
+        Me.RadioButton18.TabStop = True
+        Me.RadioButton18.Text = "DESIGNER"
+        Me.RadioButton18.UseVisualStyleBackColor = True
+        '
+        'RadioButton19
+        '
+        Me.RadioButton19.AutoSize = True
+        Me.RadioButton19.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton19.Location = New System.Drawing.Point(206, 127)
+        Me.RadioButton19.Name = "RadioButton19"
+        Me.RadioButton19.Size = New System.Drawing.Size(84, 26)
+        Me.RadioButton19.TabIndex = 21
+        Me.RadioButton19.TabStop = True
+        Me.RadioButton19.Text = "TÍTULO"
+        Me.RadioButton19.UseVisualStyleBackColor = True
+        '
+        'RadioButton20
+        '
+        Me.RadioButton20.AutoSize = True
+        Me.RadioButton20.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton20.Location = New System.Drawing.Point(120, 126)
+        Me.RadioButton20.Name = "RadioButton20"
+        Me.RadioButton20.Size = New System.Drawing.Size(43, 26)
+        Me.RadioButton20.TabIndex = 20
+        Me.RadioButton20.TabStop = True
+        Me.RadioButton20.Text = "ID"
+        Me.RadioButton20.UseVisualStyleBackColor = True
+        '
+        'Panel24
+        '
+        Me.Panel24.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel24.Controls.Add(Me.txtSearchMoveis)
+        Me.Panel24.Controls.Add(Me.btnSearchMoveis)
+        Me.Panel24.Location = New System.Drawing.Point(43, 71)
+        Me.Panel24.Name = "Panel24"
+        Me.Panel24.Size = New System.Drawing.Size(650, 47)
+        Me.Panel24.TabIndex = 19
+        '
+        'txtSearchMoveis
+        '
+        Me.txtSearchMoveis.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.txtSearchMoveis.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtSearchMoveis.Font = New System.Drawing.Font("Arial", 16.0!)
+        Me.txtSearchMoveis.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.txtSearchMoveis.Location = New System.Drawing.Point(47, 10)
+        Me.txtSearchMoveis.Name = "txtSearchMoveis"
+        Me.txtSearchMoveis.Size = New System.Drawing.Size(593, 25)
+        Me.txtSearchMoveis.TabIndex = 21
+        '
+        'btnSearchMoveis
+        '
+        Me.btnSearchMoveis.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.btnSearchMoveis.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.btnSearchMoveis.Location = New System.Drawing.Point(7, 8)
+        Me.btnSearchMoveis.Name = "btnSearchMoveis"
+        Me.btnSearchMoveis.Size = New System.Drawing.Size(30, 30)
+        Me.btnSearchMoveis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnSearchMoveis.TabIndex = 20
+        Me.btnSearchMoveis.TabStop = False
+        '
+        'Label49
+        '
+        Me.Label49.AutoSize = True
+        Me.Label49.Font = New System.Drawing.Font("Raleway Light", 24.0!)
+        Me.Label49.Location = New System.Drawing.Point(10, 3)
+        Me.Label49.Name = "Label49"
+        Me.Label49.Size = New System.Drawing.Size(140, 44)
+        Me.Label49.TabIndex = 18
+        Me.Label49.Text = "MÓVEIS"
+        '
+        'Panel25
+        '
+        Me.Panel25.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.Panel25.Controls.Add(Me.Label50)
+        Me.Panel25.Controls.Add(Me.Label51)
+        Me.Panel25.Location = New System.Drawing.Point(46, 166)
+        Me.Panel25.Name = "Panel25"
+        Me.Panel25.Size = New System.Drawing.Size(185, 181)
+        Me.Panel25.TabIndex = 16
+        '
+        'Label50
+        '
+        Me.Label50.Font = New System.Drawing.Font("Raleway Light", 40.0!)
+        Me.Label50.ForeColor = System.Drawing.Color.White
+        Me.Label50.Location = New System.Drawing.Point(3, 62)
+        Me.Label50.Name = "Label50"
+        Me.Label50.Size = New System.Drawing.Size(175, 85)
+        Me.Label50.TabIndex = 1
+        Me.Label50.Text = "4"
+        Me.Label50.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label51
+        '
+        Me.Label51.Font = New System.Drawing.Font("Raleway Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label51.ForeColor = System.Drawing.Color.White
+        Me.Label51.Location = New System.Drawing.Point(3, 2)
+        Me.Label51.Name = "Label51"
+        Me.Label51.Size = New System.Drawing.Size(175, 33)
+        Me.Label51.TabIndex = 0
+        Me.Label51.Text = "ESTOQUE TOTAL"
+        Me.Label51.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Panel26
+        '
+        Me.Panel26.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(76, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Panel26.Controls.Add(Me.Label52)
+        Me.Panel26.Controls.Add(Me.Label53)
+        Me.Panel26.Location = New System.Drawing.Point(277, 166)
+        Me.Panel26.Name = "Panel26"
+        Me.Panel26.Size = New System.Drawing.Size(185, 181)
+        Me.Panel26.TabIndex = 17
+        '
+        'Label52
+        '
+        Me.Label52.Font = New System.Drawing.Font("Raleway Light", 40.0!)
+        Me.Label52.ForeColor = System.Drawing.Color.White
+        Me.Label52.Location = New System.Drawing.Point(3, 62)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(175, 85)
+        Me.Label52.TabIndex = 1
+        Me.Label52.Text = "80"
+        Me.Label52.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label53
+        '
+        Me.Label53.Font = New System.Drawing.Font("Raleway Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label53.ForeColor = System.Drawing.Color.White
+        Me.Label53.Location = New System.Drawing.Point(3, 2)
+        Me.Label53.Name = "Label53"
+        Me.Label53.Size = New System.Drawing.Size(175, 33)
+        Me.Label53.TabIndex = 0
+        Me.Label53.Text = "REG. MÊS"
+        Me.Label53.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Panel27
+        '
+        Me.Panel27.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(113, Byte), Integer))
+        Me.Panel27.Controls.Add(Me.Label54)
+        Me.Panel27.Controls.Add(Me.Label55)
+        Me.Panel27.Location = New System.Drawing.Point(508, 166)
+        Me.Panel27.Name = "Panel27"
+        Me.Panel27.Size = New System.Drawing.Size(185, 181)
+        Me.Panel27.TabIndex = 17
+        '
+        'Label54
+        '
+        Me.Label54.Font = New System.Drawing.Font("Raleway Light", 40.0!)
+        Me.Label54.ForeColor = System.Drawing.Color.White
+        Me.Label54.Location = New System.Drawing.Point(3, 62)
+        Me.Label54.Name = "Label54"
+        Me.Label54.Size = New System.Drawing.Size(175, 85)
+        Me.Label54.TabIndex = 1
+        Me.Label54.Text = "4"
+        Me.Label54.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label55
+        '
+        Me.Label55.Font = New System.Drawing.Font("Raleway Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label55.ForeColor = System.Drawing.Color.White
+        Me.Label55.Location = New System.Drawing.Point(3, 2)
+        Me.Label55.Name = "Label55"
+        Me.Label55.Size = New System.Drawing.Size(175, 33)
+        Me.Label55.TabIndex = 0
+        Me.Label55.Text = "SEM ESTOQUE"
+        Me.Label55.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'panelHomeDesigners
+        '
+        Me.panelHomeDesigners.Controls.Add(Me.Panel29)
+        Me.panelHomeDesigners.Controls.Add(Me.Panel30)
+        Me.panelHomeDesigners.Controls.Add(Me.DataGridView6)
+        Me.panelHomeDesigners.Controls.Add(Me.Label69)
+        Me.panelHomeDesigners.Controls.Add(Me.RadioButton25)
+        Me.panelHomeDesigners.Controls.Add(Me.RadioButton26)
+        Me.panelHomeDesigners.Controls.Add(Me.RadioButton27)
+        Me.panelHomeDesigners.Controls.Add(Me.RadioButton28)
+        Me.panelHomeDesigners.Controls.Add(Me.Panel36)
+        Me.panelHomeDesigners.Controls.Add(Me.Label70)
+        Me.panelHomeDesigners.Controls.Add(Me.Panel38)
+        Me.panelHomeDesigners.Location = New System.Drawing.Point(266, 48)
+        Me.panelHomeDesigners.Name = "panelHomeDesigners"
+        Me.panelHomeDesigners.Size = New System.Drawing.Size(730, 652)
+        Me.panelHomeDesigners.TabIndex = 18
+        '
+        'Panel29
+        '
+        Me.Panel29.BackColor = System.Drawing.Color.Black
+        Me.Panel29.Location = New System.Drawing.Point(18, 56)
+        Me.Panel29.Name = "Panel29"
+        Me.Panel29.Size = New System.Drawing.Size(704, 2)
+        Me.Panel29.TabIndex = 19
+        '
+        'Panel30
+        '
+        Me.Panel30.Controls.Add(Me.Panel31)
+        Me.Panel30.Controls.Add(Me.DataGridView5)
+        Me.Panel30.Controls.Add(Me.Label58)
+        Me.Panel30.Controls.Add(Me.RadioButton16)
+        Me.Panel30.Controls.Add(Me.RadioButton21)
+        Me.Panel30.Controls.Add(Me.RadioButton22)
+        Me.Panel30.Controls.Add(Me.RadioButton23)
+        Me.Panel30.Controls.Add(Me.RadioButton24)
+        Me.Panel30.Controls.Add(Me.Panel32)
+        Me.Panel30.Controls.Add(Me.Label59)
+        Me.Panel30.Controls.Add(Me.Panel33)
+        Me.Panel30.Controls.Add(Me.Panel34)
+        Me.Panel30.Controls.Add(Me.Panel35)
+        Me.Panel30.Location = New System.Drawing.Point(809, 246)
+        Me.Panel30.Name = "Panel30"
+        Me.Panel30.Size = New System.Drawing.Size(730, 652)
+        Me.Panel30.TabIndex = 15
+        '
+        'Panel31
+        '
+        Me.Panel31.BackColor = System.Drawing.Color.Black
+        Me.Panel31.Location = New System.Drawing.Point(18, 56)
+        Me.Panel31.Name = "Panel31"
+        Me.Panel31.Size = New System.Drawing.Size(704, 2)
+        Me.Panel31.TabIndex = 19
+        '
+        'DataGridView5
+        '
+        Me.DataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView5.Location = New System.Drawing.Point(18, 389)
+        Me.DataGridView5.Name = "DataGridView5"
+        Me.DataGridView5.Size = New System.Drawing.Size(692, 251)
+        Me.DataGridView5.TabIndex = 26
+        '
+        'Label58
+        '
+        Me.Label58.AutoSize = True
+        Me.Label58.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.Label58.Location = New System.Drawing.Point(14, 364)
+        Me.Label58.Name = "Label58"
+        Me.Label58.Size = New System.Drawing.Size(61, 22)
+        Me.Label58.TabIndex = 25
+        Me.Label58.Text = "Total: 4"
+        '
+        'RadioButton16
+        '
+        Me.RadioButton16.AutoSize = True
+        Me.RadioButton16.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton16.Location = New System.Drawing.Point(631, 127)
+        Me.RadioButton16.Name = "RadioButton16"
+        Me.RadioButton16.Size = New System.Drawing.Size(60, 26)
+        Me.RadioButton16.TabIndex = 24
+        Me.RadioButton16.TabStop = True
+        Me.RadioButton16.Text = "TEL."
+        Me.RadioButton16.UseVisualStyleBackColor = True
+        '
+        'RadioButton21
+        '
+        Me.RadioButton21.AutoSize = True
+        Me.RadioButton21.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton21.Location = New System.Drawing.Point(511, 127)
+        Me.RadioButton21.Name = "RadioButton21"
+        Me.RadioButton21.Size = New System.Drawing.Size(61, 26)
+        Me.RadioButton21.TabIndex = 23
+        Me.RadioButton21.TabStop = True
+        Me.RadioButton21.Text = "CEL."
+        Me.RadioButton21.UseVisualStyleBackColor = True
+        '
+        'RadioButton22
+        '
+        Me.RadioButton22.AutoSize = True
+        Me.RadioButton22.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton22.Location = New System.Drawing.Point(368, 127)
+        Me.RadioButton22.Name = "RadioButton22"
+        Me.RadioButton22.Size = New System.Drawing.Size(84, 26)
+        Me.RadioButton22.TabIndex = 22
+        Me.RadioButton22.TabStop = True
+        Me.RadioButton22.Text = "MÓVEL"
+        Me.RadioButton22.UseVisualStyleBackColor = True
+        '
+        'RadioButton23
+        '
+        Me.RadioButton23.AutoSize = True
+        Me.RadioButton23.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton23.Location = New System.Drawing.Point(215, 127)
+        Me.RadioButton23.Name = "RadioButton23"
+        Me.RadioButton23.Size = New System.Drawing.Size(94, 26)
+        Me.RadioButton23.TabIndex = 21
+        Me.RadioButton23.TabStop = True
+        Me.RadioButton23.Text = "CLIENTE"
+        Me.RadioButton23.UseVisualStyleBackColor = True
+        '
+        'RadioButton24
+        '
+        Me.RadioButton24.AutoSize = True
+        Me.RadioButton24.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton24.Location = New System.Drawing.Point(44, 126)
+        Me.RadioButton24.Name = "RadioButton24"
+        Me.RadioButton24.Size = New System.Drawing.Size(112, 26)
+        Me.RadioButton24.TabIndex = 20
+        Me.RadioButton24.TabStop = True
+        Me.RadioButton24.Text = "N°PEDIDOS"
+        Me.RadioButton24.UseVisualStyleBackColor = True
+        '
+        'Panel32
+        '
+        Me.Panel32.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel32.Controls.Add(Me.TextBox2)
+        Me.Panel32.Controls.Add(Me.PictureBox4)
+        Me.Panel32.Location = New System.Drawing.Point(43, 71)
+        Me.Panel32.Name = "Panel32"
+        Me.Panel32.Size = New System.Drawing.Size(650, 47)
+        Me.Panel32.TabIndex = 19
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox2.Font = New System.Drawing.Font("Raleway Light", 16.0!)
+        Me.TextBox2.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.TextBox2.Location = New System.Drawing.Point(47, 10)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(593, 26)
+        Me.TextBox2.TabIndex = 21
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.PictureBox4.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.PictureBox4.Location = New System.Drawing.Point(7, 8)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 20
+        Me.PictureBox4.TabStop = False
+        '
+        'Label59
+        '
+        Me.Label59.AutoSize = True
+        Me.Label59.Font = New System.Drawing.Font("Raleway Light", 24.0!)
+        Me.Label59.Location = New System.Drawing.Point(10, 3)
+        Me.Label59.Name = "Label59"
+        Me.Label59.Size = New System.Drawing.Size(157, 44)
+        Me.Label59.TabIndex = 18
+        Me.Label59.Text = "PEDIDOS"
+        '
+        'Panel33
+        '
+        Me.Panel33.BackColor = System.Drawing.Color.FromArgb(CType(CType(124, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(231, Byte), Integer))
+        Me.Panel33.Controls.Add(Me.Label60)
+        Me.Panel33.Controls.Add(Me.Label61)
+        Me.Panel33.Controls.Add(Me.Label62)
+        Me.Panel33.Location = New System.Drawing.Point(278, 166)
+        Me.Panel33.Name = "Panel33"
+        Me.Panel33.Size = New System.Drawing.Size(181, 181)
+        Me.Panel33.TabIndex = 16
+        '
+        'Label60
+        '
+        Me.Label60.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label60.ForeColor = System.Drawing.Color.White
+        Me.Label60.Location = New System.Drawing.Point(3, 99)
+        Me.Label60.Name = "Label60"
+        Me.Label60.Size = New System.Drawing.Size(175, 33)
+        Me.Label60.TabIndex = 2
+        Me.Label60.Text = "200000"
+        Me.Label60.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label61
+        '
+        Me.Label61.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label61.ForeColor = System.Drawing.Color.White
+        Me.Label61.Location = New System.Drawing.Point(3, 42)
+        Me.Label61.Name = "Label61"
+        Me.Label61.Size = New System.Drawing.Size(175, 57)
+        Me.Label61.TabIndex = 1
+        Me.Label61.Text = "R$"
+        Me.Label61.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label62
+        '
+        Me.Label62.Font = New System.Drawing.Font("Raleway Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label62.ForeColor = System.Drawing.Color.White
+        Me.Label62.Location = New System.Drawing.Point(3, 2)
+        Me.Label62.Name = "Label62"
+        Me.Label62.Size = New System.Drawing.Size(175, 33)
+        Me.Label62.TabIndex = 0
+        Me.Label62.Text = "LUCRO MENSAL"
+        Me.Label62.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Panel34
+        '
+        Me.Panel34.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Panel34.Controls.Add(Me.Label63)
+        Me.Panel34.Controls.Add(Me.Label64)
+        Me.Panel34.Controls.Add(Me.Label65)
+        Me.Panel34.Location = New System.Drawing.Point(509, 166)
+        Me.Panel34.Name = "Panel34"
+        Me.Panel34.Size = New System.Drawing.Size(181, 187)
+        Me.Panel34.TabIndex = 17
+        '
+        'Label63
+        '
+        Me.Label63.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label63.ForeColor = System.Drawing.Color.White
+        Me.Label63.Location = New System.Drawing.Point(3, 99)
+        Me.Label63.Name = "Label63"
+        Me.Label63.Size = New System.Drawing.Size(175, 33)
+        Me.Label63.TabIndex = 2
+        Me.Label63.Text = "200000"
+        Me.Label63.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label64
+        '
+        Me.Label64.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label64.ForeColor = System.Drawing.Color.White
+        Me.Label64.Location = New System.Drawing.Point(3, 42)
+        Me.Label64.Name = "Label64"
+        Me.Label64.Size = New System.Drawing.Size(175, 57)
+        Me.Label64.TabIndex = 1
+        Me.Label64.Text = "R$"
+        Me.Label64.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label65
+        '
+        Me.Label65.Font = New System.Drawing.Font("Raleway Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label65.ForeColor = System.Drawing.Color.White
+        Me.Label65.Location = New System.Drawing.Point(3, 2)
+        Me.Label65.Name = "Label65"
+        Me.Label65.Size = New System.Drawing.Size(175, 33)
+        Me.Label65.TabIndex = 0
+        Me.Label65.Text = "LUCRO MENSAL"
+        Me.Label65.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Panel35
+        '
+        Me.Panel35.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(238, Byte), Integer))
+        Me.Panel35.Controls.Add(Me.Label66)
+        Me.Panel35.Controls.Add(Me.Label67)
+        Me.Panel35.Controls.Add(Me.Label68)
+        Me.Panel35.Location = New System.Drawing.Point(46, 166)
+        Me.Panel35.Name = "Panel35"
+        Me.Panel35.Size = New System.Drawing.Size(181, 181)
+        Me.Panel35.TabIndex = 15
+        '
+        'Label66
+        '
+        Me.Label66.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label66.ForeColor = System.Drawing.Color.White
+        Me.Label66.Location = New System.Drawing.Point(3, 99)
+        Me.Label66.Name = "Label66"
+        Me.Label66.Size = New System.Drawing.Size(175, 33)
+        Me.Label66.TabIndex = 2
+        Me.Label66.Text = "200000"
+        Me.Label66.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label67
+        '
+        Me.Label67.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label67.ForeColor = System.Drawing.Color.White
+        Me.Label67.Location = New System.Drawing.Point(3, 42)
+        Me.Label67.Name = "Label67"
+        Me.Label67.Size = New System.Drawing.Size(175, 57)
+        Me.Label67.TabIndex = 1
+        Me.Label67.Text = "R$"
+        Me.Label67.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label68
+        '
+        Me.Label68.Font = New System.Drawing.Font("Raleway Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label68.ForeColor = System.Drawing.Color.White
+        Me.Label68.Location = New System.Drawing.Point(3, 2)
+        Me.Label68.Name = "Label68"
+        Me.Label68.Size = New System.Drawing.Size(175, 33)
+        Me.Label68.TabIndex = 0
+        Me.Label68.Text = "LUCRO SEMANAL"
+        Me.Label68.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'DataGridView6
+        '
+        Me.DataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView6.Location = New System.Drawing.Point(18, 389)
+        Me.DataGridView6.Name = "DataGridView6"
+        Me.DataGridView6.Size = New System.Drawing.Size(692, 251)
+        Me.DataGridView6.TabIndex = 26
+        '
+        'Label69
+        '
+        Me.Label69.AutoSize = True
+        Me.Label69.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.Label69.Location = New System.Drawing.Point(14, 364)
+        Me.Label69.Name = "Label69"
+        Me.Label69.Size = New System.Drawing.Size(61, 22)
+        Me.Label69.TabIndex = 25
+        Me.Label69.Text = "Total: 4"
+        '
+        'RadioButton25
+        '
+        Me.RadioButton25.AutoSize = True
+        Me.RadioButton25.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton25.Location = New System.Drawing.Point(482, 127)
+        Me.RadioButton25.Name = "RadioButton25"
+        Me.RadioButton25.Size = New System.Drawing.Size(129, 26)
+        Me.RadioButton25.TabIndex = 23
+        Me.RadioButton25.TabStop = True
+        Me.RadioButton25.Text = "QTD. MÓVEIS"
+        Me.RadioButton25.UseVisualStyleBackColor = True
+        '
+        'RadioButton26
+        '
+        Me.RadioButton26.AutoSize = True
+        Me.RadioButton26.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton26.Location = New System.Drawing.Point(327, 127)
+        Me.RadioButton26.Name = "RadioButton26"
+        Me.RadioButton26.Size = New System.Drawing.Size(112, 26)
+        Me.RadioButton26.TabIndex = 22
+        Me.RadioButton26.TabStop = True
+        Me.RadioButton26.Text = "BIOGRAFIA"
+        Me.RadioButton26.UseVisualStyleBackColor = True
+        '
+        'RadioButton27
+        '
+        Me.RadioButton27.AutoSize = True
+        Me.RadioButton27.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton27.Location = New System.Drawing.Point(208, 127)
+        Me.RadioButton27.Name = "RadioButton27"
+        Me.RadioButton27.Size = New System.Drawing.Size(76, 26)
+        Me.RadioButton27.TabIndex = 21
+        Me.RadioButton27.TabStop = True
+        Me.RadioButton27.Text = "NOME"
+        Me.RadioButton27.UseVisualStyleBackColor = True
+        '
+        'RadioButton28
+        '
+        Me.RadioButton28.AutoSize = True
+        Me.RadioButton28.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton28.Location = New System.Drawing.Point(122, 126)
+        Me.RadioButton28.Name = "RadioButton28"
+        Me.RadioButton28.Size = New System.Drawing.Size(43, 26)
+        Me.RadioButton28.TabIndex = 20
+        Me.RadioButton28.TabStop = True
+        Me.RadioButton28.Text = "ID"
+        Me.RadioButton28.UseVisualStyleBackColor = True
+        '
+        'Panel36
+        '
+        Me.Panel36.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel36.Controls.Add(Me.txtSearchDesigners)
+        Me.Panel36.Controls.Add(Me.PictureBox5)
+        Me.Panel36.Location = New System.Drawing.Point(43, 71)
+        Me.Panel36.Name = "Panel36"
+        Me.Panel36.Size = New System.Drawing.Size(650, 47)
+        Me.Panel36.TabIndex = 19
+        '
+        'txtSearchDesigners
+        '
+        Me.txtSearchDesigners.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.txtSearchDesigners.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtSearchDesigners.Font = New System.Drawing.Font("Arial", 16.0!)
+        Me.txtSearchDesigners.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.txtSearchDesigners.Location = New System.Drawing.Point(47, 10)
+        Me.txtSearchDesigners.Name = "txtSearchDesigners"
+        Me.txtSearchDesigners.Size = New System.Drawing.Size(593, 25)
+        Me.txtSearchDesigners.TabIndex = 21
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.PictureBox5.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.PictureBox5.Location = New System.Drawing.Point(7, 8)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 20
+        Me.PictureBox5.TabStop = False
+        '
+        'Label70
+        '
+        Me.Label70.AutoSize = True
+        Me.Label70.Font = New System.Drawing.Font("Raleway Light", 24.0!)
+        Me.Label70.Location = New System.Drawing.Point(10, 3)
+        Me.Label70.Name = "Label70"
+        Me.Label70.Size = New System.Drawing.Size(198, 44)
+        Me.Label70.TabIndex = 18
+        Me.Label70.Text = "DESIGNERS"
+        '
+        'Panel38
+        '
+        Me.Panel38.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(79, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Panel38.Controls.Add(Me.Label73)
+        Me.Panel38.Controls.Add(Me.Label74)
+        Me.Panel38.Location = New System.Drawing.Point(277, 166)
+        Me.Panel38.Name = "Panel38"
+        Me.Panel38.Size = New System.Drawing.Size(185, 181)
+        Me.Panel38.TabIndex = 17
+        '
+        'Label73
+        '
+        Me.Label73.Font = New System.Drawing.Font("Raleway Light", 40.0!)
+        Me.Label73.ForeColor = System.Drawing.Color.White
+        Me.Label73.Location = New System.Drawing.Point(3, 62)
+        Me.Label73.Name = "Label73"
+        Me.Label73.Size = New System.Drawing.Size(175, 85)
+        Me.Label73.TabIndex = 1
+        Me.Label73.Text = "80"
+        Me.Label73.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label74
+        '
+        Me.Label74.Font = New System.Drawing.Font("Raleway Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label74.ForeColor = System.Drawing.Color.White
+        Me.Label74.Location = New System.Drawing.Point(3, 2)
+        Me.Label74.Name = "Label74"
+        Me.Label74.Size = New System.Drawing.Size(175, 33)
+        Me.Label74.TabIndex = 0
+        Me.Label74.Text = "REG. TOTAL"
+        Me.Label74.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'panelHomeFuncionarios
+        '
+        Me.panelHomeFuncionarios.Controls.Add(Me.Panel28)
+        Me.panelHomeFuncionarios.Controls.Add(Me.Panel37)
+        Me.panelHomeFuncionarios.Controls.Add(Me.DataGridView8)
+        Me.panelHomeFuncionarios.Controls.Add(Me.Label82)
+        Me.panelHomeFuncionarios.Controls.Add(Me.RadioButton34)
+        Me.panelHomeFuncionarios.Controls.Add(Me.RadioButton35)
+        Me.panelHomeFuncionarios.Controls.Add(Me.RadioButton36)
+        Me.panelHomeFuncionarios.Controls.Add(Me.RadioButton37)
+        Me.panelHomeFuncionarios.Controls.Add(Me.Panel44)
+        Me.panelHomeFuncionarios.Controls.Add(Me.Label83)
+        Me.panelHomeFuncionarios.Controls.Add(Me.Panel45)
+        Me.panelHomeFuncionarios.Location = New System.Drawing.Point(266, 48)
+        Me.panelHomeFuncionarios.Name = "panelHomeFuncionarios"
+        Me.panelHomeFuncionarios.Size = New System.Drawing.Size(730, 652)
+        Me.panelHomeFuncionarios.TabIndex = 19
+        '
+        'Panel28
+        '
+        Me.Panel28.BackColor = System.Drawing.Color.Black
+        Me.Panel28.Location = New System.Drawing.Point(18, 56)
+        Me.Panel28.Name = "Panel28"
+        Me.Panel28.Size = New System.Drawing.Size(704, 2)
+        Me.Panel28.TabIndex = 19
+        '
+        'Panel37
+        '
+        Me.Panel37.Controls.Add(Me.Panel39)
+        Me.Panel37.Controls.Add(Me.DataGridView7)
+        Me.Panel37.Controls.Add(Me.Label56)
+        Me.Panel37.Controls.Add(Me.RadioButton29)
+        Me.Panel37.Controls.Add(Me.RadioButton30)
+        Me.Panel37.Controls.Add(Me.RadioButton31)
+        Me.Panel37.Controls.Add(Me.RadioButton32)
+        Me.Panel37.Controls.Add(Me.RadioButton33)
+        Me.Panel37.Controls.Add(Me.Panel40)
+        Me.Panel37.Controls.Add(Me.Label57)
+        Me.Panel37.Controls.Add(Me.Panel41)
+        Me.Panel37.Controls.Add(Me.Panel42)
+        Me.Panel37.Controls.Add(Me.Panel43)
+        Me.Panel37.Location = New System.Drawing.Point(809, 246)
+        Me.Panel37.Name = "Panel37"
+        Me.Panel37.Size = New System.Drawing.Size(730, 652)
+        Me.Panel37.TabIndex = 15
+        '
+        'Panel39
+        '
+        Me.Panel39.BackColor = System.Drawing.Color.Black
+        Me.Panel39.Location = New System.Drawing.Point(18, 56)
+        Me.Panel39.Name = "Panel39"
+        Me.Panel39.Size = New System.Drawing.Size(704, 2)
+        Me.Panel39.TabIndex = 19
+        '
+        'DataGridView7
+        '
+        Me.DataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView7.Location = New System.Drawing.Point(18, 389)
+        Me.DataGridView7.Name = "DataGridView7"
+        Me.DataGridView7.Size = New System.Drawing.Size(692, 251)
+        Me.DataGridView7.TabIndex = 26
+        '
+        'Label56
+        '
+        Me.Label56.AutoSize = True
+        Me.Label56.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.Label56.Location = New System.Drawing.Point(14, 364)
+        Me.Label56.Name = "Label56"
+        Me.Label56.Size = New System.Drawing.Size(61, 22)
+        Me.Label56.TabIndex = 25
+        Me.Label56.Text = "Total: 4"
+        '
+        'RadioButton29
+        '
+        Me.RadioButton29.AutoSize = True
+        Me.RadioButton29.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton29.Location = New System.Drawing.Point(631, 127)
+        Me.RadioButton29.Name = "RadioButton29"
+        Me.RadioButton29.Size = New System.Drawing.Size(60, 26)
+        Me.RadioButton29.TabIndex = 24
+        Me.RadioButton29.TabStop = True
+        Me.RadioButton29.Text = "TEL."
+        Me.RadioButton29.UseVisualStyleBackColor = True
+        '
+        'RadioButton30
+        '
+        Me.RadioButton30.AutoSize = True
+        Me.RadioButton30.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton30.Location = New System.Drawing.Point(511, 127)
+        Me.RadioButton30.Name = "RadioButton30"
+        Me.RadioButton30.Size = New System.Drawing.Size(61, 26)
+        Me.RadioButton30.TabIndex = 23
+        Me.RadioButton30.TabStop = True
+        Me.RadioButton30.Text = "CEL."
+        Me.RadioButton30.UseVisualStyleBackColor = True
+        '
+        'RadioButton31
+        '
+        Me.RadioButton31.AutoSize = True
+        Me.RadioButton31.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton31.Location = New System.Drawing.Point(368, 127)
+        Me.RadioButton31.Name = "RadioButton31"
+        Me.RadioButton31.Size = New System.Drawing.Size(84, 26)
+        Me.RadioButton31.TabIndex = 22
+        Me.RadioButton31.TabStop = True
+        Me.RadioButton31.Text = "MÓVEL"
+        Me.RadioButton31.UseVisualStyleBackColor = True
+        '
+        'RadioButton32
+        '
+        Me.RadioButton32.AutoSize = True
+        Me.RadioButton32.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton32.Location = New System.Drawing.Point(215, 127)
+        Me.RadioButton32.Name = "RadioButton32"
+        Me.RadioButton32.Size = New System.Drawing.Size(94, 26)
+        Me.RadioButton32.TabIndex = 21
+        Me.RadioButton32.TabStop = True
+        Me.RadioButton32.Text = "CLIENTE"
+        Me.RadioButton32.UseVisualStyleBackColor = True
+        '
+        'RadioButton33
+        '
+        Me.RadioButton33.AutoSize = True
+        Me.RadioButton33.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton33.Location = New System.Drawing.Point(44, 126)
+        Me.RadioButton33.Name = "RadioButton33"
+        Me.RadioButton33.Size = New System.Drawing.Size(112, 26)
+        Me.RadioButton33.TabIndex = 20
+        Me.RadioButton33.TabStop = True
+        Me.RadioButton33.Text = "N°PEDIDOS"
+        Me.RadioButton33.UseVisualStyleBackColor = True
+        '
+        'Panel40
+        '
+        Me.Panel40.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel40.Controls.Add(Me.TextBox3)
+        Me.Panel40.Controls.Add(Me.PictureBox6)
+        Me.Panel40.Location = New System.Drawing.Point(43, 71)
+        Me.Panel40.Name = "Panel40"
+        Me.Panel40.Size = New System.Drawing.Size(650, 47)
+        Me.Panel40.TabIndex = 19
+        '
+        'TextBox3
+        '
+        Me.TextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox3.Font = New System.Drawing.Font("Raleway Light", 16.0!)
+        Me.TextBox3.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.TextBox3.Location = New System.Drawing.Point(47, 10)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(593, 26)
+        Me.TextBox3.TabIndex = 21
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.PictureBox6.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.PictureBox6.Location = New System.Drawing.Point(7, 8)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 20
+        Me.PictureBox6.TabStop = False
+        '
+        'Label57
+        '
+        Me.Label57.AutoSize = True
+        Me.Label57.Font = New System.Drawing.Font("Raleway Light", 24.0!)
+        Me.Label57.Location = New System.Drawing.Point(10, 3)
+        Me.Label57.Name = "Label57"
+        Me.Label57.Size = New System.Drawing.Size(157, 44)
+        Me.Label57.TabIndex = 18
+        Me.Label57.Text = "PEDIDOS"
+        '
+        'Panel41
+        '
+        Me.Panel41.BackColor = System.Drawing.Color.FromArgb(CType(CType(124, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(231, Byte), Integer))
+        Me.Panel41.Controls.Add(Me.Label71)
+        Me.Panel41.Controls.Add(Me.Label72)
+        Me.Panel41.Controls.Add(Me.Label75)
+        Me.Panel41.Location = New System.Drawing.Point(278, 166)
+        Me.Panel41.Name = "Panel41"
+        Me.Panel41.Size = New System.Drawing.Size(181, 181)
+        Me.Panel41.TabIndex = 16
+        '
+        'Label71
+        '
+        Me.Label71.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label71.ForeColor = System.Drawing.Color.White
+        Me.Label71.Location = New System.Drawing.Point(3, 99)
+        Me.Label71.Name = "Label71"
+        Me.Label71.Size = New System.Drawing.Size(175, 33)
+        Me.Label71.TabIndex = 2
+        Me.Label71.Text = "200000"
+        Me.Label71.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label72
+        '
+        Me.Label72.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label72.ForeColor = System.Drawing.Color.White
+        Me.Label72.Location = New System.Drawing.Point(3, 42)
+        Me.Label72.Name = "Label72"
+        Me.Label72.Size = New System.Drawing.Size(175, 57)
+        Me.Label72.TabIndex = 1
+        Me.Label72.Text = "R$"
+        Me.Label72.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label75
+        '
+        Me.Label75.Font = New System.Drawing.Font("Raleway Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label75.ForeColor = System.Drawing.Color.White
+        Me.Label75.Location = New System.Drawing.Point(3, 2)
+        Me.Label75.Name = "Label75"
+        Me.Label75.Size = New System.Drawing.Size(175, 33)
+        Me.Label75.TabIndex = 0
+        Me.Label75.Text = "LUCRO MENSAL"
+        Me.Label75.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Panel42
+        '
+        Me.Panel42.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Panel42.Controls.Add(Me.Label76)
+        Me.Panel42.Controls.Add(Me.Label77)
+        Me.Panel42.Controls.Add(Me.Label78)
+        Me.Panel42.Location = New System.Drawing.Point(509, 166)
+        Me.Panel42.Name = "Panel42"
+        Me.Panel42.Size = New System.Drawing.Size(181, 187)
+        Me.Panel42.TabIndex = 17
+        '
+        'Label76
+        '
+        Me.Label76.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label76.ForeColor = System.Drawing.Color.White
+        Me.Label76.Location = New System.Drawing.Point(3, 99)
+        Me.Label76.Name = "Label76"
+        Me.Label76.Size = New System.Drawing.Size(175, 33)
+        Me.Label76.TabIndex = 2
+        Me.Label76.Text = "200000"
+        Me.Label76.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label77
+        '
+        Me.Label77.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label77.ForeColor = System.Drawing.Color.White
+        Me.Label77.Location = New System.Drawing.Point(3, 42)
+        Me.Label77.Name = "Label77"
+        Me.Label77.Size = New System.Drawing.Size(175, 57)
+        Me.Label77.TabIndex = 1
+        Me.Label77.Text = "R$"
+        Me.Label77.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label78
+        '
+        Me.Label78.Font = New System.Drawing.Font("Raleway Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label78.ForeColor = System.Drawing.Color.White
+        Me.Label78.Location = New System.Drawing.Point(3, 2)
+        Me.Label78.Name = "Label78"
+        Me.Label78.Size = New System.Drawing.Size(175, 33)
+        Me.Label78.TabIndex = 0
+        Me.Label78.Text = "LUCRO MENSAL"
+        Me.Label78.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Panel43
+        '
+        Me.Panel43.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(238, Byte), Integer))
+        Me.Panel43.Controls.Add(Me.Label79)
+        Me.Panel43.Controls.Add(Me.Label80)
+        Me.Panel43.Controls.Add(Me.Label81)
+        Me.Panel43.Location = New System.Drawing.Point(46, 166)
+        Me.Panel43.Name = "Panel43"
+        Me.Panel43.Size = New System.Drawing.Size(181, 181)
+        Me.Panel43.TabIndex = 15
+        '
+        'Label79
+        '
+        Me.Label79.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label79.ForeColor = System.Drawing.Color.White
+        Me.Label79.Location = New System.Drawing.Point(3, 99)
+        Me.Label79.Name = "Label79"
+        Me.Label79.Size = New System.Drawing.Size(175, 33)
+        Me.Label79.TabIndex = 2
+        Me.Label79.Text = "200000"
+        Me.Label79.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label80
+        '
+        Me.Label80.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label80.ForeColor = System.Drawing.Color.White
+        Me.Label80.Location = New System.Drawing.Point(3, 42)
+        Me.Label80.Name = "Label80"
+        Me.Label80.Size = New System.Drawing.Size(175, 57)
+        Me.Label80.TabIndex = 1
+        Me.Label80.Text = "R$"
+        Me.Label80.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label81
+        '
+        Me.Label81.Font = New System.Drawing.Font("Raleway Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label81.ForeColor = System.Drawing.Color.White
+        Me.Label81.Location = New System.Drawing.Point(3, 2)
+        Me.Label81.Name = "Label81"
+        Me.Label81.Size = New System.Drawing.Size(175, 33)
+        Me.Label81.TabIndex = 0
+        Me.Label81.Text = "LUCRO SEMANAL"
+        Me.Label81.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'DataGridView8
+        '
+        Me.DataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView8.Location = New System.Drawing.Point(18, 389)
+        Me.DataGridView8.Name = "DataGridView8"
+        Me.DataGridView8.Size = New System.Drawing.Size(692, 251)
+        Me.DataGridView8.TabIndex = 26
+        '
+        'Label82
+        '
+        Me.Label82.AutoSize = True
+        Me.Label82.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.Label82.Location = New System.Drawing.Point(14, 364)
+        Me.Label82.Name = "Label82"
+        Me.Label82.Size = New System.Drawing.Size(61, 22)
+        Me.Label82.TabIndex = 25
+        Me.Label82.Text = "Total: 4"
+        '
+        'RadioButton34
+        '
+        Me.RadioButton34.AutoSize = True
+        Me.RadioButton34.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton34.Location = New System.Drawing.Point(482, 127)
+        Me.RadioButton34.Name = "RadioButton34"
+        Me.RadioButton34.Size = New System.Drawing.Size(129, 26)
+        Me.RadioButton34.TabIndex = 23
+        Me.RadioButton34.TabStop = True
+        Me.RadioButton34.Text = "QTD. MÓVEIS"
+        Me.RadioButton34.UseVisualStyleBackColor = True
+        '
+        'RadioButton35
+        '
+        Me.RadioButton35.AutoSize = True
+        Me.RadioButton35.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton35.Location = New System.Drawing.Point(327, 127)
+        Me.RadioButton35.Name = "RadioButton35"
+        Me.RadioButton35.Size = New System.Drawing.Size(112, 26)
+        Me.RadioButton35.TabIndex = 22
+        Me.RadioButton35.TabStop = True
+        Me.RadioButton35.Text = "BIOGRAFIA"
+        Me.RadioButton35.UseVisualStyleBackColor = True
+        '
+        'RadioButton36
+        '
+        Me.RadioButton36.AutoSize = True
+        Me.RadioButton36.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton36.Location = New System.Drawing.Point(208, 127)
+        Me.RadioButton36.Name = "RadioButton36"
+        Me.RadioButton36.Size = New System.Drawing.Size(76, 26)
+        Me.RadioButton36.TabIndex = 21
+        Me.RadioButton36.TabStop = True
+        Me.RadioButton36.Text = "NOME"
+        Me.RadioButton36.UseVisualStyleBackColor = True
+        '
+        'RadioButton37
+        '
+        Me.RadioButton37.AutoSize = True
+        Me.RadioButton37.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton37.Location = New System.Drawing.Point(122, 126)
+        Me.RadioButton37.Name = "RadioButton37"
+        Me.RadioButton37.Size = New System.Drawing.Size(43, 26)
+        Me.RadioButton37.TabIndex = 20
+        Me.RadioButton37.TabStop = True
+        Me.RadioButton37.Text = "ID"
+        Me.RadioButton37.UseVisualStyleBackColor = True
+        '
+        'Panel44
+        '
+        Me.Panel44.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel44.Controls.Add(Me.txtSearchFuncionarios)
+        Me.Panel44.Controls.Add(Me.btnSearchFuncionarios)
+        Me.Panel44.Location = New System.Drawing.Point(43, 71)
+        Me.Panel44.Name = "Panel44"
+        Me.Panel44.Size = New System.Drawing.Size(650, 47)
+        Me.Panel44.TabIndex = 19
+        '
+        'txtSearchFuncionarios
+        '
+        Me.txtSearchFuncionarios.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.txtSearchFuncionarios.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtSearchFuncionarios.Font = New System.Drawing.Font("Arial", 16.0!)
+        Me.txtSearchFuncionarios.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.txtSearchFuncionarios.Location = New System.Drawing.Point(47, 10)
+        Me.txtSearchFuncionarios.Name = "txtSearchFuncionarios"
+        Me.txtSearchFuncionarios.Size = New System.Drawing.Size(593, 25)
+        Me.txtSearchFuncionarios.TabIndex = 21
+        '
+        'btnSearchFuncionarios
+        '
+        Me.btnSearchFuncionarios.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.btnSearchFuncionarios.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.btnSearchFuncionarios.Location = New System.Drawing.Point(7, 8)
+        Me.btnSearchFuncionarios.Name = "btnSearchFuncionarios"
+        Me.btnSearchFuncionarios.Size = New System.Drawing.Size(30, 30)
+        Me.btnSearchFuncionarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnSearchFuncionarios.TabIndex = 20
+        Me.btnSearchFuncionarios.TabStop = False
+        '
+        'Label83
+        '
+        Me.Label83.AutoSize = True
+        Me.Label83.Font = New System.Drawing.Font("Raleway Light", 24.0!)
+        Me.Label83.Location = New System.Drawing.Point(10, 3)
+        Me.Label83.Name = "Label83"
+        Me.Label83.Size = New System.Drawing.Size(261, 44)
+        Me.Label83.TabIndex = 18
+        Me.Label83.Text = "FUNCIONÁRIOS"
+        '
+        'Panel45
+        '
+        Me.Panel45.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Panel45.Controls.Add(Me.Label84)
+        Me.Panel45.Controls.Add(Me.Label85)
+        Me.Panel45.Location = New System.Drawing.Point(277, 166)
+        Me.Panel45.Name = "Panel45"
+        Me.Panel45.Size = New System.Drawing.Size(185, 181)
+        Me.Panel45.TabIndex = 17
+        '
+        'Label84
+        '
+        Me.Label84.Font = New System.Drawing.Font("Raleway Light", 40.0!)
+        Me.Label84.ForeColor = System.Drawing.Color.White
+        Me.Label84.Location = New System.Drawing.Point(3, 62)
+        Me.Label84.Name = "Label84"
+        Me.Label84.Size = New System.Drawing.Size(175, 85)
+        Me.Label84.TabIndex = 1
+        Me.Label84.Text = "80"
+        Me.Label84.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label85
+        '
+        Me.Label85.Font = New System.Drawing.Font("Raleway Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label85.ForeColor = System.Drawing.Color.White
+        Me.Label85.Location = New System.Drawing.Point(3, 2)
+        Me.Label85.Name = "Label85"
+        Me.Label85.Size = New System.Drawing.Size(175, 33)
+        Me.Label85.TabIndex = 0
+        Me.Label85.Text = "REG. TOTAL"
+        Me.Label85.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
         'FormHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(21.0!, 50.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1000, 700)
-        Me.Controls.Add(Me.panelHomeCliente)
+        Me.Controls.Add(Me.panelHomeFuncionarios)
         Me.Controls.Add(Me.panelHomePedidos)
+        Me.Controls.Add(Me.panelHomeDesigners)
+        Me.Controls.Add(Me.panelHomeMoveis)
+        Me.Controls.Add(Me.panelHomeCliente)
         Me.Controls.Add(Me.panelMainPage)
         Me.Controls.Add(Me.btnMinimize)
         Me.Controls.Add(Me.btnEnd)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btnFuncionario)
+        Me.Controls.Add(Me.btnDesigners)
+        Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.btnCliente)
         Me.Controls.Add(Me.btnPedidos)
         Me.Controls.Add(Me.Panel1)
@@ -1070,6 +2642,56 @@ Partial Class FormHome
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel15.ResumeLayout(False)
         Me.Panel16.ResumeLayout(False)
+        Me.panelHomeMoveis.ResumeLayout(False)
+        Me.panelHomeMoveis.PerformLayout()
+        Me.Panel18.ResumeLayout(False)
+        Me.Panel18.PerformLayout()
+        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel20.ResumeLayout(False)
+        Me.Panel20.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel21.ResumeLayout(False)
+        Me.Panel22.ResumeLayout(False)
+        Me.Panel23.ResumeLayout(False)
+        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel24.ResumeLayout(False)
+        Me.Panel24.PerformLayout()
+        CType(Me.btnSearchMoveis, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel25.ResumeLayout(False)
+        Me.Panel26.ResumeLayout(False)
+        Me.Panel27.ResumeLayout(False)
+        Me.panelHomeDesigners.ResumeLayout(False)
+        Me.panelHomeDesigners.PerformLayout()
+        Me.Panel30.ResumeLayout(False)
+        Me.Panel30.PerformLayout()
+        CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel32.ResumeLayout(False)
+        Me.Panel32.PerformLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel33.ResumeLayout(False)
+        Me.Panel34.ResumeLayout(False)
+        Me.Panel35.ResumeLayout(False)
+        CType(Me.DataGridView6, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel36.ResumeLayout(False)
+        Me.Panel36.PerformLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel38.ResumeLayout(False)
+        Me.panelHomeFuncionarios.ResumeLayout(False)
+        Me.panelHomeFuncionarios.PerformLayout()
+        Me.Panel37.ResumeLayout(False)
+        Me.Panel37.PerformLayout()
+        CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel40.ResumeLayout(False)
+        Me.Panel40.PerformLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel41.ResumeLayout(False)
+        Me.Panel42.ResumeLayout(False)
+        Me.Panel43.ResumeLayout(False)
+        CType(Me.DataGridView8, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel44.ResumeLayout(False)
+        Me.Panel44.PerformLayout()
+        CType(Me.btnSearchFuncionarios, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel45.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1078,9 +2700,9 @@ Partial Class FormHome
     Friend WithEvents btnHome As PictureBox
     Friend WithEvents btnPedidos As Button
     Friend WithEvents btnCliente As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents btnSearch As Button
+    Friend WithEvents btnDesigners As Button
+    Friend WithEvents btnFuncionario As Button
     Friend WithEvents btnMinimize As PictureBox
     Friend WithEvents btnEnd As PictureBox
     Friend WithEvents panelMainPage As Panel
@@ -1153,4 +2775,130 @@ Partial Class FormHome
     Friend WithEvents Panel16 As Panel
     Friend WithEvents Label31 As Label
     Friend WithEvents Label32 As Label
+    Friend WithEvents panelHomeMoveis As Panel
+    Friend WithEvents Panel27 As Panel
+    Friend WithEvents Label54 As Label
+    Friend WithEvents Label55 As Label
+    Friend WithEvents Panel17 As Panel
+    Friend WithEvents Panel18 As Panel
+    Friend WithEvents Panel19 As Panel
+    Friend WithEvents DataGridView3 As DataGridView
+    Friend WithEvents Label27 As Label
+    Friend WithEvents RadioButton11 As RadioButton
+    Friend WithEvents RadioButton12 As RadioButton
+    Friend WithEvents RadioButton13 As RadioButton
+    Friend WithEvents RadioButton14 As RadioButton
+    Friend WithEvents RadioButton15 As RadioButton
+    Friend WithEvents Panel20 As Panel
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Label30 As Label
+    Friend WithEvents Panel21 As Panel
+    Friend WithEvents Label39 As Label
+    Friend WithEvents Label40 As Label
+    Friend WithEvents Label41 As Label
+    Friend WithEvents Panel22 As Panel
+    Friend WithEvents Label42 As Label
+    Friend WithEvents Label43 As Label
+    Friend WithEvents Label44 As Label
+    Friend WithEvents Panel23 As Panel
+    Friend WithEvents Label45 As Label
+    Friend WithEvents Label46 As Label
+    Friend WithEvents Label47 As Label
+    Friend WithEvents DataGridView4 As DataGridView
+    Friend WithEvents Label48 As Label
+    Friend WithEvents RadioButton17 As RadioButton
+    Friend WithEvents RadioButton18 As RadioButton
+    Friend WithEvents RadioButton19 As RadioButton
+    Friend WithEvents RadioButton20 As RadioButton
+    Friend WithEvents Panel24 As Panel
+    Friend WithEvents txtSearchMoveis As TextBox
+    Friend WithEvents btnSearchMoveis As PictureBox
+    Friend WithEvents Label49 As Label
+    Friend WithEvents Panel25 As Panel
+    Friend WithEvents Label50 As Label
+    Friend WithEvents Label51 As Label
+    Friend WithEvents Panel26 As Panel
+    Friend WithEvents Label52 As Label
+    Friend WithEvents Label53 As Label
+    Friend WithEvents panelHomeDesigners As Panel
+    Friend WithEvents Panel29 As Panel
+    Friend WithEvents Panel30 As Panel
+    Friend WithEvents Panel31 As Panel
+    Friend WithEvents DataGridView5 As DataGridView
+    Friend WithEvents Label58 As Label
+    Friend WithEvents RadioButton16 As RadioButton
+    Friend WithEvents RadioButton21 As RadioButton
+    Friend WithEvents RadioButton22 As RadioButton
+    Friend WithEvents RadioButton23 As RadioButton
+    Friend WithEvents RadioButton24 As RadioButton
+    Friend WithEvents Panel32 As Panel
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents Label59 As Label
+    Friend WithEvents Panel33 As Panel
+    Friend WithEvents Label60 As Label
+    Friend WithEvents Label61 As Label
+    Friend WithEvents Label62 As Label
+    Friend WithEvents Panel34 As Panel
+    Friend WithEvents Label63 As Label
+    Friend WithEvents Label64 As Label
+    Friend WithEvents Label65 As Label
+    Friend WithEvents Panel35 As Panel
+    Friend WithEvents Label66 As Label
+    Friend WithEvents Label67 As Label
+    Friend WithEvents Label68 As Label
+    Friend WithEvents DataGridView6 As DataGridView
+    Friend WithEvents Label69 As Label
+    Friend WithEvents RadioButton25 As RadioButton
+    Friend WithEvents RadioButton26 As RadioButton
+    Friend WithEvents RadioButton27 As RadioButton
+    Friend WithEvents RadioButton28 As RadioButton
+    Friend WithEvents Panel36 As Panel
+    Friend WithEvents txtSearchDesigners As TextBox
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents Label70 As Label
+    Friend WithEvents Panel38 As Panel
+    Friend WithEvents Label73 As Label
+    Friend WithEvents Label74 As Label
+    Friend WithEvents panelHomeFuncionarios As Panel
+    Friend WithEvents Panel28 As Panel
+    Friend WithEvents Panel37 As Panel
+    Friend WithEvents Panel39 As Panel
+    Friend WithEvents DataGridView7 As DataGridView
+    Friend WithEvents Label56 As Label
+    Friend WithEvents RadioButton29 As RadioButton
+    Friend WithEvents RadioButton30 As RadioButton
+    Friend WithEvents RadioButton31 As RadioButton
+    Friend WithEvents RadioButton32 As RadioButton
+    Friend WithEvents RadioButton33 As RadioButton
+    Friend WithEvents Panel40 As Panel
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents Label57 As Label
+    Friend WithEvents Panel41 As Panel
+    Friend WithEvents Label71 As Label
+    Friend WithEvents Label72 As Label
+    Friend WithEvents Label75 As Label
+    Friend WithEvents Panel42 As Panel
+    Friend WithEvents Label76 As Label
+    Friend WithEvents Label77 As Label
+    Friend WithEvents Label78 As Label
+    Friend WithEvents Panel43 As Panel
+    Friend WithEvents Label79 As Label
+    Friend WithEvents Label80 As Label
+    Friend WithEvents Label81 As Label
+    Friend WithEvents DataGridView8 As DataGridView
+    Friend WithEvents Label82 As Label
+    Friend WithEvents RadioButton34 As RadioButton
+    Friend WithEvents RadioButton35 As RadioButton
+    Friend WithEvents RadioButton36 As RadioButton
+    Friend WithEvents RadioButton37 As RadioButton
+    Friend WithEvents Panel44 As Panel
+    Friend WithEvents txtSearchFuncionarios As TextBox
+    Friend WithEvents btnSearchFuncionarios As PictureBox
+    Friend WithEvents Label83 As Label
+    Friend WithEvents Panel45 As Panel
+    Friend WithEvents Label84 As Label
+    Friend WithEvents Label85 As Label
 End Class
