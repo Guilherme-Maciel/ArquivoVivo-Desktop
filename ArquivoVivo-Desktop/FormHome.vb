@@ -93,4 +93,9 @@ Public Class FormHome
         panelHomeDesigners.Visible = False
         panelHomeFuncionarios.Visible = True
     End Sub
+
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+        FormMoveisType.Show()
+        Me.Close()
+    End Sub
 End Class

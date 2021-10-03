@@ -80,10 +80,22 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormCadaster.Designer.vb">
+      <DependentUpon>FormCadaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormHome.Designer.vb">
       <DependentUpon>FormHome.vb</DependentUpon>
     </Compile>
     <Compile Include="FormHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMoveisType.Designer.vb">
+      <DependentUpon>FormMoveisType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMoveisType.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -106,8 +118,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCadaster.resx">
+      <DependentUpon>FormCadaster.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHome.resx">
       <DependentUpon>FormHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMoveisType.resx">
+      <DependentUpon>FormMoveisType.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -148,6 +166,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_ambiente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_others.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_plus.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

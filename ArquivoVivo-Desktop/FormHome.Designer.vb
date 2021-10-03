@@ -23,7 +23,6 @@ Partial Class FormHome
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.btnHome = New System.Windows.Forms.PictureBox()
         Me.btnPedidos = New System.Windows.Forms.Button()
         Me.btnCliente = New System.Windows.Forms.Button()
         Me.btnSearch = New System.Windows.Forms.Button()
@@ -64,9 +63,6 @@ Partial Class FormHome
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.panelSearchPedidos = New System.Windows.Forms.Panel()
-        Me.txtSearchPedidos = New System.Windows.Forms.TextBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Label23 = New System.Windows.Forms.Label()
@@ -80,8 +76,6 @@ Partial Class FormHome
         Me.Label36 = New System.Windows.Forms.Label()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
-        Me.btnMinimize = New System.Windows.Forms.PictureBox()
-        Me.btnEnd = New System.Windows.Forms.PictureBox()
         Me.panelHomeCliente = New System.Windows.Forms.Panel()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
@@ -91,9 +85,6 @@ Partial Class FormHome
         Me.RadioButton8 = New System.Windows.Forms.RadioButton()
         Me.RadioButton9 = New System.Windows.Forms.RadioButton()
         Me.RadioButton10 = New System.Windows.Forms.RadioButton()
-        Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.txtSearchCliente = New System.Windows.Forms.TextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Panel15 = New System.Windows.Forms.Panel()
         Me.Label28 = New System.Windows.Forms.Label()
@@ -102,6 +93,9 @@ Partial Class FormHome
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
         Me.panelHomeMoveis = New System.Windows.Forms.Panel()
+        Me.Panel27 = New System.Windows.Forms.Panel()
+        Me.Label54 = New System.Windows.Forms.Label()
+        Me.Label55 = New System.Windows.Forms.Label()
         Me.Panel17 = New System.Windows.Forms.Panel()
         Me.Panel18 = New System.Windows.Forms.Panel()
         Me.Panel19 = New System.Windows.Forms.Panel()
@@ -112,9 +106,6 @@ Partial Class FormHome
         Me.RadioButton13 = New System.Windows.Forms.RadioButton()
         Me.RadioButton14 = New System.Windows.Forms.RadioButton()
         Me.RadioButton15 = New System.Windows.Forms.RadioButton()
-        Me.Panel20 = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Panel21 = New System.Windows.Forms.Panel()
         Me.Label39 = New System.Windows.Forms.Label()
@@ -134,9 +125,6 @@ Partial Class FormHome
         Me.RadioButton18 = New System.Windows.Forms.RadioButton()
         Me.RadioButton19 = New System.Windows.Forms.RadioButton()
         Me.RadioButton20 = New System.Windows.Forms.RadioButton()
-        Me.Panel24 = New System.Windows.Forms.Panel()
-        Me.txtSearchMoveis = New System.Windows.Forms.TextBox()
-        Me.btnSearchMoveis = New System.Windows.Forms.PictureBox()
         Me.Label49 = New System.Windows.Forms.Label()
         Me.Panel25 = New System.Windows.Forms.Panel()
         Me.Label50 = New System.Windows.Forms.Label()
@@ -144,9 +132,6 @@ Partial Class FormHome
         Me.Panel26 = New System.Windows.Forms.Panel()
         Me.Label52 = New System.Windows.Forms.Label()
         Me.Label53 = New System.Windows.Forms.Label()
-        Me.Panel27 = New System.Windows.Forms.Panel()
-        Me.Label54 = New System.Windows.Forms.Label()
-        Me.Label55 = New System.Windows.Forms.Label()
         Me.panelHomeDesigners = New System.Windows.Forms.Panel()
         Me.Panel29 = New System.Windows.Forms.Panel()
         Me.Panel30 = New System.Windows.Forms.Panel()
@@ -158,9 +143,6 @@ Partial Class FormHome
         Me.RadioButton22 = New System.Windows.Forms.RadioButton()
         Me.RadioButton23 = New System.Windows.Forms.RadioButton()
         Me.RadioButton24 = New System.Windows.Forms.RadioButton()
-        Me.Panel32 = New System.Windows.Forms.Panel()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label59 = New System.Windows.Forms.Label()
         Me.Panel33 = New System.Windows.Forms.Panel()
         Me.Label60 = New System.Windows.Forms.Label()
@@ -180,9 +162,6 @@ Partial Class FormHome
         Me.RadioButton26 = New System.Windows.Forms.RadioButton()
         Me.RadioButton27 = New System.Windows.Forms.RadioButton()
         Me.RadioButton28 = New System.Windows.Forms.RadioButton()
-        Me.Panel36 = New System.Windows.Forms.Panel()
-        Me.txtSearchDesigners = New System.Windows.Forms.TextBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Label70 = New System.Windows.Forms.Label()
         Me.Panel38 = New System.Windows.Forms.Panel()
         Me.Label73 = New System.Windows.Forms.Label()
@@ -198,9 +177,6 @@ Partial Class FormHome
         Me.RadioButton31 = New System.Windows.Forms.RadioButton()
         Me.RadioButton32 = New System.Windows.Forms.RadioButton()
         Me.RadioButton33 = New System.Windows.Forms.RadioButton()
-        Me.Panel40 = New System.Windows.Forms.Panel()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Label57 = New System.Windows.Forms.Label()
         Me.Panel41 = New System.Windows.Forms.Panel()
         Me.Label71 = New System.Windows.Forms.Label()
@@ -220,15 +196,39 @@ Partial Class FormHome
         Me.RadioButton35 = New System.Windows.Forms.RadioButton()
         Me.RadioButton36 = New System.Windows.Forms.RadioButton()
         Me.RadioButton37 = New System.Windows.Forms.RadioButton()
-        Me.Panel44 = New System.Windows.Forms.Panel()
-        Me.txtSearchFuncionarios = New System.Windows.Forms.TextBox()
-        Me.btnSearchFuncionarios = New System.Windows.Forms.PictureBox()
         Me.Label83 = New System.Windows.Forms.Label()
         Me.Panel45 = New System.Windows.Forms.Panel()
         Me.Label84 = New System.Windows.Forms.Label()
         Me.Label85 = New System.Windows.Forms.Label()
+        Me.Panel40 = New System.Windows.Forms.Panel()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.Panel44 = New System.Windows.Forms.Panel()
+        Me.txtSearchFuncionarios = New System.Windows.Forms.TextBox()
+        Me.btnSearchFuncionarios = New System.Windows.Forms.PictureBox()
+        Me.panelSearchPedidos = New System.Windows.Forms.Panel()
+        Me.txtSearchPedidos = New System.Windows.Forms.TextBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Panel32 = New System.Windows.Forms.Panel()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.Panel36 = New System.Windows.Forms.Panel()
+        Me.txtSearchDesigners = New System.Windows.Forms.TextBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.Panel20 = New System.Windows.Forms.Panel()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Panel24 = New System.Windows.Forms.Panel()
+        Me.txtSearchMoveis = New System.Windows.Forms.TextBox()
+        Me.btnSearchMoveis = New System.Windows.Forms.PictureBox()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.txtSearchCliente = New System.Windows.Forms.TextBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnMinimize = New System.Windows.Forms.PictureBox()
+        Me.btnEnd = New System.Windows.Forms.PictureBox()
+        Me.btnHome = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
-        CType(Me.btnHome, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelMainPage.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -238,57 +238,59 @@ Partial Class FormHome
         Me.Panel3.SuspendLayout()
         Me.panelHomePedidos.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.panelSearchPedidos.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel10.SuspendLayout()
         Me.Panel13.SuspendLayout()
         Me.Panel14.SuspendLayout()
-        CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnEnd, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelHomeCliente.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel12.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel15.SuspendLayout()
         Me.Panel16.SuspendLayout()
         Me.panelHomeMoveis.SuspendLayout()
+        Me.Panel27.SuspendLayout()
         Me.Panel18.SuspendLayout()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel20.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel21.SuspendLayout()
         Me.Panel22.SuspendLayout()
         Me.Panel23.SuspendLayout()
         CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel24.SuspendLayout()
-        CType(Me.btnSearchMoveis, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel25.SuspendLayout()
         Me.Panel26.SuspendLayout()
-        Me.Panel27.SuspendLayout()
         Me.panelHomeDesigners.SuspendLayout()
         Me.Panel30.SuspendLayout()
         CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel32.SuspendLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel33.SuspendLayout()
         Me.Panel34.SuspendLayout()
         Me.Panel35.SuspendLayout()
         CType(Me.DataGridView6, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel36.SuspendLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel38.SuspendLayout()
         Me.panelHomeFuncionarios.SuspendLayout()
         Me.Panel37.SuspendLayout()
         CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel40.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel41.SuspendLayout()
         Me.Panel42.SuspendLayout()
         Me.Panel43.SuspendLayout()
         CType(Me.DataGridView8, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel45.SuspendLayout()
+        Me.Panel40.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel44.SuspendLayout()
         CType(Me.btnSearchFuncionarios, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel45.SuspendLayout()
+        Me.panelSearchPedidos.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel32.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel36.SuspendLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel20.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel24.SuspendLayout()
+        CType(Me.btnSearchMoveis, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel12.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnEnd, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnHome, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -299,16 +301,6 @@ Partial Class FormHome
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(263, 700)
         Me.Panel1.TabIndex = 0
-        '
-        'btnHome
-        '
-        Me.btnHome.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.logo_home
-        Me.btnHome.Location = New System.Drawing.Point(56, 18)
-        Me.btnHome.Name = "btnHome"
-        Me.btnHome.Size = New System.Drawing.Size(150, 148)
-        Me.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnHome.TabIndex = 0
-        Me.btnHome.TabStop = False
         '
         'btnPedidos
         '
@@ -687,7 +679,7 @@ Partial Class FormHome
         Me.panelHomePedidos.Controls.Add(Me.Panel10)
         Me.panelHomePedidos.Controls.Add(Me.Panel13)
         Me.panelHomePedidos.Controls.Add(Me.Panel14)
-        Me.panelHomePedidos.Location = New System.Drawing.Point(266, 48)
+        Me.panelHomePedidos.Location = New System.Drawing.Point(2660, 48)
         Me.panelHomePedidos.Name = "panelHomePedidos"
         Me.panelHomePedidos.Size = New System.Drawing.Size(730, 652)
         Me.panelHomePedidos.TabIndex = 15
@@ -777,39 +769,6 @@ Partial Class FormHome
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "N°PEDIDOS"
         Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'panelSearchPedidos
-        '
-        Me.panelSearchPedidos.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
-        Me.panelSearchPedidos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.panelSearchPedidos.Controls.Add(Me.txtSearchPedidos)
-        Me.panelSearchPedidos.Controls.Add(Me.PictureBox2)
-        Me.panelSearchPedidos.Location = New System.Drawing.Point(43, 71)
-        Me.panelSearchPedidos.Name = "panelSearchPedidos"
-        Me.panelSearchPedidos.Size = New System.Drawing.Size(650, 47)
-        Me.panelSearchPedidos.TabIndex = 19
-        '
-        'txtSearchPedidos
-        '
-        Me.txtSearchPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.txtSearchPedidos.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtSearchPedidos.Font = New System.Drawing.Font("Arial", 16.0!)
-        Me.txtSearchPedidos.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.txtSearchPedidos.Location = New System.Drawing.Point(47, 10)
-        Me.txtSearchPedidos.Name = "txtSearchPedidos"
-        Me.txtSearchPedidos.Size = New System.Drawing.Size(593, 25)
-        Me.txtSearchPedidos.TabIndex = 21
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.PictureBox2.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
-        Me.PictureBox2.Location = New System.Drawing.Point(7, 8)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(30, 30)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 20
-        Me.PictureBox2.TabStop = False
         '
         'Label20
         '
@@ -953,26 +912,6 @@ Partial Class FormHome
         Me.Label38.Text = "LUCRO SEMANAL"
         Me.Label38.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'btnMinimize
-        '
-        Me.btnMinimize.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.minimize
-        Me.btnMinimize.Location = New System.Drawing.Point(922, 12)
-        Me.btnMinimize.Name = "btnMinimize"
-        Me.btnMinimize.Size = New System.Drawing.Size(30, 30)
-        Me.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnMinimize.TabIndex = 13
-        Me.btnMinimize.TabStop = False
-        '
-        'btnEnd
-        '
-        Me.btnEnd.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources._end
-        Me.btnEnd.Location = New System.Drawing.Point(958, 12)
-        Me.btnEnd.Name = "btnEnd"
-        Me.btnEnd.Size = New System.Drawing.Size(30, 30)
-        Me.btnEnd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnEnd.TabIndex = 12
-        Me.btnEnd.TabStop = False
-        '
         'panelHomeCliente
         '
         Me.panelHomeCliente.Controls.Add(Me.Panel11)
@@ -987,7 +926,7 @@ Partial Class FormHome
         Me.panelHomeCliente.Controls.Add(Me.Label26)
         Me.panelHomeCliente.Controls.Add(Me.Panel15)
         Me.panelHomeCliente.Controls.Add(Me.Panel16)
-        Me.panelHomeCliente.Location = New System.Drawing.Point(266, 48)
+        Me.panelHomeCliente.Location = New System.Drawing.Point(2660, 48)
         Me.panelHomeCliente.Name = "panelHomeCliente"
         Me.panelHomeCliente.Size = New System.Drawing.Size(730, 652)
         Me.panelHomeCliente.TabIndex = 16
@@ -1078,38 +1017,6 @@ Partial Class FormHome
         Me.RadioButton10.Text = "N°PEDIDOS"
         Me.RadioButton10.UseVisualStyleBackColor = True
         '
-        'Panel12
-        '
-        Me.Panel12.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
-        Me.Panel12.Controls.Add(Me.txtSearchCliente)
-        Me.Panel12.Controls.Add(Me.PictureBox1)
-        Me.Panel12.Location = New System.Drawing.Point(43, 71)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(650, 47)
-        Me.Panel12.TabIndex = 19
-        '
-        'txtSearchCliente
-        '
-        Me.txtSearchCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.txtSearchCliente.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtSearchCliente.Font = New System.Drawing.Font("Arial", 16.0!)
-        Me.txtSearchCliente.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.txtSearchCliente.Location = New System.Drawing.Point(47, 10)
-        Me.txtSearchCliente.Name = "txtSearchCliente"
-        Me.txtSearchCliente.Size = New System.Drawing.Size(593, 25)
-        Me.txtSearchCliente.TabIndex = 21
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.PictureBox1.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
-        Me.PictureBox1.Location = New System.Drawing.Point(7, 8)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(30, 30)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 20
-        Me.PictureBox1.TabStop = False
-        '
         'Label26
         '
         Me.Label26.AutoSize = True
@@ -1186,6 +1093,7 @@ Partial Class FormHome
         '
         'panelHomeMoveis
         '
+        Me.panelHomeMoveis.Controls.Add(Me.PictureBox7)
         Me.panelHomeMoveis.Controls.Add(Me.Panel27)
         Me.panelHomeMoveis.Controls.Add(Me.Panel17)
         Me.panelHomeMoveis.Controls.Add(Me.Panel18)
@@ -1203,6 +1111,38 @@ Partial Class FormHome
         Me.panelHomeMoveis.Name = "panelHomeMoveis"
         Me.panelHomeMoveis.Size = New System.Drawing.Size(730, 652)
         Me.panelHomeMoveis.TabIndex = 17
+        '
+        'Panel27
+        '
+        Me.Panel27.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(113, Byte), Integer))
+        Me.Panel27.Controls.Add(Me.Label54)
+        Me.Panel27.Controls.Add(Me.Label55)
+        Me.Panel27.Location = New System.Drawing.Point(508, 166)
+        Me.Panel27.Name = "Panel27"
+        Me.Panel27.Size = New System.Drawing.Size(185, 181)
+        Me.Panel27.TabIndex = 17
+        '
+        'Label54
+        '
+        Me.Label54.Font = New System.Drawing.Font("Raleway Light", 40.0!)
+        Me.Label54.ForeColor = System.Drawing.Color.White
+        Me.Label54.Location = New System.Drawing.Point(3, 62)
+        Me.Label54.Name = "Label54"
+        Me.Label54.Size = New System.Drawing.Size(175, 85)
+        Me.Label54.TabIndex = 1
+        Me.Label54.Text = "4"
+        Me.Label54.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label55
+        '
+        Me.Label55.Font = New System.Drawing.Font("Raleway Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label55.ForeColor = System.Drawing.Color.White
+        Me.Label55.Location = New System.Drawing.Point(3, 2)
+        Me.Label55.Name = "Label55"
+        Me.Label55.Size = New System.Drawing.Size(175, 33)
+        Me.Label55.TabIndex = 0
+        Me.Label55.Text = "SEM ESTOQUE"
+        Me.Label55.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Panel17
         '
@@ -1317,38 +1257,6 @@ Partial Class FormHome
         Me.RadioButton15.TabStop = True
         Me.RadioButton15.Text = "N°PEDIDOS"
         Me.RadioButton15.UseVisualStyleBackColor = True
-        '
-        'Panel20
-        '
-        Me.Panel20.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
-        Me.Panel20.Controls.Add(Me.TextBox1)
-        Me.Panel20.Controls.Add(Me.PictureBox3)
-        Me.Panel20.Location = New System.Drawing.Point(43, 71)
-        Me.Panel20.Name = "Panel20"
-        Me.Panel20.Size = New System.Drawing.Size(650, 47)
-        Me.Panel20.TabIndex = 19
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Raleway Light", 16.0!)
-        Me.TextBox1.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.TextBox1.Location = New System.Drawing.Point(47, 10)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(593, 26)
-        Me.TextBox1.TabIndex = 21
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.PictureBox3.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
-        Me.PictureBox3.Location = New System.Drawing.Point(7, 8)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(30, 30)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 20
-        Me.PictureBox3.TabStop = False
         '
         'Label30
         '
@@ -1558,38 +1466,6 @@ Partial Class FormHome
         Me.RadioButton20.Text = "ID"
         Me.RadioButton20.UseVisualStyleBackColor = True
         '
-        'Panel24
-        '
-        Me.Panel24.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
-        Me.Panel24.Controls.Add(Me.txtSearchMoveis)
-        Me.Panel24.Controls.Add(Me.btnSearchMoveis)
-        Me.Panel24.Location = New System.Drawing.Point(43, 71)
-        Me.Panel24.Name = "Panel24"
-        Me.Panel24.Size = New System.Drawing.Size(650, 47)
-        Me.Panel24.TabIndex = 19
-        '
-        'txtSearchMoveis
-        '
-        Me.txtSearchMoveis.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.txtSearchMoveis.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtSearchMoveis.Font = New System.Drawing.Font("Arial", 16.0!)
-        Me.txtSearchMoveis.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.txtSearchMoveis.Location = New System.Drawing.Point(47, 10)
-        Me.txtSearchMoveis.Name = "txtSearchMoveis"
-        Me.txtSearchMoveis.Size = New System.Drawing.Size(593, 25)
-        Me.txtSearchMoveis.TabIndex = 21
-        '
-        'btnSearchMoveis
-        '
-        Me.btnSearchMoveis.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnSearchMoveis.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
-        Me.btnSearchMoveis.Location = New System.Drawing.Point(7, 8)
-        Me.btnSearchMoveis.Name = "btnSearchMoveis"
-        Me.btnSearchMoveis.Size = New System.Drawing.Size(30, 30)
-        Me.btnSearchMoveis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnSearchMoveis.TabIndex = 20
-        Me.btnSearchMoveis.TabStop = False
-        '
         'Label49
         '
         Me.Label49.AutoSize = True
@@ -1664,38 +1540,6 @@ Partial Class FormHome
         Me.Label53.Text = "REG. MÊS"
         Me.Label53.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Panel27
-        '
-        Me.Panel27.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(113, Byte), Integer))
-        Me.Panel27.Controls.Add(Me.Label54)
-        Me.Panel27.Controls.Add(Me.Label55)
-        Me.Panel27.Location = New System.Drawing.Point(508, 166)
-        Me.Panel27.Name = "Panel27"
-        Me.Panel27.Size = New System.Drawing.Size(185, 181)
-        Me.Panel27.TabIndex = 17
-        '
-        'Label54
-        '
-        Me.Label54.Font = New System.Drawing.Font("Raleway Light", 40.0!)
-        Me.Label54.ForeColor = System.Drawing.Color.White
-        Me.Label54.Location = New System.Drawing.Point(3, 62)
-        Me.Label54.Name = "Label54"
-        Me.Label54.Size = New System.Drawing.Size(175, 85)
-        Me.Label54.TabIndex = 1
-        Me.Label54.Text = "4"
-        Me.Label54.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label55
-        '
-        Me.Label55.Font = New System.Drawing.Font("Raleway Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label55.ForeColor = System.Drawing.Color.White
-        Me.Label55.Location = New System.Drawing.Point(3, 2)
-        Me.Label55.Name = "Label55"
-        Me.Label55.Size = New System.Drawing.Size(175, 33)
-        Me.Label55.TabIndex = 0
-        Me.Label55.Text = "SEM ESTOQUE"
-        Me.Label55.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
         'panelHomeDesigners
         '
         Me.panelHomeDesigners.Controls.Add(Me.Panel29)
@@ -1709,7 +1553,7 @@ Partial Class FormHome
         Me.panelHomeDesigners.Controls.Add(Me.Panel36)
         Me.panelHomeDesigners.Controls.Add(Me.Label70)
         Me.panelHomeDesigners.Controls.Add(Me.Panel38)
-        Me.panelHomeDesigners.Location = New System.Drawing.Point(266, 48)
+        Me.panelHomeDesigners.Location = New System.Drawing.Point(2660, 48)
         Me.panelHomeDesigners.Name = "panelHomeDesigners"
         Me.panelHomeDesigners.Size = New System.Drawing.Size(730, 652)
         Me.panelHomeDesigners.TabIndex = 18
@@ -1827,38 +1671,6 @@ Partial Class FormHome
         Me.RadioButton24.TabStop = True
         Me.RadioButton24.Text = "N°PEDIDOS"
         Me.RadioButton24.UseVisualStyleBackColor = True
-        '
-        'Panel32
-        '
-        Me.Panel32.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
-        Me.Panel32.Controls.Add(Me.TextBox2)
-        Me.Panel32.Controls.Add(Me.PictureBox4)
-        Me.Panel32.Location = New System.Drawing.Point(43, 71)
-        Me.Panel32.Name = "Panel32"
-        Me.Panel32.Size = New System.Drawing.Size(650, 47)
-        Me.Panel32.TabIndex = 19
-        '
-        'TextBox2
-        '
-        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Font = New System.Drawing.Font("Raleway Light", 16.0!)
-        Me.TextBox2.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.TextBox2.Location = New System.Drawing.Point(47, 10)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(593, 26)
-        Me.TextBox2.TabIndex = 21
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.PictureBox4.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
-        Me.PictureBox4.Location = New System.Drawing.Point(7, 8)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(30, 30)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 20
-        Me.PictureBox4.TabStop = False
         '
         'Label59
         '
@@ -2068,38 +1880,6 @@ Partial Class FormHome
         Me.RadioButton28.Text = "ID"
         Me.RadioButton28.UseVisualStyleBackColor = True
         '
-        'Panel36
-        '
-        Me.Panel36.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
-        Me.Panel36.Controls.Add(Me.txtSearchDesigners)
-        Me.Panel36.Controls.Add(Me.PictureBox5)
-        Me.Panel36.Location = New System.Drawing.Point(43, 71)
-        Me.Panel36.Name = "Panel36"
-        Me.Panel36.Size = New System.Drawing.Size(650, 47)
-        Me.Panel36.TabIndex = 19
-        '
-        'txtSearchDesigners
-        '
-        Me.txtSearchDesigners.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.txtSearchDesigners.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtSearchDesigners.Font = New System.Drawing.Font("Arial", 16.0!)
-        Me.txtSearchDesigners.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.txtSearchDesigners.Location = New System.Drawing.Point(47, 10)
-        Me.txtSearchDesigners.Name = "txtSearchDesigners"
-        Me.txtSearchDesigners.Size = New System.Drawing.Size(593, 25)
-        Me.txtSearchDesigners.TabIndex = 21
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.PictureBox5.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
-        Me.PictureBox5.Location = New System.Drawing.Point(7, 8)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(30, 30)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 20
-        Me.PictureBox5.TabStop = False
-        '
         'Label70
         '
         Me.Label70.AutoSize = True
@@ -2155,7 +1935,7 @@ Partial Class FormHome
         Me.panelHomeFuncionarios.Controls.Add(Me.Panel44)
         Me.panelHomeFuncionarios.Controls.Add(Me.Label83)
         Me.panelHomeFuncionarios.Controls.Add(Me.Panel45)
-        Me.panelHomeFuncionarios.Location = New System.Drawing.Point(266, 48)
+        Me.panelHomeFuncionarios.Location = New System.Drawing.Point(2660, 48)
         Me.panelHomeFuncionarios.Name = "panelHomeFuncionarios"
         Me.panelHomeFuncionarios.Size = New System.Drawing.Size(730, 652)
         Me.panelHomeFuncionarios.TabIndex = 19
@@ -2273,38 +2053,6 @@ Partial Class FormHome
         Me.RadioButton33.TabStop = True
         Me.RadioButton33.Text = "N°PEDIDOS"
         Me.RadioButton33.UseVisualStyleBackColor = True
-        '
-        'Panel40
-        '
-        Me.Panel40.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
-        Me.Panel40.Controls.Add(Me.TextBox3)
-        Me.Panel40.Controls.Add(Me.PictureBox6)
-        Me.Panel40.Location = New System.Drawing.Point(43, 71)
-        Me.Panel40.Name = "Panel40"
-        Me.Panel40.Size = New System.Drawing.Size(650, 47)
-        Me.Panel40.TabIndex = 19
-        '
-        'TextBox3
-        '
-        Me.TextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox3.Font = New System.Drawing.Font("Raleway Light", 16.0!)
-        Me.TextBox3.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.TextBox3.Location = New System.Drawing.Point(47, 10)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(593, 26)
-        Me.TextBox3.TabIndex = 21
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.PictureBox6.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
-        Me.PictureBox6.Location = New System.Drawing.Point(7, 8)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(30, 30)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 20
-        Me.PictureBox6.TabStop = False
         '
         'Label57
         '
@@ -2514,38 +2262,6 @@ Partial Class FormHome
         Me.RadioButton37.Text = "ID"
         Me.RadioButton37.UseVisualStyleBackColor = True
         '
-        'Panel44
-        '
-        Me.Panel44.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
-        Me.Panel44.Controls.Add(Me.txtSearchFuncionarios)
-        Me.Panel44.Controls.Add(Me.btnSearchFuncionarios)
-        Me.Panel44.Location = New System.Drawing.Point(43, 71)
-        Me.Panel44.Name = "Panel44"
-        Me.Panel44.Size = New System.Drawing.Size(650, 47)
-        Me.Panel44.TabIndex = 19
-        '
-        'txtSearchFuncionarios
-        '
-        Me.txtSearchFuncionarios.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.txtSearchFuncionarios.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtSearchFuncionarios.Font = New System.Drawing.Font("Arial", 16.0!)
-        Me.txtSearchFuncionarios.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.txtSearchFuncionarios.Location = New System.Drawing.Point(47, 10)
-        Me.txtSearchFuncionarios.Name = "txtSearchFuncionarios"
-        Me.txtSearchFuncionarios.Size = New System.Drawing.Size(593, 25)
-        Me.txtSearchFuncionarios.TabIndex = 21
-        '
-        'btnSearchFuncionarios
-        '
-        Me.btnSearchFuncionarios.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnSearchFuncionarios.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
-        Me.btnSearchFuncionarios.Location = New System.Drawing.Point(7, 8)
-        Me.btnSearchFuncionarios.Name = "btnSearchFuncionarios"
-        Me.btnSearchFuncionarios.Size = New System.Drawing.Size(30, 30)
-        Me.btnSearchFuncionarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnSearchFuncionarios.TabIndex = 20
-        Me.btnSearchFuncionarios.TabStop = False
-        '
         'Label83
         '
         Me.Label83.AutoSize = True
@@ -2588,6 +2304,303 @@ Partial Class FormHome
         Me.Label85.Text = "REG. TOTAL"
         Me.Label85.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
+        'Panel40
+        '
+        Me.Panel40.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel40.Controls.Add(Me.TextBox3)
+        Me.Panel40.Controls.Add(Me.PictureBox6)
+        Me.Panel40.Location = New System.Drawing.Point(43, 71)
+        Me.Panel40.Name = "Panel40"
+        Me.Panel40.Size = New System.Drawing.Size(650, 47)
+        Me.Panel40.TabIndex = 19
+        '
+        'TextBox3
+        '
+        Me.TextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox3.Font = New System.Drawing.Font("Raleway Light", 16.0!)
+        Me.TextBox3.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.TextBox3.Location = New System.Drawing.Point(47, 10)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(593, 26)
+        Me.TextBox3.TabIndex = 21
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.PictureBox6.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.PictureBox6.Location = New System.Drawing.Point(7, 8)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 20
+        Me.PictureBox6.TabStop = False
+        '
+        'Panel44
+        '
+        Me.Panel44.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel44.Controls.Add(Me.txtSearchFuncionarios)
+        Me.Panel44.Controls.Add(Me.btnSearchFuncionarios)
+        Me.Panel44.Location = New System.Drawing.Point(43, 71)
+        Me.Panel44.Name = "Panel44"
+        Me.Panel44.Size = New System.Drawing.Size(650, 47)
+        Me.Panel44.TabIndex = 19
+        '
+        'txtSearchFuncionarios
+        '
+        Me.txtSearchFuncionarios.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.txtSearchFuncionarios.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtSearchFuncionarios.Font = New System.Drawing.Font("Arial", 16.0!)
+        Me.txtSearchFuncionarios.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.txtSearchFuncionarios.Location = New System.Drawing.Point(47, 10)
+        Me.txtSearchFuncionarios.Name = "txtSearchFuncionarios"
+        Me.txtSearchFuncionarios.Size = New System.Drawing.Size(593, 25)
+        Me.txtSearchFuncionarios.TabIndex = 21
+        '
+        'btnSearchFuncionarios
+        '
+        Me.btnSearchFuncionarios.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.btnSearchFuncionarios.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.btnSearchFuncionarios.Location = New System.Drawing.Point(7, 8)
+        Me.btnSearchFuncionarios.Name = "btnSearchFuncionarios"
+        Me.btnSearchFuncionarios.Size = New System.Drawing.Size(30, 30)
+        Me.btnSearchFuncionarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnSearchFuncionarios.TabIndex = 20
+        Me.btnSearchFuncionarios.TabStop = False
+        '
+        'panelSearchPedidos
+        '
+        Me.panelSearchPedidos.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.panelSearchPedidos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.panelSearchPedidos.Controls.Add(Me.txtSearchPedidos)
+        Me.panelSearchPedidos.Controls.Add(Me.PictureBox2)
+        Me.panelSearchPedidos.Location = New System.Drawing.Point(43, 71)
+        Me.panelSearchPedidos.Name = "panelSearchPedidos"
+        Me.panelSearchPedidos.Size = New System.Drawing.Size(650, 47)
+        Me.panelSearchPedidos.TabIndex = 19
+        '
+        'txtSearchPedidos
+        '
+        Me.txtSearchPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.txtSearchPedidos.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtSearchPedidos.Font = New System.Drawing.Font("Arial", 16.0!)
+        Me.txtSearchPedidos.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.txtSearchPedidos.Location = New System.Drawing.Point(47, 10)
+        Me.txtSearchPedidos.Name = "txtSearchPedidos"
+        Me.txtSearchPedidos.Size = New System.Drawing.Size(593, 25)
+        Me.txtSearchPedidos.TabIndex = 21
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.PictureBox2.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.PictureBox2.Location = New System.Drawing.Point(7, 8)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 20
+        Me.PictureBox2.TabStop = False
+        '
+        'Panel32
+        '
+        Me.Panel32.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel32.Controls.Add(Me.TextBox2)
+        Me.Panel32.Controls.Add(Me.PictureBox4)
+        Me.Panel32.Location = New System.Drawing.Point(43, 71)
+        Me.Panel32.Name = "Panel32"
+        Me.Panel32.Size = New System.Drawing.Size(650, 47)
+        Me.Panel32.TabIndex = 19
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox2.Font = New System.Drawing.Font("Raleway Light", 16.0!)
+        Me.TextBox2.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.TextBox2.Location = New System.Drawing.Point(47, 10)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(593, 26)
+        Me.TextBox2.TabIndex = 21
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.PictureBox4.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.PictureBox4.Location = New System.Drawing.Point(7, 8)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 20
+        Me.PictureBox4.TabStop = False
+        '
+        'Panel36
+        '
+        Me.Panel36.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel36.Controls.Add(Me.txtSearchDesigners)
+        Me.Panel36.Controls.Add(Me.PictureBox5)
+        Me.Panel36.Location = New System.Drawing.Point(43, 71)
+        Me.Panel36.Name = "Panel36"
+        Me.Panel36.Size = New System.Drawing.Size(650, 47)
+        Me.Panel36.TabIndex = 19
+        '
+        'txtSearchDesigners
+        '
+        Me.txtSearchDesigners.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.txtSearchDesigners.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtSearchDesigners.Font = New System.Drawing.Font("Arial", 16.0!)
+        Me.txtSearchDesigners.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.txtSearchDesigners.Location = New System.Drawing.Point(47, 10)
+        Me.txtSearchDesigners.Name = "txtSearchDesigners"
+        Me.txtSearchDesigners.Size = New System.Drawing.Size(593, 25)
+        Me.txtSearchDesigners.TabIndex = 21
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.PictureBox5.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.PictureBox5.Location = New System.Drawing.Point(7, 8)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 20
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.btn_plus
+        Me.PictureBox7.Location = New System.Drawing.Point(682, 13)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 27
+        Me.PictureBox7.TabStop = False
+        '
+        'Panel20
+        '
+        Me.Panel20.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel20.Controls.Add(Me.TextBox1)
+        Me.Panel20.Controls.Add(Me.PictureBox3)
+        Me.Panel20.Location = New System.Drawing.Point(43, 71)
+        Me.Panel20.Name = "Panel20"
+        Me.Panel20.Size = New System.Drawing.Size(650, 47)
+        Me.Panel20.TabIndex = 19
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox1.Font = New System.Drawing.Font("Raleway Light", 16.0!)
+        Me.TextBox1.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.TextBox1.Location = New System.Drawing.Point(47, 10)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(593, 26)
+        Me.TextBox1.TabIndex = 21
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.PictureBox3.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.PictureBox3.Location = New System.Drawing.Point(7, 8)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 20
+        Me.PictureBox3.TabStop = False
+        '
+        'Panel24
+        '
+        Me.Panel24.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel24.Controls.Add(Me.txtSearchMoveis)
+        Me.Panel24.Controls.Add(Me.btnSearchMoveis)
+        Me.Panel24.Location = New System.Drawing.Point(43, 71)
+        Me.Panel24.Name = "Panel24"
+        Me.Panel24.Size = New System.Drawing.Size(650, 47)
+        Me.Panel24.TabIndex = 19
+        '
+        'txtSearchMoveis
+        '
+        Me.txtSearchMoveis.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.txtSearchMoveis.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtSearchMoveis.Font = New System.Drawing.Font("Arial", 16.0!)
+        Me.txtSearchMoveis.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.txtSearchMoveis.Location = New System.Drawing.Point(47, 10)
+        Me.txtSearchMoveis.Name = "txtSearchMoveis"
+        Me.txtSearchMoveis.Size = New System.Drawing.Size(593, 25)
+        Me.txtSearchMoveis.TabIndex = 21
+        '
+        'btnSearchMoveis
+        '
+        Me.btnSearchMoveis.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.btnSearchMoveis.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.btnSearchMoveis.Location = New System.Drawing.Point(7, 8)
+        Me.btnSearchMoveis.Name = "btnSearchMoveis"
+        Me.btnSearchMoveis.Size = New System.Drawing.Size(30, 30)
+        Me.btnSearchMoveis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnSearchMoveis.TabIndex = 20
+        Me.btnSearchMoveis.TabStop = False
+        '
+        'Panel12
+        '
+        Me.Panel12.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel12.Controls.Add(Me.txtSearchCliente)
+        Me.Panel12.Controls.Add(Me.PictureBox1)
+        Me.Panel12.Location = New System.Drawing.Point(43, 71)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(650, 47)
+        Me.Panel12.TabIndex = 19
+        '
+        'txtSearchCliente
+        '
+        Me.txtSearchCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.txtSearchCliente.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtSearchCliente.Font = New System.Drawing.Font("Arial", 16.0!)
+        Me.txtSearchCliente.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.txtSearchCliente.Location = New System.Drawing.Point(47, 10)
+        Me.txtSearchCliente.Name = "txtSearchCliente"
+        Me.txtSearchCliente.Size = New System.Drawing.Size(593, 25)
+        Me.txtSearchCliente.TabIndex = 21
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.PictureBox1.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.PictureBox1.Location = New System.Drawing.Point(7, 8)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 20
+        Me.PictureBox1.TabStop = False
+        '
+        'btnMinimize
+        '
+        Me.btnMinimize.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.minimize
+        Me.btnMinimize.Location = New System.Drawing.Point(922, 12)
+        Me.btnMinimize.Name = "btnMinimize"
+        Me.btnMinimize.Size = New System.Drawing.Size(30, 30)
+        Me.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnMinimize.TabIndex = 13
+        Me.btnMinimize.TabStop = False
+        '
+        'btnEnd
+        '
+        Me.btnEnd.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources._end
+        Me.btnEnd.Location = New System.Drawing.Point(958, 12)
+        Me.btnEnd.Name = "btnEnd"
+        Me.btnEnd.Size = New System.Drawing.Size(30, 30)
+        Me.btnEnd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnEnd.TabIndex = 12
+        Me.btnEnd.TabStop = False
+        '
+        'btnHome
+        '
+        Me.btnHome.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.logo_home
+        Me.btnHome.Location = New System.Drawing.Point(56, 18)
+        Me.btnHome.Name = "btnHome"
+        Me.btnHome.Size = New System.Drawing.Size(150, 148)
+        Me.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnHome.TabIndex = 0
+        Me.btnHome.TabStop = False
+        '
         'FormHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(21.0!, 50.0!)
@@ -2614,7 +2627,6 @@ Partial Class FormHome
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormHome"
         Me.Panel1.ResumeLayout(False)
-        CType(Me.btnHome, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panelMainPage.ResumeLayout(False)
         Me.panelMainPage.PerformLayout()
         Me.Panel7.ResumeLayout(False)
@@ -2626,72 +2638,74 @@ Partial Class FormHome
         Me.panelHomePedidos.ResumeLayout(False)
         Me.panelHomePedidos.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.panelSearchPedidos.ResumeLayout(False)
-        Me.panelSearchPedidos.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel10.ResumeLayout(False)
         Me.Panel13.ResumeLayout(False)
         Me.Panel14.ResumeLayout(False)
-        CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnEnd, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panelHomeCliente.ResumeLayout(False)
         Me.panelHomeCliente.PerformLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel12.ResumeLayout(False)
-        Me.Panel12.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel15.ResumeLayout(False)
         Me.Panel16.ResumeLayout(False)
         Me.panelHomeMoveis.ResumeLayout(False)
         Me.panelHomeMoveis.PerformLayout()
+        Me.Panel27.ResumeLayout(False)
         Me.Panel18.ResumeLayout(False)
         Me.Panel18.PerformLayout()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel20.ResumeLayout(False)
-        Me.Panel20.PerformLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel21.ResumeLayout(False)
         Me.Panel22.ResumeLayout(False)
         Me.Panel23.ResumeLayout(False)
         CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel24.ResumeLayout(False)
-        Me.Panel24.PerformLayout()
-        CType(Me.btnSearchMoveis, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel25.ResumeLayout(False)
         Me.Panel26.ResumeLayout(False)
-        Me.Panel27.ResumeLayout(False)
         Me.panelHomeDesigners.ResumeLayout(False)
         Me.panelHomeDesigners.PerformLayout()
         Me.Panel30.ResumeLayout(False)
         Me.Panel30.PerformLayout()
         CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel32.ResumeLayout(False)
-        Me.Panel32.PerformLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel33.ResumeLayout(False)
         Me.Panel34.ResumeLayout(False)
         Me.Panel35.ResumeLayout(False)
         CType(Me.DataGridView6, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel36.ResumeLayout(False)
-        Me.Panel36.PerformLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel38.ResumeLayout(False)
         Me.panelHomeFuncionarios.ResumeLayout(False)
         Me.panelHomeFuncionarios.PerformLayout()
         Me.Panel37.ResumeLayout(False)
         Me.Panel37.PerformLayout()
         CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel40.ResumeLayout(False)
-        Me.Panel40.PerformLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel41.ResumeLayout(False)
         Me.Panel42.ResumeLayout(False)
         Me.Panel43.ResumeLayout(False)
         CType(Me.DataGridView8, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel45.ResumeLayout(False)
+        Me.Panel40.ResumeLayout(False)
+        Me.Panel40.PerformLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel44.ResumeLayout(False)
         Me.Panel44.PerformLayout()
         CType(Me.btnSearchFuncionarios, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel45.ResumeLayout(False)
+        Me.panelSearchPedidos.ResumeLayout(False)
+        Me.panelSearchPedidos.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel32.ResumeLayout(False)
+        Me.Panel32.PerformLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel36.ResumeLayout(False)
+        Me.Panel36.PerformLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel20.ResumeLayout(False)
+        Me.Panel20.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel24.ResumeLayout(False)
+        Me.Panel24.PerformLayout()
+        CType(Me.btnSearchMoveis, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel12.ResumeLayout(False)
+        Me.Panel12.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnEnd, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnHome, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -2901,4 +2915,5 @@ Partial Class FormHome
     Friend WithEvents Panel45 As Panel
     Friend WithEvents Label84 As Label
     Friend WithEvents Label85 As Label
+    Friend WithEvents PictureBox7 As PictureBox
 End Class
