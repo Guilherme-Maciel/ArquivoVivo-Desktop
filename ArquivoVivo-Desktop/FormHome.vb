@@ -94,8 +94,14 @@ Public Class FormHome
         panelHomeFuncionarios.Visible = True
     End Sub
 
-    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+    Private Sub btnCadasterMovel_Click(sender As Object, e As EventArgs) Handles btnCadasterMovel.Click
         FormMoveisType.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnCadasterDesigner_Click(sender As Object, e As EventArgs) Handles btnCadasterDesigner.Click
+        panelCadaster = 2
+        FormCadaster.Show()
         Me.Close()
     End Sub
 End Class

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormCadaster
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,31 +20,52 @@ Partial Class FormCadaster
     'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
     'Pode ser modificado usando o Windows Form Designer.  
     'Não o modifique usando o editor de códigos.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label83 = New System.Windows.Forms.Label()
         Me.Panel28 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.txtTitleMovel = New System.Windows.Forms.TextBox()
+        Me.panelMovel = New System.Windows.Forms.Panel()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.btnCommitMovel = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.btnImage = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.btnImageMovel = New System.Windows.Forms.Button()
+        Me.picboxImageUploadMovel = New System.Windows.Forms.PictureBox()
+        Me.txtDescMovel = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.cboxQtdMovel = New System.Windows.Forms.ComboBox()
+        Me.txtValueMovel = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.cboxDesignersMovel = New System.Windows.Forms.ComboBox()
+        Me.DesignersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ArquivovivomvDataSet = New ArquivoVivo_Desktop.arquivovivomvDataSet()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cboxCatMovel = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.btnCommit = New System.Windows.Forms.Button()
-        Me.btnCancel = New System.Windows.Forms.Button()
-        Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.DesignersTableAdapter = New ArquivoVivo_Desktop.arquivovivomvDataSetTableAdapters.designersTableAdapter()
+        Me.panelDesigner = New System.Windows.Forms.Panel()
+        Me.btnCancelDesigner = New System.Windows.Forms.Button()
+        Me.btnCommitDesigner = New System.Windows.Forms.Button()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.btnImageDesigner = New System.Windows.Forms.Button()
+        Me.picboxImageUploadDesigner = New System.Windows.Forms.PictureBox()
+        Me.txtBioDesigner = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.txtNameDesigner = New System.Windows.Forms.TextBox()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.panelMovel.SuspendLayout()
+        CType(Me.picboxImageUploadMovel, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DesignersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ArquivovivomvDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panelDesigner.SuspendLayout()
+        CType(Me.picboxImageUploadDesigner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label83
@@ -75,40 +96,63 @@ Partial Class FormCadaster
         Me.Label1.TabIndex = 24
         Me.Label1.Text = "título:"
         '
-        'TextBox1
+        'txtTitleMovel
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(186, 115)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(648, 35)
-        Me.TextBox1.TabIndex = 25
+        Me.txtTitleMovel.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTitleMovel.Location = New System.Drawing.Point(186, 115)
+        Me.txtTitleMovel.Name = "txtTitleMovel"
+        Me.txtTitleMovel.Size = New System.Drawing.Size(648, 35)
+        Me.txtTitleMovel.TabIndex = 25
         '
-        'Panel1
+        'panelMovel
         '
-        Me.Panel1.Controls.Add(Me.btnCancel)
-        Me.Panel1.Controls.Add(Me.btnCommit)
-        Me.Panel1.Controls.Add(Me.Label8)
-        Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Controls.Add(Me.btnImage)
-        Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.TextBox3)
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.ComboBox3)
-        Me.Panel1.Controls.Add(Me.TextBox2)
-        Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.ComboBox2)
-        Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.ComboBox1)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.Label83)
-        Me.Panel1.Controls.Add(Me.TextBox1)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.Panel28)
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1000, 700)
-        Me.Panel1.TabIndex = 27
+        Me.panelMovel.Controls.Add(Me.btnCancel)
+        Me.panelMovel.Controls.Add(Me.btnCommitMovel)
+        Me.panelMovel.Controls.Add(Me.Label8)
+        Me.panelMovel.Controls.Add(Me.Label7)
+        Me.panelMovel.Controls.Add(Me.btnImageMovel)
+        Me.panelMovel.Controls.Add(Me.picboxImageUploadMovel)
+        Me.panelMovel.Controls.Add(Me.txtDescMovel)
+        Me.panelMovel.Controls.Add(Me.Label6)
+        Me.panelMovel.Controls.Add(Me.Label5)
+        Me.panelMovel.Controls.Add(Me.cboxQtdMovel)
+        Me.panelMovel.Controls.Add(Me.txtValueMovel)
+        Me.panelMovel.Controls.Add(Me.Label4)
+        Me.panelMovel.Controls.Add(Me.cboxDesignersMovel)
+        Me.panelMovel.Controls.Add(Me.Label3)
+        Me.panelMovel.Controls.Add(Me.cboxCatMovel)
+        Me.panelMovel.Controls.Add(Me.Label2)
+        Me.panelMovel.Controls.Add(Me.Label83)
+        Me.panelMovel.Controls.Add(Me.txtTitleMovel)
+        Me.panelMovel.Controls.Add(Me.Label1)
+        Me.panelMovel.Controls.Add(Me.Panel28)
+        Me.panelMovel.Location = New System.Drawing.Point(0, 0)
+        Me.panelMovel.Name = "panelMovel"
+        Me.panelMovel.Size = New System.Drawing.Size(961, 706)
+        Me.panelMovel.TabIndex = 27
+        '
+        'btnCancel
+        '
+        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancel.Font = New System.Drawing.Font("Raleway Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.Location = New System.Drawing.Point(621, 629)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(213, 57)
+        Me.btnCancel.TabIndex = 41
+        Me.btnCancel.Text = "CANCELAR"
+        Me.btnCancel.UseVisualStyleBackColor = True
+        '
+        'btnCommitMovel
+        '
+        Me.btnCommitMovel.FlatAppearance.BorderSize = 0
+        Me.btnCommitMovel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCommitMovel.Font = New System.Drawing.Font("Raleway Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCommitMovel.Location = New System.Drawing.Point(186, 629)
+        Me.btnCommitMovel.Name = "btnCommitMovel"
+        Me.btnCommitMovel.Size = New System.Drawing.Size(213, 57)
+        Me.btnCommitMovel.TabIndex = 40
+        Me.btnCommitMovel.Text = "SALVAR"
+        Me.btnCommitMovel.UseVisualStyleBackColor = True
         '
         'Label8
         '
@@ -131,33 +175,33 @@ Partial Class FormCadaster
         Me.Label7.TabIndex = 38
         Me.Label7.Text = "Limite: 100KB"
         '
-        'btnImage
+        'btnImageMovel
         '
-        Me.btnImage.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnImage.Location = New System.Drawing.Point(530, 427)
-        Me.btnImage.Name = "btnImage"
-        Me.btnImage.Size = New System.Drawing.Size(304, 31)
-        Me.btnImage.TabIndex = 37
-        Me.btnImage.Text = "ESCOLHER IMAGEM"
-        Me.btnImage.UseVisualStyleBackColor = True
+        Me.btnImageMovel.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnImageMovel.Location = New System.Drawing.Point(530, 427)
+        Me.btnImageMovel.Name = "btnImageMovel"
+        Me.btnImageMovel.Size = New System.Drawing.Size(304, 31)
+        Me.btnImageMovel.TabIndex = 37
+        Me.btnImageMovel.Text = "ESCOLHER IMAGEM"
+        Me.btnImageMovel.UseVisualStyleBackColor = True
         '
-        'PictureBox1
+        'picboxImageUploadMovel
         '
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Location = New System.Drawing.Point(186, 427)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(304, 181)
-        Me.PictureBox1.TabIndex = 36
-        Me.PictureBox1.TabStop = False
+        Me.picboxImageUploadMovel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.picboxImageUploadMovel.Location = New System.Drawing.Point(186, 427)
+        Me.picboxImageUploadMovel.Name = "picboxImageUploadMovel"
+        Me.picboxImageUploadMovel.Size = New System.Drawing.Size(304, 181)
+        Me.picboxImageUploadMovel.TabIndex = 36
+        Me.picboxImageUploadMovel.TabStop = False
         '
-        'TextBox3
+        'txtDescMovel
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(186, 200)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(304, 205)
-        Me.TextBox3.TabIndex = 35
+        Me.txtDescMovel.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDescMovel.Location = New System.Drawing.Point(186, 200)
+        Me.txtDescMovel.Multiline = True
+        Me.txtDescMovel.Name = "txtDescMovel"
+        Me.txtDescMovel.Size = New System.Drawing.Size(304, 205)
+        Me.txtDescMovel.TabIndex = 35
         '
         'Label6
         '
@@ -179,22 +223,22 @@ Partial Class FormCadaster
         Me.Label5.TabIndex = 33
         Me.Label5.Text = "qtd:"
         '
-        'ComboBox3
+        'cboxQtdMovel
         '
-        Me.ComboBox3.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(761, 370)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(73, 35)
-        Me.ComboBox3.TabIndex = 32
+        Me.cboxQtdMovel.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboxQtdMovel.FormattingEnabled = True
+        Me.cboxQtdMovel.Location = New System.Drawing.Point(761, 370)
+        Me.cboxQtdMovel.Name = "cboxQtdMovel"
+        Me.cboxQtdMovel.Size = New System.Drawing.Size(73, 35)
+        Me.cboxQtdMovel.TabIndex = 32
         '
-        'TextBox2
+        'txtValueMovel
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(530, 370)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(167, 35)
-        Me.TextBox2.TabIndex = 31
+        Me.txtValueMovel.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtValueMovel.Location = New System.Drawing.Point(530, 370)
+        Me.txtValueMovel.Name = "txtValueMovel"
+        Me.txtValueMovel.Size = New System.Drawing.Size(167, 35)
+        Me.txtValueMovel.TabIndex = 31
         '
         'Label4
         '
@@ -206,14 +250,27 @@ Partial Class FormCadaster
         Me.Label4.TabIndex = 30
         Me.Label4.Text = "valor:"
         '
-        'ComboBox2
+        'cboxDesignersMovel
         '
-        Me.ComboBox2.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(530, 285)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(304, 35)
-        Me.ComboBox2.TabIndex = 29
+        Me.cboxDesignersMovel.DataSource = Me.DesignersBindingSource
+        Me.cboxDesignersMovel.DisplayMember = "d_nome"
+        Me.cboxDesignersMovel.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboxDesignersMovel.FormattingEnabled = True
+        Me.cboxDesignersMovel.Location = New System.Drawing.Point(530, 285)
+        Me.cboxDesignersMovel.Name = "cboxDesignersMovel"
+        Me.cboxDesignersMovel.Size = New System.Drawing.Size(304, 35)
+        Me.cboxDesignersMovel.TabIndex = 29
+        Me.cboxDesignersMovel.ValueMember = "d_id"
+        '
+        'DesignersBindingSource
+        '
+        Me.DesignersBindingSource.DataMember = "designers"
+        Me.DesignersBindingSource.DataSource = Me.ArquivovivomvDataSet
+        '
+        'ArquivovivomvDataSet
+        '
+        Me.ArquivovivomvDataSet.DataSetName = "arquivovivomvDataSet"
+        Me.ArquivovivomvDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Label3
         '
@@ -225,14 +282,14 @@ Partial Class FormCadaster
         Me.Label3.TabIndex = 28
         Me.Label3.Text = "designer:"
         '
-        'ComboBox1
+        'cboxCatMovel
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(530, 200)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(304, 35)
-        Me.ComboBox1.TabIndex = 27
+        Me.cboxCatMovel.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboxCatMovel.FormattingEnabled = True
+        Me.cboxCatMovel.Location = New System.Drawing.Point(530, 200)
+        Me.cboxCatMovel.Name = "cboxCatMovel"
+        Me.cboxCatMovel.Size = New System.Drawing.Size(304, 35)
+        Me.cboxCatMovel.TabIndex = 27
         '
         'Label2
         '
@@ -244,42 +301,167 @@ Partial Class FormCadaster
         Me.Label2.TabIndex = 26
         Me.Label2.Text = "categoria:"
         '
-        'btnCommit
+        'DesignersTableAdapter
         '
-        Me.btnCommit.FlatAppearance.BorderSize = 0
-        Me.btnCommit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCommit.Font = New System.Drawing.Font("Raleway Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCommit.Location = New System.Drawing.Point(186, 629)
-        Me.btnCommit.Name = "btnCommit"
-        Me.btnCommit.Size = New System.Drawing.Size(213, 57)
-        Me.btnCommit.TabIndex = 40
-        Me.btnCommit.Text = "SALVAR"
-        Me.btnCommit.UseVisualStyleBackColor = True
+        Me.DesignersTableAdapter.ClearBeforeFill = True
         '
-        'btnCancel
+        'panelDesigner
         '
-        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCancel.Font = New System.Drawing.Font("Raleway Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancel.Location = New System.Drawing.Point(621, 629)
-        Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(213, 57)
-        Me.btnCancel.TabIndex = 41
-        Me.btnCancel.Text = "CANCELAR"
-        Me.btnCancel.UseVisualStyleBackColor = True
+        Me.panelDesigner.Controls.Add(Me.btnCancelDesigner)
+        Me.panelDesigner.Controls.Add(Me.btnCommitDesigner)
+        Me.panelDesigner.Controls.Add(Me.Label9)
+        Me.panelDesigner.Controls.Add(Me.Label10)
+        Me.panelDesigner.Controls.Add(Me.btnImageDesigner)
+        Me.panelDesigner.Controls.Add(Me.picboxImageUploadDesigner)
+        Me.panelDesigner.Controls.Add(Me.txtBioDesigner)
+        Me.panelDesigner.Controls.Add(Me.Label11)
+        Me.panelDesigner.Controls.Add(Me.Label16)
+        Me.panelDesigner.Controls.Add(Me.txtNameDesigner)
+        Me.panelDesigner.Controls.Add(Me.Label17)
+        Me.panelDesigner.Controls.Add(Me.Panel2)
+        Me.panelDesigner.Location = New System.Drawing.Point(0, 0)
+        Me.panelDesigner.Name = "panelDesigner"
+        Me.panelDesigner.Size = New System.Drawing.Size(1000, 700)
+        Me.panelDesigner.TabIndex = 42
+        '
+        'btnCancelDesigner
+        '
+        Me.btnCancelDesigner.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancelDesigner.Font = New System.Drawing.Font("Raleway Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelDesigner.Location = New System.Drawing.Point(621, 629)
+        Me.btnCancelDesigner.Name = "btnCancelDesigner"
+        Me.btnCancelDesigner.Size = New System.Drawing.Size(213, 57)
+        Me.btnCancelDesigner.TabIndex = 41
+        Me.btnCancelDesigner.Text = "CANCELAR"
+        Me.btnCancelDesigner.UseVisualStyleBackColor = True
+        '
+        'btnCommitDesigner
+        '
+        Me.btnCommitDesigner.FlatAppearance.BorderSize = 0
+        Me.btnCommitDesigner.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCommitDesigner.Font = New System.Drawing.Font("Raleway Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCommitDesigner.Location = New System.Drawing.Point(186, 629)
+        Me.btnCommitDesigner.Name = "btnCommitDesigner"
+        Me.btnCommitDesigner.Size = New System.Drawing.Size(213, 57)
+        Me.btnCommitDesigner.TabIndex = 40
+        Me.btnCommitDesigner.Text = "SALVAR"
+        Me.btnCommitDesigner.UseVisualStyleBackColor = True
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(632, 533)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(94, 22)
+        Me.Label9.TabIndex = 39
+        Me.Label9.Text = ".jpg ou .png"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(626, 487)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(109, 22)
+        Me.Label10.TabIndex = 38
+        Me.Label10.Text = "Limite: 100KB"
+        '
+        'btnImageDesigner
+        '
+        Me.btnImageDesigner.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnImageDesigner.Location = New System.Drawing.Point(530, 427)
+        Me.btnImageDesigner.Name = "btnImageDesigner"
+        Me.btnImageDesigner.Size = New System.Drawing.Size(304, 31)
+        Me.btnImageDesigner.TabIndex = 37
+        Me.btnImageDesigner.Text = "ESCOLHER IMAGEM"
+        Me.btnImageDesigner.UseVisualStyleBackColor = True
+        '
+        'picboxImageUploadDesigner
+        '
+        Me.picboxImageUploadDesigner.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.picboxImageUploadDesigner.Location = New System.Drawing.Point(186, 427)
+        Me.picboxImageUploadDesigner.Name = "picboxImageUploadDesigner"
+        Me.picboxImageUploadDesigner.Size = New System.Drawing.Size(304, 181)
+        Me.picboxImageUploadDesigner.TabIndex = 36
+        Me.picboxImageUploadDesigner.TabStop = False
+        '
+        'txtBioDesigner
+        '
+        Me.txtBioDesigner.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBioDesigner.Location = New System.Drawing.Point(186, 200)
+        Me.txtBioDesigner.Multiline = True
+        Me.txtBioDesigner.Name = "txtBioDesigner"
+        Me.txtBioDesigner.Size = New System.Drawing.Size(648, 205)
+        Me.txtBioDesigner.TabIndex = 35
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(178, 153)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(152, 44)
+        Me.Label11.TabIndex = 34
+        Me.Label11.Text = "biografia:"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Raleway", 24.0!)
+        Me.Label16.Location = New System.Drawing.Point(430, 10)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(198, 44)
+        Me.Label16.TabIndex = 23
+        Me.Label16.Text = "DESIGNERS"
+        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txtNameDesigner
+        '
+        Me.txtNameDesigner.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNameDesigner.Location = New System.Drawing.Point(186, 115)
+        Me.txtNameDesigner.Name = "txtNameDesigner"
+        Me.txtNameDesigner.Size = New System.Drawing.Size(648, 35)
+        Me.txtNameDesigner.TabIndex = 25
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(178, 68)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(111, 44)
+        Me.Label17.TabIndex = 24
+        Me.Label17.Text = "nome:"
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Black
+        Me.Panel2.Location = New System.Drawing.Point(0, 61)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(1000, 2)
+        Me.Panel2.TabIndex = 22
         '
         'FormCadaster
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1000, 700)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.panelDesigner)
+        Me.Controls.Add(Me.panelMovel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormCadaster"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormCadaster"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panelMovel.ResumeLayout(False)
+        Me.panelMovel.PerformLayout()
+        CType(Me.picboxImageUploadMovel, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DesignersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ArquivovivomvDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panelDesigner.ResumeLayout(False)
+        Me.panelDesigner.PerformLayout()
+        CType(Me.picboxImageUploadDesigner, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -287,22 +469,38 @@ Partial Class FormCadaster
     Friend WithEvents Label83 As Label
     Friend WithEvents Panel28 As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents txtTitleMovel As TextBox
+    Friend WithEvents panelMovel As Panel
+    Friend WithEvents cboxDesignersMovel As ComboBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cboxCatMovel As ComboBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents cboxQtdMovel As ComboBox
+    Friend WithEvents picboxImageUploadMovel As PictureBox
+    Friend WithEvents txtDescMovel As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents btnImage As Button
+    Friend WithEvents btnImageMovel As Button
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents btnCancel As Button
-    Friend WithEvents btnCommit As Button
+    Friend WithEvents btnCommitMovel As Button
+    Friend WithEvents txtValueMovel As TextBox
+    Friend WithEvents ArquivovivomvDataSet As arquivovivomvDataSet
+    Friend WithEvents DesignersBindingSource As BindingSource
+    Friend WithEvents DesignersTableAdapter As arquivovivomvDataSetTableAdapters.designersTableAdapter
+    Friend WithEvents panelDesigner As Panel
+    Friend WithEvents btnCancelDesigner As Button
+    Friend WithEvents btnCommitDesigner As Button
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents btnImageDesigner As Button
+    Friend WithEvents picboxImageUploadDesigner As PictureBox
+    Friend WithEvents txtBioDesigner As TextBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents txtNameDesigner As TextBox
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Panel2 As Panel
 End Class
