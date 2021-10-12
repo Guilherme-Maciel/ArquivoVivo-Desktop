@@ -14,6 +14,7 @@ Public Class FormCadaster
     Private Sub FormCadaster_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: esta linha de código carrega dados na tabela 'ArquivovivomvDataSet.designers'. Você pode movê-la ou removê-la conforme necessário.
         Me.DesignersTableAdapter.Fill(Me.ArquivovivomvDataSet.designers)
+
         panelInvisible()
 
         cadastroDecision(panelCadaster)
@@ -27,8 +28,8 @@ Public Class FormCadaster
         WhiteButton(btnCancel)
         WhiteButton(btnCancelDesigner)
 
-        comboBoxCat()
         comboBoxQtd()
+        cboxCatItems()
     End Sub
     'Movel
     Private Sub btnImage_Click(sender As Object, e As EventArgs) Handles btnImageMovel.Click
@@ -44,27 +45,32 @@ Public Class FormCadaster
     End Sub
 
     Private Sub btnCommit_Click(sender As Object, e As EventArgs) Handles btnCommitMovel.Click
-        Dim title, desc, cat, designer, typeImg, dataFormat As String
+        Dim title, desc, designer, typeImg, dataFormat As String
+        Dim idDesigner, cat As Integer
         Dim value, qtd As Double
         Dim data As DateTime = DateTime.Now
 
         'atribuição de valores às variáveis
         title = txtTitleMovel.Text
         desc = txtDescMovel.Text
-        cat = cboxCatMovel.Text
+        cat = cboxCatMovel.SelectedValue
         designer = cboxDesignersMovel.Text
         value = txtValueMovel.Text
         qtd = cboxQtdMovel.Text
         dataFormat = Format(data, "s")
+        idDesigner = cboxDesignersMovel.SelectedValue
+
+
 
         Using con As MySqlConnection = GetConnectionMysql()
             Try
                 'conexão com o banco pela variável con que recebe a função GetConnectionMysql()
                 con.Open()
-                Dim sql As String = "INSERT INTO moveis(m_titulo, m_desc, m_categoria, m_designers, m_valUni, m_qtdEstoque, m_imagem, m_typeImg, m_dtReg) VALUES(@title, @desc, @cat, @designer, @value, @qtd, @image, @type, @date)"
+                Dim sql As String = "INSERT INTO moveis(d_id, m_titulo, m_desc, ct_id, m_designers, m_valUni, m_qtdEstoque, m_imagem, m_typeImg, m_dtReg) VALUES(@did, @title, @desc, @cat, @designer, @value, @qtd, @image, @type, @date)"
                 Dim cmd As MySqlCommand = New MySqlCommand(sql, con)
 
                 'Atribuição dos parâmetros
+                cmd.Parameters.AddWithValue("@did", idDesigner)
                 cmd.Parameters.AddWithValue("@title", title)
                 cmd.Parameters.AddWithValue("@desc", desc)
                 cmd.Parameters.AddWithValue("@cat", cat)
@@ -201,6 +207,31 @@ Public Class FormCadaster
         e.Handled = True
     End Sub
 
+    Private Sub cboxCatItems()
+
+        cboxCatMovel.DisplayMember = "Text"
+        cboxCatMovel.ValueMember = "Value"
+
+        Dim tb As New DataTable
+
+        tb.Columns.Add("Text", GetType(String))
+        tb.Columns.Add("Value", GetType(Integer))
+        tb.Rows.Add("APARADOR", 3)
+        tb.Rows.Add("CADEIRAS", 4)
+        tb.Rows.Add("CREDENZA", 5)
+        tb.Rows.Add("ESCRIVANINHA", 6)
+        tb.Rows.Add("ESTANTE", 7)
+        tb.Rows.Add("MESA LATERAL", 8)
+        tb.Rows.Add("MESA ALTA", 9)
+        tb.Rows.Add("MESA DE CENTRO", 10)
+        tb.Rows.Add("OBJETOS", 11)
+        tb.Rows.Add("POLTRONAS", 12)
+        tb.Rows.Add("SOFÁS", 13)
+
+        cboxCatMovel.DataSource = tb
+
+    End Sub
+
     Private Sub cboxQtd_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cboxQtdMovel.KeyPress
         e.Handled = True
     End Sub
@@ -212,20 +243,6 @@ Public Class FormCadaster
             cboxQtdMovel.Items.Add(i)
             i = i + 1
         End While
-    End Sub
-
-    Public Sub comboBoxCat()
-        cboxCatMovel.Items.Add("APARADOR")
-        cboxCatMovel.Items.Add("CADEIRAS")
-        cboxCatMovel.Items.Add("CREDENZA")
-        cboxCatMovel.Items.Add("ESCRIVANINHA")
-        cboxCatMovel.Items.Add("ESTANTE")
-        cboxCatMovel.Items.Add("MESA LATERAL")
-        cboxCatMovel.Items.Add("MESA ALTA")
-        cboxCatMovel.Items.Add("MESAS DE CENTRO")
-        cboxCatMovel.Items.Add("OBJETOS")
-        cboxCatMovel.Items.Add("POLTRONAS")
-        cboxCatMovel.Items.Add("SOFÁS")
     End Sub
 
     'init sub

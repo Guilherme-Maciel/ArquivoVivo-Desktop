@@ -147,6 +147,7 @@ Partial Class FormHome
         Me.Label52 = New System.Windows.Forms.Label()
         Me.Label53 = New System.Windows.Forms.Label()
         Me.panelHomeDesigners = New System.Windows.Forms.Panel()
+        Me.btnCadasterDesigner = New System.Windows.Forms.PictureBox()
         Me.Panel29 = New System.Windows.Forms.Panel()
         Me.Panel30 = New System.Windows.Forms.Panel()
         Me.Panel31 = New System.Windows.Forms.Panel()
@@ -228,7 +229,6 @@ Partial Class FormHome
         Me.Label85 = New System.Windows.Forms.Label()
         Me.btnMinimize = New System.Windows.Forms.PictureBox()
         Me.btnEnd = New System.Windows.Forms.PictureBox()
-        Me.btnCadasterDesigner = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.btnHome, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelMainPage.SuspendLayout()
@@ -267,6 +267,7 @@ Partial Class FormHome
         Me.Panel25.SuspendLayout()
         Me.Panel26.SuspendLayout()
         Me.panelHomeDesigners.SuspendLayout()
+        CType(Me.btnCadasterDesigner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel30.SuspendLayout()
         CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel32.SuspendLayout()
@@ -292,7 +293,6 @@ Partial Class FormHome
         Me.Panel45.SuspendLayout()
         CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnEnd, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnCadasterDesigner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -691,7 +691,7 @@ Partial Class FormHome
         Me.panelHomePedidos.Controls.Add(Me.Panel10)
         Me.panelHomePedidos.Controls.Add(Me.Panel13)
         Me.panelHomePedidos.Controls.Add(Me.Panel14)
-        Me.panelHomePedidos.Location = New System.Drawing.Point(2660, 48)
+        Me.panelHomePedidos.Location = New System.Drawing.Point(266, 48)
         Me.panelHomePedidos.Name = "panelHomePedidos"
         Me.panelHomePedidos.Size = New System.Drawing.Size(730, 652)
         Me.panelHomePedidos.TabIndex = 15
@@ -1710,6 +1710,16 @@ Partial Class FormHome
         Me.panelHomeDesigners.Size = New System.Drawing.Size(730, 652)
         Me.panelHomeDesigners.TabIndex = 18
         '
+        'btnCadasterDesigner
+        '
+        Me.btnCadasterDesigner.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.btn_plus
+        Me.btnCadasterDesigner.Location = New System.Drawing.Point(682, 13)
+        Me.btnCadasterDesigner.Name = "btnCadasterDesigner"
+        Me.btnCadasterDesigner.Size = New System.Drawing.Size(40, 40)
+        Me.btnCadasterDesigner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnCadasterDesigner.TabIndex = 28
+        Me.btnCadasterDesigner.TabStop = False
+        '
         'Panel29
         '
         Me.Panel29.BackColor = System.Drawing.Color.Black
@@ -2151,7 +2161,7 @@ Partial Class FormHome
         Me.panelHomeFuncionarios.Controls.Add(Me.Panel44)
         Me.panelHomeFuncionarios.Controls.Add(Me.Label83)
         Me.panelHomeFuncionarios.Controls.Add(Me.Panel45)
-        Me.panelHomeFuncionarios.Location = New System.Drawing.Point(2660, 48)
+        Me.panelHomeFuncionarios.Location = New System.Drawing.Point(266, 48)
         Me.panelHomeFuncionarios.Name = "panelHomeFuncionarios"
         Me.panelHomeFuncionarios.Size = New System.Drawing.Size(730, 652)
         Me.panelHomeFuncionarios.TabIndex = 19
@@ -2604,16 +2614,6 @@ Partial Class FormHome
         Me.btnEnd.TabIndex = 12
         Me.btnEnd.TabStop = False
         '
-        'btnCadasterDesigner
-        '
-        Me.btnCadasterDesigner.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.btn_plus
-        Me.btnCadasterDesigner.Location = New System.Drawing.Point(682, 13)
-        Me.btnCadasterDesigner.Name = "btnCadasterDesigner"
-        Me.btnCadasterDesigner.Size = New System.Drawing.Size(40, 40)
-        Me.btnCadasterDesigner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnCadasterDesigner.TabIndex = 28
-        Me.btnCadasterDesigner.TabStop = False
-        '
         'FormHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(21.0!, 50.0!)
@@ -2687,6 +2687,7 @@ Partial Class FormHome
         Me.Panel26.ResumeLayout(False)
         Me.panelHomeDesigners.ResumeLayout(False)
         Me.panelHomeDesigners.PerformLayout()
+        CType(Me.btnCadasterDesigner, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel30.ResumeLayout(False)
         Me.Panel30.PerformLayout()
         CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2719,7 +2720,6 @@ Partial Class FormHome
         Me.Panel45.ResumeLayout(False)
         CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnEnd, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnCadasterDesigner, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

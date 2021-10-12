@@ -60,12 +60,15 @@ Partial Class FormCadaster
         Me.txtNameDesigner = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.CategoriaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.CategoriaTableAdapter = New ArquivoVivo_Desktop.arquivovivomvDataSetTableAdapters.categoriaTableAdapter()
         Me.panelMovel.SuspendLayout()
         CType(Me.picboxImageUploadMovel, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DesignersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ArquivovivomvDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelDesigner.SuspendLayout()
         CType(Me.picboxImageUploadDesigner, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CategoriaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label83
@@ -443,6 +446,15 @@ Partial Class FormCadaster
         Me.Panel2.Size = New System.Drawing.Size(1000, 2)
         Me.Panel2.TabIndex = 22
         '
+        'CategoriaBindingSource
+        '
+        Me.CategoriaBindingSource.DataMember = "categoria"
+        Me.CategoriaBindingSource.DataSource = Me.ArquivovivomvDataSet
+        '
+        'CategoriaTableAdapter
+        '
+        Me.CategoriaTableAdapter.ClearBeforeFill = True
+        '
         'FormCadaster
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -462,6 +474,7 @@ Partial Class FormCadaster
         Me.panelDesigner.ResumeLayout(False)
         Me.panelDesigner.PerformLayout()
         CType(Me.picboxImageUploadDesigner, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CategoriaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -503,4 +516,6 @@ Partial Class FormCadaster
     Friend WithEvents txtNameDesigner As TextBox
     Friend WithEvents Label17 As Label
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents CategoriaBindingSource As BindingSource
+    Friend WithEvents CategoriaTableAdapter As arquivovivomvDataSetTableAdapters.categoriaTableAdapter
 End Class
