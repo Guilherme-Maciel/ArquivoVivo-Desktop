@@ -99,6 +99,18 @@
     <Compile Include="FormHome.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormMoveisAmbiente1.Designer.vb">
+      <DependentUpon>FormMoveisAmbiente1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMoveisAmbiente1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMoveisAmbiente2.Designer.vb">
+      <DependentUpon>FormMoveisAmbiente2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMoveisAmbiente2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormMoveisType.Designer.vb">
       <DependentUpon>FormMoveisType.vb</DependentUpon>
     </Compile>
@@ -132,6 +144,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormHome.resx">
       <DependentUpon>FormHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMoveisAmbiente1.resx">
+      <DependentUpon>FormMoveisAmbiente1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMoveisAmbiente2.resx">
+      <DependentUpon>FormMoveisAmbiente2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMoveisType.resx">
       <DependentUpon>FormMoveisType.vb</DependentUpon>

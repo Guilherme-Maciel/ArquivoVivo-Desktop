@@ -24,9 +24,9 @@ Partial Class FormMoveisType
     Private Sub InitializeComponent()
         Me.Panel28 = New System.Windows.Forms.Panel()
         Me.Label83 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.btnAmbiente = New System.Windows.Forms.PictureBox()
         Me.btn_others = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnAmbiente, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btn_others, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -48,15 +48,15 @@ Partial Class FormMoveisType
         Me.Label83.TabIndex = 21
         Me.Label83.Text = "MÓVEIS"
         '
-        'PictureBox2
+        'btnAmbiente
         '
-        Me.PictureBox2.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.btn_ambiente
-        Me.PictureBox2.Location = New System.Drawing.Point(229, 255)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(228, 228)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 23
-        Me.PictureBox2.TabStop = False
+        Me.btnAmbiente.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.btn_ambiente
+        Me.btnAmbiente.Location = New System.Drawing.Point(229, 255)
+        Me.btnAmbiente.Name = "btnAmbiente"
+        Me.btnAmbiente.Size = New System.Drawing.Size(228, 228)
+        Me.btnAmbiente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnAmbiente.TabIndex = 23
+        Me.btnAmbiente.TabStop = False
         '
         'btn_others
         '
@@ -73,7 +73,7 @@ Partial Class FormMoveisType
         Me.AutoScaleDimensions = New System.Drawing.SizeF(14.0!, 34.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1000, 700)
-        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.btnAmbiente)
         Me.Controls.Add(Me.btn_others)
         Me.Controls.Add(Me.Label83)
         Me.Controls.Add(Me.Panel28)
@@ -83,7 +83,7 @@ Partial Class FormMoveisType
         Me.Name = "FormMoveisType"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormMoveisType"
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnAmbiente, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btn_others, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -93,5 +93,5 @@ Partial Class FormMoveisType
     Friend WithEvents Panel28 As Panel
     Friend WithEvents Label83 As Label
     Friend WithEvents btn_others As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents btnAmbiente As PictureBox
 End Class
