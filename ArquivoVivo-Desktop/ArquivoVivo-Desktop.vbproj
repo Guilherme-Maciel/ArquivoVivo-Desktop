@@ -119,6 +119,7 @@
     </Compile>
     <Compile Include="ModuleDB.vb" />
     <Compile Include="ModuleSUB.vb" />
+    <Compile Include="ModuleVAR.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

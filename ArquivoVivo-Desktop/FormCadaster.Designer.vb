@@ -194,6 +194,7 @@ Partial Class FormCadaster
         Me.picboxImageUploadMovel.Location = New System.Drawing.Point(186, 427)
         Me.picboxImageUploadMovel.Name = "picboxImageUploadMovel"
         Me.picboxImageUploadMovel.Size = New System.Drawing.Size(304, 181)
+        Me.picboxImageUploadMovel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picboxImageUploadMovel.TabIndex = 36
         Me.picboxImageUploadMovel.TabStop = False
         '
@@ -387,6 +388,7 @@ Partial Class FormCadaster
         Me.picboxImageUploadDesigner.Location = New System.Drawing.Point(186, 427)
         Me.picboxImageUploadDesigner.Name = "picboxImageUploadDesigner"
         Me.picboxImageUploadDesigner.Size = New System.Drawing.Size(304, 181)
+        Me.picboxImageUploadDesigner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picboxImageUploadDesigner.TabIndex = 36
         Me.picboxImageUploadDesigner.TabStop = False
         '

@@ -28,19 +28,19 @@ Partial Class FormMoveisAmbiente1
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.btnImage = New System.Windows.Forms.Button()
-        Me.txtDescMovel = New System.Windows.Forms.TextBox()
+        Me.picboxImageUpload = New System.Windows.Forms.PictureBox()
+        Me.txtDesc = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.cboxQtdMovel = New System.Windows.Forms.ComboBox()
-        Me.txtValueMovel = New System.Windows.Forms.TextBox()
+        Me.cboxQtd = New System.Windows.Forms.ComboBox()
+        Me.txtValue = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label83 = New System.Windows.Forms.Label()
-        Me.txtTitleMovel = New System.Windows.Forms.TextBox()
+        Me.txtTitle = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel28 = New System.Windows.Forms.Panel()
-        Me.picboxImageUploadMovel = New System.Windows.Forms.PictureBox()
         Me.panelMovel.SuspendLayout()
-        CType(Me.picboxImageUploadMovel, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picboxImageUpload, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'panelMovel
@@ -50,15 +50,15 @@ Partial Class FormMoveisAmbiente1
         Me.panelMovel.Controls.Add(Me.Label8)
         Me.panelMovel.Controls.Add(Me.Label7)
         Me.panelMovel.Controls.Add(Me.btnImage)
-        Me.panelMovel.Controls.Add(Me.picboxImageUploadMovel)
-        Me.panelMovel.Controls.Add(Me.txtDescMovel)
+        Me.panelMovel.Controls.Add(Me.picboxImageUpload)
+        Me.panelMovel.Controls.Add(Me.txtDesc)
         Me.panelMovel.Controls.Add(Me.Label6)
         Me.panelMovel.Controls.Add(Me.Label5)
-        Me.panelMovel.Controls.Add(Me.cboxQtdMovel)
-        Me.panelMovel.Controls.Add(Me.txtValueMovel)
+        Me.panelMovel.Controls.Add(Me.cboxQtd)
+        Me.panelMovel.Controls.Add(Me.txtValue)
         Me.panelMovel.Controls.Add(Me.Label4)
         Me.panelMovel.Controls.Add(Me.Label83)
-        Me.panelMovel.Controls.Add(Me.txtTitleMovel)
+        Me.panelMovel.Controls.Add(Me.txtTitle)
         Me.panelMovel.Controls.Add(Me.Label1)
         Me.panelMovel.Controls.Add(Me.Panel28)
         Me.panelMovel.Location = New System.Drawing.Point(0, 0)
@@ -120,14 +120,24 @@ Partial Class FormMoveisAmbiente1
         Me.btnImage.Text = "ESCOLHER IMAGEM"
         Me.btnImage.UseVisualStyleBackColor = True
         '
-        'txtDescMovel
+        'picboxImageUpload
         '
-        Me.txtDescMovel.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDescMovel.Location = New System.Drawing.Point(186, 200)
-        Me.txtDescMovel.Multiline = True
-        Me.txtDescMovel.Name = "txtDescMovel"
-        Me.txtDescMovel.Size = New System.Drawing.Size(304, 205)
-        Me.txtDescMovel.TabIndex = 35
+        Me.picboxImageUpload.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.picboxImageUpload.Location = New System.Drawing.Point(186, 427)
+        Me.picboxImageUpload.Name = "picboxImageUpload"
+        Me.picboxImageUpload.Size = New System.Drawing.Size(304, 181)
+        Me.picboxImageUpload.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picboxImageUpload.TabIndex = 36
+        Me.picboxImageUpload.TabStop = False
+        '
+        'txtDesc
+        '
+        Me.txtDesc.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDesc.Location = New System.Drawing.Point(186, 200)
+        Me.txtDesc.Multiline = True
+        Me.txtDesc.Name = "txtDesc"
+        Me.txtDesc.Size = New System.Drawing.Size(304, 205)
+        Me.txtDesc.TabIndex = 35
         '
         'Label6
         '
@@ -149,22 +159,22 @@ Partial Class FormMoveisAmbiente1
         Me.Label5.TabIndex = 33
         Me.Label5.Text = "qtd:"
         '
-        'cboxQtdMovel
+        'cboxQtd
         '
-        Me.cboxQtdMovel.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboxQtdMovel.FormattingEnabled = True
-        Me.cboxQtdMovel.Location = New System.Drawing.Point(761, 290)
-        Me.cboxQtdMovel.Name = "cboxQtdMovel"
-        Me.cboxQtdMovel.Size = New System.Drawing.Size(73, 35)
-        Me.cboxQtdMovel.TabIndex = 32
+        Me.cboxQtd.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboxQtd.FormattingEnabled = True
+        Me.cboxQtd.Location = New System.Drawing.Point(761, 290)
+        Me.cboxQtd.Name = "cboxQtd"
+        Me.cboxQtd.Size = New System.Drawing.Size(73, 35)
+        Me.cboxQtd.TabIndex = 32
         '
-        'txtValueMovel
+        'txtValue
         '
-        Me.txtValueMovel.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtValueMovel.Location = New System.Drawing.Point(530, 290)
-        Me.txtValueMovel.Name = "txtValueMovel"
-        Me.txtValueMovel.Size = New System.Drawing.Size(167, 35)
-        Me.txtValueMovel.TabIndex = 31
+        Me.txtValue.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtValue.Location = New System.Drawing.Point(530, 290)
+        Me.txtValue.Name = "txtValue"
+        Me.txtValue.Size = New System.Drawing.Size(167, 35)
+        Me.txtValue.TabIndex = 31
         '
         'Label4
         '
@@ -186,13 +196,13 @@ Partial Class FormMoveisAmbiente1
         Me.Label83.TabIndex = 23
         Me.Label83.Text = "MÓVEIS"
         '
-        'txtTitleMovel
+        'txtTitle
         '
-        Me.txtTitleMovel.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTitleMovel.Location = New System.Drawing.Point(186, 115)
-        Me.txtTitleMovel.Name = "txtTitleMovel"
-        Me.txtTitleMovel.Size = New System.Drawing.Size(648, 35)
-        Me.txtTitleMovel.TabIndex = 25
+        Me.txtTitle.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTitle.Location = New System.Drawing.Point(186, 115)
+        Me.txtTitle.Name = "txtTitle"
+        Me.txtTitle.Size = New System.Drawing.Size(648, 35)
+        Me.txtTitle.TabIndex = 25
         '
         'Label1
         '
@@ -212,15 +222,6 @@ Partial Class FormMoveisAmbiente1
         Me.Panel28.Size = New System.Drawing.Size(1000, 2)
         Me.Panel28.TabIndex = 22
         '
-        'picboxImageUploadMovel
-        '
-        Me.picboxImageUploadMovel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.picboxImageUploadMovel.Location = New System.Drawing.Point(186, 427)
-        Me.picboxImageUploadMovel.Name = "picboxImageUploadMovel"
-        Me.picboxImageUploadMovel.Size = New System.Drawing.Size(304, 181)
-        Me.picboxImageUploadMovel.TabIndex = 36
-        Me.picboxImageUploadMovel.TabStop = False
-        '
         'FormMoveisAmbiente1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(14.0!, 34.0!)
@@ -235,7 +236,7 @@ Partial Class FormMoveisAmbiente1
         Me.Text = "FormMoveisAmbiente1"
         Me.panelMovel.ResumeLayout(False)
         Me.panelMovel.PerformLayout()
-        CType(Me.picboxImageUploadMovel, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picboxImageUpload, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -246,15 +247,15 @@ Partial Class FormMoveisAmbiente1
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents btnImage As Button
-    Friend WithEvents picboxImageUploadMovel As PictureBox
-    Friend WithEvents txtDescMovel As TextBox
+    Friend WithEvents picboxImageUpload As PictureBox
+    Friend WithEvents txtDesc As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents cboxQtdMovel As ComboBox
-    Friend WithEvents txtValueMovel As TextBox
+    Friend WithEvents cboxQtd As ComboBox
+    Friend WithEvents txtValue As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label83 As Label
-    Friend WithEvents txtTitleMovel As TextBox
+    Friend WithEvents txtTitle As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel28 As Panel
 End Class
