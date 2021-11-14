@@ -1,4 +1,6 @@
-﻿Module ModuleSUB
+﻿Imports MySql.Data.MySqlClient
+
+Module ModuleSUB
     Public panelCadaster As Integer
 
     'Design Buttons
@@ -166,6 +168,45 @@
         End Try
 
     End Sub
+
+    'Senha aleatória
+    Public Function RandowPass()
+        'https://www.arquivodecodigos.com.br/dicas/1501-vb-net-cAdigo-completo-para-um-gerador-de-senhas-aleatArias.html
+        'nos caracteres possíveis nós evitamos a letra "L" minúscula, para que o usuário não confunda com o numeral "1"
+        Dim carac As String = "abcdefhijkmnopqrstuvxwyz123456789"
+
+        'converte em uma matriz de caracteres
+        Dim carac2 As Char() = carac.ToCharArray()
+
+        'vamos embaralhar 2 vezes
+        Embaralhar(carac2, 2)
+
+        'vamos sugerir a senha de 8 caracteres
+        Dim senha As String = Nothing
+        For i As Integer = 0 To 7 Step 1
+            senha = senha & carac2(i)
+        Next
+
+        'exibe a senha sugerida
+        Return senha
+    End Function
+    Private Sub Embaralhar(ByRef array As Array, ByVal vezes As Integer)
+        Dim rand As New Random(DateTime.Now.Millisecond)
+        For i As Integer = 1 To vezes
+            For i2 As Integer = 1 To array.Length
+                swap(array(rand.Next(0, array.Length)),
+                   array(rand.Next(0, array.Length)))
+            Next i2
+        Next i
+    End Sub
+    Private Sub swap(ByRef arg1 As Object, ByRef arg2 As Object)
+        Dim strTemp As String
+        strTemp = arg1
+        arg1 = arg2
+        arg2 = strTemp
+    End Sub
+
+    'DataGridView
 
 
 End Module

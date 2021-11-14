@@ -3,6 +3,8 @@ Imports System.IO
 Imports System.IO.Path
 Imports System.Drawing.Imaging
 Imports System.Runtime.InteropServices
+Imports System.Net
+Imports System.Net.Mail
 
 Public Class FormCadaster
     'Variáveis para cadastro de imagem
@@ -24,14 +26,18 @@ Public Class FormCadaster
 
         DarkGrayButton(btnCommitMovel)
         DarkGrayButton(btnCommitDesigner)
+        DarkGrayButton(btnCommitCliente)
+        DarkGrayButton(btnCommitFuncionario)
 
         WhiteButton(btnCancel)
         WhiteButton(btnCancelDesigner)
+        WhiteButton(btnCancelCliente)
+        WhiteButton(btnCancelFuncionario)
 
         comboBoxQtd()
         cboxCatItems()
     End Sub
-    'Movel
+    'MÓVEL
     Private Sub btnImage_Click(sender As Object, e As EventArgs) Handles btnImageMovel.Click
         Using OFD As New OpenFileDialog With {.Filter = "image File(*.jpg;*.png;*)|*.jpg;*.png;*"}
             If OFD.ShowDialog = Windows.Forms.DialogResult.OK Then
@@ -43,7 +49,6 @@ Public Class FormCadaster
             End If
         End Using
     End Sub
-
     Private Sub btnCommit_Click(sender As Object, e As EventArgs) Handles btnCommitMovel.Click
         Dim title, desc, designer, typeImg, dataFormat As String
         Dim idDesigner, cat As Integer
@@ -59,8 +64,6 @@ Public Class FormCadaster
         qtd = cboxQtdMovel.Text
         dataFormat = Format(data, "s")
         idDesigner = cboxDesignersMovel.SelectedValue
-
-
 
         Using con As MySqlConnection = GetConnectionMysql()
             Try
@@ -103,24 +106,23 @@ Public Class FormCadaster
                 MsgBox(ex.Message)
             Finally
                 con.Close()
+
+                txtTitleMovel.Clear()
+                txtDescMovel.Clear()
+                cboxCatMovel.SelectedIndex = -1
+                cboxDesignersMovel.SelectedIndex = -1
+                txtValueMovel.Clear()
+                cboxQtdMovel.SelectedIndex = -1
+                picboxImageUploadMovel.Image = Nothing
             End Try
         End Using
-        txtTitleMovel.Clear()
-        txtDescMovel.Clear()
-        cboxCatMovel.SelectedIndex = -1
-        cboxDesignersMovel.SelectedIndex = -1
-        txtValueMovel.Clear()
-        cboxQtdMovel.SelectedIndex = -1
-        picboxImageUploadMovel.Image = Nothing
-
     End Sub
-
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         FormHome.Show()
         Me.Close()
     End Sub
 
-    'Designer
+    'DESIGNER
     Private Sub btnImageDesigner_Click(sender As Object, e As EventArgs) Handles btnImageDesigner.Click
         Using OFD As New OpenFileDialog With {.Filter = "image File(*.jpg;*.png;*)|*.jpg;*.png;*"}
             If OFD.ShowDialog = Windows.Forms.DialogResult.OK Then
@@ -175,28 +177,145 @@ Public Class FormCadaster
                 MsgBox(ex.Message)
             Finally
                 con.Close()
+
+                txtNameDesigner.Clear()
+                txtBioDesigner.Clear()
+                picboxImageUploadDesigner.Image = Nothing
             End Try
         End Using
-        txtNameDesigner.Clear()
-        txtBioDesigner.Clear()
-        picboxImageUploadDesigner.Image = Nothing
-
     End Sub
     Private Sub btnCancelDesigner_Click(sender As Object, e As EventArgs) Handles btnCancelDesigner.Click
         FormHome.Show()
         Me.Close()
     End Sub
 
-    Private Sub cadastroDecision(i As Integer)
-        If (i = 1) Then
-            panelMovel.Visible = True
-        End If
+    'CLIENTE
+    Private Sub btnCommitCliente_Click(sender As Object, e As EventArgs) Handles btnCommitCliente.Click
+        Dim name, lastName, email, cel, fix, estado, cidade, rua, bairro, cep, numRes, comple, password, state, dataFormat As String
+        Dim data As DateTime = DateTime.Now
 
-        If (i = 2) Then
-            panelDesigner.Visible = True
-        End If
+        'atribuição de valores às variáveis
+        name = txtNameCliente.Text
+        lastName = txtSobreCliente.Text
+        email = txtEmailCliente.Text
+        cel = txtCelCliente.Text
+        fix = txtFixCliente.Text
+        estado = txtEstadoCliente.Text
+        cidade = txtCidadeCliente.Text
+        rua = txtRuaCliente.Text
+        bairro = txtBairroCliente.Text
+        cep = txtCepCliente.Text
+        numRes = txtNumResCliente.Text
+        comple = txtCompleCliente.Text
+        dataFormat = Format(data, "s")
+        password = RandowPass()
+        state = "ativo"
 
+        Using con As MySqlConnection = GetConnectionMysql()
+            Try
+                'conexão com o banco pela variável con que recebe a função GetConnectionMysql()
+                con.Open()
+                Dim sql As String = "INSERT INTO cliente(c_nome, c_sobrenome, c_email, c_senha, c_estado, c_cidade, c_cep, c_rua, c_bairro, c_numRes, c_complemento, c_telCel, c_telFixo, c_dtReg, c_state)
+                                     VALUES(@name, @lastName, @email, @password, @estado, @city, @cep, @street, @district, @numRes, @comple, @telCel, @telFix, @date, @state)"
+                Dim cmd As MySqlCommand = New MySqlCommand(sql, con)
+
+                'Atribuição dos parâmetros
+                cmd.Parameters.AddWithValue("@name", name)
+                cmd.Parameters.AddWithValue("@lastName", lastName)
+                cmd.Parameters.AddWithValue("@email", email)
+                cmd.Parameters.AddWithValue("@password", password)
+                cmd.Parameters.AddWithValue("@estado", estado)
+                cmd.Parameters.AddWithValue("@city", cidade)
+                cmd.Parameters.AddWithValue("@cep", cep)
+                cmd.Parameters.AddWithValue("@street", rua)
+                cmd.Parameters.AddWithValue("@district", bairro)
+                cmd.Parameters.AddWithValue("@numRes", numRes)
+                cmd.Parameters.AddWithValue("@comple", comple)
+                cmd.Parameters.AddWithValue("@telCel", cel)
+                cmd.Parameters.AddWithValue("@telFix", fix)
+                cmd.Parameters.AddWithValue("@date", dataFormat)
+                cmd.Parameters.AddWithValue("@state", state)
+
+                'Cadastro concluído
+                Dim reader As MySqlDataReader = cmd.ExecuteReader
+
+                'cria uma mensagem e envia por email ao usuário
+                SendMail(password)
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            Finally
+                con.Close()
+
+                txtNameCliente.Clear()
+                txtSobreCliente.Clear()
+                txtEmailCliente.Clear()
+                txtCelCliente.Clear()
+                txtFixCliente.Clear()
+                txtEstadoCliente.Clear()
+                txtCidadeCliente.Clear()
+                txtRuaCliente.Clear()
+                txtBairroCliente.Clear()
+                txtCepCliente.Clear()
+                txtNumResCliente.Clear()
+                txtCompleCliente.Clear()
+            End Try
+        End Using
     End Sub
+    Private Sub btnCancelCliente_Click(sender As Object, e As EventArgs) Handles btnCancelCliente.Click
+        FormHome.Show()
+        Me.Close()
+    End Sub
+
+    'FUNCIONÁRIO
+    Private Sub btnCommitFuncionario_Click(sender As Object, e As EventArgs) Handles btnCommitFuncionario.Click
+        Dim name, lastName, email, cel, fix, password, state, dataFormat As String
+        Dim data As DateTime = DateTime.Now
+
+        'atribuição de valores às variáveis
+        name = txtNomeFuncionario.Text
+        lastName = txtSobreFuncionario.Text
+        email = txtEmailFuncionario.Text
+        cel = txtCelFuncionario.Text
+        fix = txtFixFuncionario.Text
+        password = txtSenhaFuncionario.Text
+        dataFormat = Format(data, "s")
+        state = "ativo"
+
+        Using con As MySqlConnection = GetConnectionMysql()
+            Try
+                'conexão com o banco pela variável con que recebe a função GetConnectionMysql()
+                con.Open()
+                Dim sql As String = "INSERT INTO funcionarios(f_nome, f_sobrenome, f_email, f_senha, f_telCel, f_telFixo, f_dtReg, f_state, f_type)
+                                     VALUES(@name, @lastName, @email, @password, @telCel, @telFix, @date, @state, '2')"
+                Dim cmd As MySqlCommand = New MySqlCommand(sql, con)
+
+                'Atribuição dos parâmetros
+                cmd.Parameters.AddWithValue("@name", name)
+                cmd.Parameters.AddWithValue("@lastName", lastName)
+                cmd.Parameters.AddWithValue("@email", email)
+                cmd.Parameters.AddWithValue("@password", password)
+                cmd.Parameters.AddWithValue("@telCel", cel)
+                cmd.Parameters.AddWithValue("@telFix", fix)
+                cmd.Parameters.AddWithValue("@date", dataFormat)
+                cmd.Parameters.AddWithValue("@state", state)
+
+                'Cadastro concluído
+                Dim reader As MySqlDataReader = cmd.ExecuteReader
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            Finally
+                con.Close()
+
+                txtNomeFuncionario.Clear()
+                txtSobreFuncionario.Clear()
+                txtEmailFuncionario.Clear()
+                txtSenhaFuncionario.Clear()
+                txtCelFuncionario.Clear()
+                txtFixFuncionario.Clear()
+            End Try
+        End Using
+    End Sub
+
     'Procedimento de atribuição do método textBoxMoeda()
     Private Sub txtValue_TextChanged(sender As Object, e As EventArgs) Handles txtValueMovel.TextChanged
         TextBoxMoeda(txtValueMovel)
@@ -206,7 +325,6 @@ Public Class FormCadaster
     Private Sub cboxCat_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cboxCatMovel.KeyPress
         e.Handled = True
     End Sub
-
     Private Sub cboxCatItems()
 
         cboxCatMovel.DisplayMember = "Text"
@@ -231,11 +349,9 @@ Public Class FormCadaster
         cboxCatMovel.DataSource = tb
 
     End Sub
-
     Private Sub cboxQtd_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cboxQtdMovel.KeyPress
         e.Handled = True
     End Sub
-
     Public Sub comboBoxQtd()
         Dim i As Integer
 
@@ -249,8 +365,66 @@ Public Class FormCadaster
     Private Sub panelInvisible()
         panelMovel.Visible = False
         panelDesigner.Visible = False
+        panelCliente.Visible = False
+        panelFuncionario.Visible = False
+    End Sub
+    Private Sub cadastroDecision(i As Integer)
+        If (i = 1) Then
+            panelMovel.Visible = True
+        End If
 
+        If (i = 2) Then
+            panelDesigner.Visible = True
+        End If
+
+        If (i = 3) Then
+            panelCliente.Visible = True
+        End If
+
+        If (i = 4) Then
+            panelFuncionario.Visible = True
+        End If
     End Sub
 
+    'email function
+    Private Function SendMail(ByVal password As String) As Boolean
 
+        Dim objEnvio As SmtpClient = Nothing
+        Dim objEmail As New MailMessage
+        Dim blnReturn As Boolean = False
+
+        Try
+            objEnvio = New SmtpClient("smtp.gmail.com", "587")
+            objEmail = New MailMessage
+
+            'destino
+            objEmail.To.Add(New MailAddress("guilhermeteste5932.ms@gmail.com", "Guilherme Maciel"))
+
+            'remetente
+            objEmail.From = New MailAddress("guilhermeteste5932.ms@gmail.com", "ARQUIVO VIVO MÓVEIS")
+
+            'Mensagem
+            objEmail.Subject = "ARQUIVO VIVO MÓVEIS - SENHA WEBSITE"
+            objEmail.IsBodyHtml = True
+            objEmail.Body = "Sua senha é: " & password & ". Faça login no site <arquivovivomoveis.com.br> e mude sua senha caso desejar :)"
+
+            'credenciais
+            objEnvio.EnableSsl = True
+            objEnvio.UseDefaultCredentials = False
+            Dim credentials As New NetworkCredential("guilhermeteste5932.ms@gmail.com", "59323466Teste")
+            objEnvio.Credentials = credentials
+
+            'enviar
+            objEnvio.Send(objEmail)
+
+            blnReturn = True
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            objEmail = Nothing
+            objEnvio = Nothing
+        End Try
+
+        Return blnReturn
+    End Function
 End Class

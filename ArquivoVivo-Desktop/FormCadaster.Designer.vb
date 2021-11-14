@@ -60,15 +60,63 @@ Partial Class FormCadaster
         Me.txtNameDesigner = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.panelCliente = New System.Windows.Forms.Panel()
+        Me.txtCompleCliente = New System.Windows.Forms.TextBox()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.txtNumResCliente = New System.Windows.Forms.TextBox()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.txtBairroCliente = New System.Windows.Forms.TextBox()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.txtRuaCliente = New System.Windows.Forms.TextBox()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.txtCepCliente = New System.Windows.Forms.TextBox()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.txtCidadeCliente = New System.Windows.Forms.TextBox()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.txtEstadoCliente = New System.Windows.Forms.TextBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.txtFixCliente = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.txtCelCliente = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.txtEmailCliente = New System.Windows.Forms.TextBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.btnCancelCliente = New System.Windows.Forms.Button()
+        Me.btnCommitCliente = New System.Windows.Forms.Button()
+        Me.txtSobreCliente = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.txtNameCliente = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.CategoriaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.CategoriaTableAdapter = New ArquivoVivo_Desktop.arquivovivomvDataSetTableAdapters.categoriaTableAdapter()
+        Me.panelFuncionario = New System.Windows.Forms.Panel()
+        Me.txtSenhaFuncionario = New System.Windows.Forms.TextBox()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.txtFixFuncionario = New System.Windows.Forms.TextBox()
+        Me.Label39 = New System.Windows.Forms.Label()
+        Me.txtCelFuncionario = New System.Windows.Forms.TextBox()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.txtEmailFuncionario = New System.Windows.Forms.TextBox()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.btnCancelFuncionario = New System.Windows.Forms.Button()
+        Me.btnCommitFuncionario = New System.Windows.Forms.Button()
+        Me.Label43 = New System.Windows.Forms.Label()
+        Me.txtNomeFuncionario = New System.Windows.Forms.TextBox()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Label42 = New System.Windows.Forms.Label()
+        Me.txtSobreFuncionario = New System.Windows.Forms.TextBox()
         Me.panelMovel.SuspendLayout()
         CType(Me.picboxImageUploadMovel, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DesignersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ArquivovivomvDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelDesigner.SuspendLayout()
         CType(Me.picboxImageUploadDesigner, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panelCliente.SuspendLayout()
         CType(Me.CategoriaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panelFuncionario.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label83
@@ -448,6 +496,299 @@ Partial Class FormCadaster
         Me.Panel2.Size = New System.Drawing.Size(1000, 2)
         Me.Panel2.TabIndex = 22
         '
+        'panelCliente
+        '
+        Me.panelCliente.Controls.Add(Me.txtCompleCliente)
+        Me.panelCliente.Controls.Add(Me.Label25)
+        Me.panelCliente.Controls.Add(Me.txtNumResCliente)
+        Me.panelCliente.Controls.Add(Me.Label26)
+        Me.panelCliente.Controls.Add(Me.txtBairroCliente)
+        Me.panelCliente.Controls.Add(Me.Label24)
+        Me.panelCliente.Controls.Add(Me.txtRuaCliente)
+        Me.panelCliente.Controls.Add(Me.Label23)
+        Me.panelCliente.Controls.Add(Me.txtCepCliente)
+        Me.panelCliente.Controls.Add(Me.Label22)
+        Me.panelCliente.Controls.Add(Me.txtCidadeCliente)
+        Me.panelCliente.Controls.Add(Me.Label20)
+        Me.panelCliente.Controls.Add(Me.txtEstadoCliente)
+        Me.panelCliente.Controls.Add(Me.Label21)
+        Me.panelCliente.Controls.Add(Me.txtFixCliente)
+        Me.panelCliente.Controls.Add(Me.Label13)
+        Me.panelCliente.Controls.Add(Me.txtCelCliente)
+        Me.panelCliente.Controls.Add(Me.Label12)
+        Me.panelCliente.Controls.Add(Me.txtEmailCliente)
+        Me.panelCliente.Controls.Add(Me.Label19)
+        Me.panelCliente.Controls.Add(Me.btnCancelCliente)
+        Me.panelCliente.Controls.Add(Me.btnCommitCliente)
+        Me.panelCliente.Controls.Add(Me.txtSobreCliente)
+        Me.panelCliente.Controls.Add(Me.Label14)
+        Me.panelCliente.Controls.Add(Me.Label15)
+        Me.panelCliente.Controls.Add(Me.txtNameCliente)
+        Me.panelCliente.Controls.Add(Me.Label18)
+        Me.panelCliente.Controls.Add(Me.Panel3)
+        Me.panelCliente.Location = New System.Drawing.Point(0, 0)
+        Me.panelCliente.Name = "panelCliente"
+        Me.panelCliente.Size = New System.Drawing.Size(1000, 700)
+        Me.panelCliente.TabIndex = 43
+        '
+        'txtCompleCliente
+        '
+        Me.txtCompleCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCompleCliente.Location = New System.Drawing.Point(394, 563)
+        Me.txtCompleCliente.Name = "txtCompleCliente"
+        Me.txtCompleCliente.Size = New System.Drawing.Size(440, 35)
+        Me.txtCompleCliente.TabIndex = 61
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(386, 522)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(233, 44)
+        Me.Label25.TabIndex = 60
+        Me.Label25.Text = "complemento:"
+        '
+        'txtNumResCliente
+        '
+        Me.txtNumResCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNumResCliente.Location = New System.Drawing.Point(186, 563)
+        Me.txtNumResCliente.Name = "txtNumResCliente"
+        Me.txtNumResCliente.Size = New System.Drawing.Size(191, 35)
+        Me.txtNumResCliente.TabIndex = 59
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Location = New System.Drawing.Point(178, 522)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(52, 44)
+        Me.Label26.TabIndex = 58
+        Me.Label26.Text = "n°:"
+        '
+        'txtBairroCliente
+        '
+        Me.txtBairroCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBairroCliente.Location = New System.Drawing.Point(186, 487)
+        Me.txtBairroCliente.Name = "txtBairroCliente"
+        Me.txtBairroCliente.Size = New System.Drawing.Size(648, 35)
+        Me.txtBairroCliente.TabIndex = 57
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.Location = New System.Drawing.Point(178, 446)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(110, 44)
+        Me.Label24.TabIndex = 56
+        Me.Label24.Text = "bairro:"
+        '
+        'txtRuaCliente
+        '
+        Me.txtRuaCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtRuaCliente.Location = New System.Drawing.Point(394, 411)
+        Me.txtRuaCliente.Name = "txtRuaCliente"
+        Me.txtRuaCliente.Size = New System.Drawing.Size(440, 35)
+        Me.txtRuaCliente.TabIndex = 55
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.Location = New System.Drawing.Point(386, 370)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(73, 44)
+        Me.Label23.TabIndex = 54
+        Me.Label23.Text = "rua:"
+        '
+        'txtCepCliente
+        '
+        Me.txtCepCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCepCliente.Location = New System.Drawing.Point(186, 411)
+        Me.txtCepCliente.Name = "txtCepCliente"
+        Me.txtCepCliente.Size = New System.Drawing.Size(191, 35)
+        Me.txtCepCliente.TabIndex = 53
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.Location = New System.Drawing.Point(178, 370)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(82, 44)
+        Me.Label22.TabIndex = 52
+        Me.Label22.Text = "cep:"
+        '
+        'txtCidadeCliente
+        '
+        Me.txtCidadeCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCidadeCliente.Location = New System.Drawing.Point(556, 335)
+        Me.txtCidadeCliente.Name = "txtCidadeCliente"
+        Me.txtCidadeCliente.Size = New System.Drawing.Size(278, 35)
+        Me.txtCidadeCliente.TabIndex = 51
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(548, 294)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(126, 44)
+        Me.Label20.TabIndex = 50
+        Me.Label20.Text = "cidade:"
+        '
+        'txtEstadoCliente
+        '
+        Me.txtEstadoCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEstadoCliente.Location = New System.Drawing.Point(186, 335)
+        Me.txtEstadoCliente.Name = "txtEstadoCliente"
+        Me.txtEstadoCliente.Size = New System.Drawing.Size(278, 35)
+        Me.txtEstadoCliente.TabIndex = 49
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(178, 294)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(126, 44)
+        Me.Label21.TabIndex = 48
+        Me.Label21.Text = "estado:"
+        '
+        'txtFixCliente
+        '
+        Me.txtFixCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFixCliente.Location = New System.Drawing.Point(556, 259)
+        Me.txtFixCliente.Name = "txtFixCliente"
+        Me.txtFixCliente.Size = New System.Drawing.Size(278, 35)
+        Me.txtFixCliente.TabIndex = 47
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(548, 218)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(75, 44)
+        Me.Label13.TabIndex = 46
+        Me.Label13.Text = "fixo:"
+        '
+        'txtCelCliente
+        '
+        Me.txtCelCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCelCliente.Location = New System.Drawing.Point(186, 259)
+        Me.txtCelCliente.Name = "txtCelCliente"
+        Me.txtCelCliente.Size = New System.Drawing.Size(278, 35)
+        Me.txtCelCliente.TabIndex = 45
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(178, 218)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(125, 44)
+        Me.Label12.TabIndex = 44
+        Me.Label12.Text = "celular:"
+        '
+        'txtEmailCliente
+        '
+        Me.txtEmailCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmailCliente.Location = New System.Drawing.Point(186, 183)
+        Me.txtEmailCliente.Name = "txtEmailCliente"
+        Me.txtEmailCliente.Size = New System.Drawing.Size(648, 35)
+        Me.txtEmailCliente.TabIndex = 43
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Location = New System.Drawing.Point(178, 142)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(106, 44)
+        Me.Label19.TabIndex = 42
+        Me.Label19.Text = "email:"
+        '
+        'btnCancelCliente
+        '
+        Me.btnCancelCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancelCliente.Font = New System.Drawing.Font("Raleway Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelCliente.Location = New System.Drawing.Point(621, 629)
+        Me.btnCancelCliente.Name = "btnCancelCliente"
+        Me.btnCancelCliente.Size = New System.Drawing.Size(213, 57)
+        Me.btnCancelCliente.TabIndex = 41
+        Me.btnCancelCliente.Text = "CANCELAR"
+        Me.btnCancelCliente.UseVisualStyleBackColor = True
+        '
+        'btnCommitCliente
+        '
+        Me.btnCommitCliente.FlatAppearance.BorderSize = 0
+        Me.btnCommitCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCommitCliente.Font = New System.Drawing.Font("Raleway Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCommitCliente.Location = New System.Drawing.Point(186, 629)
+        Me.btnCommitCliente.Name = "btnCommitCliente"
+        Me.btnCommitCliente.Size = New System.Drawing.Size(213, 57)
+        Me.btnCommitCliente.TabIndex = 40
+        Me.btnCommitCliente.Text = "SALVAR"
+        Me.btnCommitCliente.UseVisualStyleBackColor = True
+        '
+        'txtSobreCliente
+        '
+        Me.txtSobreCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSobreCliente.Location = New System.Drawing.Point(556, 109)
+        Me.txtSobreCliente.Name = "txtSobreCliente"
+        Me.txtSobreCliente.Size = New System.Drawing.Size(278, 35)
+        Me.txtSobreCliente.TabIndex = 35
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(548, 68)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(126, 44)
+        Me.Label14.TabIndex = 34
+        Me.Label14.Text = "s.nome"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Raleway", 24.0!)
+        Me.Label15.Location = New System.Drawing.Point(430, 10)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(172, 44)
+        Me.Label15.TabIndex = 23
+        Me.Label15.Text = "CLIENTES"
+        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txtNameCliente
+        '
+        Me.txtNameCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNameCliente.Location = New System.Drawing.Point(186, 107)
+        Me.txtNameCliente.Name = "txtNameCliente"
+        Me.txtNameCliente.Size = New System.Drawing.Size(278, 35)
+        Me.txtNameCliente.TabIndex = 25
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(178, 66)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(111, 44)
+        Me.Label18.TabIndex = 24
+        Me.Label18.Text = "nome:"
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.Black
+        Me.Panel3.Location = New System.Drawing.Point(0, 61)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(1000, 2)
+        Me.Panel3.TabIndex = 22
+        '
         'CategoriaBindingSource
         '
         Me.CategoriaBindingSource.DataMember = "categoria"
@@ -457,11 +798,186 @@ Partial Class FormCadaster
         '
         Me.CategoriaTableAdapter.ClearBeforeFill = True
         '
+        'panelFuncionario
+        '
+        Me.panelFuncionario.Controls.Add(Me.txtSenhaFuncionario)
+        Me.panelFuncionario.Controls.Add(Me.Label34)
+        Me.panelFuncionario.Controls.Add(Me.txtFixFuncionario)
+        Me.panelFuncionario.Controls.Add(Me.Label39)
+        Me.panelFuncionario.Controls.Add(Me.txtCelFuncionario)
+        Me.panelFuncionario.Controls.Add(Me.Label40)
+        Me.panelFuncionario.Controls.Add(Me.txtEmailFuncionario)
+        Me.panelFuncionario.Controls.Add(Me.Label41)
+        Me.panelFuncionario.Controls.Add(Me.btnCancelFuncionario)
+        Me.panelFuncionario.Controls.Add(Me.btnCommitFuncionario)
+        Me.panelFuncionario.Controls.Add(Me.txtSobreFuncionario)
+        Me.panelFuncionario.Controls.Add(Me.Label42)
+        Me.panelFuncionario.Controls.Add(Me.Label43)
+        Me.panelFuncionario.Controls.Add(Me.txtNomeFuncionario)
+        Me.panelFuncionario.Controls.Add(Me.Label44)
+        Me.panelFuncionario.Controls.Add(Me.Panel6)
+        Me.panelFuncionario.Location = New System.Drawing.Point(0, 0)
+        Me.panelFuncionario.Name = "panelFuncionario"
+        Me.panelFuncionario.Size = New System.Drawing.Size(1000, 700)
+        Me.panelFuncionario.TabIndex = 44
+        '
+        'txtSenhaFuncionario
+        '
+        Me.txtSenhaFuncionario.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSenhaFuncionario.Location = New System.Drawing.Point(186, 375)
+        Me.txtSenhaFuncionario.Name = "txtSenhaFuncionario"
+        Me.txtSenhaFuncionario.Size = New System.Drawing.Size(648, 35)
+        Me.txtSenhaFuncionario.TabIndex = 57
+        '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label34.Location = New System.Drawing.Point(178, 334)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(113, 44)
+        Me.Label34.TabIndex = 56
+        Me.Label34.Text = "senha:"
+        '
+        'txtFixFuncionario
+        '
+        Me.txtFixFuncionario.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFixFuncionario.Location = New System.Drawing.Point(556, 449)
+        Me.txtFixFuncionario.Name = "txtFixFuncionario"
+        Me.txtFixFuncionario.Size = New System.Drawing.Size(278, 35)
+        Me.txtFixFuncionario.TabIndex = 47
+        '
+        'Label39
+        '
+        Me.Label39.AutoSize = True
+        Me.Label39.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label39.Location = New System.Drawing.Point(548, 408)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(75, 44)
+        Me.Label39.TabIndex = 46
+        Me.Label39.Text = "fixo:"
+        '
+        'txtCelFuncionario
+        '
+        Me.txtCelFuncionario.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCelFuncionario.Location = New System.Drawing.Point(186, 449)
+        Me.txtCelFuncionario.Name = "txtCelFuncionario"
+        Me.txtCelFuncionario.Size = New System.Drawing.Size(278, 35)
+        Me.txtCelFuncionario.TabIndex = 45
+        '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label40.Location = New System.Drawing.Point(178, 408)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(125, 44)
+        Me.Label40.TabIndex = 44
+        Me.Label40.Text = "celular:"
+        '
+        'txtEmailFuncionario
+        '
+        Me.txtEmailFuncionario.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmailFuncionario.Location = New System.Drawing.Point(186, 299)
+        Me.txtEmailFuncionario.Name = "txtEmailFuncionario"
+        Me.txtEmailFuncionario.Size = New System.Drawing.Size(648, 35)
+        Me.txtEmailFuncionario.TabIndex = 43
+        '
+        'Label41
+        '
+        Me.Label41.AutoSize = True
+        Me.Label41.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label41.Location = New System.Drawing.Point(178, 258)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(106, 44)
+        Me.Label41.TabIndex = 42
+        Me.Label41.Text = "email:"
+        '
+        'btnCancelFuncionario
+        '
+        Me.btnCancelFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancelFuncionario.Font = New System.Drawing.Font("Raleway Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelFuncionario.Location = New System.Drawing.Point(621, 629)
+        Me.btnCancelFuncionario.Name = "btnCancelFuncionario"
+        Me.btnCancelFuncionario.Size = New System.Drawing.Size(213, 57)
+        Me.btnCancelFuncionario.TabIndex = 41
+        Me.btnCancelFuncionario.Text = "CANCELAR"
+        Me.btnCancelFuncionario.UseVisualStyleBackColor = True
+        '
+        'btnCommitFuncionario
+        '
+        Me.btnCommitFuncionario.FlatAppearance.BorderSize = 0
+        Me.btnCommitFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCommitFuncionario.Font = New System.Drawing.Font("Raleway Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCommitFuncionario.Location = New System.Drawing.Point(186, 629)
+        Me.btnCommitFuncionario.Name = "btnCommitFuncionario"
+        Me.btnCommitFuncionario.Size = New System.Drawing.Size(213, 57)
+        Me.btnCommitFuncionario.TabIndex = 40
+        Me.btnCommitFuncionario.Text = "SALVAR"
+        Me.btnCommitFuncionario.UseVisualStyleBackColor = True
+        '
+        'Label43
+        '
+        Me.Label43.AutoSize = True
+        Me.Label43.Font = New System.Drawing.Font("Raleway", 24.0!)
+        Me.Label43.Location = New System.Drawing.Point(430, 10)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(261, 44)
+        Me.Label43.TabIndex = 23
+        Me.Label43.Text = "FUNCIONÁRIOS"
+        Me.Label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txtNomeFuncionario
+        '
+        Me.txtNomeFuncionario.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNomeFuncionario.Location = New System.Drawing.Point(186, 223)
+        Me.txtNomeFuncionario.Name = "txtNomeFuncionario"
+        Me.txtNomeFuncionario.Size = New System.Drawing.Size(278, 35)
+        Me.txtNomeFuncionario.TabIndex = 25
+        '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label44.Location = New System.Drawing.Point(178, 182)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(111, 44)
+        Me.Label44.TabIndex = 24
+        Me.Label44.Text = "nome:"
+        '
+        'Panel6
+        '
+        Me.Panel6.BackColor = System.Drawing.Color.Black
+        Me.Panel6.Location = New System.Drawing.Point(0, 61)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(1000, 2)
+        Me.Panel6.TabIndex = 22
+        '
+        'Label42
+        '
+        Me.Label42.AutoSize = True
+        Me.Label42.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label42.Location = New System.Drawing.Point(548, 184)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(126, 44)
+        Me.Label42.TabIndex = 34
+        Me.Label42.Text = "s.nome"
+        '
+        'txtSobreFuncionario
+        '
+        Me.txtSobreFuncionario.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSobreFuncionario.Location = New System.Drawing.Point(556, 225)
+        Me.txtSobreFuncionario.Name = "txtSobreFuncionario"
+        Me.txtSobreFuncionario.Size = New System.Drawing.Size(278, 35)
+        Me.txtSobreFuncionario.TabIndex = 35
+        '
         'FormCadaster
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1000, 700)
+        Me.Controls.Add(Me.panelFuncionario)
+        Me.Controls.Add(Me.panelCliente)
         Me.Controls.Add(Me.panelDesigner)
         Me.Controls.Add(Me.panelMovel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -476,7 +992,11 @@ Partial Class FormCadaster
         Me.panelDesigner.ResumeLayout(False)
         Me.panelDesigner.PerformLayout()
         CType(Me.picboxImageUploadDesigner, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panelCliente.ResumeLayout(False)
+        Me.panelCliente.PerformLayout()
         CType(Me.CategoriaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panelFuncionario.ResumeLayout(False)
+        Me.panelFuncionario.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -520,4 +1040,50 @@ Partial Class FormCadaster
     Friend WithEvents Panel2 As Panel
     Friend WithEvents CategoriaBindingSource As BindingSource
     Friend WithEvents CategoriaTableAdapter As arquivovivomvDataSetTableAdapters.categoriaTableAdapter
+    Friend WithEvents panelCliente As Panel
+    Friend WithEvents txtCidadeCliente As TextBox
+    Friend WithEvents Label20 As Label
+    Friend WithEvents txtEstadoCliente As TextBox
+    Friend WithEvents Label21 As Label
+    Friend WithEvents txtFixCliente As TextBox
+    Friend WithEvents Label13 As Label
+    Friend WithEvents txtCelCliente As TextBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents txtEmailCliente As TextBox
+    Friend WithEvents Label19 As Label
+    Friend WithEvents btnCancelCliente As Button
+    Friend WithEvents btnCommitCliente As Button
+    Friend WithEvents txtSobreCliente As TextBox
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents txtNameCliente As TextBox
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents txtCepCliente As TextBox
+    Friend WithEvents Label22 As Label
+    Friend WithEvents txtBairroCliente As TextBox
+    Friend WithEvents Label24 As Label
+    Friend WithEvents txtRuaCliente As TextBox
+    Friend WithEvents Label23 As Label
+    Friend WithEvents txtCompleCliente As TextBox
+    Friend WithEvents Label25 As Label
+    Friend WithEvents txtNumResCliente As TextBox
+    Friend WithEvents Label26 As Label
+    Friend WithEvents panelFuncionario As Panel
+    Friend WithEvents txtSenhaFuncionario As TextBox
+    Friend WithEvents Label34 As Label
+    Friend WithEvents txtFixFuncionario As TextBox
+    Friend WithEvents Label39 As Label
+    Friend WithEvents txtCelFuncionario As TextBox
+    Friend WithEvents Label40 As Label
+    Friend WithEvents txtEmailFuncionario As TextBox
+    Friend WithEvents Label41 As Label
+    Friend WithEvents btnCancelFuncionario As Button
+    Friend WithEvents btnCommitFuncionario As Button
+    Friend WithEvents txtSobreFuncionario As TextBox
+    Friend WithEvents Label42 As Label
+    Friend WithEvents Label43 As Label
+    Friend WithEvents txtNomeFuncionario As TextBox
+    Friend WithEvents Label44 As Label
+    Friend WithEvents Panel6 As Panel
 End Class
