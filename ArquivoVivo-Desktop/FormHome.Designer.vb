@@ -22,10 +22,22 @@ Partial Class FormHome
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle49 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle50 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle51 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle52 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle53 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle54 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle55 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle56 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle57 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle58 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle59 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle60 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle61 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle62 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle63 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle64 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnHome = New System.Windows.Forms.PictureBox()
         Me.btnPedidos = New System.Windows.Forms.Button()
@@ -85,6 +97,7 @@ Partial Class FormHome
         Me.Label37 = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
         Me.panelHomeCliente = New System.Windows.Forms.Panel()
+        Me.RadioButton38 = New System.Windows.Forms.RadioButton()
         Me.btnCadasterCliente = New System.Windows.Forms.PictureBox()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.dtGridCliente = New System.Windows.Forms.DataGridView()
@@ -107,7 +120,7 @@ Partial Class FormHome
         Me.panelHomeMoveis = New System.Windows.Forms.Panel()
         Me.btnCadasterMovel = New System.Windows.Forms.PictureBox()
         Me.Panel27 = New System.Windows.Forms.Panel()
-        Me.Label54 = New System.Windows.Forms.Label()
+        Me.lblCountWithoutStorageMovel = New System.Windows.Forms.Label()
         Me.Label55 = New System.Windows.Forms.Label()
         Me.Panel17 = New System.Windows.Forms.Panel()
         Me.Panel18 = New System.Windows.Forms.Panel()
@@ -135,7 +148,7 @@ Partial Class FormHome
         Me.Label45 = New System.Windows.Forms.Label()
         Me.Label46 = New System.Windows.Forms.Label()
         Me.Label47 = New System.Windows.Forms.Label()
-        Me.DataGridView4 = New System.Windows.Forms.DataGridView()
+        Me.dtGridMovel = New System.Windows.Forms.DataGridView()
         Me.Label48 = New System.Windows.Forms.Label()
         Me.RadioButton17 = New System.Windows.Forms.RadioButton()
         Me.RadioButton18 = New System.Windows.Forms.RadioButton()
@@ -146,10 +159,10 @@ Partial Class FormHome
         Me.btnSearchMoveis = New System.Windows.Forms.PictureBox()
         Me.Label49 = New System.Windows.Forms.Label()
         Me.Panel25 = New System.Windows.Forms.Panel()
-        Me.Label50 = New System.Windows.Forms.Label()
+        Me.lblCountAllDataMovel = New System.Windows.Forms.Label()
         Me.Label51 = New System.Windows.Forms.Label()
         Me.Panel26 = New System.Windows.Forms.Panel()
-        Me.Label52 = New System.Windows.Forms.Label()
+        Me.lblCountCurrentMouthMovel = New System.Windows.Forms.Label()
         Me.Label53 = New System.Windows.Forms.Label()
         Me.panelHomeDesigners = New System.Windows.Forms.Panel()
         Me.btnCadasterDesigner = New System.Windows.Forms.PictureBox()
@@ -179,7 +192,7 @@ Partial Class FormHome
         Me.Label66 = New System.Windows.Forms.Label()
         Me.Label67 = New System.Windows.Forms.Label()
         Me.Label68 = New System.Windows.Forms.Label()
-        Me.DataGridView6 = New System.Windows.Forms.DataGridView()
+        Me.dtGridDesigner = New System.Windows.Forms.DataGridView()
         Me.Label69 = New System.Windows.Forms.Label()
         Me.RadioButton25 = New System.Windows.Forms.RadioButton()
         Me.RadioButton26 = New System.Windows.Forms.RadioButton()
@@ -190,7 +203,7 @@ Partial Class FormHome
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Label70 = New System.Windows.Forms.Label()
         Me.Panel38 = New System.Windows.Forms.Panel()
-        Me.Label73 = New System.Windows.Forms.Label()
+        Me.lblCountAllDataDesigner = New System.Windows.Forms.Label()
         Me.Label74 = New System.Windows.Forms.Label()
         Me.panelHomeFuncionarios = New System.Windows.Forms.Panel()
         Me.btnCadasterFuncionario = New System.Windows.Forms.PictureBox()
@@ -220,7 +233,7 @@ Partial Class FormHome
         Me.Label79 = New System.Windows.Forms.Label()
         Me.Label80 = New System.Windows.Forms.Label()
         Me.Label81 = New System.Windows.Forms.Label()
-        Me.DataGridView8 = New System.Windows.Forms.DataGridView()
+        Me.dtGridFuncionario = New System.Windows.Forms.DataGridView()
         Me.Label82 = New System.Windows.Forms.Label()
         Me.RadioButton34 = New System.Windows.Forms.RadioButton()
         Me.RadioButton35 = New System.Windows.Forms.RadioButton()
@@ -231,11 +244,10 @@ Partial Class FormHome
         Me.btnSearchFuncionarios = New System.Windows.Forms.PictureBox()
         Me.Label83 = New System.Windows.Forms.Label()
         Me.Panel45 = New System.Windows.Forms.Panel()
-        Me.Label84 = New System.Windows.Forms.Label()
+        Me.lblCountAllDataFuncionario = New System.Windows.Forms.Label()
         Me.Label85 = New System.Windows.Forms.Label()
         Me.btnMinimize = New System.Windows.Forms.PictureBox()
         Me.btnEnd = New System.Windows.Forms.PictureBox()
-        Me.RadioButton38 = New System.Windows.Forms.RadioButton()
         Me.Panel1.SuspendLayout()
         CType(Me.btnHome, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelMainPage.SuspendLayout()
@@ -269,7 +281,7 @@ Partial Class FormHome
         Me.Panel21.SuspendLayout()
         Me.Panel22.SuspendLayout()
         Me.Panel23.SuspendLayout()
-        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtGridMovel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel24.SuspendLayout()
         CType(Me.btnSearchMoveis, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel25.SuspendLayout()
@@ -283,7 +295,7 @@ Partial Class FormHome
         Me.Panel33.SuspendLayout()
         Me.Panel34.SuspendLayout()
         Me.Panel35.SuspendLayout()
-        CType(Me.DataGridView6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtGridDesigner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel36.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel38.SuspendLayout()
@@ -296,7 +308,7 @@ Partial Class FormHome
         Me.Panel41.SuspendLayout()
         Me.Panel42.SuspendLayout()
         Me.Panel43.SuspendLayout()
-        CType(Me.DataGridView8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtGridFuncionario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel44.SuspendLayout()
         CType(Me.btnSearchFuncionarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel45.SuspendLayout()
@@ -309,7 +321,7 @@ Partial Class FormHome
         Me.Panel1.BackColor = System.Drawing.Color.Black
         Me.Panel1.Controls.Add(Me.btnHome)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(264, 700)
         Me.Panel1.TabIndex = 0
@@ -318,7 +330,7 @@ Partial Class FormHome
         '
         Me.btnHome.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.logo_home
         Me.btnHome.Location = New System.Drawing.Point(56, 18)
-        Me.btnHome.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnHome.Margin = New System.Windows.Forms.Padding(2)
         Me.btnHome.Name = "btnHome"
         Me.btnHome.Size = New System.Drawing.Size(149, 148)
         Me.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -334,7 +346,7 @@ Partial Class FormHome
         Me.btnPedidos.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPedidos.ForeColor = System.Drawing.Color.White
         Me.btnPedidos.Location = New System.Drawing.Point(0, 209)
-        Me.btnPedidos.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.btnPedidos.Name = "btnPedidos"
         Me.btnPedidos.Size = New System.Drawing.Size(264, 57)
         Me.btnPedidos.TabIndex = 1
@@ -350,7 +362,7 @@ Partial Class FormHome
         Me.btnCliente.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCliente.ForeColor = System.Drawing.Color.White
         Me.btnCliente.Location = New System.Drawing.Point(0, 275)
-        Me.btnCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCliente.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCliente.Name = "btnCliente"
         Me.btnCliente.Size = New System.Drawing.Size(264, 57)
         Me.btnCliente.TabIndex = 2
@@ -366,7 +378,7 @@ Partial Class FormHome
         Me.btnMoveis.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMoveis.ForeColor = System.Drawing.Color.White
         Me.btnMoveis.Location = New System.Drawing.Point(0, 343)
-        Me.btnMoveis.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnMoveis.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMoveis.Name = "btnMoveis"
         Me.btnMoveis.Size = New System.Drawing.Size(264, 57)
         Me.btnMoveis.TabIndex = 3
@@ -382,7 +394,7 @@ Partial Class FormHome
         Me.btnDesigners.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDesigners.ForeColor = System.Drawing.Color.White
         Me.btnDesigners.Location = New System.Drawing.Point(0, 411)
-        Me.btnDesigners.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnDesigners.Margin = New System.Windows.Forms.Padding(2)
         Me.btnDesigners.Name = "btnDesigners"
         Me.btnDesigners.Size = New System.Drawing.Size(264, 57)
         Me.btnDesigners.TabIndex = 4
@@ -398,7 +410,7 @@ Partial Class FormHome
         Me.btnFuncionario.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnFuncionario.ForeColor = System.Drawing.Color.White
         Me.btnFuncionario.Location = New System.Drawing.Point(0, 480)
-        Me.btnFuncionario.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnFuncionario.Margin = New System.Windows.Forms.Padding(2)
         Me.btnFuncionario.Name = "btnFuncionario"
         Me.btnFuncionario.Size = New System.Drawing.Size(264, 57)
         Me.btnFuncionario.TabIndex = 5
@@ -415,7 +427,7 @@ Partial Class FormHome
         Me.panelMainPage.Controls.Add(Me.Panel4)
         Me.panelMainPage.Controls.Add(Me.Panel3)
         Me.panelMainPage.Location = New System.Drawing.Point(266, 48)
-        Me.panelMainPage.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.panelMainPage.Margin = New System.Windows.Forms.Padding(2)
         Me.panelMainPage.Name = "panelMainPage"
         Me.panelMainPage.Size = New System.Drawing.Size(730, 652)
         Me.panelMainPage.TabIndex = 14
@@ -427,7 +439,7 @@ Partial Class FormHome
         Me.Panel7.Controls.Add(Me.Label18)
         Me.Panel7.Controls.Add(Me.Label19)
         Me.Panel7.Location = New System.Drawing.Point(504, 339)
-        Me.Panel7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(182, 182)
         Me.Panel7.TabIndex = 18
@@ -475,7 +487,7 @@ Partial Class FormHome
         Me.Panel2.Controls.Add(Me.Label6)
         Me.Panel2.Controls.Add(Me.Label7)
         Me.Panel2.Location = New System.Drawing.Point(273, 84)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(182, 182)
         Me.Panel2.TabIndex = 16
@@ -523,7 +535,7 @@ Partial Class FormHome
         Me.Panel6.Controls.Add(Me.Label15)
         Me.Panel6.Controls.Add(Me.Label16)
         Me.Panel6.Location = New System.Drawing.Point(273, 339)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(182, 182)
         Me.Panel6.TabIndex = 17
@@ -581,7 +593,7 @@ Partial Class FormHome
         Me.Panel5.Controls.Add(Me.Label12)
         Me.Panel5.Controls.Add(Me.Label13)
         Me.Panel5.Location = New System.Drawing.Point(42, 339)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(182, 182)
         Me.Panel5.TabIndex = 17
@@ -629,7 +641,7 @@ Partial Class FormHome
         Me.Panel4.Controls.Add(Me.Label9)
         Me.Panel4.Controls.Add(Me.Label10)
         Me.Panel4.Location = New System.Drawing.Point(504, 84)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(182, 186)
         Me.Panel4.TabIndex = 17
@@ -677,7 +689,7 @@ Partial Class FormHome
         Me.Panel3.Controls.Add(Me.Label3)
         Me.Panel3.Controls.Add(Me.Label2)
         Me.Panel3.Location = New System.Drawing.Point(42, 84)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(182, 182)
         Me.Panel3.TabIndex = 15
@@ -733,8 +745,8 @@ Partial Class FormHome
         Me.panelHomePedidos.Controls.Add(Me.Panel10)
         Me.panelHomePedidos.Controls.Add(Me.Panel13)
         Me.panelHomePedidos.Controls.Add(Me.Panel14)
-        Me.panelHomePedidos.Location = New System.Drawing.Point(2660, 48)
-        Me.panelHomePedidos.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.panelHomePedidos.Location = New System.Drawing.Point(266, 48)
+        Me.panelHomePedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.panelHomePedidos.Name = "panelHomePedidos"
         Me.panelHomePedidos.Size = New System.Drawing.Size(730, 652)
         Me.panelHomePedidos.TabIndex = 15
@@ -743,7 +755,7 @@ Partial Class FormHome
         '
         Me.Panel9.BackColor = System.Drawing.Color.Black
         Me.Panel9.Location = New System.Drawing.Point(19, 57)
-        Me.Panel9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel9.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(705, 2)
         Me.Panel9.TabIndex = 19
@@ -752,7 +764,7 @@ Partial Class FormHome
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(19, 389)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(693, 250)
         Me.DataGridView1.TabIndex = 26
@@ -773,7 +785,7 @@ Partial Class FormHome
         Me.RadioButton5.AutoSize = True
         Me.RadioButton5.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton5.Location = New System.Drawing.Point(630, 127)
-        Me.RadioButton5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton5.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton5.Name = "RadioButton5"
         Me.RadioButton5.Size = New System.Drawing.Size(60, 26)
         Me.RadioButton5.TabIndex = 24
@@ -786,7 +798,7 @@ Partial Class FormHome
         Me.RadioButton4.AutoSize = True
         Me.RadioButton4.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton4.Location = New System.Drawing.Point(511, 127)
-        Me.RadioButton4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton4.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton4.Name = "RadioButton4"
         Me.RadioButton4.Size = New System.Drawing.Size(61, 26)
         Me.RadioButton4.TabIndex = 23
@@ -799,7 +811,7 @@ Partial Class FormHome
         Me.RadioButton3.AutoSize = True
         Me.RadioButton3.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton3.Location = New System.Drawing.Point(369, 127)
-        Me.RadioButton3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton3.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton3.Name = "RadioButton3"
         Me.RadioButton3.Size = New System.Drawing.Size(84, 26)
         Me.RadioButton3.TabIndex = 22
@@ -812,7 +824,7 @@ Partial Class FormHome
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton2.Location = New System.Drawing.Point(215, 127)
-        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(94, 26)
         Me.RadioButton2.TabIndex = 21
@@ -825,7 +837,7 @@ Partial Class FormHome
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton1.Location = New System.Drawing.Point(44, 125)
-        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(112, 26)
         Me.RadioButton1.TabIndex = 20
@@ -840,7 +852,7 @@ Partial Class FormHome
         Me.panelSearchPedidos.Controls.Add(Me.txtSearchPedidos)
         Me.panelSearchPedidos.Controls.Add(Me.PictureBox2)
         Me.panelSearchPedidos.Location = New System.Drawing.Point(42, 70)
-        Me.panelSearchPedidos.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.panelSearchPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.panelSearchPedidos.Name = "panelSearchPedidos"
         Me.panelSearchPedidos.Size = New System.Drawing.Size(651, 48)
         Me.panelSearchPedidos.TabIndex = 19
@@ -852,7 +864,7 @@ Partial Class FormHome
         Me.txtSearchPedidos.Font = New System.Drawing.Font("Arial", 16.0!)
         Me.txtSearchPedidos.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.txtSearchPedidos.Location = New System.Drawing.Point(47, 9)
-        Me.txtSearchPedidos.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtSearchPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSearchPedidos.Name = "txtSearchPedidos"
         Me.txtSearchPedidos.Size = New System.Drawing.Size(593, 25)
         Me.txtSearchPedidos.TabIndex = 21
@@ -862,7 +874,7 @@ Partial Class FormHome
         Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.PictureBox2.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
         Me.PictureBox2.Location = New System.Drawing.Point(7, 9)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -887,7 +899,7 @@ Partial Class FormHome
         Me.Panel10.Controls.Add(Me.Label24)
         Me.Panel10.Controls.Add(Me.Label25)
         Me.Panel10.Location = New System.Drawing.Point(278, 166)
-        Me.Panel10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel10.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel10.Name = "Panel10"
         Me.Panel10.Size = New System.Drawing.Size(182, 182)
         Me.Panel10.TabIndex = 16
@@ -935,7 +947,7 @@ Partial Class FormHome
         Me.Panel13.Controls.Add(Me.Label34)
         Me.Panel13.Controls.Add(Me.Label35)
         Me.Panel13.Location = New System.Drawing.Point(509, 166)
-        Me.Panel13.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel13.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel13.Name = "Panel13"
         Me.Panel13.Size = New System.Drawing.Size(182, 186)
         Me.Panel13.TabIndex = 17
@@ -983,7 +995,7 @@ Partial Class FormHome
         Me.Panel14.Controls.Add(Me.Label37)
         Me.Panel14.Controls.Add(Me.Label38)
         Me.Panel14.Location = New System.Drawing.Point(47, 166)
-        Me.Panel14.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel14.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel14.Name = "Panel14"
         Me.Panel14.Size = New System.Drawing.Size(182, 182)
         Me.Panel14.TabIndex = 15
@@ -1041,16 +1053,29 @@ Partial Class FormHome
         Me.panelHomeCliente.Controls.Add(Me.Panel15)
         Me.panelHomeCliente.Controls.Add(Me.Panel16)
         Me.panelHomeCliente.Location = New System.Drawing.Point(266, 48)
-        Me.panelHomeCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.panelHomeCliente.Margin = New System.Windows.Forms.Padding(2)
         Me.panelHomeCliente.Name = "panelHomeCliente"
         Me.panelHomeCliente.Size = New System.Drawing.Size(730, 652)
         Me.panelHomeCliente.TabIndex = 16
+        '
+        'RadioButton38
+        '
+        Me.RadioButton38.AutoSize = True
+        Me.RadioButton38.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.RadioButton38.Location = New System.Drawing.Point(516, 127)
+        Me.RadioButton38.Margin = New System.Windows.Forms.Padding(2)
+        Me.RadioButton38.Name = "RadioButton38"
+        Me.RadioButton38.Size = New System.Drawing.Size(59, 26)
+        Me.RadioButton38.TabIndex = 29
+        Me.RadioButton38.TabStop = True
+        Me.RadioButton38.Text = "CEP"
+        Me.RadioButton38.UseVisualStyleBackColor = True
         '
         'btnCadasterCliente
         '
         Me.btnCadasterCliente.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.btn_plus
         Me.btnCadasterCliente.Location = New System.Drawing.Point(681, 14)
-        Me.btnCadasterCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCadasterCliente.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCadasterCliente.Name = "btnCadasterCliente"
         Me.btnCadasterCliente.Size = New System.Drawing.Size(40, 41)
         Me.btnCadasterCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1061,7 +1086,7 @@ Partial Class FormHome
         '
         Me.Panel11.BackColor = System.Drawing.Color.Black
         Me.Panel11.Location = New System.Drawing.Point(19, 57)
-        Me.Panel11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel11.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(705, 2)
         Me.Panel11.TabIndex = 19
@@ -1070,44 +1095,44 @@ Partial Class FormHome
         '
         Me.dtGridCliente.AllowUserToAddRows = False
         Me.dtGridCliente.AllowUserToDeleteRows = False
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridCliente.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle49.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle49.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridCliente.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle49
         Me.dtGridCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Raleway Light", 12.0!)
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridCliente.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle50.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle50.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle50.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle50.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle50.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridCliente.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle50
         Me.dtGridCliente.ColumnHeadersHeight = 29
         Me.dtGridCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Raleway Light", 12.0!)
-        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridCliente.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle51.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle51.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle51.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle51.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle51.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle51.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridCliente.DefaultCellStyle = DataGridViewCellStyle51
         Me.dtGridCliente.EnableHeadersVisualStyles = False
         Me.dtGridCliente.Location = New System.Drawing.Point(19, 389)
-        Me.dtGridCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dtGridCliente.Margin = New System.Windows.Forms.Padding(2)
         Me.dtGridCliente.Name = "dtGridCliente"
         Me.dtGridCliente.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         Me.dtGridCliente.RowHeadersWidth = 20
         Me.dtGridCliente.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle8.NullValue = "(sem dados)"
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridCliente.RowsDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle52.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle52.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle52.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle52.NullValue = "(sem dados)"
+        DataGridViewCellStyle52.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle52.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridCliente.RowsDefaultCellStyle = DataGridViewCellStyle52
         Me.dtGridCliente.Size = New System.Drawing.Size(693, 250)
         Me.dtGridCliente.TabIndex = 26
         '
@@ -1127,7 +1152,7 @@ Partial Class FormHome
         Me.RadioButton6.AutoSize = True
         Me.RadioButton6.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton6.Location = New System.Drawing.Point(428, 126)
-        Me.RadioButton6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton6.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton6.Name = "RadioButton6"
         Me.RadioButton6.Size = New System.Drawing.Size(76, 26)
         Me.RadioButton6.TabIndex = 24
@@ -1140,7 +1165,7 @@ Partial Class FormHome
         Me.RadioButton7.AutoSize = True
         Me.RadioButton7.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton7.Location = New System.Drawing.Point(356, 126)
-        Me.RadioButton7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton7.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton7.Name = "RadioButton7"
         Me.RadioButton7.Size = New System.Drawing.Size(60, 26)
         Me.RadioButton7.TabIndex = 23
@@ -1153,7 +1178,7 @@ Partial Class FormHome
         Me.RadioButton8.AutoSize = True
         Me.RadioButton8.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton8.Location = New System.Drawing.Point(283, 126)
-        Me.RadioButton8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton8.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton8.Name = "RadioButton8"
         Me.RadioButton8.Size = New System.Drawing.Size(61, 26)
         Me.RadioButton8.TabIndex = 22
@@ -1166,7 +1191,7 @@ Partial Class FormHome
         Me.RadioButton9.AutoSize = True
         Me.RadioButton9.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton9.Location = New System.Drawing.Point(195, 126)
-        Me.RadioButton9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton9.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton9.Name = "RadioButton9"
         Me.RadioButton9.Size = New System.Drawing.Size(76, 26)
         Me.RadioButton9.TabIndex = 21
@@ -1179,7 +1204,7 @@ Partial Class FormHome
         Me.RadioButton10.AutoSize = True
         Me.RadioButton10.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton10.Location = New System.Drawing.Point(140, 126)
-        Me.RadioButton10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton10.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton10.Name = "RadioButton10"
         Me.RadioButton10.Size = New System.Drawing.Size(43, 26)
         Me.RadioButton10.TabIndex = 20
@@ -1193,7 +1218,7 @@ Partial Class FormHome
         Me.Panel12.Controls.Add(Me.txtSearchCliente)
         Me.Panel12.Controls.Add(Me.PictureBox1)
         Me.Panel12.Location = New System.Drawing.Point(42, 70)
-        Me.Panel12.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel12.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel12.Name = "Panel12"
         Me.Panel12.Size = New System.Drawing.Size(651, 48)
         Me.Panel12.TabIndex = 19
@@ -1205,7 +1230,7 @@ Partial Class FormHome
         Me.txtSearchCliente.Font = New System.Drawing.Font("Arial", 16.0!)
         Me.txtSearchCliente.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.txtSearchCliente.Location = New System.Drawing.Point(47, 14)
-        Me.txtSearchCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtSearchCliente.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSearchCliente.Name = "txtSearchCliente"
         Me.txtSearchCliente.Size = New System.Drawing.Size(593, 25)
         Me.txtSearchCliente.TabIndex = 21
@@ -1215,7 +1240,7 @@ Partial Class FormHome
         Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.PictureBox1.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
         Me.PictureBox1.Location = New System.Drawing.Point(7, 9)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1239,7 +1264,7 @@ Partial Class FormHome
         Me.Panel15.Controls.Add(Me.lblCountCurrentMouthCliente)
         Me.Panel15.Controls.Add(Me.Label29)
         Me.Panel15.Location = New System.Drawing.Point(161, 166)
-        Me.Panel15.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel15.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel15.Name = "Panel15"
         Me.Panel15.Size = New System.Drawing.Size(182, 182)
         Me.Panel15.TabIndex = 16
@@ -1253,7 +1278,7 @@ Partial Class FormHome
         Me.lblCountCurrentMouthCliente.Name = "lblCountCurrentMouthCliente"
         Me.lblCountCurrentMouthCliente.Size = New System.Drawing.Size(175, 84)
         Me.lblCountCurrentMouthCliente.TabIndex = 1
-        Me.lblCountCurrentMouthCliente.Text = "4"
+        Me.lblCountCurrentMouthCliente.Text = "0"
         Me.lblCountCurrentMouthCliente.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label29
@@ -1274,7 +1299,7 @@ Partial Class FormHome
         Me.Panel16.Controls.Add(Me.lblCountAllDataCliente)
         Me.Panel16.Controls.Add(Me.Label32)
         Me.Panel16.Location = New System.Drawing.Point(392, 166)
-        Me.Panel16.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel16.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel16.Name = "Panel16"
         Me.Panel16.Size = New System.Drawing.Size(182, 186)
         Me.Panel16.TabIndex = 17
@@ -1288,7 +1313,7 @@ Partial Class FormHome
         Me.lblCountAllDataCliente.Name = "lblCountAllDataCliente"
         Me.lblCountAllDataCliente.Size = New System.Drawing.Size(175, 84)
         Me.lblCountAllDataCliente.TabIndex = 1
-        Me.lblCountAllDataCliente.Text = "80"
+        Me.lblCountAllDataCliente.Text = "0"
         Me.lblCountAllDataCliente.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label32
@@ -1309,7 +1334,7 @@ Partial Class FormHome
         Me.panelHomeMoveis.Controls.Add(Me.Panel27)
         Me.panelHomeMoveis.Controls.Add(Me.Panel17)
         Me.panelHomeMoveis.Controls.Add(Me.Panel18)
-        Me.panelHomeMoveis.Controls.Add(Me.DataGridView4)
+        Me.panelHomeMoveis.Controls.Add(Me.dtGridMovel)
         Me.panelHomeMoveis.Controls.Add(Me.Label48)
         Me.panelHomeMoveis.Controls.Add(Me.RadioButton17)
         Me.panelHomeMoveis.Controls.Add(Me.RadioButton18)
@@ -1319,8 +1344,8 @@ Partial Class FormHome
         Me.panelHomeMoveis.Controls.Add(Me.Label49)
         Me.panelHomeMoveis.Controls.Add(Me.Panel25)
         Me.panelHomeMoveis.Controls.Add(Me.Panel26)
-        Me.panelHomeMoveis.Location = New System.Drawing.Point(2660, 48)
-        Me.panelHomeMoveis.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.panelHomeMoveis.Location = New System.Drawing.Point(266, 48)
+        Me.panelHomeMoveis.Margin = New System.Windows.Forms.Padding(2)
         Me.panelHomeMoveis.Name = "panelHomeMoveis"
         Me.panelHomeMoveis.Size = New System.Drawing.Size(730, 652)
         Me.panelHomeMoveis.TabIndex = 17
@@ -1329,7 +1354,7 @@ Partial Class FormHome
         '
         Me.btnCadasterMovel.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.btn_plus
         Me.btnCadasterMovel.Location = New System.Drawing.Point(681, 14)
-        Me.btnCadasterMovel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCadasterMovel.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCadasterMovel.Name = "btnCadasterMovel"
         Me.btnCadasterMovel.Size = New System.Drawing.Size(40, 41)
         Me.btnCadasterMovel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1339,25 +1364,25 @@ Partial Class FormHome
         'Panel27
         '
         Me.Panel27.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(113, Byte), Integer))
-        Me.Panel27.Controls.Add(Me.Label54)
+        Me.Panel27.Controls.Add(Me.lblCountWithoutStorageMovel)
         Me.Panel27.Controls.Add(Me.Label55)
         Me.Panel27.Location = New System.Drawing.Point(509, 166)
-        Me.Panel27.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel27.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel27.Name = "Panel27"
         Me.Panel27.Size = New System.Drawing.Size(184, 182)
         Me.Panel27.TabIndex = 17
         '
-        'Label54
+        'lblCountWithoutStorageMovel
         '
-        Me.Label54.Font = New System.Drawing.Font("Raleway Light", 40.0!)
-        Me.Label54.ForeColor = System.Drawing.Color.White
-        Me.Label54.Location = New System.Drawing.Point(2, 61)
-        Me.Label54.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label54.Name = "Label54"
-        Me.Label54.Size = New System.Drawing.Size(175, 84)
-        Me.Label54.TabIndex = 1
-        Me.Label54.Text = "4"
-        Me.Label54.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblCountWithoutStorageMovel.Font = New System.Drawing.Font("Raleway Light", 40.0!)
+        Me.lblCountWithoutStorageMovel.ForeColor = System.Drawing.Color.White
+        Me.lblCountWithoutStorageMovel.Location = New System.Drawing.Point(2, 61)
+        Me.lblCountWithoutStorageMovel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblCountWithoutStorageMovel.Name = "lblCountWithoutStorageMovel"
+        Me.lblCountWithoutStorageMovel.Size = New System.Drawing.Size(180, 84)
+        Me.lblCountWithoutStorageMovel.TabIndex = 1
+        Me.lblCountWithoutStorageMovel.Text = "0"
+        Me.lblCountWithoutStorageMovel.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label55
         '
@@ -1375,7 +1400,7 @@ Partial Class FormHome
         '
         Me.Panel17.BackColor = System.Drawing.Color.Black
         Me.Panel17.Location = New System.Drawing.Point(19, 57)
-        Me.Panel17.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel17.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel17.Name = "Panel17"
         Me.Panel17.Size = New System.Drawing.Size(705, 2)
         Me.Panel17.TabIndex = 19
@@ -1396,7 +1421,7 @@ Partial Class FormHome
         Me.Panel18.Controls.Add(Me.Panel22)
         Me.Panel18.Controls.Add(Me.Panel23)
         Me.Panel18.Location = New System.Drawing.Point(810, 245)
-        Me.Panel18.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel18.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel18.Name = "Panel18"
         Me.Panel18.Size = New System.Drawing.Size(730, 652)
         Me.Panel18.TabIndex = 15
@@ -1405,7 +1430,7 @@ Partial Class FormHome
         '
         Me.Panel19.BackColor = System.Drawing.Color.Black
         Me.Panel19.Location = New System.Drawing.Point(19, 57)
-        Me.Panel19.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel19.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel19.Name = "Panel19"
         Me.Panel19.Size = New System.Drawing.Size(705, 2)
         Me.Panel19.TabIndex = 19
@@ -1414,7 +1439,7 @@ Partial Class FormHome
         '
         Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView3.Location = New System.Drawing.Point(19, 389)
-        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView3.Name = "DataGridView3"
         Me.DataGridView3.Size = New System.Drawing.Size(693, 250)
         Me.DataGridView3.TabIndex = 26
@@ -1435,7 +1460,7 @@ Partial Class FormHome
         Me.RadioButton11.AutoSize = True
         Me.RadioButton11.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton11.Location = New System.Drawing.Point(630, 127)
-        Me.RadioButton11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton11.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton11.Name = "RadioButton11"
         Me.RadioButton11.Size = New System.Drawing.Size(60, 26)
         Me.RadioButton11.TabIndex = 24
@@ -1448,7 +1473,7 @@ Partial Class FormHome
         Me.RadioButton12.AutoSize = True
         Me.RadioButton12.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton12.Location = New System.Drawing.Point(511, 127)
-        Me.RadioButton12.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton12.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton12.Name = "RadioButton12"
         Me.RadioButton12.Size = New System.Drawing.Size(61, 26)
         Me.RadioButton12.TabIndex = 23
@@ -1461,7 +1486,7 @@ Partial Class FormHome
         Me.RadioButton13.AutoSize = True
         Me.RadioButton13.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton13.Location = New System.Drawing.Point(369, 127)
-        Me.RadioButton13.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton13.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton13.Name = "RadioButton13"
         Me.RadioButton13.Size = New System.Drawing.Size(84, 26)
         Me.RadioButton13.TabIndex = 22
@@ -1474,7 +1499,7 @@ Partial Class FormHome
         Me.RadioButton14.AutoSize = True
         Me.RadioButton14.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton14.Location = New System.Drawing.Point(215, 127)
-        Me.RadioButton14.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton14.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton14.Name = "RadioButton14"
         Me.RadioButton14.Size = New System.Drawing.Size(94, 26)
         Me.RadioButton14.TabIndex = 21
@@ -1487,7 +1512,7 @@ Partial Class FormHome
         Me.RadioButton15.AutoSize = True
         Me.RadioButton15.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton15.Location = New System.Drawing.Point(44, 125)
-        Me.RadioButton15.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton15.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton15.Name = "RadioButton15"
         Me.RadioButton15.Size = New System.Drawing.Size(112, 26)
         Me.RadioButton15.TabIndex = 20
@@ -1501,7 +1526,7 @@ Partial Class FormHome
         Me.Panel20.Controls.Add(Me.TextBox1)
         Me.Panel20.Controls.Add(Me.PictureBox3)
         Me.Panel20.Location = New System.Drawing.Point(42, 70)
-        Me.Panel20.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel20.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel20.Name = "Panel20"
         Me.Panel20.Size = New System.Drawing.Size(651, 48)
         Me.Panel20.TabIndex = 19
@@ -1513,7 +1538,7 @@ Partial Class FormHome
         Me.TextBox1.Font = New System.Drawing.Font("Raleway Light", 16.0!)
         Me.TextBox1.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.TextBox1.Location = New System.Drawing.Point(47, 9)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(593, 26)
         Me.TextBox1.TabIndex = 21
@@ -1523,7 +1548,7 @@ Partial Class FormHome
         Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.PictureBox3.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
         Me.PictureBox3.Location = New System.Drawing.Point(7, 9)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1548,7 +1573,7 @@ Partial Class FormHome
         Me.Panel21.Controls.Add(Me.Label40)
         Me.Panel21.Controls.Add(Me.Label41)
         Me.Panel21.Location = New System.Drawing.Point(278, 166)
-        Me.Panel21.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel21.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel21.Name = "Panel21"
         Me.Panel21.Size = New System.Drawing.Size(182, 182)
         Me.Panel21.TabIndex = 16
@@ -1596,7 +1621,7 @@ Partial Class FormHome
         Me.Panel22.Controls.Add(Me.Label43)
         Me.Panel22.Controls.Add(Me.Label44)
         Me.Panel22.Location = New System.Drawing.Point(509, 166)
-        Me.Panel22.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel22.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel22.Name = "Panel22"
         Me.Panel22.Size = New System.Drawing.Size(182, 186)
         Me.Panel22.TabIndex = 17
@@ -1644,7 +1669,7 @@ Partial Class FormHome
         Me.Panel23.Controls.Add(Me.Label46)
         Me.Panel23.Controls.Add(Me.Label47)
         Me.Panel23.Location = New System.Drawing.Point(47, 166)
-        Me.Panel23.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel23.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel23.Name = "Panel23"
         Me.Panel23.Size = New System.Drawing.Size(182, 182)
         Me.Panel23.TabIndex = 15
@@ -1685,14 +1710,53 @@ Partial Class FormHome
         Me.Label47.Text = "LUCRO SEMANAL"
         Me.Label47.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'DataGridView4
+        'dtGridMovel
         '
-        Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView4.Location = New System.Drawing.Point(19, 389)
-        Me.DataGridView4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.DataGridView4.Name = "DataGridView4"
-        Me.DataGridView4.Size = New System.Drawing.Size(693, 250)
-        Me.DataGridView4.TabIndex = 26
+        Me.dtGridMovel.AllowUserToAddRows = False
+        Me.dtGridMovel.AllowUserToDeleteRows = False
+        Me.dtGridMovel.AllowUserToResizeRows = False
+        Me.dtGridMovel.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        DataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle53.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle53.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        DataGridViewCellStyle53.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle53.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle53.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridMovel.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle53
+        Me.dtGridMovel.ColumnHeadersHeight = 29
+        Me.dtGridMovel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        DataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle54.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle54.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        DataGridViewCellStyle54.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle54.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle54.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridMovel.DefaultCellStyle = DataGridViewCellStyle54
+        Me.dtGridMovel.EnableHeadersVisualStyles = False
+        Me.dtGridMovel.Location = New System.Drawing.Point(19, 389)
+        Me.dtGridMovel.Margin = New System.Windows.Forms.Padding(2)
+        Me.dtGridMovel.Name = "dtGridMovel"
+        Me.dtGridMovel.ReadOnly = True
+        DataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle55.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle55.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        DataGridViewCellStyle55.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle55.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle55.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle55.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridMovel.RowHeadersDefaultCellStyle = DataGridViewCellStyle55
+        DataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle56.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle56.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle56.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle56.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle56.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle56.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridMovel.RowsDefaultCellStyle = DataGridViewCellStyle56
+        Me.dtGridMovel.Size = New System.Drawing.Size(693, 250)
+        Me.dtGridMovel.TabIndex = 26
         '
         'Label48
         '
@@ -1710,7 +1774,7 @@ Partial Class FormHome
         Me.RadioButton17.AutoSize = True
         Me.RadioButton17.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton17.Location = New System.Drawing.Point(483, 127)
-        Me.RadioButton17.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton17.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton17.Name = "RadioButton17"
         Me.RadioButton17.Size = New System.Drawing.Size(117, 26)
         Me.RadioButton17.TabIndex = 23
@@ -1723,7 +1787,7 @@ Partial Class FormHome
         Me.RadioButton18.AutoSize = True
         Me.RadioButton18.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton18.Location = New System.Drawing.Point(334, 127)
-        Me.RadioButton18.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton18.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton18.Name = "RadioButton18"
         Me.RadioButton18.Size = New System.Drawing.Size(106, 26)
         Me.RadioButton18.TabIndex = 22
@@ -1736,7 +1800,7 @@ Partial Class FormHome
         Me.RadioButton19.AutoSize = True
         Me.RadioButton19.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton19.Location = New System.Drawing.Point(205, 127)
-        Me.RadioButton19.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton19.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton19.Name = "RadioButton19"
         Me.RadioButton19.Size = New System.Drawing.Size(84, 26)
         Me.RadioButton19.TabIndex = 21
@@ -1749,7 +1813,7 @@ Partial Class FormHome
         Me.RadioButton20.AutoSize = True
         Me.RadioButton20.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton20.Location = New System.Drawing.Point(119, 125)
-        Me.RadioButton20.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton20.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton20.Name = "RadioButton20"
         Me.RadioButton20.Size = New System.Drawing.Size(43, 26)
         Me.RadioButton20.TabIndex = 20
@@ -1763,7 +1827,7 @@ Partial Class FormHome
         Me.Panel24.Controls.Add(Me.txtSearchMoveis)
         Me.Panel24.Controls.Add(Me.btnSearchMoveis)
         Me.Panel24.Location = New System.Drawing.Point(42, 70)
-        Me.Panel24.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel24.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel24.Name = "Panel24"
         Me.Panel24.Size = New System.Drawing.Size(651, 48)
         Me.Panel24.TabIndex = 19
@@ -1774,8 +1838,8 @@ Partial Class FormHome
         Me.txtSearchMoveis.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtSearchMoveis.Font = New System.Drawing.Font("Arial", 16.0!)
         Me.txtSearchMoveis.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.txtSearchMoveis.Location = New System.Drawing.Point(47, 9)
-        Me.txtSearchMoveis.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtSearchMoveis.Location = New System.Drawing.Point(47, 13)
+        Me.txtSearchMoveis.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSearchMoveis.Name = "txtSearchMoveis"
         Me.txtSearchMoveis.Size = New System.Drawing.Size(593, 25)
         Me.txtSearchMoveis.TabIndex = 21
@@ -1785,7 +1849,7 @@ Partial Class FormHome
         Me.btnSearchMoveis.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.btnSearchMoveis.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
         Me.btnSearchMoveis.Location = New System.Drawing.Point(7, 9)
-        Me.btnSearchMoveis.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnSearchMoveis.Margin = New System.Windows.Forms.Padding(2)
         Me.btnSearchMoveis.Name = "btnSearchMoveis"
         Me.btnSearchMoveis.Size = New System.Drawing.Size(30, 30)
         Me.btnSearchMoveis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1806,25 +1870,25 @@ Partial Class FormHome
         'Panel25
         '
         Me.Panel25.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Panel25.Controls.Add(Me.Label50)
+        Me.Panel25.Controls.Add(Me.lblCountAllDataMovel)
         Me.Panel25.Controls.Add(Me.Label51)
         Me.Panel25.Location = New System.Drawing.Point(47, 166)
-        Me.Panel25.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel25.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel25.Name = "Panel25"
         Me.Panel25.Size = New System.Drawing.Size(184, 182)
         Me.Panel25.TabIndex = 16
         '
-        'Label50
+        'lblCountAllDataMovel
         '
-        Me.Label50.Font = New System.Drawing.Font("Raleway Light", 40.0!)
-        Me.Label50.ForeColor = System.Drawing.Color.White
-        Me.Label50.Location = New System.Drawing.Point(2, 61)
-        Me.Label50.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label50.Name = "Label50"
-        Me.Label50.Size = New System.Drawing.Size(175, 84)
-        Me.Label50.TabIndex = 1
-        Me.Label50.Text = "4"
-        Me.Label50.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblCountAllDataMovel.Font = New System.Drawing.Font("Raleway Light", 40.0!)
+        Me.lblCountAllDataMovel.ForeColor = System.Drawing.Color.White
+        Me.lblCountAllDataMovel.Location = New System.Drawing.Point(2, 61)
+        Me.lblCountAllDataMovel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblCountAllDataMovel.Name = "lblCountAllDataMovel"
+        Me.lblCountAllDataMovel.Size = New System.Drawing.Size(182, 84)
+        Me.lblCountAllDataMovel.TabIndex = 1
+        Me.lblCountAllDataMovel.Text = "0"
+        Me.lblCountAllDataMovel.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label51
         '
@@ -1841,25 +1905,25 @@ Partial Class FormHome
         'Panel26
         '
         Me.Panel26.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(76, Byte), Integer), CType(CType(76, Byte), Integer))
-        Me.Panel26.Controls.Add(Me.Label52)
+        Me.Panel26.Controls.Add(Me.lblCountCurrentMouthMovel)
         Me.Panel26.Controls.Add(Me.Label53)
         Me.Panel26.Location = New System.Drawing.Point(278, 166)
-        Me.Panel26.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel26.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel26.Name = "Panel26"
         Me.Panel26.Size = New System.Drawing.Size(184, 182)
         Me.Panel26.TabIndex = 17
         '
-        'Label52
+        'lblCountCurrentMouthMovel
         '
-        Me.Label52.Font = New System.Drawing.Font("Raleway Light", 40.0!)
-        Me.Label52.ForeColor = System.Drawing.Color.White
-        Me.Label52.Location = New System.Drawing.Point(2, 61)
-        Me.Label52.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(175, 84)
-        Me.Label52.TabIndex = 1
-        Me.Label52.Text = "80"
-        Me.Label52.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblCountCurrentMouthMovel.Font = New System.Drawing.Font("Raleway Light", 40.0!)
+        Me.lblCountCurrentMouthMovel.ForeColor = System.Drawing.Color.White
+        Me.lblCountCurrentMouthMovel.Location = New System.Drawing.Point(2, 61)
+        Me.lblCountCurrentMouthMovel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblCountCurrentMouthMovel.Name = "lblCountCurrentMouthMovel"
+        Me.lblCountCurrentMouthMovel.Size = New System.Drawing.Size(182, 84)
+        Me.lblCountCurrentMouthMovel.TabIndex = 1
+        Me.lblCountCurrentMouthMovel.Text = "0"
+        Me.lblCountCurrentMouthMovel.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label53
         '
@@ -1878,7 +1942,7 @@ Partial Class FormHome
         Me.panelHomeDesigners.Controls.Add(Me.btnCadasterDesigner)
         Me.panelHomeDesigners.Controls.Add(Me.Panel29)
         Me.panelHomeDesigners.Controls.Add(Me.Panel30)
-        Me.panelHomeDesigners.Controls.Add(Me.DataGridView6)
+        Me.panelHomeDesigners.Controls.Add(Me.dtGridDesigner)
         Me.panelHomeDesigners.Controls.Add(Me.Label69)
         Me.panelHomeDesigners.Controls.Add(Me.RadioButton25)
         Me.panelHomeDesigners.Controls.Add(Me.RadioButton26)
@@ -1887,8 +1951,8 @@ Partial Class FormHome
         Me.panelHomeDesigners.Controls.Add(Me.Panel36)
         Me.panelHomeDesigners.Controls.Add(Me.Label70)
         Me.panelHomeDesigners.Controls.Add(Me.Panel38)
-        Me.panelHomeDesigners.Location = New System.Drawing.Point(2660, 48)
-        Me.panelHomeDesigners.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.panelHomeDesigners.Location = New System.Drawing.Point(266, 48)
+        Me.panelHomeDesigners.Margin = New System.Windows.Forms.Padding(2)
         Me.panelHomeDesigners.Name = "panelHomeDesigners"
         Me.panelHomeDesigners.Size = New System.Drawing.Size(730, 652)
         Me.panelHomeDesigners.TabIndex = 18
@@ -1897,7 +1961,7 @@ Partial Class FormHome
         '
         Me.btnCadasterDesigner.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.btn_plus
         Me.btnCadasterDesigner.Location = New System.Drawing.Point(681, 14)
-        Me.btnCadasterDesigner.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCadasterDesigner.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCadasterDesigner.Name = "btnCadasterDesigner"
         Me.btnCadasterDesigner.Size = New System.Drawing.Size(40, 41)
         Me.btnCadasterDesigner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1908,7 +1972,7 @@ Partial Class FormHome
         '
         Me.Panel29.BackColor = System.Drawing.Color.Black
         Me.Panel29.Location = New System.Drawing.Point(19, 57)
-        Me.Panel29.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel29.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel29.Name = "Panel29"
         Me.Panel29.Size = New System.Drawing.Size(705, 2)
         Me.Panel29.TabIndex = 19
@@ -1929,7 +1993,7 @@ Partial Class FormHome
         Me.Panel30.Controls.Add(Me.Panel34)
         Me.Panel30.Controls.Add(Me.Panel35)
         Me.Panel30.Location = New System.Drawing.Point(810, 245)
-        Me.Panel30.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel30.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel30.Name = "Panel30"
         Me.Panel30.Size = New System.Drawing.Size(730, 652)
         Me.Panel30.TabIndex = 15
@@ -1938,7 +2002,7 @@ Partial Class FormHome
         '
         Me.Panel31.BackColor = System.Drawing.Color.Black
         Me.Panel31.Location = New System.Drawing.Point(19, 57)
-        Me.Panel31.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel31.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel31.Name = "Panel31"
         Me.Panel31.Size = New System.Drawing.Size(705, 2)
         Me.Panel31.TabIndex = 19
@@ -1947,7 +2011,7 @@ Partial Class FormHome
         '
         Me.DataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView5.Location = New System.Drawing.Point(19, 389)
-        Me.DataGridView5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView5.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView5.Name = "DataGridView5"
         Me.DataGridView5.Size = New System.Drawing.Size(693, 250)
         Me.DataGridView5.TabIndex = 26
@@ -1968,7 +2032,7 @@ Partial Class FormHome
         Me.RadioButton16.AutoSize = True
         Me.RadioButton16.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton16.Location = New System.Drawing.Point(630, 127)
-        Me.RadioButton16.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton16.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton16.Name = "RadioButton16"
         Me.RadioButton16.Size = New System.Drawing.Size(60, 26)
         Me.RadioButton16.TabIndex = 24
@@ -1981,7 +2045,7 @@ Partial Class FormHome
         Me.RadioButton21.AutoSize = True
         Me.RadioButton21.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton21.Location = New System.Drawing.Point(511, 127)
-        Me.RadioButton21.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton21.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton21.Name = "RadioButton21"
         Me.RadioButton21.Size = New System.Drawing.Size(61, 26)
         Me.RadioButton21.TabIndex = 23
@@ -1994,7 +2058,7 @@ Partial Class FormHome
         Me.RadioButton22.AutoSize = True
         Me.RadioButton22.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton22.Location = New System.Drawing.Point(369, 127)
-        Me.RadioButton22.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton22.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton22.Name = "RadioButton22"
         Me.RadioButton22.Size = New System.Drawing.Size(84, 26)
         Me.RadioButton22.TabIndex = 22
@@ -2007,7 +2071,7 @@ Partial Class FormHome
         Me.RadioButton23.AutoSize = True
         Me.RadioButton23.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton23.Location = New System.Drawing.Point(215, 127)
-        Me.RadioButton23.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton23.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton23.Name = "RadioButton23"
         Me.RadioButton23.Size = New System.Drawing.Size(94, 26)
         Me.RadioButton23.TabIndex = 21
@@ -2020,7 +2084,7 @@ Partial Class FormHome
         Me.RadioButton24.AutoSize = True
         Me.RadioButton24.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton24.Location = New System.Drawing.Point(44, 125)
-        Me.RadioButton24.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton24.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton24.Name = "RadioButton24"
         Me.RadioButton24.Size = New System.Drawing.Size(112, 26)
         Me.RadioButton24.TabIndex = 20
@@ -2034,7 +2098,7 @@ Partial Class FormHome
         Me.Panel32.Controls.Add(Me.TextBox2)
         Me.Panel32.Controls.Add(Me.PictureBox4)
         Me.Panel32.Location = New System.Drawing.Point(42, 70)
-        Me.Panel32.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel32.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel32.Name = "Panel32"
         Me.Panel32.Size = New System.Drawing.Size(651, 48)
         Me.Panel32.TabIndex = 19
@@ -2046,7 +2110,7 @@ Partial Class FormHome
         Me.TextBox2.Font = New System.Drawing.Font("Raleway Light", 16.0!)
         Me.TextBox2.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.TextBox2.Location = New System.Drawing.Point(47, 9)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(593, 26)
         Me.TextBox2.TabIndex = 21
@@ -2056,7 +2120,7 @@ Partial Class FormHome
         Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.PictureBox4.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
         Me.PictureBox4.Location = New System.Drawing.Point(7, 9)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -2081,7 +2145,7 @@ Partial Class FormHome
         Me.Panel33.Controls.Add(Me.Label61)
         Me.Panel33.Controls.Add(Me.Label62)
         Me.Panel33.Location = New System.Drawing.Point(278, 166)
-        Me.Panel33.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel33.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel33.Name = "Panel33"
         Me.Panel33.Size = New System.Drawing.Size(182, 182)
         Me.Panel33.TabIndex = 16
@@ -2129,7 +2193,7 @@ Partial Class FormHome
         Me.Panel34.Controls.Add(Me.Label64)
         Me.Panel34.Controls.Add(Me.Label65)
         Me.Panel34.Location = New System.Drawing.Point(509, 166)
-        Me.Panel34.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel34.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel34.Name = "Panel34"
         Me.Panel34.Size = New System.Drawing.Size(182, 186)
         Me.Panel34.TabIndex = 17
@@ -2177,7 +2241,7 @@ Partial Class FormHome
         Me.Panel35.Controls.Add(Me.Label67)
         Me.Panel35.Controls.Add(Me.Label68)
         Me.Panel35.Location = New System.Drawing.Point(47, 166)
-        Me.Panel35.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel35.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel35.Name = "Panel35"
         Me.Panel35.Size = New System.Drawing.Size(182, 182)
         Me.Panel35.TabIndex = 15
@@ -2218,14 +2282,54 @@ Partial Class FormHome
         Me.Label68.Text = "LUCRO SEMANAL"
         Me.Label68.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'DataGridView6
+        'dtGridDesigner
         '
-        Me.DataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView6.Location = New System.Drawing.Point(19, 389)
-        Me.DataGridView6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.DataGridView6.Name = "DataGridView6"
-        Me.DataGridView6.Size = New System.Drawing.Size(693, 250)
-        Me.DataGridView6.TabIndex = 26
+        Me.dtGridDesigner.AllowUserToAddRows = False
+        Me.dtGridDesigner.AllowUserToDeleteRows = False
+        Me.dtGridDesigner.AllowUserToResizeRows = False
+        Me.dtGridDesigner.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        DataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle57.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle57.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        DataGridViewCellStyle57.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle57.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle57.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle57.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridDesigner.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle57
+        Me.dtGridDesigner.ColumnHeadersHeight = 29
+        Me.dtGridDesigner.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        DataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle58.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle58.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        DataGridViewCellStyle58.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle58.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle58.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle58.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridDesigner.DefaultCellStyle = DataGridViewCellStyle58
+        Me.dtGridDesigner.EnableHeadersVisualStyles = False
+        Me.dtGridDesigner.Location = New System.Drawing.Point(19, 389)
+        Me.dtGridDesigner.Margin = New System.Windows.Forms.Padding(2)
+        Me.dtGridDesigner.Name = "dtGridDesigner"
+        DataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle59.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle59.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        DataGridViewCellStyle59.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle59.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle59.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle59.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridDesigner.RowHeadersDefaultCellStyle = DataGridViewCellStyle59
+        Me.dtGridDesigner.RowHeadersWidth = 20
+        Me.dtGridDesigner.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        DataGridViewCellStyle60.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle60.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle60.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle60.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle60.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle60.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle60.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridDesigner.RowsDefaultCellStyle = DataGridViewCellStyle60
+        Me.dtGridDesigner.Size = New System.Drawing.Size(693, 250)
+        Me.dtGridDesigner.TabIndex = 26
         '
         'Label69
         '
@@ -2243,7 +2347,7 @@ Partial Class FormHome
         Me.RadioButton25.AutoSize = True
         Me.RadioButton25.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton25.Location = New System.Drawing.Point(483, 127)
-        Me.RadioButton25.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton25.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton25.Name = "RadioButton25"
         Me.RadioButton25.Size = New System.Drawing.Size(129, 26)
         Me.RadioButton25.TabIndex = 23
@@ -2256,7 +2360,7 @@ Partial Class FormHome
         Me.RadioButton26.AutoSize = True
         Me.RadioButton26.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton26.Location = New System.Drawing.Point(327, 127)
-        Me.RadioButton26.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton26.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton26.Name = "RadioButton26"
         Me.RadioButton26.Size = New System.Drawing.Size(112, 26)
         Me.RadioButton26.TabIndex = 22
@@ -2269,7 +2373,7 @@ Partial Class FormHome
         Me.RadioButton27.AutoSize = True
         Me.RadioButton27.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton27.Location = New System.Drawing.Point(208, 127)
-        Me.RadioButton27.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton27.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton27.Name = "RadioButton27"
         Me.RadioButton27.Size = New System.Drawing.Size(76, 26)
         Me.RadioButton27.TabIndex = 21
@@ -2282,7 +2386,7 @@ Partial Class FormHome
         Me.RadioButton28.AutoSize = True
         Me.RadioButton28.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton28.Location = New System.Drawing.Point(121, 125)
-        Me.RadioButton28.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton28.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton28.Name = "RadioButton28"
         Me.RadioButton28.Size = New System.Drawing.Size(43, 26)
         Me.RadioButton28.TabIndex = 20
@@ -2296,7 +2400,7 @@ Partial Class FormHome
         Me.Panel36.Controls.Add(Me.txtSearchDesigners)
         Me.Panel36.Controls.Add(Me.PictureBox5)
         Me.Panel36.Location = New System.Drawing.Point(42, 70)
-        Me.Panel36.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel36.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel36.Name = "Panel36"
         Me.Panel36.Size = New System.Drawing.Size(651, 48)
         Me.Panel36.TabIndex = 19
@@ -2307,8 +2411,8 @@ Partial Class FormHome
         Me.txtSearchDesigners.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtSearchDesigners.Font = New System.Drawing.Font("Arial", 16.0!)
         Me.txtSearchDesigners.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.txtSearchDesigners.Location = New System.Drawing.Point(47, 9)
-        Me.txtSearchDesigners.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtSearchDesigners.Location = New System.Drawing.Point(47, 13)
+        Me.txtSearchDesigners.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSearchDesigners.Name = "txtSearchDesigners"
         Me.txtSearchDesigners.Size = New System.Drawing.Size(593, 25)
         Me.txtSearchDesigners.TabIndex = 21
@@ -2318,7 +2422,7 @@ Partial Class FormHome
         Me.PictureBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.PictureBox5.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
         Me.PictureBox5.Location = New System.Drawing.Point(7, 9)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -2339,25 +2443,25 @@ Partial Class FormHome
         'Panel38
         '
         Me.Panel38.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(79, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Panel38.Controls.Add(Me.Label73)
+        Me.Panel38.Controls.Add(Me.lblCountAllDataDesigner)
         Me.Panel38.Controls.Add(Me.Label74)
         Me.Panel38.Location = New System.Drawing.Point(278, 166)
-        Me.Panel38.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel38.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel38.Name = "Panel38"
         Me.Panel38.Size = New System.Drawing.Size(184, 182)
         Me.Panel38.TabIndex = 17
         '
-        'Label73
+        'lblCountAllDataDesigner
         '
-        Me.Label73.Font = New System.Drawing.Font("Raleway Light", 40.0!)
-        Me.Label73.ForeColor = System.Drawing.Color.White
-        Me.Label73.Location = New System.Drawing.Point(2, 61)
-        Me.Label73.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label73.Name = "Label73"
-        Me.Label73.Size = New System.Drawing.Size(175, 84)
-        Me.Label73.TabIndex = 1
-        Me.Label73.Text = "80"
-        Me.Label73.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblCountAllDataDesigner.Font = New System.Drawing.Font("Raleway Light", 40.0!)
+        Me.lblCountAllDataDesigner.ForeColor = System.Drawing.Color.White
+        Me.lblCountAllDataDesigner.Location = New System.Drawing.Point(2, 61)
+        Me.lblCountAllDataDesigner.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblCountAllDataDesigner.Name = "lblCountAllDataDesigner"
+        Me.lblCountAllDataDesigner.Size = New System.Drawing.Size(175, 84)
+        Me.lblCountAllDataDesigner.TabIndex = 1
+        Me.lblCountAllDataDesigner.Text = "0"
+        Me.lblCountAllDataDesigner.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label74
         '
@@ -2376,7 +2480,7 @@ Partial Class FormHome
         Me.panelHomeFuncionarios.Controls.Add(Me.btnCadasterFuncionario)
         Me.panelHomeFuncionarios.Controls.Add(Me.Panel28)
         Me.panelHomeFuncionarios.Controls.Add(Me.Panel37)
-        Me.panelHomeFuncionarios.Controls.Add(Me.DataGridView8)
+        Me.panelHomeFuncionarios.Controls.Add(Me.dtGridFuncionario)
         Me.panelHomeFuncionarios.Controls.Add(Me.Label82)
         Me.panelHomeFuncionarios.Controls.Add(Me.RadioButton34)
         Me.panelHomeFuncionarios.Controls.Add(Me.RadioButton35)
@@ -2385,8 +2489,8 @@ Partial Class FormHome
         Me.panelHomeFuncionarios.Controls.Add(Me.Panel44)
         Me.panelHomeFuncionarios.Controls.Add(Me.Label83)
         Me.panelHomeFuncionarios.Controls.Add(Me.Panel45)
-        Me.panelHomeFuncionarios.Location = New System.Drawing.Point(2660, 48)
-        Me.panelHomeFuncionarios.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.panelHomeFuncionarios.Location = New System.Drawing.Point(266, 48)
+        Me.panelHomeFuncionarios.Margin = New System.Windows.Forms.Padding(2)
         Me.panelHomeFuncionarios.Name = "panelHomeFuncionarios"
         Me.panelHomeFuncionarios.Size = New System.Drawing.Size(730, 652)
         Me.panelHomeFuncionarios.TabIndex = 19
@@ -2395,7 +2499,7 @@ Partial Class FormHome
         '
         Me.btnCadasterFuncionario.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.btn_plus
         Me.btnCadasterFuncionario.Location = New System.Drawing.Point(681, 16)
-        Me.btnCadasterFuncionario.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCadasterFuncionario.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCadasterFuncionario.Name = "btnCadasterFuncionario"
         Me.btnCadasterFuncionario.Size = New System.Drawing.Size(40, 41)
         Me.btnCadasterFuncionario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -2406,7 +2510,7 @@ Partial Class FormHome
         '
         Me.Panel28.BackColor = System.Drawing.Color.Black
         Me.Panel28.Location = New System.Drawing.Point(19, 57)
-        Me.Panel28.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel28.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel28.Name = "Panel28"
         Me.Panel28.Size = New System.Drawing.Size(705, 2)
         Me.Panel28.TabIndex = 19
@@ -2427,7 +2531,7 @@ Partial Class FormHome
         Me.Panel37.Controls.Add(Me.Panel42)
         Me.Panel37.Controls.Add(Me.Panel43)
         Me.Panel37.Location = New System.Drawing.Point(810, 245)
-        Me.Panel37.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel37.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel37.Name = "Panel37"
         Me.Panel37.Size = New System.Drawing.Size(730, 652)
         Me.Panel37.TabIndex = 15
@@ -2436,7 +2540,7 @@ Partial Class FormHome
         '
         Me.Panel39.BackColor = System.Drawing.Color.Black
         Me.Panel39.Location = New System.Drawing.Point(19, 57)
-        Me.Panel39.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel39.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel39.Name = "Panel39"
         Me.Panel39.Size = New System.Drawing.Size(705, 2)
         Me.Panel39.TabIndex = 19
@@ -2445,7 +2549,7 @@ Partial Class FormHome
         '
         Me.DataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView7.Location = New System.Drawing.Point(19, 389)
-        Me.DataGridView7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView7.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView7.Name = "DataGridView7"
         Me.DataGridView7.Size = New System.Drawing.Size(693, 250)
         Me.DataGridView7.TabIndex = 26
@@ -2466,7 +2570,7 @@ Partial Class FormHome
         Me.RadioButton29.AutoSize = True
         Me.RadioButton29.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton29.Location = New System.Drawing.Point(630, 127)
-        Me.RadioButton29.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton29.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton29.Name = "RadioButton29"
         Me.RadioButton29.Size = New System.Drawing.Size(60, 26)
         Me.RadioButton29.TabIndex = 24
@@ -2479,7 +2583,7 @@ Partial Class FormHome
         Me.RadioButton30.AutoSize = True
         Me.RadioButton30.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton30.Location = New System.Drawing.Point(511, 127)
-        Me.RadioButton30.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton30.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton30.Name = "RadioButton30"
         Me.RadioButton30.Size = New System.Drawing.Size(61, 26)
         Me.RadioButton30.TabIndex = 23
@@ -2492,7 +2596,7 @@ Partial Class FormHome
         Me.RadioButton31.AutoSize = True
         Me.RadioButton31.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton31.Location = New System.Drawing.Point(369, 127)
-        Me.RadioButton31.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton31.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton31.Name = "RadioButton31"
         Me.RadioButton31.Size = New System.Drawing.Size(84, 26)
         Me.RadioButton31.TabIndex = 22
@@ -2505,7 +2609,7 @@ Partial Class FormHome
         Me.RadioButton32.AutoSize = True
         Me.RadioButton32.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton32.Location = New System.Drawing.Point(215, 127)
-        Me.RadioButton32.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton32.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton32.Name = "RadioButton32"
         Me.RadioButton32.Size = New System.Drawing.Size(94, 26)
         Me.RadioButton32.TabIndex = 21
@@ -2518,7 +2622,7 @@ Partial Class FormHome
         Me.RadioButton33.AutoSize = True
         Me.RadioButton33.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton33.Location = New System.Drawing.Point(44, 125)
-        Me.RadioButton33.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton33.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton33.Name = "RadioButton33"
         Me.RadioButton33.Size = New System.Drawing.Size(112, 26)
         Me.RadioButton33.TabIndex = 20
@@ -2532,7 +2636,7 @@ Partial Class FormHome
         Me.Panel40.Controls.Add(Me.TextBox3)
         Me.Panel40.Controls.Add(Me.PictureBox6)
         Me.Panel40.Location = New System.Drawing.Point(42, 70)
-        Me.Panel40.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel40.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel40.Name = "Panel40"
         Me.Panel40.Size = New System.Drawing.Size(651, 48)
         Me.Panel40.TabIndex = 19
@@ -2544,7 +2648,7 @@ Partial Class FormHome
         Me.TextBox3.Font = New System.Drawing.Font("Raleway Light", 16.0!)
         Me.TextBox3.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.TextBox3.Location = New System.Drawing.Point(47, 9)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(593, 26)
         Me.TextBox3.TabIndex = 21
@@ -2554,7 +2658,7 @@ Partial Class FormHome
         Me.PictureBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.PictureBox6.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
         Me.PictureBox6.Location = New System.Drawing.Point(7, 9)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -2579,7 +2683,7 @@ Partial Class FormHome
         Me.Panel41.Controls.Add(Me.Label72)
         Me.Panel41.Controls.Add(Me.Label75)
         Me.Panel41.Location = New System.Drawing.Point(278, 166)
-        Me.Panel41.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel41.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel41.Name = "Panel41"
         Me.Panel41.Size = New System.Drawing.Size(182, 182)
         Me.Panel41.TabIndex = 16
@@ -2627,7 +2731,7 @@ Partial Class FormHome
         Me.Panel42.Controls.Add(Me.Label77)
         Me.Panel42.Controls.Add(Me.Label78)
         Me.Panel42.Location = New System.Drawing.Point(509, 166)
-        Me.Panel42.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel42.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel42.Name = "Panel42"
         Me.Panel42.Size = New System.Drawing.Size(182, 186)
         Me.Panel42.TabIndex = 17
@@ -2675,7 +2779,7 @@ Partial Class FormHome
         Me.Panel43.Controls.Add(Me.Label80)
         Me.Panel43.Controls.Add(Me.Label81)
         Me.Panel43.Location = New System.Drawing.Point(47, 166)
-        Me.Panel43.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel43.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel43.Name = "Panel43"
         Me.Panel43.Size = New System.Drawing.Size(182, 182)
         Me.Panel43.TabIndex = 15
@@ -2716,14 +2820,52 @@ Partial Class FormHome
         Me.Label81.Text = "LUCRO SEMANAL"
         Me.Label81.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'DataGridView8
+        'dtGridFuncionario
         '
-        Me.DataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView8.Location = New System.Drawing.Point(19, 389)
-        Me.DataGridView8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.DataGridView8.Name = "DataGridView8"
-        Me.DataGridView8.Size = New System.Drawing.Size(693, 250)
-        Me.DataGridView8.TabIndex = 26
+        Me.dtGridFuncionario.AllowUserToAddRows = False
+        Me.dtGridFuncionario.AllowUserToDeleteRows = False
+        Me.dtGridFuncionario.AllowUserToResizeRows = False
+        Me.dtGridFuncionario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        DataGridViewCellStyle61.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle61.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle61.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        DataGridViewCellStyle61.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle61.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle61.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle61.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridFuncionario.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle61
+        Me.dtGridFuncionario.ColumnHeadersHeight = 29
+        Me.dtGridFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        DataGridViewCellStyle62.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle62.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle62.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        DataGridViewCellStyle62.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle62.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle62.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle62.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridFuncionario.DefaultCellStyle = DataGridViewCellStyle62
+        Me.dtGridFuncionario.EnableHeadersVisualStyles = False
+        Me.dtGridFuncionario.Location = New System.Drawing.Point(19, 389)
+        Me.dtGridFuncionario.Margin = New System.Windows.Forms.Padding(2)
+        Me.dtGridFuncionario.Name = "dtGridFuncionario"
+        DataGridViewCellStyle63.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle63.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle63.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        DataGridViewCellStyle63.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle63.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle63.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle63.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridFuncionario.RowHeadersDefaultCellStyle = DataGridViewCellStyle63
+        DataGridViewCellStyle64.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle64.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle64.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle64.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle64.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle64.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle64.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridFuncionario.RowsDefaultCellStyle = DataGridViewCellStyle64
+        Me.dtGridFuncionario.Size = New System.Drawing.Size(693, 250)
+        Me.dtGridFuncionario.TabIndex = 26
         '
         'Label82
         '
@@ -2741,7 +2883,7 @@ Partial Class FormHome
         Me.RadioButton34.AutoSize = True
         Me.RadioButton34.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton34.Location = New System.Drawing.Point(483, 127)
-        Me.RadioButton34.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton34.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton34.Name = "RadioButton34"
         Me.RadioButton34.Size = New System.Drawing.Size(129, 26)
         Me.RadioButton34.TabIndex = 23
@@ -2754,7 +2896,7 @@ Partial Class FormHome
         Me.RadioButton35.AutoSize = True
         Me.RadioButton35.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton35.Location = New System.Drawing.Point(327, 127)
-        Me.RadioButton35.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton35.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton35.Name = "RadioButton35"
         Me.RadioButton35.Size = New System.Drawing.Size(112, 26)
         Me.RadioButton35.TabIndex = 22
@@ -2767,7 +2909,7 @@ Partial Class FormHome
         Me.RadioButton36.AutoSize = True
         Me.RadioButton36.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton36.Location = New System.Drawing.Point(208, 127)
-        Me.RadioButton36.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton36.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton36.Name = "RadioButton36"
         Me.RadioButton36.Size = New System.Drawing.Size(76, 26)
         Me.RadioButton36.TabIndex = 21
@@ -2780,7 +2922,7 @@ Partial Class FormHome
         Me.RadioButton37.AutoSize = True
         Me.RadioButton37.Font = New System.Drawing.Font("Raleway Light", 12.0!)
         Me.RadioButton37.Location = New System.Drawing.Point(121, 125)
-        Me.RadioButton37.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton37.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton37.Name = "RadioButton37"
         Me.RadioButton37.Size = New System.Drawing.Size(43, 26)
         Me.RadioButton37.TabIndex = 20
@@ -2794,7 +2936,7 @@ Partial Class FormHome
         Me.Panel44.Controls.Add(Me.txtSearchFuncionarios)
         Me.Panel44.Controls.Add(Me.btnSearchFuncionarios)
         Me.Panel44.Location = New System.Drawing.Point(42, 70)
-        Me.Panel44.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel44.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel44.Name = "Panel44"
         Me.Panel44.Size = New System.Drawing.Size(651, 48)
         Me.Panel44.TabIndex = 19
@@ -2805,8 +2947,8 @@ Partial Class FormHome
         Me.txtSearchFuncionarios.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtSearchFuncionarios.Font = New System.Drawing.Font("Arial", 16.0!)
         Me.txtSearchFuncionarios.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.txtSearchFuncionarios.Location = New System.Drawing.Point(47, 9)
-        Me.txtSearchFuncionarios.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtSearchFuncionarios.Location = New System.Drawing.Point(47, 12)
+        Me.txtSearchFuncionarios.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSearchFuncionarios.Name = "txtSearchFuncionarios"
         Me.txtSearchFuncionarios.Size = New System.Drawing.Size(593, 25)
         Me.txtSearchFuncionarios.TabIndex = 21
@@ -2816,7 +2958,7 @@ Partial Class FormHome
         Me.btnSearchFuncionarios.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.btnSearchFuncionarios.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
         Me.btnSearchFuncionarios.Location = New System.Drawing.Point(7, 9)
-        Me.btnSearchFuncionarios.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnSearchFuncionarios.Margin = New System.Windows.Forms.Padding(2)
         Me.btnSearchFuncionarios.Name = "btnSearchFuncionarios"
         Me.btnSearchFuncionarios.Size = New System.Drawing.Size(30, 30)
         Me.btnSearchFuncionarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -2837,25 +2979,25 @@ Partial Class FormHome
         'Panel45
         '
         Me.Panel45.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Panel45.Controls.Add(Me.Label84)
+        Me.Panel45.Controls.Add(Me.lblCountAllDataFuncionario)
         Me.Panel45.Controls.Add(Me.Label85)
         Me.Panel45.Location = New System.Drawing.Point(278, 166)
-        Me.Panel45.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel45.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel45.Name = "Panel45"
         Me.Panel45.Size = New System.Drawing.Size(184, 182)
         Me.Panel45.TabIndex = 17
         '
-        'Label84
+        'lblCountAllDataFuncionario
         '
-        Me.Label84.Font = New System.Drawing.Font("Raleway Light", 40.0!)
-        Me.Label84.ForeColor = System.Drawing.Color.White
-        Me.Label84.Location = New System.Drawing.Point(2, 61)
-        Me.Label84.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label84.Name = "Label84"
-        Me.Label84.Size = New System.Drawing.Size(175, 84)
-        Me.Label84.TabIndex = 1
-        Me.Label84.Text = "80"
-        Me.Label84.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblCountAllDataFuncionario.Font = New System.Drawing.Font("Raleway Light", 40.0!)
+        Me.lblCountAllDataFuncionario.ForeColor = System.Drawing.Color.White
+        Me.lblCountAllDataFuncionario.Location = New System.Drawing.Point(2, 61)
+        Me.lblCountAllDataFuncionario.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblCountAllDataFuncionario.Name = "lblCountAllDataFuncionario"
+        Me.lblCountAllDataFuncionario.Size = New System.Drawing.Size(182, 84)
+        Me.lblCountAllDataFuncionario.TabIndex = 1
+        Me.lblCountAllDataFuncionario.Text = "0"
+        Me.lblCountAllDataFuncionario.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label85
         '
@@ -2873,7 +3015,7 @@ Partial Class FormHome
         '
         Me.btnMinimize.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.minimize
         Me.btnMinimize.Location = New System.Drawing.Point(922, 11)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(30, 30)
         Me.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -2884,25 +3026,12 @@ Partial Class FormHome
         '
         Me.btnEnd.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources._end
         Me.btnEnd.Location = New System.Drawing.Point(959, 11)
-        Me.btnEnd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnEnd.Margin = New System.Windows.Forms.Padding(2)
         Me.btnEnd.Name = "btnEnd"
         Me.btnEnd.Size = New System.Drawing.Size(30, 30)
         Me.btnEnd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.btnEnd.TabIndex = 12
         Me.btnEnd.TabStop = False
-        '
-        'RadioButton38
-        '
-        Me.RadioButton38.AutoSize = True
-        Me.RadioButton38.Font = New System.Drawing.Font("Raleway Light", 12.0!)
-        Me.RadioButton38.Location = New System.Drawing.Point(516, 127)
-        Me.RadioButton38.Margin = New System.Windows.Forms.Padding(2)
-        Me.RadioButton38.Name = "RadioButton38"
-        Me.RadioButton38.Size = New System.Drawing.Size(59, 26)
-        Me.RadioButton38.TabIndex = 29
-        Me.RadioButton38.TabStop = True
-        Me.RadioButton38.Text = "CEP"
-        Me.RadioButton38.UseVisualStyleBackColor = True
         '
         'FormHome
         '
@@ -2970,7 +3099,7 @@ Partial Class FormHome
         Me.Panel21.ResumeLayout(False)
         Me.Panel22.ResumeLayout(False)
         Me.Panel23.ResumeLayout(False)
-        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtGridMovel, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel24.ResumeLayout(False)
         Me.Panel24.PerformLayout()
         CType(Me.btnSearchMoveis, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2988,7 +3117,7 @@ Partial Class FormHome
         Me.Panel33.ResumeLayout(False)
         Me.Panel34.ResumeLayout(False)
         Me.Panel35.ResumeLayout(False)
-        CType(Me.DataGridView6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtGridDesigner, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel36.ResumeLayout(False)
         Me.Panel36.PerformLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3005,7 +3134,7 @@ Partial Class FormHome
         Me.Panel41.ResumeLayout(False)
         Me.Panel42.ResumeLayout(False)
         Me.Panel43.ResumeLayout(False)
-        CType(Me.DataGridView8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtGridFuncionario, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel44.ResumeLayout(False)
         Me.Panel44.PerformLayout()
         CType(Me.btnSearchFuncionarios, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3097,7 +3226,7 @@ Partial Class FormHome
     Friend WithEvents Label32 As Label
     Friend WithEvents panelHomeMoveis As Panel
     Friend WithEvents Panel27 As Panel
-    Friend WithEvents Label54 As Label
+    Friend WithEvents lblCountWithoutStorageMovel As Label
     Friend WithEvents Label55 As Label
     Friend WithEvents Panel17 As Panel
     Friend WithEvents Panel18 As Panel
@@ -3125,7 +3254,7 @@ Partial Class FormHome
     Friend WithEvents Label45 As Label
     Friend WithEvents Label46 As Label
     Friend WithEvents Label47 As Label
-    Friend WithEvents DataGridView4 As DataGridView
+    Friend WithEvents dtGridMovel As DataGridView
     Friend WithEvents Label48 As Label
     Friend WithEvents RadioButton17 As RadioButton
     Friend WithEvents RadioButton18 As RadioButton
@@ -3136,10 +3265,10 @@ Partial Class FormHome
     Friend WithEvents btnSearchMoveis As PictureBox
     Friend WithEvents Label49 As Label
     Friend WithEvents Panel25 As Panel
-    Friend WithEvents Label50 As Label
+    Friend WithEvents lblCountAllDataMovel As Label
     Friend WithEvents Label51 As Label
     Friend WithEvents Panel26 As Panel
-    Friend WithEvents Label52 As Label
+    Friend WithEvents lblCountCurrentMouthMovel As Label
     Friend WithEvents Label53 As Label
     Friend WithEvents panelHomeDesigners As Panel
     Friend WithEvents Panel29 As Panel
@@ -3168,7 +3297,7 @@ Partial Class FormHome
     Friend WithEvents Label66 As Label
     Friend WithEvents Label67 As Label
     Friend WithEvents Label68 As Label
-    Friend WithEvents DataGridView6 As DataGridView
+    Friend WithEvents dtGridDesigner As DataGridView
     Friend WithEvents Label69 As Label
     Friend WithEvents RadioButton25 As RadioButton
     Friend WithEvents RadioButton26 As RadioButton
@@ -3179,7 +3308,7 @@ Partial Class FormHome
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Label70 As Label
     Friend WithEvents Panel38 As Panel
-    Friend WithEvents Label73 As Label
+    Friend WithEvents lblCountAllDataDesigner As Label
     Friend WithEvents Label74 As Label
     Friend WithEvents panelHomeFuncionarios As Panel
     Friend WithEvents Panel28 As Panel
@@ -3208,7 +3337,7 @@ Partial Class FormHome
     Friend WithEvents Label79 As Label
     Friend WithEvents Label80 As Label
     Friend WithEvents Label81 As Label
-    Friend WithEvents DataGridView8 As DataGridView
+    Friend WithEvents dtGridFuncionario As DataGridView
     Friend WithEvents Label82 As Label
     Friend WithEvents RadioButton34 As RadioButton
     Friend WithEvents RadioButton35 As RadioButton
@@ -3219,7 +3348,7 @@ Partial Class FormHome
     Friend WithEvents btnSearchFuncionarios As PictureBox
     Friend WithEvents Label83 As Label
     Friend WithEvents Panel45 As Panel
-    Friend WithEvents Label84 As Label
+    Friend WithEvents lblCountAllDataFuncionario As Label
     Friend WithEvents Label85 As Label
     Friend WithEvents btnCadasterMovel As PictureBox
     Friend WithEvents btnCadasterDesigner As PictureBox

@@ -2,11 +2,19 @@
 Imports MySql.Data.MySqlClient
 Public Class FormHome
     Dim queryCliente As String
+    Dim queryDesigner As String
+    Dim queryMovel As String
+    Dim queryFuncionario As String
+
 
     Private Sub FormHome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'querys
+        queryDesigner = "SELECT d_id AS 'ID', d_nome AS 'NOME', d_bio AS 'BIOGRAFIA' FROM designers"
         queryCliente = "SELECT c_id AS 'ID', CONCAT(c_nome,' ',c_sobrenome) AS 'CLIENTE', c_telCel AS 'CELULAR', c_telFixo AS 'FIXO', c_email AS 'EMAIL', c_cep AS 'CEP' FROM cliente"
-
+        queryMovel = "SELECT m_id AS 'ID', m_titulo AS 'TITULO', d_nome AS 'DESIGNER', m_qtdEstoque AS 'QTD', ct_nome AS 'CATEGORIA', CONCAT('R$ ', m_valUni) AS 'VALOR UNI.'
+                      FROM moveis, categoria, designers 
+                      WHERE designers.d_id = moveis.d_id AND moveis.ct_id = categoria.ct_id"
+        queryFuncionario = "SELECT f_id AS 'ID', f_nome AS 'FUNCIONÁRIO', f_telCel AS 'CELULAR', f_telFixo AS 'FIXO', f_email AS 'EMAIL' FROM funcionarios"
         'Atribui o texto de dica para todas as textbox
         PlaceholderTextBox()
         'Inicia pelo panelMainPage e oculta os demais
@@ -16,10 +24,20 @@ Public Class FormHome
 
         'carrega os dados em seus respectivos DataGridView's
         LoadDataMysql(queryCliente, dtGridCliente)
-
+        LoadDataMysql(queryDesigner, dtGridDesigner)
+        LoadDataMysql(queryMovel, dtGridMovel)
+        LoadDataMysql(queryFuncionario, dtGridFuncionario)
         'Cliente Count
         CountAllData("cliente", lblCountAllDataCliente)
         CountCurrentMouth("cliente", "c_dtReg", lblCountCurrentMouthCliente)
+        'Designer Count
+        CountAllData("designers", lblCountAllDataDesigner)
+        'Movel Count
+        CountAllData("moveis", lblCountAllDataMovel)
+        CountCurrentMouth("moveis", "m_dtReg", lblCountCurrentMouthMovel)
+        CountWithoutStorage()
+        'funcionario Count
+        CountAllData("funcionarios", lblCountAllDataFuncionario)
     End Sub
 
     'Close and Minimize
@@ -131,7 +149,7 @@ Public Class FormHome
                 Dim reader As MySqlDataReader = cmd.ExecuteReader
 
                 While reader.Read()
-                    lblCountAllDataCliente.Text = reader("total").ToString
+                    label.Text = reader("total").ToString
                 End While
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -161,6 +179,27 @@ Public Class FormHome
         End Using
 
     End Sub
+    Private Sub CountWithoutStorage()
+        Using con As MySqlConnection = GetConnectionMysql()
+            Try
+                con.Open()
+                Dim sql As String = "SELECT COUNT(*) AS 'total' FROM moveis WHERE m_qtdEstoque <= 0"
+                Dim cmd As MySqlCommand = New MySqlCommand(sql, con)
+                Dim da As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+                Dim dt As DataTable = New DataTable
+                Dim reader As MySqlDataReader = cmd.ExecuteReader
+
+                While reader.Read()
+                    lblCountWithoutStorageMovel.Text = reader("total").ToString
+                End While
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            Finally
+                con.Close()
+            End Try
+        End Using
+
+    End Sub
     '----------------------------------'
 
     'DEFAULT SUB
@@ -169,6 +208,18 @@ Public Class FormHome
         dtGridCliente.ColumnHeadersDefaultCellStyle.Font = New Font("Raleway", 12)
         dtGridCliente.RowTemplate.Height = 29
         dtGridCliente.GridColor = Color.LightGray
+        'designer
+        dtGridDesigner.ColumnHeadersDefaultCellStyle.Font = New Font("Raleway", 12)
+        dtGridDesigner.RowTemplate.Height = 29
+        dtGridDesigner.GridColor = Color.LightGray
+        'móvel
+        dtGridMovel.ColumnHeadersDefaultCellStyle.Font = New Font("Raleway", 12)
+        dtGridMovel.RowTemplate.Height = 29
+        dtGridMovel.GridColor = Color.LightGray
+        'funcionario
+        dtGridFuncionario.ColumnHeadersDefaultCellStyle.Font = New Font("Raleway", 12)
+        dtGridFuncionario.RowTemplate.Height = 29
+        dtGridFuncionario.GridColor = Color.LightGray
 
     End Sub
     Private Sub PlaceholderTextBox()
