@@ -242,4 +242,113 @@ Public Class FormHome
     <DllImport("user32.dll", CharSet:=CharSet.Auto)>
     Private Shared Function SendMessage(ByVal hWnd As IntPtr, ByVal msg As Integer, ByVal wParam As Integer, <MarshalAs(UnmanagedType.LPWStr)> ByVal lParam As String) As Int32
     End Function
+
+    Private Sub btnSearchFuncionarios_Click(sender As Object, e As EventArgs) Handles btnSearchFuncionarios.Click
+        Dim search As String
+        search = txtSearchFuncionarios.Text
+        If search = "" Then
+            queryFuncionario = "SELECT f_id AS 'ID', f_nome AS 'FUNCIONÁRIO', f_telCel AS 'CELULAR', f_telFixo AS 'FIXO', f_email AS 'EMAIL' FROM funcionarios"
+            LoadDataMysql(queryFuncionario, dtGridFuncionario)
+        End If
+        If rbtnIdFuncionario.Checked Then
+            queryFuncionario = "SELECT f_id AS 'ID', f_nome AS 'FUNCIONÁRIO', f_telCel AS 'CELULAR', f_telFixo AS 'FIXO', f_email AS 'EMAIL' FROM funcionarios WHERE f_id LIKE '%" & search & "%'"
+            LoadDataMysql(queryFuncionario, dtGridFuncionario)
+        ElseIf rbtnNomeFuncionario.Checked Then
+            queryFuncionario = "SELECT f_id AS 'ID', f_nome AS 'FUNCIONÁRIO', f_telCel AS 'CELULAR', f_telFixo AS 'FIXO', f_email AS 'EMAIL' FROM funcionarios WHERE f_nome LIKE '%" & search & "%'"
+            LoadDataMysql(queryFuncionario, dtGridFuncionario)
+        ElseIf rbtnCelFuncionario.Checked Then
+            queryFuncionario = "SELECT f_id AS 'ID', f_nome AS 'FUNCIONÁRIO', f_telCel AS 'CELULAR', f_telFixo AS 'FIXO', f_email AS 'EMAIL' FROM funcionarios WHERE f_telCel LIKE '%" & search & "%'"
+            LoadDataMysql(queryFuncionario, dtGridFuncionario)
+        ElseIf rbtnFixFuncionario.Checked Then
+            queryFuncionario = "SELECT f_id AS 'ID', f_nome AS 'FUNCIONÁRIO', f_telCel AS 'CELULAR', f_telFixo AS 'FIXO', f_email AS 'EMAIL' FROM funcionarios WHERE f_telFixo LIKE '%" & search & "%'"
+            LoadDataMysql(queryFuncionario, dtGridFuncionario)
+        ElseIf rbtnEmailFuncionario.Checked Then
+            queryFuncionario = "SELECT f_id AS 'ID', f_nome AS 'FUNCIONÁRIO', f_telCel AS 'CELULAR', f_telFixo AS 'FIXO', f_email AS 'EMAIL' FROM funcionarios WHERE f_email LIKE '%" & search & "%'"
+            LoadDataMysql(queryFuncionario, dtGridFuncionario)
+        End If
+    End Sub
+    Private Sub btnSearchDesigner_Click(sender As Object, e As EventArgs) Handles btnSearchDesigner.Click
+        Dim search As String
+        search = txtSearchDesigners.Text
+        If search = "" Then
+            queryDesigner = "SELECT d_id AS 'ID', d_nome AS 'NOME', d_bio AS 'BIOGRAFIA' FROM designers"
+            LoadDataMysql(queryDesigner, dtGridDesigner)
+        End If
+        If rbtnIdDesigner.Checked Then
+            queryDesigner = "SELECT d_id AS 'ID', d_nome AS 'NOME', d_bio AS 'BIOGRAFIA' FROM designers WHERE d_id LIKE '%" & search & "%'"
+            LoadDataMysql(queryDesigner, dtGridDesigner)
+        ElseIf rbtnNomeDesigner.Checked Then
+            queryDesigner = "SELECT d_id AS 'ID', d_nome AS 'NOME', d_bio AS 'BIOGRAFIA' FROM designers WHERE d_nome LIKE '%" & search & "%'"
+            LoadDataMysql(queryDesigner, dtGridDesigner)
+        ElseIf rbtnBioDesigner.Checked Then
+            queryDesigner = "SELECT d_id AS 'ID', d_nome AS 'NOME', d_bio AS 'BIOGRAFIA' FROM designers WHERE d_bio LIKE '%" & search & "%'"
+            LoadDataMysql(queryDesigner, dtGridDesigner)
+        End If
+    End Sub
+
+    Private Sub btnSearchMoveis_Click(sender As Object, e As EventArgs) Handles btnSearchMoveis.Click
+        Dim search As String
+        search = txtSearchMoveis.Text
+
+        If search = "" Then
+            queryMovel = "SELECT m_id AS 'ID', m_titulo AS 'TITULO', d_nome AS 'DESIGNER', m_qtdEstoque AS 'QTD', ct_nome AS 'CATEGORIA', CONCAT('R$ ', m_valUni) AS 'VALOR UNI.'
+                      FROM moveis, categoria, designers 
+                      WHERE designers.d_id = moveis.d_id AND moveis.ct_id = categoria.ct_id"
+            LoadDataMysql(queryMovel, dtGridMovel)
+        End If
+        If rbtnIdMovel.Checked Then
+            queryMovel = "SELECT m_id AS 'ID', m_titulo AS 'TITULO', d_nome AS 'DESIGNER', m_qtdEstoque AS 'QTD', ct_nome AS 'CATEGORIA', CONCAT('R$ ', m_valUni) AS 'VALOR UNI.'
+                      FROM moveis, categoria, designers 
+                      WHERE designers.d_id = moveis.d_id AND moveis.ct_id = categoria.ct_id AND m_id LIKE '%" & search & "%'"
+            LoadDataMysql(queryMovel, dtGridMovel)
+        ElseIf rbtnTituloMovel.Checked Then
+            queryMovel = "SELECT m_id AS 'ID', m_titulo AS 'TITULO', d_nome AS 'DESIGNER', m_qtdEstoque AS 'QTD', ct_nome AS 'CATEGORIA', CONCAT('R$ ', m_valUni) AS 'VALOR UNI.'
+                      FROM moveis, categoria, designers 
+                      WHERE designers.d_id = moveis.d_id AND moveis.ct_id = categoria.ct_id AND m_titulo LIKE '%" & search & "%'"
+            LoadDataMysql(queryMovel, dtGridMovel)
+        ElseIf rbtnDesignerMovel.Checked Then
+            queryMovel = "SELECT m_id AS 'ID', m_titulo AS 'TITULO', d_nome AS 'DESIGNER', m_qtdEstoque AS 'QTD', ct_nome AS 'CATEGORIA', CONCAT('R$ ', m_valUni) AS 'VALOR UNI.'
+                      FROM moveis, categoria, designers 
+                      WHERE designers.d_id = moveis.d_id AND moveis.ct_id = categoria.ct_id AND d_nome LIKE '%" & search & "%'"
+            LoadDataMysql(queryMovel, dtGridMovel)
+        ElseIf rbtnCategoriaMovel.Checked Then
+            queryMovel = "SELECT m_id AS 'ID', m_titulo AS 'TITULO', d_nome AS 'DESIGNER', m_qtdEstoque AS 'QTD', ct_nome AS 'CATEGORIA', CONCAT('R$ ', m_valUni) AS 'VALOR UNI.'
+                      FROM moveis, categoria, designers 
+                      WHERE designers.d_id = moveis.d_id AND moveis.ct_id = categoria.ct_id AND ct_nome LIKE '%" & search & "%'"
+            LoadDataMysql(queryMovel, dtGridMovel)
+        End If
+    End Sub
+
+    Private Sub btnSearchCliente_Click(sender As Object, e As EventArgs) Handles btnSearchCliente.Click
+        Dim search As String
+        search = txtSearchCliente.Text
+        If search = "" Then
+            queryCliente = "SELECT c_id AS 'ID', CONCAT(c_nome,' ',c_sobrenome) AS 'CLIENTE', c_telCel AS 'CELULAR', c_telFixo AS 'FIXO', c_email AS 'EMAIL', c_cep AS 'CEP' FROM cliente"
+            LoadDataMysql(queryCliente, dtGridCliente)
+        End If
+        If rbtnIdCliente.Checked Then
+            queryCliente = "SELECT c_id AS 'ID', CONCAT(c_nome,' ',c_sobrenome) AS 'CLIENTE', c_telCel AS 'CELULAR', c_telFixo AS 'FIXO', c_email AS 'EMAIL', c_cep AS 'CEP' FROM cliente WHERE c_id LIKE '%" & search & "%'"
+            LoadDataMysql(queryCliente, dtGridCliente)
+        ElseIf rbtnNomeCliente.Checked Then
+            queryCliente = "SELECT c_id AS 'ID', CONCAT(c_nome,' ',c_sobrenome) AS 'CLIENTE', c_telCel AS 'CELULAR', c_telFixo AS 'FIXO', c_email AS 'EMAIL', c_cep AS 'CEP' 
+                            FROM cliente WHERE c_nome LIKE '%" & search & "%'"
+            LoadDataMysql(queryCliente, dtGridCliente)
+        ElseIf rbtnCelCliente.Checked Then
+            queryCliente = "SELECT c_id AS 'ID', CONCAT(c_nome,' ',c_sobrenome) AS 'CLIENTE', c_telCel AS 'CELULAR', c_telFixo AS 'FIXO', c_email AS 'EMAIL', c_cep AS 'CEP' 
+                            FROM cliente WHERE c_telCel LIKE '%" & search & "%'"
+            LoadDataMysql(queryCliente, dtGridCliente)
+        ElseIf rbtnTelCliente.Checked Then
+            queryCliente = "SELECT c_id AS 'ID', CONCAT(c_nome,' ',c_sobrenome) AS 'CLIENTE', c_telCel AS 'CELULAR', c_telFixo AS 'FIXO', c_email AS 'EMAIL', c_cep AS 'CEP' 
+                            FROM cliente WHERE c_telFixo LIKE '%" & search & "%'"
+            LoadDataMysql(queryCliente, dtGridCliente)
+        ElseIf rbtnEmailCliente.Checked Then
+            queryCliente = "SELECT c_id AS 'ID', CONCAT(c_nome,' ',c_sobrenome) AS 'CLIENTE', c_telCel AS 'CELULAR', c_telFixo AS 'FIXO', c_email AS 'EMAIL', c_cep AS 'CEP' 
+                            FROM cliente WHERE c_email LIKE '%" & search & "%'"
+            LoadDataMysql(queryCliente, dtGridCliente)
+        ElseIf rbtnCepCliente.Checked Then
+            queryCliente = "SELECT c_id AS 'ID', CONCAT(c_nome,' ',c_sobrenome) AS 'CLIENTE', c_telCel AS 'CELULAR', c_telFixo AS 'FIXO', c_email AS 'EMAIL', c_cep AS 'CEP' 
+                            FROM cliente WHERE c_cep LIKE '%" & search & "%'"
+            LoadDataMysql(queryCliente, dtGridCliente)
+        End If
+    End Sub
 End Class
