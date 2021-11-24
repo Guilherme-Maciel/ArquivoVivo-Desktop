@@ -23,6 +23,7 @@ Partial Class FormNewPedido1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.panelPedido = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.txtCompleCliente = New System.Windows.Forms.TextBox()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.txtNumResCliente = New System.Windows.Forms.TextBox()
@@ -49,7 +50,6 @@ Partial Class FormNewPedido1
         Me.txtNameCliente = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.panelPedido.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -86,6 +86,16 @@ Partial Class FormNewPedido1
         Me.panelPedido.Name = "panelPedido"
         Me.panelPedido.Size = New System.Drawing.Size(1000, 700)
         Me.panelPedido.TabIndex = 45
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(3, 10)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(172, 44)
+        Me.Label1.TabIndex = 62
+        Me.Label1.Text = "N° pedido:"
         '
         'txtCompleCliente
         '
@@ -326,16 +336,6 @@ Partial Class FormNewPedido1
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1000, 2)
         Me.Panel3.TabIndex = 22
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(3, 10)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(172, 44)
-        Me.Label1.TabIndex = 62
-        Me.Label1.Text = "N° pedido:"
         '
         'FormNewPedido1
         '

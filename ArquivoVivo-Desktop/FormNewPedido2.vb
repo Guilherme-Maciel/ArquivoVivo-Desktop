@@ -59,46 +59,168 @@ Public Class FormNewPedido2
     End Sub
 
     Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
-        Dim name, lastName, email, cel, fix, estado, cidade, rua, bairro, cep, numRes, comple, password, state, dataFormat As String
+        Dim dataFormat, movel, idMovel, qtd, tiposOrdem(), ordem, preco, state, tiposOrdemStr As String
+        Dim count As Integer
         Dim data As DateTime = DateTime.Now
 
-        'atribuição de valores às variáveis
-        password = RandowPass()
-        state = "ativo"
         If rbtnAuto.Checked Then
+            If txtId.Text = "" Then
+                MsgBox("Preencha os dados para continuar")
+            Else
+                'atribuição de valores às variáveis
+                movel = cboxTitle.Text
+                idMovel = cboxTitle.SelectedValue
+                qtd = cboxQtd.SelectedItem
+                dataFormat = Format(data, "s")
+                preco = txtValue.Text.Replace("R$ ", "").Replace(",", ".")
+                ordem = txtOrdem.Text
+                state = "pendente"
+                'Tipos da ordem
+                If checkVenda.Checked Then
+                    ReDim Preserve tiposOrdem(count)
+                    tiposOrdem(count) = "ven"
+                    count += 1
+                End If
+                If checkReforma.Checked Then
+                    ReDim Preserve tiposOrdem(count)
+                    tiposOrdem(count) = "ref"
+                    count += 1
+                End If
+                If checkLocacao.Checked Then
+                    ReDim Preserve tiposOrdem(count)
+                    tiposOrdem(count) = "loc"
+                    count += 1
+                End If
+                If checkAssis.Checked Then
+                    ReDim Preserve tiposOrdem(count)
+                    tiposOrdem(count) = "assis"
+                    count += 1
+                End If
+                tiposOrdemStr = Join(tiposOrdem, ", ")
+                'Validação das checkBox
+                If checkVenda.Checked = False And checkReforma.Checked = False And checkLocacao.Checked = False And checkAssis.Checked = False Then
+                    MsgBox("Selecione o tipo(s) de ordem para continuar")
+                Else
+                    Using con As MySqlConnection = GetConnectionMysql()
+                        Try
+                            'conexão com o banco pela variável con que recebe a função GetConnectionMysql()
+                            con.Open()
+                            Dim sql As String = "INSERT INTO pedidos(p_nPedido, p_movel, p_qtd, p_tipos, p_ordem, p_preco, p_dtReg, p_state, c_id, m_id)
+                                         VALUES(@numPedido, @movel, @qtd, @tipos, @ordem, @preco, @date, @state, @idCliente, @idMovel)"
+                            Dim cmd As MySqlCommand = New MySqlCommand(sql, con)
 
+                            'Atribuição dos parâmetros
+                            cmd.Parameters.AddWithValue("@numPedido", nPedido)
+                            cmd.Parameters.AddWithValue("@movel", movel)
+                            cmd.Parameters.AddWithValue("@qtd", qtd)
+                            cmd.Parameters.AddWithValue("@tipos", tiposOrdemStr)
+                            cmd.Parameters.AddWithValue("@ordem", ordem)
+                            cmd.Parameters.AddWithValue("@preco", preco)
+                            cmd.Parameters.AddWithValue("@date", dataFormat)
+                            cmd.Parameters.AddWithValue("@state", state)
+                            cmd.Parameters.AddWithValue("@idCliente", idQuery)
+                            cmd.Parameters.AddWithValue("@idMovel", idMovel)
+                            'Cadastro concluído
+                            Dim reader As MySqlDataReader = cmd.ExecuteReader
+                        Catch ex As Exception
+                            MsgBox(ex.Message)
+                        Finally
+                            con.Close()
+                            txtId.Clear()
+                            txtOrdem.Clear()
+                            txtQtdManual.Clear()
+                            txtTitle.Clear()
+                            txtValue.Clear()
+                            cboxTitle.SelectedIndex = -1
+                            cboxQtd.SelectedIndex = -1
+                            cboxQtd.Items.Clear()
+                            picboxImageUploadMovel.Image = Nothing
+                            checkVenda.Checked = False
+                            checkReforma.Checked = False
+                            checkLocacao.Checked = False
+                            checkAssis.Checked = False
+                        End Try
+                    End Using
+                End If
+            End If
+        Else
+            'atribuição de valores às variáveis
+            movel = txtTitle.Text
+            qtd = txtQtdManual.Text
+            dataFormat = Format(data, "s")
+            preco = txtValue.Text.Replace("R$ ", "").Replace(",", ".")
+            ordem = txtOrdem.Text
+            state = "pendente"
+            'Tipos da ordem
+            If checkVenda.Checked Then
+                ReDim Preserve tiposOrdem(count)
+                tiposOrdem(count) = "ven"
+                count += 1
+            End If
+            If checkReforma.Checked Then
+                ReDim Preserve tiposOrdem(count)
+                tiposOrdem(count) = "ref"
+                count += 1
+            End If
+            If checkLocacao.Checked Then
+                ReDim Preserve tiposOrdem(count)
+                tiposOrdem(count) = "loc"
+                count += 1
+            End If
+            If checkAssis.Checked Then
+                ReDim Preserve tiposOrdem(count)
+                tiposOrdem(count) = "assis"
+                count += 1
+            End If
+            tiposOrdemStr = Join(tiposOrdem, ", ")
 
-            Using con As MySqlConnection = GetConnectionMysql()
-                Try
-                    'conexão com o banco pela variável con que recebe a função GetConnectionMysql()
-                    con.Open()
-                    Dim sql As String = "INSERT INTO pedidos(p_nPedido, p_movel, p_qtd, p_tipos, p_ordem, p_preco, p_dtReg, p_state, c_id)
-                                     VALUES(@numPedido, @movel, @qtd, @tipos, @ordem, @preco, @date, @state, @idCliente)"
-                    Dim cmd As MySqlCommand = New MySqlCommand(sql, con)
-
-                    'Atribuição dos parâmetros
-                    cmd.Parameters.AddWithValue("@numPedido", name)
-
-                    'Cadastro concluído
-                    Dim reader As MySqlDataReader = cmd.ExecuteReader
-                Catch ex As Exception
-                    MsgBox(ex.Message)
-                Finally
-                    con.Close()
-                End Try
-            End Using
+            If checkVenda.Checked = False And checkReforma.Checked = False And checkLocacao.Checked = False And checkAssis.Checked = False Then
+                MsgBox("Selecione o tipo(s) de ordem para continuar")
+            Else
+                Using con As MySqlConnection = GetConnectionMysql()
+                    Try
+                        'conexão com o banco pela variável con que recebe a função GetConnectionMysql()
+                        con.Open()
+                        Dim sql As String = "INSERT INTO pedidos(p_nPedido, p_movel, p_qtd, p_tipos, p_ordem, p_preco, p_dtReg, p_state, c_id)
+                                         VALUES(@numPedido, @movel, @qtd, @tipos, @ordem, @preco, @date, @state, @idCliente)"
+                        Dim cmd As MySqlCommand = New MySqlCommand(sql, con)
+                        'Atribuição dos parâmetros
+                        cmd.Parameters.AddWithValue("@numPedido", nPedido)
+                        cmd.Parameters.AddWithValue("@movel", movel)
+                        cmd.Parameters.AddWithValue("@qtd", qtd)
+                        cmd.Parameters.AddWithValue("@tipos", tiposOrdemStr)
+                        cmd.Parameters.AddWithValue("@ordem", ordem)
+                        cmd.Parameters.AddWithValue("@preco", preco)
+                        cmd.Parameters.AddWithValue("@date", dataFormat)
+                        cmd.Parameters.AddWithValue("@state", state)
+                        cmd.Parameters.AddWithValue("@idCliente", idQuery)
+                        'Cadastro concluído
+                        Dim reader As MySqlDataReader = cmd.ExecuteReader
+                    Catch ex As Exception
+                        MsgBox(ex.Message)
+                    Finally
+                        con.Close()
+                        txtId.Clear()
+                        txtOrdem.Clear()
+                        txtQtdManual.Clear()
+                        txtTitle.Clear()
+                        txtValue.Clear()
+                        cboxTitle.SelectedIndex = -1
+                        cboxQtd.SelectedIndex = -1
+                        cboxQtd.Items.Clear()
+                        picboxImageUploadMovel.Image = Nothing
+                        checkVenda.Checked = False
+                        checkReforma.Checked = False
+                        checkLocacao.Checked = False
+                        checkAssis.Checked = False
+                    End Try
+                End Using
+            End If
         End If
-        txtId.Clear()
-        txtOrdem.Clear()
-        txtQtdManual.Clear()
-        txtTitle.Clear()
-        txtValue.Clear()
-        cboxTitle.SelectedIndex = -1
-        cboxQtd.SelectedIndex = -1
-        cboxQtd.Items.Clear()
-        picboxImageUploadMovel.Image = Nothing
     End Sub
+    Private Sub btnCommit_Click(sender As Object, e As EventArgs) Handles btnCommit.Click
 
+    End Sub
     Private Sub btnFill_Click(sender As Object, e As EventArgs) Handles btnFill.Click
         idMovel = cboxTitle.SelectedValue
         txtId.Text = idMovel
@@ -134,7 +256,6 @@ Public Class FormNewPedido2
         End Using
 
     End Sub
-
     Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
         Dim total As Double
 
@@ -142,7 +263,6 @@ Public Class FormNewPedido2
 
         txtValue.Text = "R$ " & total
     End Sub
-
     Private Sub rescueImage()
 
         Using con As MySqlConnection = GetConnectionMysql()
@@ -168,6 +288,8 @@ Public Class FormNewPedido2
             End Try
         End Using
     End Sub
+
+
 
     Public Sub comboBoxQtd()
         cboxQtd.Items.Clear()

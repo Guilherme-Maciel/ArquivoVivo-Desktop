@@ -52,7 +52,6 @@ Public Class FormMoveisAmbiente2
 
         btnCommit.Enabled = True
         btnNext.Enabled = True
-
     End Sub
 
     Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
@@ -119,8 +118,6 @@ Public Class FormMoveisAmbiente2
                 End Using
                 'Cadastro concluído
                 Dim reader As MySqlDataReader = cmd.ExecuteReader
-
-
             Catch ex As Exception
                 MsgBox(ex.Message)
             Finally

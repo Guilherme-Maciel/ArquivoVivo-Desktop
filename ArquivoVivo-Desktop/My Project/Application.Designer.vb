@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.ArquivoVivo_Desktop.FormNewPedido2
+            Me.MainForm = Global.ArquivoVivo_Desktop.FormNewPedido3
         End Sub
     End Class
 End Namespace

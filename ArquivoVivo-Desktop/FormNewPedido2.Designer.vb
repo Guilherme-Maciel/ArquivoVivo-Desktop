@@ -29,10 +29,10 @@ Partial Class FormNewPedido2
         Me.rbtnManual = New System.Windows.Forms.RadioButton()
         Me.rbtnAuto = New System.Windows.Forms.RadioButton()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.rbtnAssis = New System.Windows.Forms.RadioButton()
-        Me.rbtnLocacao = New System.Windows.Forms.RadioButton()
-        Me.rbtnReforma = New System.Windows.Forms.RadioButton()
-        Me.rbtnVenda = New System.Windows.Forms.RadioButton()
+        Me.checkAssis = New System.Windows.Forms.CheckBox()
+        Me.checkVenda = New System.Windows.Forms.CheckBox()
+        Me.checkLocacao = New System.Windows.Forms.CheckBox()
+        Me.checkReforma = New System.Windows.Forms.CheckBox()
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.txtValue = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -42,6 +42,9 @@ Partial Class FormNewPedido2
         Me.txtQtdManual = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.cboxTitle = New System.Windows.Forms.ComboBox()
+        Me.MoveisBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ArquivovivomvDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ArquivovivomvDataSet = New ArquivoVivo_Desktop.arquivovivomvDataSet()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.picboxImageUploadMovel = New System.Windows.Forms.PictureBox()
@@ -52,17 +55,14 @@ Partial Class FormNewPedido2
         Me.txtId = New System.Windows.Forms.TextBox()
         Me.lblId = New System.Windows.Forms.Label()
         Me.Panel28 = New System.Windows.Forms.Panel()
-        Me.ArquivovivomvDataSet = New ArquivoVivo_Desktop.arquivovivomvDataSet()
-        Me.ArquivovivomvDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MoveisBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.MoveisTableAdapter = New ArquivoVivo_Desktop.arquivovivomvDataSetTableAdapters.moveisTableAdapter()
         Me.panelMovel.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        CType(Me.picboxImageUploadMovel, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ArquivovivomvDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ArquivovivomvDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MoveisBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ArquivovivomvDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ArquivovivomvDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picboxImageUploadMovel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'panelMovel
@@ -137,62 +137,58 @@ Partial Class FormNewPedido2
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.rbtnAssis)
-        Me.Panel1.Controls.Add(Me.rbtnLocacao)
-        Me.Panel1.Controls.Add(Me.rbtnReforma)
-        Me.Panel1.Controls.Add(Me.rbtnVenda)
+        Me.Panel1.Controls.Add(Me.checkAssis)
+        Me.Panel1.Controls.Add(Me.checkVenda)
+        Me.Panel1.Controls.Add(Me.checkLocacao)
+        Me.Panel1.Controls.Add(Me.checkReforma)
         Me.Panel1.Location = New System.Drawing.Point(33, 69)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(392, 41)
         Me.Panel1.TabIndex = 51
         '
-        'rbtnAssis
+        'checkAssis
         '
-        Me.rbtnAssis.AutoSize = True
-        Me.rbtnAssis.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rbtnAssis.Location = New System.Drawing.Point(279, 7)
-        Me.rbtnAssis.Name = "rbtnAssis"
-        Me.rbtnAssis.Size = New System.Drawing.Size(110, 26)
-        Me.rbtnAssis.TabIndex = 3
-        Me.rbtnAssis.TabStop = True
-        Me.rbtnAssis.Text = "Assistência"
-        Me.rbtnAssis.UseVisualStyleBackColor = True
+        Me.checkAssis.AutoSize = True
+        Me.checkAssis.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.checkAssis.Location = New System.Drawing.Point(278, 8)
+        Me.checkAssis.Name = "checkAssis"
+        Me.checkAssis.Size = New System.Drawing.Size(111, 26)
+        Me.checkAssis.TabIndex = 57
+        Me.checkAssis.Text = "Assistência"
+        Me.checkAssis.UseVisualStyleBackColor = True
         '
-        'rbtnLocacao
+        'checkVenda
         '
-        Me.rbtnLocacao.AutoSize = True
-        Me.rbtnLocacao.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rbtnLocacao.Location = New System.Drawing.Point(182, 7)
-        Me.rbtnLocacao.Name = "rbtnLocacao"
-        Me.rbtnLocacao.Size = New System.Drawing.Size(91, 26)
-        Me.rbtnLocacao.TabIndex = 2
-        Me.rbtnLocacao.TabStop = True
-        Me.rbtnLocacao.Text = "Locação"
-        Me.rbtnLocacao.UseVisualStyleBackColor = True
+        Me.checkVenda.AutoSize = True
+        Me.checkVenda.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.checkVenda.Location = New System.Drawing.Point(3, 8)
+        Me.checkVenda.Name = "checkVenda"
+        Me.checkVenda.Size = New System.Drawing.Size(76, 26)
+        Me.checkVenda.TabIndex = 54
+        Me.checkVenda.Text = "Venda"
+        Me.checkVenda.UseVisualStyleBackColor = True
         '
-        'rbtnReforma
+        'checkLocacao
         '
-        Me.rbtnReforma.AutoSize = True
-        Me.rbtnReforma.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rbtnReforma.Location = New System.Drawing.Point(86, 7)
-        Me.rbtnReforma.Name = "rbtnReforma"
-        Me.rbtnReforma.Size = New System.Drawing.Size(90, 26)
-        Me.rbtnReforma.TabIndex = 1
-        Me.rbtnReforma.TabStop = True
-        Me.rbtnReforma.Text = "Reforma"
-        Me.rbtnReforma.UseVisualStyleBackColor = True
+        Me.checkLocacao.AutoSize = True
+        Me.checkLocacao.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.checkLocacao.Location = New System.Drawing.Point(182, 8)
+        Me.checkLocacao.Name = "checkLocacao"
+        Me.checkLocacao.Size = New System.Drawing.Size(92, 26)
+        Me.checkLocacao.TabIndex = 56
+        Me.checkLocacao.Text = "Locação"
+        Me.checkLocacao.UseVisualStyleBackColor = True
         '
-        'rbtnVenda
+        'checkReforma
         '
-        Me.rbtnVenda.AutoSize = True
-        Me.rbtnVenda.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rbtnVenda.Location = New System.Drawing.Point(5, 7)
-        Me.rbtnVenda.Name = "rbtnVenda"
-        Me.rbtnVenda.Size = New System.Drawing.Size(75, 26)
-        Me.rbtnVenda.TabIndex = 0
-        Me.rbtnVenda.TabStop = True
-        Me.rbtnVenda.Text = "Venda"
-        Me.rbtnVenda.UseVisualStyleBackColor = True
+        Me.checkReforma.AutoSize = True
+        Me.checkReforma.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.checkReforma.Location = New System.Drawing.Point(85, 8)
+        Me.checkReforma.Name = "checkReforma"
+        Me.checkReforma.Size = New System.Drawing.Size(91, 26)
+        Me.checkReforma.TabIndex = 55
+        Me.checkReforma.Text = "Reforma"
+        Me.checkReforma.UseVisualStyleBackColor = True
         '
         'btnCalculate
         '
@@ -283,6 +279,21 @@ Partial Class FormNewPedido2
         Me.cboxTitle.Size = New System.Drawing.Size(528, 35)
         Me.cboxTitle.TabIndex = 42
         Me.cboxTitle.ValueMember = "m_id"
+        '
+        'MoveisBindingSource
+        '
+        Me.MoveisBindingSource.DataMember = "moveis"
+        Me.MoveisBindingSource.DataSource = Me.ArquivovivomvDataSetBindingSource
+        '
+        'ArquivovivomvDataSetBindingSource
+        '
+        Me.ArquivovivomvDataSetBindingSource.DataSource = Me.ArquivovivomvDataSet
+        Me.ArquivovivomvDataSetBindingSource.Position = 0
+        '
+        'ArquivovivomvDataSet
+        '
+        Me.ArquivovivomvDataSet.DataSetName = "arquivovivomvDataSet"
+        Me.ArquivovivomvDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'btnCancel
         '
@@ -382,21 +393,6 @@ Partial Class FormNewPedido2
         Me.Panel28.Size = New System.Drawing.Size(1000, 2)
         Me.Panel28.TabIndex = 22
         '
-        'ArquivovivomvDataSet
-        '
-        Me.ArquivovivomvDataSet.DataSetName = "arquivovivomvDataSet"
-        Me.ArquivovivomvDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'ArquivovivomvDataSetBindingSource
-        '
-        Me.ArquivovivomvDataSetBindingSource.DataSource = Me.ArquivovivomvDataSet
-        Me.ArquivovivomvDataSetBindingSource.Position = 0
-        '
-        'MoveisBindingSource
-        '
-        Me.MoveisBindingSource.DataMember = "moveis"
-        Me.MoveisBindingSource.DataSource = Me.ArquivovivomvDataSetBindingSource
-        '
         'MoveisTableAdapter
         '
         Me.MoveisTableAdapter.ClearBeforeFill = True
@@ -417,10 +413,10 @@ Partial Class FormNewPedido2
         Me.Panel2.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.picboxImageUploadMovel, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ArquivovivomvDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ArquivovivomvDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MoveisBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ArquivovivomvDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ArquivovivomvDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picboxImageUploadMovel, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -430,10 +426,6 @@ Partial Class FormNewPedido2
     Friend WithEvents rbtnManual As RadioButton
     Friend WithEvents rbtnAuto As RadioButton
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents rbtnAssis As RadioButton
-    Friend WithEvents rbtnLocacao As RadioButton
-    Friend WithEvents rbtnReforma As RadioButton
-    Friend WithEvents rbtnVenda As RadioButton
     Friend WithEvents btnCalculate As Button
     Friend WithEvents txtValue As TextBox
     Friend WithEvents Label3 As Label
@@ -458,4 +450,8 @@ Partial Class FormNewPedido2
     Friend WithEvents ArquivovivomvDataSet As arquivovivomvDataSet
     Friend WithEvents MoveisBindingSource As BindingSource
     Friend WithEvents MoveisTableAdapter As arquivovivomvDataSetTableAdapters.moveisTableAdapter
+    Friend WithEvents checkAssis As CheckBox
+    Friend WithEvents checkLocacao As CheckBox
+    Friend WithEvents checkReforma As CheckBox
+    Friend WithEvents checkVenda As CheckBox
 End Class

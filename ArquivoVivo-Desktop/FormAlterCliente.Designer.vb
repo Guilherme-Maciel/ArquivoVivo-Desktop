@@ -23,6 +23,7 @@ Partial Class formAlterCliente
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.panelCliente = New System.Windows.Forms.Panel()
+        Me.btnNewPedido = New System.Windows.Forms.PictureBox()
         Me.rbtnAtivo = New System.Windows.Forms.RadioButton()
         Me.rbtnArquivado = New System.Windows.Forms.RadioButton()
         Me.txtCompleCliente = New System.Windows.Forms.TextBox()
@@ -53,7 +54,6 @@ Partial Class formAlterCliente
         Me.txtNameCliente = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.btnNewPedido = New System.Windows.Forms.PictureBox()
         Me.panelCliente.SuspendLayout()
         CType(Me.btnNewPedido, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -95,6 +95,16 @@ Partial Class formAlterCliente
         Me.panelCliente.Name = "panelCliente"
         Me.panelCliente.Size = New System.Drawing.Size(1000, 700)
         Me.panelCliente.TabIndex = 44
+        '
+        'btnNewPedido
+        '
+        Me.btnNewPedido.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnNewPedido.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.btnNewPedido
+        Me.btnNewPedido.Location = New System.Drawing.Point(953, 10)
+        Me.btnNewPedido.Name = "btnNewPedido"
+        Me.btnNewPedido.Size = New System.Drawing.Size(44, 44)
+        Me.btnNewPedido.TabIndex = 62
+        Me.btnNewPedido.TabStop = False
         '
         'rbtnAtivo
         '
@@ -377,15 +387,6 @@ Partial Class formAlterCliente
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1000, 2)
         Me.Panel3.TabIndex = 22
-        '
-        'btnNewPedido
-        '
-        Me.btnNewPedido.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.btnNewPedido
-        Me.btnNewPedido.Location = New System.Drawing.Point(953, 10)
-        Me.btnNewPedido.Name = "btnNewPedido"
-        Me.btnNewPedido.Size = New System.Drawing.Size(44, 44)
-        Me.btnNewPedido.TabIndex = 62
-        Me.btnNewPedido.TabStop = False
         '
         'formAlterCliente
         '

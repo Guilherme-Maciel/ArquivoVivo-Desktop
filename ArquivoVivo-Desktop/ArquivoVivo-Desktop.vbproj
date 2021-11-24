@@ -80,6 +80,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>arquivovivomvDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="arquivovivomvDataSet.vb">
+      <DependentUpon>arquivovivomvDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +138,12 @@
     <Compile Include="FormNewPedido2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormNewPedido3.Designer.vb">
+      <DependentUpon>FormNewPedido3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewPedido3.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ModuleDB.vb" />
     <Compile Include="ModuleSUB.vb" />
     <Compile Include="ModuleVAR.vb" />
@@ -181,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormNewPedido2.resx">
       <DependentUpon>FormNewPedido2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewPedido3.resx">
+      <DependentUpon>FormNewPedido3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

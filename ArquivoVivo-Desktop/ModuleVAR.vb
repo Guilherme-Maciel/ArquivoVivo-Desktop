@@ -9,4 +9,6 @@
     Public qtdA As Integer
 
     Public idQuery As Integer
+
+    Public nPedido As String
 End Module

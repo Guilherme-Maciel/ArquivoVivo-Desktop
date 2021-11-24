@@ -2033,8 +2033,6 @@ Partial Public Class arquivovivomvDataSet
         
         Private columnp_tipos As Global.System.Data.DataColumn
         
-        Private columnp_estado As Global.System.Data.DataColumn
-        
         Private columnp_ordem As Global.System.Data.DataColumn
         
         Private columnp_preco As Global.System.Data.DataColumn
@@ -2121,14 +2119,6 @@ Partial Public Class arquivovivomvDataSet
         Public ReadOnly Property p_tiposColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnp_tipos
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public ReadOnly Property p_estadoColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnp_estado
             End Get
         End Property
         
@@ -2225,9 +2215,9 @@ Partial Public Class arquivovivomvDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Overloads Function AddpedidosRow(ByVal p_nPedido As Integer, ByVal p_qtd As Integer, ByVal p_movel As String, ByVal p_tipos As String, ByVal p_estado As String, ByVal p_ordem As String, ByVal p_preco As Double, ByVal p_dtReg As Date, ByVal p_state As String, ByVal f_id As Integer, ByVal c_id As Integer, ByVal m_id As Integer) As pedidosRow
+        Public Overloads Function AddpedidosRow(ByVal p_nPedido As Integer, ByVal p_qtd As Integer, ByVal p_movel As String, ByVal p_tipos As String, ByVal p_ordem As String, ByVal p_preco As Double, ByVal p_dtReg As Date, ByVal p_state As String, ByVal f_id As Integer, ByVal c_id As Integer, ByVal m_id As Integer) As pedidosRow
             Dim rowpedidosRow As pedidosRow = CType(Me.NewRow,pedidosRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, p_nPedido, p_qtd, p_movel, p_tipos, p_estado, p_ordem, p_preco, p_dtReg, p_state, f_id, c_id, m_id}
+            Dim columnValuesArray() As Object = New Object() {Nothing, p_nPedido, p_qtd, p_movel, p_tipos, p_ordem, p_preco, p_dtReg, p_state, f_id, c_id, m_id}
             rowpedidosRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowpedidosRow)
             Return rowpedidosRow
@@ -2261,7 +2251,6 @@ Partial Public Class arquivovivomvDataSet
             Me.columnp_qtd = MyBase.Columns("p_qtd")
             Me.columnp_movel = MyBase.Columns("p_movel")
             Me.columnp_tipos = MyBase.Columns("p_tipos")
-            Me.columnp_estado = MyBase.Columns("p_estado")
             Me.columnp_ordem = MyBase.Columns("p_ordem")
             Me.columnp_preco = MyBase.Columns("p_preco")
             Me.columnp_dtReg = MyBase.Columns("p_dtReg")
@@ -2284,8 +2273,6 @@ Partial Public Class arquivovivomvDataSet
             MyBase.Columns.Add(Me.columnp_movel)
             Me.columnp_tipos = New Global.System.Data.DataColumn("p_tipos", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnp_tipos)
-            Me.columnp_estado = New Global.System.Data.DataColumn("p_estado", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnp_estado)
             Me.columnp_ordem = New Global.System.Data.DataColumn("p_ordem", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnp_ordem)
             Me.columnp_preco = New Global.System.Data.DataColumn("p_preco", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
@@ -2308,7 +2295,6 @@ Partial Public Class arquivovivomvDataSet
             Me.columnp_id.Unique = true
             Me.columnp_movel.MaxLength = 200
             Me.columnp_tipos.MaxLength = 11
-            Me.columnp_estado.MaxLength = 9
             Me.columnp_ordem.MaxLength = 500
             Me.columnp_state.MaxLength = 9
         End Sub
@@ -3913,21 +3899,6 @@ Partial Public Class arquivovivomvDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Property p_estado() As String
-            Get
-                Try 
-                    Return CType(Me(Me.tablepedidos.p_estadoColumn),String)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("O valor da coluna 'p_estado' na tabela 'pedidos' é DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tablepedidos.p_estadoColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Public Property p_ordem() As String
             Get
                 Try 
@@ -4077,18 +4048,6 @@ Partial Public Class arquivovivomvDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Public Sub Setp_tiposNull()
             Me(Me.tablepedidos.p_tiposColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Function Isp_estadoNull() As Boolean
-            Return Me.IsNull(Me.tablepedidos.p_estadoColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Sub Setp_estadoNull()
-            Me(Me.tablepedidos.p_estadoColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -8582,7 +8541,6 @@ Namespace arquivovivomvDataSetTableAdapters
             tableMapping.ColumnMappings.Add("p_qtd", "p_qtd")
             tableMapping.ColumnMappings.Add("p_movel", "p_movel")
             tableMapping.ColumnMappings.Add("p_tipos", "p_tipos")
-            tableMapping.ColumnMappings.Add("p_estado", "p_estado")
             tableMapping.ColumnMappings.Add("p_ordem", "p_ordem")
             tableMapping.ColumnMappings.Add("p_preco", "p_preco")
             tableMapping.ColumnMappings.Add("p_dtReg", "p_dtReg")
@@ -8596,13 +8554,12 @@ Namespace arquivovivomvDataSetTableAdapters
             Me._adapter.DeleteCommand.CommandText = "DELETE FROM `pedidos` WHERE ((`p_id` = @p1) AND ((@p2 = 1 AND `p_nPedido` IS NULL"& _ 
                 ") OR (`p_nPedido` = @p3)) AND ((@p4 = 1 AND `p_qtd` IS NULL) OR (`p_qtd` = @p5))"& _ 
                 " AND ((@p6 = 1 AND `p_movel` IS NULL) OR (`p_movel` = @p7)) AND ((@p8 = 1 AND `p"& _ 
-                "_tipos` IS NULL) OR (`p_tipos` = @p9)) AND ((@p10 = 1 AND `p_estado` IS NULL) OR"& _ 
-                " (`p_estado` = @p11)) AND ((@p12 = 1 AND `p_ordem` IS NULL) OR (`p_ordem` = @p13"& _ 
-                ")) AND ((@p14 = 1 AND `p_preco` IS NULL) OR (`p_preco` = @p15)) AND ((@p16 = 1 A"& _ 
-                "ND `p_dtReg` IS NULL) OR (`p_dtReg` = @p17)) AND ((@p18 = 1 AND `p_state` IS NUL"& _ 
-                "L) OR (`p_state` = @p19)) AND ((@p20 = 1 AND `f_id` IS NULL) OR (`f_id` = @p21))"& _ 
-                " AND ((@p22 = 1 AND `c_id` IS NULL) OR (`c_id` = @p23)) AND ((@p24 = 1 AND `m_id"& _ 
-                "` IS NULL) OR (`m_id` = @p25)))"
+                "_tipos` IS NULL) OR (`p_tipos` = @p9)) AND ((@p10 = 1 AND `p_ordem` IS NULL) OR "& _ 
+                "(`p_ordem` = @p11)) AND ((@p12 = 1 AND `p_preco` IS NULL) OR (`p_preco` = @p13))"& _ 
+                " AND ((@p14 = 1 AND `p_dtReg` IS NULL) OR (`p_dtReg` = @p15)) AND ((@p16 = 1 AND"& _ 
+                " `p_state` IS NULL) OR (`p_state` = @p17)) AND ((@p18 = 1 AND `f_id` IS NULL) OR"& _ 
+                " (`f_id` = @p19)) AND ((@p20 = 1 AND `c_id` IS NULL) OR (`c_id` = @p21)) AND ((@"& _ 
+                "p22 = 1 AND `m_id` IS NULL) OR (`m_id` = @p23)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Dim param As Global.MySql.Data.MySqlClient.MySqlParameter = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
@@ -8623,8 +8580,8 @@ Namespace arquivovivomvDataSetTableAdapters
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p3"
-            param.DbType = Global.System.Data.DbType.Int32
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
             param.SourceColumn = "p_nPedido"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
@@ -8685,7 +8642,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "p_estado"
+            param.SourceColumn = "p_ordem"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             param.SourceColumnNullMapping = true
             Me._adapter.DeleteCommand.Parameters.Add(param)
@@ -8694,7 +8651,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "p_estado"
+            param.SourceColumn = "p_ordem"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
@@ -8702,29 +8659,12 @@ Namespace arquivovivomvDataSetTableAdapters
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "p_ordem"
-            param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            param.SourceColumnNullMapping = true
-            Me._adapter.DeleteCommand.Parameters.Add(param)
-            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p13"
-            param.DbType = Global.System.Data.DbType.[String]
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
-            param.IsNullable = true
-            param.SourceColumn = "p_ordem"
-            param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            Me._adapter.DeleteCommand.Parameters.Add(param)
-            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p14"
-            param.DbType = Global.System.Data.DbType.Int32
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
-            param.IsNullable = true
             param.SourceColumn = "p_preco"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             param.SourceColumnNullMapping = true
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p15"
+            param.ParameterName = "@p13"
             param.DbType = Global.System.Data.DbType.[Double]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.[Double]
             param.IsNullable = true
@@ -8732,7 +8672,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p16"
+            param.ParameterName = "@p14"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -8741,7 +8681,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceColumnNullMapping = true
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p17"
+            param.ParameterName = "@p15"
             param.DbType = Global.System.Data.DbType.DateTime
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.DateTime
             param.IsNullable = true
@@ -8749,7 +8689,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p18"
+            param.ParameterName = "@p16"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -8758,11 +8698,28 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceColumnNullMapping = true
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p19"
-            param.DbType = Global.System.Data.DbType.[String]
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.ParameterName = "@p17"
+            param.DbType = Global.System.Data.DbType.StringFixedLength
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.[String]
             param.IsNullable = true
             param.SourceColumn = "p_state"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p18"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "f_id"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            param.SourceColumnNullMapping = true
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p19"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "f_id"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
@@ -8770,7 +8727,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "f_id"
+            param.SourceColumn = "c_id"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             param.SourceColumnNullMapping = true
             Me._adapter.DeleteCommand.Parameters.Add(param)
@@ -8779,7 +8736,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "f_id"
+            param.SourceColumn = "c_id"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
@@ -8787,7 +8744,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "c_id"
+            param.SourceColumn = "m_id"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             param.SourceColumnNullMapping = true
             Me._adapter.DeleteCommand.Parameters.Add(param)
@@ -8796,36 +8753,19 @@ Namespace arquivovivomvDataSetTableAdapters
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "c_id"
-            param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            Me._adapter.DeleteCommand.Parameters.Add(param)
-            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p24"
-            param.DbType = Global.System.Data.DbType.Int32
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
-            param.IsNullable = true
-            param.SourceColumn = "m_id"
-            param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            param.SourceColumnNullMapping = true
-            Me._adapter.DeleteCommand.Parameters.Add(param)
-            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p25"
-            param.DbType = Global.System.Data.DbType.Int32
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
-            param.IsNullable = true
             param.SourceColumn = "m_id"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
             Me._adapter.InsertCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO `pedidos` (`p_nPedido`, `p_qtd`, `p_movel`, `p_tipos`, `p_estado`, `p"& _ 
-                "_ordem`, `p_preco`, `p_dtReg`, `p_state`, `f_id`, `c_id`, `m_id`) VALUES (@p1, @"& _ 
-                "p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12)"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `pedidos` (`p_nPedido`, `p_qtd`, `p_movel`, `p_tipos`, `p_ordem`, `p_"& _ 
+                "preco`, `p_dtReg`, `p_state`, `f_id`, `c_id`, `m_id`) VALUES (@p1, @p2, @p3, @p4"& _ 
+                ", @p5, @p6, @p7, @p8, @p9, @p10, @p11)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
-            param.DbType = Global.System.Data.DbType.Int32
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
             param.SourceColumn = "p_nPedido"
             param.SourceVersion = Global.System.Data.DataRowVersion.Current
@@ -8859,19 +8799,11 @@ Namespace arquivovivomvDataSetTableAdapters
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "p_estado"
-            param.SourceVersion = Global.System.Data.DataRowVersion.Current
-            Me._adapter.InsertCommand.Parameters.Add(param)
-            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p6"
-            param.DbType = Global.System.Data.DbType.[String]
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
-            param.IsNullable = true
             param.SourceColumn = "p_ordem"
             param.SourceVersion = Global.System.Data.DataRowVersion.Current
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p7"
+            param.ParameterName = "@p6"
             param.DbType = Global.System.Data.DbType.[Double]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.[Double]
             param.IsNullable = true
@@ -8879,7 +8811,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Current
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p8"
+            param.ParameterName = "@p7"
             param.DbType = Global.System.Data.DbType.DateTime
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.DateTime
             param.IsNullable = true
@@ -8887,15 +8819,15 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Current
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p9"
-            param.DbType = Global.System.Data.DbType.[String]
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.ParameterName = "@p8"
+            param.DbType = Global.System.Data.DbType.StringFixedLength
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.[String]
             param.IsNullable = true
             param.SourceColumn = "p_state"
             param.SourceVersion = Global.System.Data.DataRowVersion.Current
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p10"
+            param.ParameterName = "@p9"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -8903,7 +8835,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Current
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p11"
+            param.ParameterName = "@p10"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -8911,7 +8843,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Current
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p12"
+            param.ParameterName = "@p11"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -8921,22 +8853,21 @@ Namespace arquivovivomvDataSetTableAdapters
             Me._adapter.UpdateCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
             Me._adapter.UpdateCommand.CommandText = "UPDATE `pedidos` SET `p_nPedido` = @p1, `p_qtd` = @p2, `p_movel` = @p3, `p_tipos`"& _ 
-                " = @p4, `p_estado` = @p5, `p_ordem` = @p6, `p_preco` = @p7, `p_dtReg` = @p8, `p_"& _ 
-                "state` = @p9, `f_id` = @p10, `c_id` = @p11, `m_id` = @p12 WHERE ((`p_id` = @p13)"& _ 
-                " AND ((@p14 = 1 AND `p_nPedido` IS NULL) OR (`p_nPedido` = @p15)) AND ((@p16 = 1"& _ 
-                " AND `p_qtd` IS NULL) OR (`p_qtd` = @p17)) AND ((@p18 = 1 AND `p_movel` IS NULL)"& _ 
-                " OR (`p_movel` = @p19)) AND ((@p20 = 1 AND `p_tipos` IS NULL) OR (`p_tipos` = @p"& _ 
-                "21)) AND ((@p22 = 1 AND `p_estado` IS NULL) OR (`p_estado` = @p23)) AND ((@p24 ="& _ 
-                " 1 AND `p_ordem` IS NULL) OR (`p_ordem` = @p25)) AND ((@p26 = 1 AND `p_preco` IS"& _ 
-                " NULL) OR (`p_preco` = @p27)) AND ((@p28 = 1 AND `p_dtReg` IS NULL) OR (`p_dtReg"& _ 
-                "` = @p29)) AND ((@p30 = 1 AND `p_state` IS NULL) OR (`p_state` = @p31)) AND ((@p"& _ 
-                "32 = 1 AND `f_id` IS NULL) OR (`f_id` = @p33)) AND ((@p34 = 1 AND `c_id` IS NULL"& _ 
-                ") OR (`c_id` = @p35)) AND ((@p36 = 1 AND `m_id` IS NULL) OR (`m_id` = @p37)))"
+                " = @p4, `p_ordem` = @p5, `p_preco` = @p6, `p_dtReg` = @p7, `p_state` = @p8, `f_i"& _ 
+                "d` = @p9, `c_id` = @p10, `m_id` = @p11 WHERE ((`p_id` = @p12) AND ((@p13 = 1 AND"& _ 
+                " `p_nPedido` IS NULL) OR (`p_nPedido` = @p14)) AND ((@p15 = 1 AND `p_qtd` IS NUL"& _ 
+                "L) OR (`p_qtd` = @p16)) AND ((@p17 = 1 AND `p_movel` IS NULL) OR (`p_movel` = @p"& _ 
+                "18)) AND ((@p19 = 1 AND `p_tipos` IS NULL) OR (`p_tipos` = @p20)) AND ((@p21 = 1"& _ 
+                " AND `p_ordem` IS NULL) OR (`p_ordem` = @p22)) AND ((@p23 = 1 AND `p_preco` IS N"& _ 
+                "ULL) OR (`p_preco` = @p24)) AND ((@p25 = 1 AND `p_dtReg` IS NULL) OR (`p_dtReg` "& _ 
+                "= @p26)) AND ((@p27 = 1 AND `p_state` IS NULL) OR (`p_state` = @p28)) AND ((@p29"& _ 
+                " = 1 AND `f_id` IS NULL) OR (`f_id` = @p30)) AND ((@p31 = 1 AND `c_id` IS NULL) "& _ 
+                "OR (`c_id` = @p32)) AND ((@p33 = 1 AND `m_id` IS NULL) OR (`m_id` = @p34)))"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
-            param.DbType = Global.System.Data.DbType.Int32
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
             param.SourceColumn = "p_nPedido"
             param.SourceVersion = Global.System.Data.DataRowVersion.Current
@@ -8970,19 +8901,11 @@ Namespace arquivovivomvDataSetTableAdapters
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "p_estado"
-            param.SourceVersion = Global.System.Data.DataRowVersion.Current
-            Me._adapter.UpdateCommand.Parameters.Add(param)
-            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p6"
-            param.DbType = Global.System.Data.DbType.[String]
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
-            param.IsNullable = true
             param.SourceColumn = "p_ordem"
             param.SourceVersion = Global.System.Data.DataRowVersion.Current
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p7"
+            param.ParameterName = "@p6"
             param.DbType = Global.System.Data.DbType.[Double]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.[Double]
             param.IsNullable = true
@@ -8990,7 +8913,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Current
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p8"
+            param.ParameterName = "@p7"
             param.DbType = Global.System.Data.DbType.DateTime
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.DateTime
             param.IsNullable = true
@@ -8998,15 +8921,15 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Current
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p9"
-            param.DbType = Global.System.Data.DbType.[String]
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.ParameterName = "@p8"
+            param.DbType = Global.System.Data.DbType.StringFixedLength
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.[String]
             param.IsNullable = true
             param.SourceColumn = "p_state"
             param.SourceVersion = Global.System.Data.DataRowVersion.Current
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p10"
+            param.ParameterName = "@p9"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -9014,7 +8937,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Current
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p11"
+            param.ParameterName = "@p10"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -9022,7 +8945,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Current
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p12"
+            param.ParameterName = "@p11"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -9030,7 +8953,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Current
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p13"
+            param.ParameterName = "@p12"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -9038,7 +8961,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p14"
+            param.ParameterName = "@p13"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -9047,12 +8970,21 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p14"
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.IsNullable = true
+            param.SourceColumn = "p_nPedido"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p15"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "p_nPedido"
+            param.SourceColumn = "p_qtd"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p16"
@@ -9061,86 +8993,60 @@ Namespace arquivovivomvDataSetTableAdapters
             param.IsNullable = true
             param.SourceColumn = "p_qtd"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p17"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "p_qtd"
+            param.SourceColumn = "p_movel"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p18"
-            param.DbType = Global.System.Data.DbType.Int32
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
             param.SourceColumn = "p_movel"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p19"
-            param.DbType = Global.System.Data.DbType.[String]
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "p_movel"
+            param.SourceColumn = "p_tipos"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p20"
-            param.DbType = Global.System.Data.DbType.Int32
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
             param.SourceColumn = "p_tipos"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p21"
-            param.DbType = Global.System.Data.DbType.[String]
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "p_tipos"
+            param.SourceColumn = "p_ordem"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p22"
-            param.DbType = Global.System.Data.DbType.Int32
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "p_estado"
+            param.SourceColumn = "p_ordem"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p23"
-            param.DbType = Global.System.Data.DbType.[String]
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
-            param.IsNullable = true
-            param.SourceColumn = "p_estado"
-            param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            Me._adapter.UpdateCommand.Parameters.Add(param)
-            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p24"
-            param.DbType = Global.System.Data.DbType.Int32
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
-            param.IsNullable = true
-            param.SourceColumn = "p_ordem"
-            param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            param.SourceColumnNullMapping = true
-            Me._adapter.UpdateCommand.Parameters.Add(param)
-            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p25"
-            param.DbType = Global.System.Data.DbType.[String]
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
-            param.IsNullable = true
-            param.SourceColumn = "p_ordem"
-            param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            Me._adapter.UpdateCommand.Parameters.Add(param)
-            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p26"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -9149,7 +9055,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p27"
+            param.ParameterName = "@p24"
             param.DbType = Global.System.Data.DbType.[Double]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.[Double]
             param.IsNullable = true
@@ -9157,7 +9063,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p28"
+            param.ParameterName = "@p25"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -9166,7 +9072,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p29"
+            param.ParameterName = "@p26"
             param.DbType = Global.System.Data.DbType.DateTime
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.DateTime
             param.IsNullable = true
@@ -9174,7 +9080,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p30"
+            param.ParameterName = "@p27"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -9183,49 +9089,49 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p31"
-            param.DbType = Global.System.Data.DbType.[String]
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.ParameterName = "@p28"
+            param.DbType = Global.System.Data.DbType.StringFixedLength
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.[String]
             param.IsNullable = true
             param.SourceColumn = "p_state"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p29"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "f_id"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            param.SourceColumnNullMapping = true
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p30"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "f_id"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p31"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "c_id"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p32"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "f_id"
+            param.SourceColumn = "c_id"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p33"
-            param.DbType = Global.System.Data.DbType.Int32
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
-            param.IsNullable = true
-            param.SourceColumn = "f_id"
-            param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            Me._adapter.UpdateCommand.Parameters.Add(param)
-            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p34"
-            param.DbType = Global.System.Data.DbType.Int32
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
-            param.IsNullable = true
-            param.SourceColumn = "c_id"
-            param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            param.SourceColumnNullMapping = true
-            Me._adapter.UpdateCommand.Parameters.Add(param)
-            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p35"
-            param.DbType = Global.System.Data.DbType.Int32
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
-            param.IsNullable = true
-            param.SourceColumn = "c_id"
-            param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            Me._adapter.UpdateCommand.Parameters.Add(param)
-            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p36"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -9234,7 +9140,7 @@ Namespace arquivovivomvDataSetTableAdapters
             param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p37"
+            param.ParameterName = "@p34"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -9256,8 +9162,8 @@ Namespace arquivovivomvDataSetTableAdapters
             Me._commandCollection = New Global.MySql.Data.MySqlClient.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT `p_id`, `p_nPedido`, `p_qtd`, `p_movel`, `p_tipos`, `p_estado`, `p_ordem`,"& _ 
-                " `p_preco`, `p_dtReg`, `p_state`, `f_id`, `c_id`, `m_id` FROM `pedidos`"
+            Me._commandCollection(0).CommandText = "SELECT p_id, p_nPedido, p_qtd, p_movel, p_tipos, p_ordem, p_preco, p_dtReg, p_sta"& _ 
+                "te, f_id, c_id, m_id FROM pedidos"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -9317,14 +9223,14 @@ Namespace arquivovivomvDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal p1 As Integer, ByVal p3 As Global.System.Nullable(Of Integer), ByVal p5 As Global.System.Nullable(Of Integer), ByVal p7 As String, ByVal p9 As String, ByVal p11 As String, ByVal p13 As String, ByVal p15 As Global.System.Nullable(Of Double), ByVal p17 As Global.System.Nullable(Of Date), ByVal p19 As String, ByVal p21 As Global.System.Nullable(Of Integer), ByVal p23 As Global.System.Nullable(Of Integer), ByVal p25 As Global.System.Nullable(Of Integer)) As Integer
+        Public Overloads Overridable Function Delete(ByVal p1 As Integer, ByVal p3 As String, ByVal p5 As Global.System.Nullable(Of Integer), ByVal p7 As String, ByVal p9 As String, ByVal p11 As String, ByVal p13 As Global.System.Nullable(Of Double), ByVal p15 As Global.System.Nullable(Of Date), ByVal p17 As String, ByVal p19 As Global.System.Nullable(Of Integer), ByVal p21 As Global.System.Nullable(Of Integer), ByVal p23 As Global.System.Nullable(Of Integer)) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(p1,Integer)
-            If (p3.HasValue = true) Then
-                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(p3.Value,Integer)
-            Else
+            If (p3 Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(1).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(2).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(p3,String)
             End If
             If (p5.HasValue = true) Then
                 Me.Adapter.DeleteCommand.Parameters(3).Value = CType(0,Object)
@@ -9354,33 +9260,33 @@ Namespace arquivovivomvDataSetTableAdapters
                 Me.Adapter.DeleteCommand.Parameters(9).Value = CType(0,Object)
                 Me.Adapter.DeleteCommand.Parameters(10).Value = CType(p11,String)
             End If
-            If (p13 Is Nothing) Then
+            If (p13.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(11).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(12).Value = CType(p13.Value,Double)
+            Else
                 Me.Adapter.DeleteCommand.Parameters(11).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(12).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.DeleteCommand.Parameters(11).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(12).Value = CType(p13,String)
             End If
             If (p15.HasValue = true) Then
                 Me.Adapter.DeleteCommand.Parameters(13).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(14).Value = CType(p15.Value,Double)
+                Me.Adapter.DeleteCommand.Parameters(14).Value = CType(p15.Value,Date)
             Else
                 Me.Adapter.DeleteCommand.Parameters(13).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(14).Value = Global.System.DBNull.Value
             End If
-            If (p17.HasValue = true) Then
-                Me.Adapter.DeleteCommand.Parameters(15).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(16).Value = CType(p17.Value,Date)
-            Else
+            If (p17 Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(15).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(16).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(15).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(16).Value = CType(p17,String)
             End If
-            If (p19 Is Nothing) Then
+            If (p19.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(17).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(18).Value = CType(p19.Value,Integer)
+            Else
                 Me.Adapter.DeleteCommand.Parameters(17).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(18).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.DeleteCommand.Parameters(17).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(18).Value = CType(p19,String)
             End If
             If (p21.HasValue = true) Then
                 Me.Adapter.DeleteCommand.Parameters(19).Value = CType(0,Object)
@@ -9395,13 +9301,6 @@ Namespace arquivovivomvDataSetTableAdapters
             Else
                 Me.Adapter.DeleteCommand.Parameters(21).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(22).Value = Global.System.DBNull.Value
-            End If
-            If (p25.HasValue = true) Then
-                Me.Adapter.DeleteCommand.Parameters(23).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(24).Value = CType(p25.Value,Integer)
-            Else
-                Me.Adapter.DeleteCommand.Parameters(23).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(24).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -9422,11 +9321,11 @@ Namespace arquivovivomvDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal p1 As Global.System.Nullable(Of Integer), ByVal p2 As Global.System.Nullable(Of Integer), ByVal p3 As String, ByVal p4 As String, ByVal p5 As String, ByVal p6 As String, ByVal p7 As Global.System.Nullable(Of Double), ByVal p8 As Global.System.Nullable(Of Date), ByVal p9 As String, ByVal p10 As Global.System.Nullable(Of Integer), ByVal p11 As Global.System.Nullable(Of Integer), ByVal p12 As Global.System.Nullable(Of Integer)) As Integer
-            If (p1.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(0).Value = CType(p1.Value,Integer)
-            Else
+        Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As Global.System.Nullable(Of Integer), ByVal p3 As String, ByVal p4 As String, ByVal p5 As String, ByVal p6 As Global.System.Nullable(Of Double), ByVal p7 As Global.System.Nullable(Of Date), ByVal p8 As String, ByVal p9 As Global.System.Nullable(Of Integer), ByVal p10 As Global.System.Nullable(Of Integer), ByVal p11 As Global.System.Nullable(Of Integer)) As Integer
+            If (p1 Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(p1,String)
             End If
             If (p2.HasValue = true) Then
                 Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2.Value,Integer)
@@ -9448,25 +9347,25 @@ Namespace arquivovivomvDataSetTableAdapters
             Else
                 Me.Adapter.InsertCommand.Parameters(4).Value = CType(p5,String)
             End If
-            If (p6 Is Nothing) Then
-                Me.Adapter.InsertCommand.Parameters(5).Value = Global.System.DBNull.Value
+            If (p6.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(5).Value = CType(p6.Value,Double)
             Else
-                Me.Adapter.InsertCommand.Parameters(5).Value = CType(p6,String)
+                Me.Adapter.InsertCommand.Parameters(5).Value = Global.System.DBNull.Value
             End If
             If (p7.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(6).Value = CType(p7.Value,Double)
+                Me.Adapter.InsertCommand.Parameters(6).Value = CType(p7.Value,Date)
             Else
                 Me.Adapter.InsertCommand.Parameters(6).Value = Global.System.DBNull.Value
             End If
-            If (p8.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(7).Value = CType(p8.Value,Date)
-            Else
+            If (p8 Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(7).Value = Global.System.DBNull.Value
-            End If
-            If (p9 Is Nothing) Then
-                Me.Adapter.InsertCommand.Parameters(8).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(8).Value = CType(p9,String)
+                Me.Adapter.InsertCommand.Parameters(7).Value = CType(p8,String)
+            End If
+            If (p9.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(8).Value = CType(p9.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(8).Value = Global.System.DBNull.Value
             End If
             If (p10.HasValue = true) Then
                 Me.Adapter.InsertCommand.Parameters(9).Value = CType(p10.Value,Integer)
@@ -9477,11 +9376,6 @@ Namespace arquivovivomvDataSetTableAdapters
                 Me.Adapter.InsertCommand.Parameters(10).Value = CType(p11.Value,Integer)
             Else
                 Me.Adapter.InsertCommand.Parameters(10).Value = Global.System.DBNull.Value
-            End If
-            If (p12.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(11).Value = CType(p12.Value,Integer)
-            Else
-                Me.Adapter.InsertCommand.Parameters(11).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -9503,35 +9397,33 @@ Namespace arquivovivomvDataSetTableAdapters
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
         Public Overloads Overridable Function Update( _
-                    ByVal p1 As Global.System.Nullable(Of Integer),  _
+                    ByVal p1 As String,  _
                     ByVal p2 As Global.System.Nullable(Of Integer),  _
                     ByVal p3 As String,  _
                     ByVal p4 As String,  _
                     ByVal p5 As String,  _
-                    ByVal p6 As String,  _
-                    ByVal p7 As Global.System.Nullable(Of Double),  _
-                    ByVal p8 As Global.System.Nullable(Of Date),  _
-                    ByVal p9 As String,  _
+                    ByVal p6 As Global.System.Nullable(Of Double),  _
+                    ByVal p7 As Global.System.Nullable(Of Date),  _
+                    ByVal p8 As String,  _
+                    ByVal p9 As Global.System.Nullable(Of Integer),  _
                     ByVal p10 As Global.System.Nullable(Of Integer),  _
                     ByVal p11 As Global.System.Nullable(Of Integer),  _
-                    ByVal p12 As Global.System.Nullable(Of Integer),  _
-                    ByVal p13 As Integer,  _
-                    ByVal p15 As Global.System.Nullable(Of Integer),  _
-                    ByVal p17 As Global.System.Nullable(Of Integer),  _
-                    ByVal p19 As String,  _
-                    ByVal p21 As String,  _
-                    ByVal p23 As String,  _
-                    ByVal p25 As String,  _
-                    ByVal p27 As Global.System.Nullable(Of Double),  _
-                    ByVal p29 As Global.System.Nullable(Of Date),  _
-                    ByVal p31 As String,  _
-                    ByVal p33 As Global.System.Nullable(Of Integer),  _
-                    ByVal p35 As Global.System.Nullable(Of Integer),  _
-                    ByVal p37 As Global.System.Nullable(Of Integer)) As Integer
-            If (p1.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(p1.Value,Integer)
-            Else
+                    ByVal p12 As Integer,  _
+                    ByVal p14 As String,  _
+                    ByVal p16 As Global.System.Nullable(Of Integer),  _
+                    ByVal p18 As String,  _
+                    ByVal p20 As String,  _
+                    ByVal p22 As String,  _
+                    ByVal p24 As Global.System.Nullable(Of Double),  _
+                    ByVal p26 As Global.System.Nullable(Of Date),  _
+                    ByVal p28 As String,  _
+                    ByVal p30 As Global.System.Nullable(Of Integer),  _
+                    ByVal p32 As Global.System.Nullable(Of Integer),  _
+                    ByVal p34 As Global.System.Nullable(Of Integer)) As Integer
+            If (p1 Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(0).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(p1,String)
             End If
             If (p2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1).Value = CType(p2.Value,Integer)
@@ -9553,25 +9445,25 @@ Namespace arquivovivomvDataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(4).Value = CType(p5,String)
             End If
-            If (p6 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(5).Value = Global.System.DBNull.Value
+            If (p6.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(p6.Value,Double)
             Else
-                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(p6,String)
+                Me.Adapter.UpdateCommand.Parameters(5).Value = Global.System.DBNull.Value
             End If
             If (p7.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(p7.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(p7.Value,Date)
             Else
                 Me.Adapter.UpdateCommand.Parameters(6).Value = Global.System.DBNull.Value
             End If
-            If (p8.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(p8.Value,Date)
-            Else
+            If (p8 Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(7).Value = Global.System.DBNull.Value
-            End If
-            If (p9 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(8).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(p9,String)
+                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(p8,String)
+            End If
+            If (p9.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(p9.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(8).Value = Global.System.DBNull.Value
             End If
             If (p10.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(9).Value = CType(p10.Value,Integer)
@@ -9583,95 +9475,83 @@ Namespace arquivovivomvDataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(10).Value = Global.System.DBNull.Value
             End If
-            If (p12.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(p12.Value,Integer)
+            Me.Adapter.UpdateCommand.Parameters(11).Value = CType(p12,Integer)
+            If (p14 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(13).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(11).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(p14,String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(12).Value = CType(p13,Integer)
-            If (p15.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(p15.Value,Integer)
+            If (p16.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(p16.Value,Integer)
             Else
-                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(14).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(15).Value = Global.System.DBNull.Value
             End If
-            If (p17.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(p17.Value,Integer)
+            If (p18 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(17).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(16).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(p18,String)
             End If
-            If (p19 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(18).Value = Global.System.DBNull.Value
+            If (p20 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(19).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(p19,String)
+                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(p20,String)
             End If
-            If (p21 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(20).Value = Global.System.DBNull.Value
+            If (p22 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(21).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(p21,String)
+                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(p22,String)
             End If
-            If (p23 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(22).Value = Global.System.DBNull.Value
+            If (p24.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(23).Value = CType(p24.Value,Double)
             Else
-                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(p23,String)
+                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(23).Value = Global.System.DBNull.Value
             End If
-            If (p25 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(23).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(24).Value = Global.System.DBNull.Value
+            If (p26.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(25).Value = CType(p26.Value,Date)
             Else
-                Me.Adapter.UpdateCommand.Parameters(23).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(p25,String)
+                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(25).Value = Global.System.DBNull.Value
             End If
-            If (p27.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(25).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(p27.Value,Double)
+            If (p28 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(27).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(25).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(26).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(27).Value = CType(p28,String)
             End If
-            If (p29.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(27).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(p29.Value,Date)
+            If (p30.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(29).Value = CType(p30.Value,Integer)
             Else
-                Me.Adapter.UpdateCommand.Parameters(27).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(28).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(29).Value = Global.System.DBNull.Value
             End If
-            If (p31 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(29).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(30).Value = Global.System.DBNull.Value
+            If (p32.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(31).Value = CType(p32.Value,Integer)
             Else
-                Me.Adapter.UpdateCommand.Parameters(29).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(p31,String)
+                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(31).Value = Global.System.DBNull.Value
             End If
-            If (p33.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(31).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(32).Value = CType(p33.Value,Integer)
+            If (p34.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(32).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(33).Value = CType(p34.Value,Integer)
             Else
-                Me.Adapter.UpdateCommand.Parameters(31).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(32).Value = Global.System.DBNull.Value
-            End If
-            If (p35.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(33).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(34).Value = CType(p35.Value,Integer)
-            Else
-                Me.Adapter.UpdateCommand.Parameters(33).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(34).Value = Global.System.DBNull.Value
-            End If
-            If (p37.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(35).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(36).Value = CType(p37.Value,Integer)
-            Else
-                Me.Adapter.UpdateCommand.Parameters(35).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(36).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(32).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(33).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _

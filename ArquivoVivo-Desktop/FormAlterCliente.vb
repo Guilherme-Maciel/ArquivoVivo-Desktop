@@ -151,4 +151,9 @@ Public Class formAlterCliente
             End Using
         End If
     End Sub
+
+    Private Sub btnNewPedido_Click(sender As Object, e As EventArgs) Handles btnNewPedido.Click
+        FormNewPedido1.Show()
+        Me.Close()
+    End Sub
 End Class
