@@ -351,4 +351,10 @@ Public Class FormHome
             LoadDataMysql(queryCliente, dtGridCliente)
         End If
     End Sub
+
+    Private Sub dtGridCliente_RowHeaderMouseDoubleClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dtGridCliente.RowHeaderMouseDoubleClick
+        idQuery = CType(dtGridCliente.Item(0, e.RowIndex).Value, Integer)
+        formAlterCliente.Show()
+        Me.Close()
+    End Sub
 End Class

@@ -102,12 +102,12 @@ Partial Class FormCadaster
         Me.Label41 = New System.Windows.Forms.Label()
         Me.btnCancelFuncionario = New System.Windows.Forms.Button()
         Me.btnCommitFuncionario = New System.Windows.Forms.Button()
+        Me.txtSobreFuncionario = New System.Windows.Forms.TextBox()
+        Me.Label42 = New System.Windows.Forms.Label()
         Me.Label43 = New System.Windows.Forms.Label()
         Me.txtNomeFuncionario = New System.Windows.Forms.TextBox()
         Me.Label44 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Label42 = New System.Windows.Forms.Label()
-        Me.txtSobreFuncionario = New System.Windows.Forms.TextBox()
         Me.panelMovel.SuspendLayout()
         CType(Me.picboxImageUploadMovel, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DesignersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -528,7 +528,7 @@ Partial Class FormCadaster
         Me.panelCliente.Controls.Add(Me.Panel3)
         Me.panelCliente.Location = New System.Drawing.Point(0, 0)
         Me.panelCliente.Name = "panelCliente"
-        Me.panelCliente.Size = New System.Drawing.Size(1000, 700)
+        Me.panelCliente.Size = New System.Drawing.Size(1000, 747)
         Me.panelCliente.TabIndex = 43
         '
         'txtCompleCliente
@@ -816,7 +816,7 @@ Partial Class FormCadaster
         Me.panelFuncionario.Controls.Add(Me.txtNomeFuncionario)
         Me.panelFuncionario.Controls.Add(Me.Label44)
         Me.panelFuncionario.Controls.Add(Me.Panel6)
-        Me.panelFuncionario.Location = New System.Drawing.Point(0, 0)
+        Me.panelFuncionario.Location = New System.Drawing.Point(1000, 0)
         Me.panelFuncionario.Name = "panelFuncionario"
         Me.panelFuncionario.Size = New System.Drawing.Size(1000, 700)
         Me.panelFuncionario.TabIndex = 44
@@ -916,6 +916,24 @@ Partial Class FormCadaster
         Me.btnCommitFuncionario.Text = "SALVAR"
         Me.btnCommitFuncionario.UseVisualStyleBackColor = True
         '
+        'txtSobreFuncionario
+        '
+        Me.txtSobreFuncionario.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSobreFuncionario.Location = New System.Drawing.Point(556, 225)
+        Me.txtSobreFuncionario.Name = "txtSobreFuncionario"
+        Me.txtSobreFuncionario.Size = New System.Drawing.Size(278, 35)
+        Me.txtSobreFuncionario.TabIndex = 35
+        '
+        'Label42
+        '
+        Me.Label42.AutoSize = True
+        Me.Label42.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label42.Location = New System.Drawing.Point(548, 184)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(126, 44)
+        Me.Label42.TabIndex = 34
+        Me.Label42.Text = "s.nome"
+        '
         'Label43
         '
         Me.Label43.AutoSize = True
@@ -952,24 +970,6 @@ Partial Class FormCadaster
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(1000, 2)
         Me.Panel6.TabIndex = 22
-        '
-        'Label42
-        '
-        Me.Label42.AutoSize = True
-        Me.Label42.Font = New System.Drawing.Font("Raleway Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label42.Location = New System.Drawing.Point(548, 184)
-        Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(126, 44)
-        Me.Label42.TabIndex = 34
-        Me.Label42.Text = "s.nome"
-        '
-        'txtSobreFuncionario
-        '
-        Me.txtSobreFuncionario.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSobreFuncionario.Location = New System.Drawing.Point(556, 225)
-        Me.txtSobreFuncionario.Name = "txtSobreFuncionario"
-        Me.txtSobreFuncionario.Size = New System.Drawing.Size(278, 35)
-        Me.txtSobreFuncionario.TabIndex = 35
         '
         'FormCadaster
         '
