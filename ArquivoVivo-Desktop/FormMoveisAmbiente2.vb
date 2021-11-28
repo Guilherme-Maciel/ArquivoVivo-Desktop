@@ -5,7 +5,7 @@ Imports System.Drawing.Imaging
 Imports System.Runtime.InteropServices
 Public Class FormMoveisAmbiente2
 
-    Dim idQuery As Integer
+    Dim idQueryMovel As Integer
     Public assoc() As Integer
     Public count As Integer = 0
 
@@ -23,13 +23,13 @@ Public Class FormMoveisAmbiente2
 
     Private Sub btnFill_Click(sender As Object, e As EventArgs) Handles btnFill.Click
 
-        idQuery = cboxTitle.SelectedValue
-        txtId.Text = idQuery
+        idQueryMovel = cboxTitle.SelectedValue
+        txtId.Text = idQueryMovel
 
         Using con As MySqlConnection = GetConnectionMysql()
             Try
                 con.Open()
-                Dim sql As String = "SELECT m_titulo, m_desc, d_nome FROM moveis, designers WHERE moveis.m_id = '" & idQuery & "' and moveis.d_id = designers.d_id"
+                Dim sql As String = "SELECT m_titulo, m_desc, d_nome FROM moveis, designers WHERE moveis.m_id = '" & idQueryMovel & "' and moveis.d_id = designers.d_id"
                 Dim cmd As MySqlCommand = New MySqlCommand(sql, con)
                 Dim da As MySqlDataAdapter = New MySqlDataAdapter(cmd)
                 Dim dt As DataTable = New DataTable
@@ -56,7 +56,7 @@ Public Class FormMoveisAmbiente2
 
     Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
         ReDim Preserve assoc(count)
-        assoc(count) = idQuery
+        assoc(count) = idQueryMovel
         count += 1
 
         txtId.Clear()
@@ -64,7 +64,7 @@ Public Class FormMoveisAmbiente2
         txtDesigner.Clear()
         txtDesigner.Clear()
         cboxTitle.SelectedIndex = -1
-        idQuery = 0
+        idQueryMovel = 0
         picboxImageUploadMovel.Image = Nothing
     End Sub
 
@@ -78,7 +78,7 @@ Public Class FormMoveisAmbiente2
         Dim dataFormat, assocStr, typeImg As String
 
         ReDim Preserve assoc(count)
-        assoc(count) = idQuery
+        assoc(count) = idQueryMovel
 
         dataFormat = Format(data, "s")
         assocStr = String.Join(",", assoc)
@@ -145,7 +145,7 @@ Public Class FormMoveisAmbiente2
         Using con As MySqlConnection = GetConnectionMysql()
             Try
                 con.Open()
-                Dim sql As String = "SELECT m_imagem FROM moveis WHERE m_id = '" & idQuery & "'"
+                Dim sql As String = "SELECT m_imagem FROM moveis WHERE m_id = '" & idQueryMovel & "'"
                 Dim cmd As MySqlCommand = New MySqlCommand(sql, con)
                 Dim da As MySqlDataAdapter = New MySqlDataAdapter(cmd)
                 Dim dt As DataTable = New DataTable

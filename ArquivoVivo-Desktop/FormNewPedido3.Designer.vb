@@ -23,47 +23,45 @@ Partial Class FormNewPedido3
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.panelMovel = New System.Windows.Forms.Panel()
+        Me.dtGridPedido = New System.Windows.Forms.DataGridView()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.lblEmail = New System.Windows.Forms.Label()
+        Me.lblBairro = New System.Windows.Forms.Label()
+        Me.lblRua = New System.Windows.Forms.Label()
+        Me.lblCep = New System.Windows.Forms.Label()
+        Me.lblCliente = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.lblCel = New System.Windows.Forms.Label()
+        Me.lblFixo = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblTotal = New System.Windows.Forms.Label()
+        Me.lblData = New System.Windows.Forms.Label()
+        Me.lblNPedido = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.btnCommit = New System.Windows.Forms.Button()
         Me.btnCancel = New System.Windows.Forms.Button()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label83 = New System.Windows.Forms.Label()
         Me.Panel28 = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.lblNPedido = New System.Windows.Forms.Label()
-        Me.lblOrdens = New System.Windows.Forms.Label()
-        Me.lblData = New System.Windows.Forms.Label()
-        Me.lblTotal = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.lblFixo = New System.Windows.Forms.Label()
-        Me.lblCel = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.lblCliente = New System.Windows.Forms.Label()
-        Me.lblCep = New System.Windows.Forms.Label()
-        Me.lblRua = New System.Windows.Forms.Label()
-        Me.lblBairro = New System.Windows.Forms.Label()
-        Me.lblEmail = New System.Windows.Forms.Label()
-        Me.dtGridPedido = New System.Windows.Forms.DataGridView()
         Me.PedidosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ArquivovivomvDataSet = New ArquivoVivo_Desktop.arquivovivomvDataSet()
         Me.PedidosTableAdapter = New ArquivoVivo_Desktop.arquivovivomvDataSetTableAdapters.pedidosTableAdapter()
         Me.panelMovel.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
         CType(Me.dtGridPedido, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         CType(Me.PedidosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ArquivovivomvDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -82,137 +80,51 @@ Partial Class FormNewPedido3
         Me.panelMovel.Size = New System.Drawing.Size(1000, 700)
         Me.panelMovel.TabIndex = 31
         '
-        'btnCommit
+        'dtGridPedido
         '
-        Me.btnCommit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCommit.Font = New System.Drawing.Font("Raleway Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCommit.Location = New System.Drawing.Point(393, 327)
-        Me.btnCommit.Name = "btnCommit"
-        Me.btnCommit.Size = New System.Drawing.Size(213, 57)
-        Me.btnCommit.TabIndex = 45
-        Me.btnCommit.Text = "REGISTRAR"
-        Me.btnCommit.UseVisualStyleBackColor = True
-        '
-        'btnCancel
-        '
-        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCancel.Font = New System.Drawing.Font("Raleway Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancel.Location = New System.Drawing.Point(12, 327)
-        Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(213, 57)
-        Me.btnCancel.TabIndex = 41
-        Me.btnCancel.Text = "CANCELAR"
-        Me.btnCancel.UseVisualStyleBackColor = True
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Raleway Light", 20.0!)
-        Me.Label6.Location = New System.Drawing.Point(14, 13)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(155, 37)
-        Me.Label6.TabIndex = 34
-        Me.Label6.Text = "N° PEDIDO:"
-        '
-        'Label83
-        '
-        Me.Label83.AutoSize = True
-        Me.Label83.Font = New System.Drawing.Font("Raleway", 24.0!)
-        Me.Label83.Location = New System.Drawing.Point(430, 10)
-        Me.Label83.Name = "Label83"
-        Me.Label83.Size = New System.Drawing.Size(138, 44)
-        Me.Label83.TabIndex = 23
-        Me.Label83.Text = "PEDIDO"
-        '
-        'Panel28
-        '
-        Me.Panel28.BackColor = System.Drawing.Color.Black
-        Me.Panel28.Location = New System.Drawing.Point(0, 61)
-        Me.Panel28.Name = "Panel28"
-        Me.Panel28.Size = New System.Drawing.Size(1000, 2)
-        Me.Panel28.TabIndex = 22
-        '
-        'Panel1
-        '
-        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Controls.Add(Me.lblTotal)
-        Me.Panel1.Controls.Add(Me.lblData)
-        Me.Panel1.Controls.Add(Me.lblOrdens)
-        Me.Panel1.Controls.Add(Me.lblNPedido)
-        Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Location = New System.Drawing.Point(12, 70)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(332, 251)
-        Me.Panel1.TabIndex = 54
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Raleway Light", 20.0!)
-        Me.Label1.Location = New System.Drawing.Point(14, 76)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(133, 37)
-        Me.Label1.TabIndex = 35
-        Me.Label1.Text = "ORDENS:"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Raleway Light", 20.0!)
-        Me.Label2.Location = New System.Drawing.Point(14, 139)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(88, 37)
-        Me.Label2.TabIndex = 36
-        Me.Label2.Text = "DATA:"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Raleway Light", 20.0!)
-        Me.Label3.Location = New System.Drawing.Point(14, 202)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(104, 37)
-        Me.Label3.TabIndex = 37
-        Me.Label3.Text = "TOTAL:"
-        '
-        'lblNPedido
-        '
-        Me.lblNPedido.AutoSize = True
-        Me.lblNPedido.Font = New System.Drawing.Font("Raleway Light", 20.0!)
-        Me.lblNPedido.Location = New System.Drawing.Point(165, 13)
-        Me.lblNPedido.Name = "lblNPedido"
-        Me.lblNPedido.Size = New System.Drawing.Size(0, 37)
-        Me.lblNPedido.TabIndex = 38
-        '
-        'lblOrdens
-        '
-        Me.lblOrdens.AutoSize = True
-        Me.lblOrdens.Font = New System.Drawing.Font("Raleway Light", 20.0!)
-        Me.lblOrdens.Location = New System.Drawing.Point(143, 76)
-        Me.lblOrdens.Name = "lblOrdens"
-        Me.lblOrdens.Size = New System.Drawing.Size(0, 37)
-        Me.lblOrdens.TabIndex = 39
-        '
-        'lblData
-        '
-        Me.lblData.AutoSize = True
-        Me.lblData.Font = New System.Drawing.Font("Raleway Light", 20.0!)
-        Me.lblData.Location = New System.Drawing.Point(98, 139)
-        Me.lblData.Name = "lblData"
-        Me.lblData.Size = New System.Drawing.Size(0, 37)
-        Me.lblData.TabIndex = 40
-        '
-        'lblTotal
-        '
-        Me.lblTotal.AutoSize = True
-        Me.lblTotal.Font = New System.Drawing.Font("Raleway Light", 20.0!)
-        Me.lblTotal.Location = New System.Drawing.Point(114, 202)
-        Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.Size = New System.Drawing.Size(0, 37)
-        Me.lblTotal.TabIndex = 41
+        Me.dtGridPedido.AllowUserToAddRows = False
+        Me.dtGridPedido.AllowUserToDeleteRows = False
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Arial", 12.0!)
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridPedido.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
+        Me.dtGridPedido.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridPedido.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
+        Me.dtGridPedido.ColumnHeadersHeight = 29
+        Me.dtGridPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridPedido.DefaultCellStyle = DataGridViewCellStyle11
+        Me.dtGridPedido.EnableHeadersVisualStyles = False
+        Me.dtGridPedido.Location = New System.Drawing.Point(12, 389)
+        Me.dtGridPedido.Margin = New System.Windows.Forms.Padding(2)
+        Me.dtGridPedido.Name = "dtGridPedido"
+        Me.dtGridPedido.ReadOnly = True
+        Me.dtGridPedido.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        Me.dtGridPedido.RowHeadersWidth = 20
+        Me.dtGridPedido.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle12.NullValue = "(sem dados)"
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridPedido.RowsDefaultCellStyle = DataGridViewCellStyle12
+        Me.dtGridPedido.Size = New System.Drawing.Size(977, 300)
+        Me.dtGridPedido.TabIndex = 57
         '
         'Panel2
         '
@@ -236,85 +148,50 @@ Partial Class FormNewPedido3
         Me.Panel2.Size = New System.Drawing.Size(595, 251)
         Me.Panel2.TabIndex = 55
         '
-        'Label
+        'lblEmail
         '
-        Me.Label.AutoSize = True
-        Me.Label.Font = New System.Drawing.Font("Raleway Light", 20.0!)
-        Me.Label.Location = New System.Drawing.Point(6, 7)
-        Me.Label.Name = "Label"
-        Me.Label.Size = New System.Drawing.Size(134, 37)
-        Me.Label.TabIndex = 34
-        Me.Label.Text = "CLIENTE:"
+        Me.lblEmail.Font = New System.Drawing.Font("Raleway Light", 16.0!)
+        Me.lblEmail.Location = New System.Drawing.Point(94, 213)
+        Me.lblEmail.Name = "lblEmail"
+        Me.lblEmail.Size = New System.Drawing.Size(488, 30)
+        Me.lblEmail.TabIndex = 47
+        Me.lblEmail.Text = "(NULL)"
         '
-        'Label4
+        'lblBairro
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Raleway Light", 20.0!)
-        Me.Label4.Location = New System.Drawing.Point(6, 47)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(75, 37)
-        Me.Label4.TabIndex = 35
-        Me.Label4.Text = "CEP:"
+        Me.lblBairro.Font = New System.Drawing.Font("Raleway Light", 16.0!)
+        Me.lblBairro.Location = New System.Drawing.Point(122, 134)
+        Me.lblBairro.Name = "lblBairro"
+        Me.lblBairro.Size = New System.Drawing.Size(450, 30)
+        Me.lblBairro.TabIndex = 46
+        Me.lblBairro.Text = "(NULL)"
         '
-        'Label5
+        'lblRua
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Raleway Light", 18.0!)
-        Me.Label5.Location = New System.Drawing.Point(257, 169)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(128, 34)
-        Me.Label5.TabIndex = 36
-        Me.Label5.Text = "CELULAR:"
+        Me.lblRua.Font = New System.Drawing.Font("Raleway Light", 16.0!)
+        Me.lblRua.Location = New System.Drawing.Point(79, 94)
+        Me.lblRua.Name = "lblRua"
+        Me.lblRua.Size = New System.Drawing.Size(502, 30)
+        Me.lblRua.TabIndex = 45
+        Me.lblRua.Text = "(NULL)"
         '
-        'Label7
+        'lblCep
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Raleway Light", 18.0!)
-        Me.Label7.Location = New System.Drawing.Point(6, 169)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(71, 34)
-        Me.Label7.TabIndex = 37
-        Me.Label7.Text = "FIXO:"
+        Me.lblCep.Font = New System.Drawing.Font("Raleway Light", 16.0!)
+        Me.lblCep.Location = New System.Drawing.Point(77, 54)
+        Me.lblCep.Name = "lblCep"
+        Me.lblCep.Size = New System.Drawing.Size(502, 30)
+        Me.lblCep.TabIndex = 44
+        Me.lblCep.Text = "(NULL)"
         '
-        'Label8
+        'lblCliente
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Raleway Light", 20.0!)
-        Me.Label8.Location = New System.Drawing.Point(6, 127)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(120, 37)
-        Me.Label8.TabIndex = 38
-        Me.Label8.Text = "BAIRRO:"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Raleway Light", 20.0!)
-        Me.Label9.Location = New System.Drawing.Point(6, 87)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(77, 37)
-        Me.Label9.TabIndex = 39
-        Me.Label9.Text = "RUA:"
-        '
-        'lblFixo
-        '
-        Me.lblFixo.AutoSize = True
-        Me.lblFixo.Font = New System.Drawing.Font("Raleway Light", 16.0!)
-        Me.lblFixo.Location = New System.Drawing.Point(73, 173)
-        Me.lblFixo.Name = "lblFixo"
-        Me.lblFixo.Size = New System.Drawing.Size(178, 30)
-        Me.lblFixo.TabIndex = 40
-        Me.lblFixo.Text = "55 11 94210-4521"
-        '
-        'lblCel
-        '
-        Me.lblCel.AutoSize = True
-        Me.lblCel.Font = New System.Drawing.Font("Raleway Light", 16.0!)
-        Me.lblCel.Location = New System.Drawing.Point(381, 173)
-        Me.lblCel.Name = "lblCel"
-        Me.lblCel.Size = New System.Drawing.Size(178, 30)
-        Me.lblCel.TabIndex = 41
-        Me.lblCel.Text = "55 11 94210-4521"
+        Me.lblCliente.Font = New System.Drawing.Font("Raleway Light", 16.0!)
+        Me.lblCliente.Location = New System.Drawing.Point(136, 14)
+        Me.lblCliente.Name = "lblCliente"
+        Me.lblCliente.Size = New System.Drawing.Size(443, 30)
+        Me.lblCliente.TabIndex = 43
+        Me.lblCliente.Text = "(NULL)"
         '
         'Label12
         '
@@ -326,96 +203,196 @@ Partial Class FormNewPedido3
         Me.Label12.TabIndex = 42
         Me.Label12.Text = "EMAIL:"
         '
-        'lblCliente
+        'lblCel
         '
-        Me.lblCliente.Font = New System.Drawing.Font("Raleway Light", 16.0!)
-        Me.lblCliente.Location = New System.Drawing.Point(136, 14)
-        Me.lblCliente.Name = "lblCliente"
-        Me.lblCliente.Size = New System.Drawing.Size(443, 30)
-        Me.lblCliente.TabIndex = 43
-        Me.lblCliente.Text = "(NULL)"
+        Me.lblCel.AutoSize = True
+        Me.lblCel.Font = New System.Drawing.Font("Raleway Light", 16.0!)
+        Me.lblCel.Location = New System.Drawing.Point(381, 173)
+        Me.lblCel.Name = "lblCel"
+        Me.lblCel.Size = New System.Drawing.Size(178, 30)
+        Me.lblCel.TabIndex = 41
+        Me.lblCel.Text = "55 11 94210-4521"
         '
-        'lblCep
+        'lblFixo
         '
-        Me.lblCep.Font = New System.Drawing.Font("Raleway Light", 16.0!)
-        Me.lblCep.Location = New System.Drawing.Point(77, 54)
-        Me.lblCep.Name = "lblCep"
-        Me.lblCep.Size = New System.Drawing.Size(502, 30)
-        Me.lblCep.TabIndex = 44
-        Me.lblCep.Text = "(NULL)"
+        Me.lblFixo.AutoSize = True
+        Me.lblFixo.Font = New System.Drawing.Font("Raleway Light", 16.0!)
+        Me.lblFixo.Location = New System.Drawing.Point(73, 173)
+        Me.lblFixo.Name = "lblFixo"
+        Me.lblFixo.Size = New System.Drawing.Size(178, 30)
+        Me.lblFixo.TabIndex = 40
+        Me.lblFixo.Text = "55 11 94210-4521"
         '
-        'lblRua
+        'Label9
         '
-        Me.lblRua.Font = New System.Drawing.Font("Raleway Light", 16.0!)
-        Me.lblRua.Location = New System.Drawing.Point(79, 94)
-        Me.lblRua.Name = "lblRua"
-        Me.lblRua.Size = New System.Drawing.Size(502, 30)
-        Me.lblRua.TabIndex = 45
-        Me.lblRua.Text = "(NULL)"
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Raleway Light", 20.0!)
+        Me.Label9.Location = New System.Drawing.Point(6, 87)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(77, 37)
+        Me.Label9.TabIndex = 39
+        Me.Label9.Text = "RUA:"
         '
-        'lblBairro
+        'Label8
         '
-        Me.lblBairro.Font = New System.Drawing.Font("Raleway Light", 16.0!)
-        Me.lblBairro.Location = New System.Drawing.Point(122, 134)
-        Me.lblBairro.Name = "lblBairro"
-        Me.lblBairro.Size = New System.Drawing.Size(450, 30)
-        Me.lblBairro.TabIndex = 46
-        Me.lblBairro.Text = "(NULL)"
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Raleway Light", 20.0!)
+        Me.Label8.Location = New System.Drawing.Point(6, 127)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(120, 37)
+        Me.Label8.TabIndex = 38
+        Me.Label8.Text = "BAIRRO:"
         '
-        'lblEmail
+        'Label7
         '
-        Me.lblEmail.Font = New System.Drawing.Font("Raleway Light", 16.0!)
-        Me.lblEmail.Location = New System.Drawing.Point(94, 213)
-        Me.lblEmail.Name = "lblEmail"
-        Me.lblEmail.Size = New System.Drawing.Size(488, 30)
-        Me.lblEmail.TabIndex = 47
-        Me.lblEmail.Text = "(NULL)"
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Raleway Light", 18.0!)
+        Me.Label7.Location = New System.Drawing.Point(6, 169)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(71, 34)
+        Me.Label7.TabIndex = 37
+        Me.Label7.Text = "FIXO:"
         '
-        'dtGridPedido
+        'Label5
         '
-        Me.dtGridPedido.AllowUserToAddRows = False
-        Me.dtGridPedido.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridPedido.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.dtGridPedido.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridPedido.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.dtGridPedido.ColumnHeadersHeight = 29
-        Me.dtGridPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridPedido.DefaultCellStyle = DataGridViewCellStyle3
-        Me.dtGridPedido.EnableHeadersVisualStyles = False
-        Me.dtGridPedido.Location = New System.Drawing.Point(12, 389)
-        Me.dtGridPedido.Margin = New System.Windows.Forms.Padding(2)
-        Me.dtGridPedido.Name = "dtGridPedido"
-        Me.dtGridPedido.ReadOnly = True
-        Me.dtGridPedido.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        Me.dtGridPedido.RowHeadersWidth = 20
-        Me.dtGridPedido.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle4.NullValue = "(sem dados)"
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridPedido.RowsDefaultCellStyle = DataGridViewCellStyle4
-        Me.dtGridPedido.Size = New System.Drawing.Size(977, 300)
-        Me.dtGridPedido.TabIndex = 57
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Raleway Light", 18.0!)
+        Me.Label5.Location = New System.Drawing.Point(257, 169)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(128, 34)
+        Me.Label5.TabIndex = 36
+        Me.Label5.Text = "CELULAR:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Raleway Light", 20.0!)
+        Me.Label4.Location = New System.Drawing.Point(6, 47)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(75, 37)
+        Me.Label4.TabIndex = 35
+        Me.Label4.Text = "CEP:"
+        '
+        'Label
+        '
+        Me.Label.AutoSize = True
+        Me.Label.Font = New System.Drawing.Font("Raleway Light", 20.0!)
+        Me.Label.Location = New System.Drawing.Point(6, 7)
+        Me.Label.Name = "Label"
+        Me.Label.Size = New System.Drawing.Size(134, 37)
+        Me.Label.TabIndex = 34
+        Me.Label.Text = "CLIENTE:"
+        '
+        'Panel1
+        '
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.lblTotal)
+        Me.Panel1.Controls.Add(Me.lblData)
+        Me.Panel1.Controls.Add(Me.lblNPedido)
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.Label6)
+        Me.Panel1.Location = New System.Drawing.Point(12, 70)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(332, 251)
+        Me.Panel1.TabIndex = 54
+        '
+        'lblTotal
+        '
+        Me.lblTotal.AutoSize = True
+        Me.lblTotal.Font = New System.Drawing.Font("Raleway Light", 20.0!)
+        Me.lblTotal.Location = New System.Drawing.Point(114, 176)
+        Me.lblTotal.Name = "lblTotal"
+        Me.lblTotal.Size = New System.Drawing.Size(0, 37)
+        Me.lblTotal.TabIndex = 41
+        '
+        'lblData
+        '
+        Me.lblData.AutoSize = True
+        Me.lblData.Font = New System.Drawing.Font("Raleway Light", 20.0!)
+        Me.lblData.Location = New System.Drawing.Point(98, 100)
+        Me.lblData.Name = "lblData"
+        Me.lblData.Size = New System.Drawing.Size(0, 37)
+        Me.lblData.TabIndex = 40
+        '
+        'lblNPedido
+        '
+        Me.lblNPedido.AutoSize = True
+        Me.lblNPedido.Font = New System.Drawing.Font("Raleway Light", 20.0!)
+        Me.lblNPedido.Location = New System.Drawing.Point(165, 26)
+        Me.lblNPedido.Name = "lblNPedido"
+        Me.lblNPedido.Size = New System.Drawing.Size(0, 37)
+        Me.lblNPedido.TabIndex = 38
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Raleway Light", 20.0!)
+        Me.Label3.Location = New System.Drawing.Point(10, 178)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(104, 37)
+        Me.Label3.TabIndex = 37
+        Me.Label3.Text = "TOTAL:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Raleway Light", 20.0!)
+        Me.Label2.Location = New System.Drawing.Point(10, 102)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(88, 37)
+        Me.Label2.TabIndex = 36
+        Me.Label2.Text = "DATA:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Raleway Light", 20.0!)
+        Me.Label6.Location = New System.Drawing.Point(10, 26)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(155, 37)
+        Me.Label6.TabIndex = 34
+        Me.Label6.Text = "N° PEDIDO:"
+        '
+        'btnCommit
+        '
+        Me.btnCommit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCommit.Font = New System.Drawing.Font("Raleway Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCommit.Location = New System.Drawing.Point(393, 327)
+        Me.btnCommit.Name = "btnCommit"
+        Me.btnCommit.Size = New System.Drawing.Size(213, 57)
+        Me.btnCommit.TabIndex = 45
+        Me.btnCommit.Text = "REGISTRAR"
+        Me.btnCommit.UseVisualStyleBackColor = True
+        '
+        'btnCancel
+        '
+        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancel.Font = New System.Drawing.Font("Raleway Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.Location = New System.Drawing.Point(12, 327)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(213, 57)
+        Me.btnCancel.TabIndex = 41
+        Me.btnCancel.Text = "CANCELAR"
+        Me.btnCancel.UseVisualStyleBackColor = True
+        '
+        'Label83
+        '
+        Me.Label83.AutoSize = True
+        Me.Label83.Font = New System.Drawing.Font("Raleway", 24.0!)
+        Me.Label83.Location = New System.Drawing.Point(430, 10)
+        Me.Label83.Name = "Label83"
+        Me.Label83.Size = New System.Drawing.Size(138, 44)
+        Me.Label83.TabIndex = 23
+        Me.Label83.Text = "PEDIDO"
+        '
+        'Panel28
+        '
+        Me.Panel28.BackColor = System.Drawing.Color.Black
+        Me.Panel28.Location = New System.Drawing.Point(0, 61)
+        Me.Panel28.Name = "Panel28"
+        Me.Panel28.Size = New System.Drawing.Size(1000, 2)
+        Me.Panel28.TabIndex = 22
         '
         'PedidosBindingSource
         '
@@ -443,11 +420,11 @@ Partial Class FormNewPedido3
         Me.Text = "FormNewPedido3"
         Me.panelMovel.ResumeLayout(False)
         Me.panelMovel.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        CType(Me.dtGridPedido, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        CType(Me.dtGridPedido, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         CType(Me.PedidosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ArquivovivomvDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -473,11 +450,9 @@ Partial Class FormNewPedido3
     Friend WithEvents Panel1 As Panel
     Friend WithEvents lblTotal As Label
     Friend WithEvents lblData As Label
-    Friend WithEvents lblOrdens As Label
     Friend WithEvents lblNPedido As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents btnCommit As Button
     Friend WithEvents btnCancel As Button

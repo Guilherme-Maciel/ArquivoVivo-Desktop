@@ -101,7 +101,6 @@ Public Class formAlterCliente
                     cmd.Parameters.AddWithValue("@telCel", cel)
                     cmd.Parameters.AddWithValue("@telFix", fix)
                     cmd.Parameters.AddWithValue("@state", state)
-
                     'Cadastro concluído
                     Dim reader As MySqlDataReader = cmd.ExecuteReader
 
@@ -109,6 +108,9 @@ Public Class formAlterCliente
                     MsgBox(ex.Message)
                 Finally
                     con.Close()
+                    idQuery = Nothing
+                    FormHome.Show()
+                    Me.Close()
                 End Try
             End Using
         Else

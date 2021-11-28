@@ -179,7 +179,7 @@ Partial Class FormCadaster
         Me.panelMovel.Controls.Add(Me.Panel28)
         Me.panelMovel.Location = New System.Drawing.Point(0, 0)
         Me.panelMovel.Name = "panelMovel"
-        Me.panelMovel.Size = New System.Drawing.Size(961, 706)
+        Me.panelMovel.Size = New System.Drawing.Size(1000, 706)
         Me.panelMovel.TabIndex = 27
         '
         'btnCancel
@@ -816,7 +816,7 @@ Partial Class FormCadaster
         Me.panelFuncionario.Controls.Add(Me.txtNomeFuncionario)
         Me.panelFuncionario.Controls.Add(Me.Label44)
         Me.panelFuncionario.Controls.Add(Me.Panel6)
-        Me.panelFuncionario.Location = New System.Drawing.Point(1000, 0)
+        Me.panelFuncionario.Location = New System.Drawing.Point(0, 0)
         Me.panelFuncionario.Name = "panelFuncionario"
         Me.panelFuncionario.Size = New System.Drawing.Size(1000, 700)
         Me.panelFuncionario.TabIndex = 44
@@ -976,10 +976,10 @@ Partial Class FormCadaster
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1000, 700)
+        Me.Controls.Add(Me.panelMovel)
         Me.Controls.Add(Me.panelFuncionario)
         Me.Controls.Add(Me.panelCliente)
         Me.Controls.Add(Me.panelDesigner)
-        Me.Controls.Add(Me.panelMovel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormCadaster"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

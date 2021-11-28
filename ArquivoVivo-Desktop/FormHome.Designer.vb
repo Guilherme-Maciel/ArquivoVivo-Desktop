@@ -22,10 +22,6 @@ Partial Class FormHome
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -38,7 +34,16 @@ Partial Class FormHome
         Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnHome = New System.Windows.Forms.PictureBox()
         Me.btnPedidos = New System.Windows.Forms.Button()
         Me.btnCliente = New System.Windows.Forms.Button()
         Me.btnMoveis = New System.Windows.Forms.Button()
@@ -46,54 +51,49 @@ Partial Class FormHome
         Me.btnFuncionario = New System.Windows.Forms.Button()
         Me.panelMainPage = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
+        Me.lblWithoutStorageMain = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lbl_lucroM = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
+        Me.lblClienteMesMain = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.lblWaitingPedidosMain = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.lbl_lucroA = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lbl_lucroS = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.panelHomePedidos = New System.Windows.Forms.Panel()
         Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label21 = New System.Windows.Forms.Label()
-        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.rbtnMovelPedido = New System.Windows.Forms.RadioButton()
+        Me.rbtnClientePedido = New System.Windows.Forms.RadioButton()
+        Me.rbtnNPedido = New System.Windows.Forms.RadioButton()
+        Me.panelSearchPedidos = New System.Windows.Forms.Panel()
+        Me.txtSearchPedidos = New System.Windows.Forms.TextBox()
+        Me.btnSearchPedidos = New System.Windows.Forms.PictureBox()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
+        Me.lblPedidosMensais = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.Label33 = New System.Windows.Forms.Label()
-        Me.Label34 = New System.Windows.Forms.Label()
+        Me.lblPedidosAno = New System.Windows.Forms.Label()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.Panel14 = New System.Windows.Forms.Panel()
-        Me.Label36 = New System.Windows.Forms.Label()
-        Me.Label37 = New System.Windows.Forms.Label()
+        Me.lblWaitingPedidos = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
         Me.panelHomeCliente = New System.Windows.Forms.Panel()
         Me.rbtnCepCliente = New System.Windows.Forms.RadioButton()
+        Me.btnCadasterCliente = New System.Windows.Forms.PictureBox()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.dtGridCliente = New System.Windows.Forms.DataGridView()
         Me.Label22 = New System.Windows.Forms.Label()
@@ -102,6 +102,9 @@ Partial Class FormHome
         Me.rbtnCelCliente = New System.Windows.Forms.RadioButton()
         Me.rbtnNomeCliente = New System.Windows.Forms.RadioButton()
         Me.rbtnIdCliente = New System.Windows.Forms.RadioButton()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.txtSearchCliente = New System.Windows.Forms.TextBox()
+        Me.btnSearchCliente = New System.Windows.Forms.PictureBox()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Panel15 = New System.Windows.Forms.Panel()
         Me.lblCountCurrentMouthCliente = New System.Windows.Forms.Label()
@@ -110,6 +113,7 @@ Partial Class FormHome
         Me.lblCountAllDataCliente = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
         Me.panelHomeMoveis = New System.Windows.Forms.Panel()
+        Me.btnCadasterMovel = New System.Windows.Forms.PictureBox()
         Me.Panel27 = New System.Windows.Forms.Panel()
         Me.lblCountWithoutStorageMovel = New System.Windows.Forms.Label()
         Me.Label55 = New System.Windows.Forms.Label()
@@ -123,6 +127,9 @@ Partial Class FormHome
         Me.RadioButton13 = New System.Windows.Forms.RadioButton()
         Me.RadioButton14 = New System.Windows.Forms.RadioButton()
         Me.RadioButton15 = New System.Windows.Forms.RadioButton()
+        Me.Panel20 = New System.Windows.Forms.Panel()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Panel21 = New System.Windows.Forms.Panel()
         Me.Label39 = New System.Windows.Forms.Label()
@@ -142,6 +149,9 @@ Partial Class FormHome
         Me.rbtnDesignerMovel = New System.Windows.Forms.RadioButton()
         Me.rbtnTituloMovel = New System.Windows.Forms.RadioButton()
         Me.rbtnIdMovel = New System.Windows.Forms.RadioButton()
+        Me.Panel24 = New System.Windows.Forms.Panel()
+        Me.txtSearchMoveis = New System.Windows.Forms.TextBox()
+        Me.btnSearchMoveis = New System.Windows.Forms.PictureBox()
         Me.Label49 = New System.Windows.Forms.Label()
         Me.Panel25 = New System.Windows.Forms.Panel()
         Me.lblCountAllDataMovel = New System.Windows.Forms.Label()
@@ -150,6 +160,7 @@ Partial Class FormHome
         Me.lblCountCurrentMouthMovel = New System.Windows.Forms.Label()
         Me.Label53 = New System.Windows.Forms.Label()
         Me.panelHomeDesigners = New System.Windows.Forms.Panel()
+        Me.btnCadasterDesigner = New System.Windows.Forms.PictureBox()
         Me.Panel29 = New System.Windows.Forms.Panel()
         Me.Panel30 = New System.Windows.Forms.Panel()
         Me.Panel31 = New System.Windows.Forms.Panel()
@@ -160,6 +171,9 @@ Partial Class FormHome
         Me.RadioButton22 = New System.Windows.Forms.RadioButton()
         Me.RadioButton23 = New System.Windows.Forms.RadioButton()
         Me.RadioButton24 = New System.Windows.Forms.RadioButton()
+        Me.Panel32 = New System.Windows.Forms.Panel()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label59 = New System.Windows.Forms.Label()
         Me.Panel33 = New System.Windows.Forms.Panel()
         Me.Label60 = New System.Windows.Forms.Label()
@@ -178,12 +192,16 @@ Partial Class FormHome
         Me.rbtnBioDesigner = New System.Windows.Forms.RadioButton()
         Me.rbtnNomeDesigner = New System.Windows.Forms.RadioButton()
         Me.rbtnIdDesigner = New System.Windows.Forms.RadioButton()
+        Me.Panel36 = New System.Windows.Forms.Panel()
+        Me.txtSearchDesigners = New System.Windows.Forms.TextBox()
+        Me.btnSearchDesigner = New System.Windows.Forms.PictureBox()
         Me.Label70 = New System.Windows.Forms.Label()
         Me.Panel38 = New System.Windows.Forms.Panel()
         Me.lblCountAllDataDesigner = New System.Windows.Forms.Label()
         Me.Label74 = New System.Windows.Forms.Label()
         Me.panelHomeFuncionarios = New System.Windows.Forms.Panel()
         Me.rbtnEmailFuncionario = New System.Windows.Forms.RadioButton()
+        Me.btnCadasterFuncionario = New System.Windows.Forms.PictureBox()
         Me.Panel28 = New System.Windows.Forms.Panel()
         Me.Panel37 = New System.Windows.Forms.Panel()
         Me.Panel39 = New System.Windows.Forms.Panel()
@@ -194,6 +212,9 @@ Partial Class FormHome
         Me.RadioButton31 = New System.Windows.Forms.RadioButton()
         Me.RadioButton32 = New System.Windows.Forms.RadioButton()
         Me.RadioButton33 = New System.Windows.Forms.RadioButton()
+        Me.Panel40 = New System.Windows.Forms.Panel()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Label57 = New System.Windows.Forms.Label()
         Me.Panel41 = New System.Windows.Forms.Panel()
         Me.Label71 = New System.Windows.Forms.Label()
@@ -213,42 +234,18 @@ Partial Class FormHome
         Me.rbtnCelFuncionario = New System.Windows.Forms.RadioButton()
         Me.rbtnNomeFuncionario = New System.Windows.Forms.RadioButton()
         Me.rbtnIdFuncionario = New System.Windows.Forms.RadioButton()
+        Me.Panel44 = New System.Windows.Forms.Panel()
+        Me.txtSearchFuncionarios = New System.Windows.Forms.TextBox()
+        Me.btnSearchFuncionarios = New System.Windows.Forms.PictureBox()
         Me.Label83 = New System.Windows.Forms.Label()
         Me.Panel45 = New System.Windows.Forms.Panel()
         Me.lblCountAllDataFuncionario = New System.Windows.Forms.Label()
         Me.Label85 = New System.Windows.Forms.Label()
-        Me.btnCadasterFuncionario = New System.Windows.Forms.PictureBox()
-        Me.Panel40 = New System.Windows.Forms.Panel()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.Panel44 = New System.Windows.Forms.Panel()
-        Me.txtSearchFuncionarios = New System.Windows.Forms.TextBox()
-        Me.btnSearchFuncionarios = New System.Windows.Forms.PictureBox()
-        Me.panelSearchPedidos = New System.Windows.Forms.Panel()
-        Me.txtSearchPedidos = New System.Windows.Forms.TextBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.btnCadasterDesigner = New System.Windows.Forms.PictureBox()
-        Me.Panel32 = New System.Windows.Forms.Panel()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.Panel36 = New System.Windows.Forms.Panel()
-        Me.txtSearchDesigners = New System.Windows.Forms.TextBox()
-        Me.btnSearchDesigner = New System.Windows.Forms.PictureBox()
-        Me.btnCadasterMovel = New System.Windows.Forms.PictureBox()
-        Me.Panel20 = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Panel24 = New System.Windows.Forms.Panel()
-        Me.txtSearchMoveis = New System.Windows.Forms.TextBox()
-        Me.btnSearchMoveis = New System.Windows.Forms.PictureBox()
-        Me.btnCadasterCliente = New System.Windows.Forms.PictureBox()
-        Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.txtSearchCliente = New System.Windows.Forms.TextBox()
-        Me.btnSearchCliente = New System.Windows.Forms.PictureBox()
         Me.btnMinimize = New System.Windows.Forms.PictureBox()
         Me.btnEnd = New System.Windows.Forms.PictureBox()
-        Me.btnHome = New System.Windows.Forms.PictureBox()
+        Me.dtGridPedidos = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
+        CType(Me.btnHome, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelMainPage.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -257,63 +254,62 @@ Partial Class FormHome
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.panelHomePedidos.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panelSearchPedidos.SuspendLayout()
+        CType(Me.btnSearchPedidos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel10.SuspendLayout()
         Me.Panel13.SuspendLayout()
         Me.Panel14.SuspendLayout()
         Me.panelHomeCliente.SuspendLayout()
+        CType(Me.btnCadasterCliente, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtGridCliente, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel12.SuspendLayout()
+        CType(Me.btnSearchCliente, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel15.SuspendLayout()
         Me.Panel16.SuspendLayout()
         Me.panelHomeMoveis.SuspendLayout()
+        CType(Me.btnCadasterMovel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel27.SuspendLayout()
         Me.Panel18.SuspendLayout()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel20.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel21.SuspendLayout()
         Me.Panel22.SuspendLayout()
         Me.Panel23.SuspendLayout()
         CType(Me.dtGridMovel, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel24.SuspendLayout()
+        CType(Me.btnSearchMoveis, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel25.SuspendLayout()
         Me.Panel26.SuspendLayout()
         Me.panelHomeDesigners.SuspendLayout()
+        CType(Me.btnCadasterDesigner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel30.SuspendLayout()
         CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel32.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel33.SuspendLayout()
         Me.Panel34.SuspendLayout()
         Me.Panel35.SuspendLayout()
         CType(Me.dtGridDesigner, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel36.SuspendLayout()
+        CType(Me.btnSearchDesigner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel38.SuspendLayout()
         Me.panelHomeFuncionarios.SuspendLayout()
+        CType(Me.btnCadasterFuncionario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel37.SuspendLayout()
         CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel40.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel41.SuspendLayout()
         Me.Panel42.SuspendLayout()
         Me.Panel43.SuspendLayout()
         CType(Me.dtGridFuncionario, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel45.SuspendLayout()
-        CType(Me.btnCadasterFuncionario, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel40.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel44.SuspendLayout()
         CType(Me.btnSearchFuncionarios, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.panelSearchPedidos.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnCadasterDesigner, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel32.SuspendLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel36.SuspendLayout()
-        CType(Me.btnSearchDesigner, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnCadasterMovel, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel20.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel24.SuspendLayout()
-        CType(Me.btnSearchMoveis, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnCadasterCliente, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel12.SuspendLayout()
-        CType(Me.btnSearchCliente, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel45.SuspendLayout()
         CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnEnd, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnHome, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtGridPedidos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -325,6 +321,17 @@ Partial Class FormHome
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(264, 700)
         Me.Panel1.TabIndex = 0
+        '
+        'btnHome
+        '
+        Me.btnHome.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.logo_home
+        Me.btnHome.Location = New System.Drawing.Point(56, 18)
+        Me.btnHome.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnHome.Name = "btnHome"
+        Me.btnHome.Size = New System.Drawing.Size(149, 148)
+        Me.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnHome.TabIndex = 0
+        Me.btnHome.TabStop = False
         '
         'btnPedidos
         '
@@ -424,8 +431,7 @@ Partial Class FormHome
         'Panel7
         '
         Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(113, Byte), Integer), CType(CType(113, Byte), Integer))
-        Me.Panel7.Controls.Add(Me.Label17)
-        Me.Panel7.Controls.Add(Me.Label18)
+        Me.Panel7.Controls.Add(Me.lblWithoutStorageMain)
         Me.Panel7.Controls.Add(Me.Label19)
         Me.Panel7.Location = New System.Drawing.Point(504, 339)
         Me.Panel7.Margin = New System.Windows.Forms.Padding(2)
@@ -433,29 +439,17 @@ Partial Class FormHome
         Me.Panel7.Size = New System.Drawing.Size(182, 182)
         Me.Panel7.TabIndex = 18
         '
-        'Label17
+        'lblWithoutStorageMain
         '
-        Me.Label17.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(2, 100)
-        Me.Label17.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(175, 34)
-        Me.Label17.TabIndex = 2
-        Me.Label17.Text = "200000"
-        Me.Label17.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label18
-        '
-        Me.Label18.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(2, 41)
-        Me.Label18.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(175, 57)
-        Me.Label18.TabIndex = 1
-        Me.Label18.Text = "R$"
-        Me.Label18.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblWithoutStorageMain.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWithoutStorageMain.ForeColor = System.Drawing.Color.White
+        Me.lblWithoutStorageMain.Location = New System.Drawing.Point(2, 72)
+        Me.lblWithoutStorageMain.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblWithoutStorageMain.Name = "lblWithoutStorageMain"
+        Me.lblWithoutStorageMain.Size = New System.Drawing.Size(175, 57)
+        Me.lblWithoutStorageMain.TabIndex = 1
+        Me.lblWithoutStorageMain.Text = "0"
+        Me.lblWithoutStorageMain.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label19
         '
@@ -466,13 +460,13 @@ Partial Class FormHome
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(175, 34)
         Me.Label19.TabIndex = 0
-        Me.Label19.Text = "LUCRO MENSAL"
+        Me.Label19.Text = "SEM ESTOQUE"
         Me.Label19.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(93, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.Label5)
+        Me.Panel2.Controls.Add(Me.lbl_lucroM)
         Me.Panel2.Controls.Add(Me.Label6)
         Me.Panel2.Controls.Add(Me.Label7)
         Me.Panel2.Location = New System.Drawing.Point(273, 84)
@@ -481,17 +475,17 @@ Partial Class FormHome
         Me.Panel2.Size = New System.Drawing.Size(182, 182)
         Me.Panel2.TabIndex = 16
         '
-        'Label5
+        'lbl_lucroM
         '
-        Me.Label5.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(2, 100)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(175, 34)
-        Me.Label5.TabIndex = 2
-        Me.Label5.Text = "200000"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lbl_lucroM.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_lucroM.ForeColor = System.Drawing.Color.White
+        Me.lbl_lucroM.Location = New System.Drawing.Point(2, 100)
+        Me.lbl_lucroM.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl_lucroM.Name = "lbl_lucroM"
+        Me.lbl_lucroM.Size = New System.Drawing.Size(175, 34)
+        Me.lbl_lucroM.TabIndex = 2
+        Me.lbl_lucroM.Text = "0"
+        Me.lbl_lucroM.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label6
         '
@@ -520,8 +514,7 @@ Partial Class FormHome
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(115, Byte), Integer))
-        Me.Panel6.Controls.Add(Me.Label14)
-        Me.Panel6.Controls.Add(Me.Label15)
+        Me.Panel6.Controls.Add(Me.lblClienteMesMain)
         Me.Panel6.Controls.Add(Me.Label16)
         Me.Panel6.Location = New System.Drawing.Point(273, 339)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
@@ -529,29 +522,17 @@ Partial Class FormHome
         Me.Panel6.Size = New System.Drawing.Size(182, 182)
         Me.Panel6.TabIndex = 17
         '
-        'Label14
+        'lblClienteMesMain
         '
-        Me.Label14.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(2, 100)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(175, 34)
-        Me.Label14.TabIndex = 2
-        Me.Label14.Text = "200000"
-        Me.Label14.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label15
-        '
-        Me.Label15.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(2, 41)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(175, 57)
-        Me.Label15.TabIndex = 1
-        Me.Label15.Text = "R$"
-        Me.Label15.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblClienteMesMain.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblClienteMesMain.ForeColor = System.Drawing.Color.White
+        Me.lblClienteMesMain.Location = New System.Drawing.Point(2, 72)
+        Me.lblClienteMesMain.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblClienteMesMain.Name = "lblClienteMesMain"
+        Me.lblClienteMesMain.Size = New System.Drawing.Size(175, 57)
+        Me.lblClienteMesMain.TabIndex = 1
+        Me.lblClienteMesMain.Text = "0"
+        Me.lblClienteMesMain.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label16
         '
@@ -562,7 +543,7 @@ Partial Class FormHome
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(175, 34)
         Me.Label16.TabIndex = 0
-        Me.Label16.Text = "LUCRO MENSAL"
+        Me.Label16.Text = "CLIENTES MÊS"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label1
@@ -578,8 +559,7 @@ Partial Class FormHome
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(238, Byte), Integer))
-        Me.Panel5.Controls.Add(Me.Label11)
-        Me.Panel5.Controls.Add(Me.Label12)
+        Me.Panel5.Controls.Add(Me.lblWaitingPedidosMain)
         Me.Panel5.Controls.Add(Me.Label13)
         Me.Panel5.Location = New System.Drawing.Point(42, 339)
         Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
@@ -587,29 +567,17 @@ Partial Class FormHome
         Me.Panel5.Size = New System.Drawing.Size(182, 182)
         Me.Panel5.TabIndex = 17
         '
-        'Label11
+        'lblWaitingPedidosMain
         '
-        Me.Label11.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(2, 100)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(175, 34)
-        Me.Label11.TabIndex = 2
-        Me.Label11.Text = "200000"
-        Me.Label11.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label12
-        '
-        Me.Label12.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(2, 41)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(175, 57)
-        Me.Label12.TabIndex = 1
-        Me.Label12.Text = "R$"
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblWaitingPedidosMain.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWaitingPedidosMain.ForeColor = System.Drawing.Color.White
+        Me.lblWaitingPedidosMain.Location = New System.Drawing.Point(2, 72)
+        Me.lblWaitingPedidosMain.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblWaitingPedidosMain.Name = "lblWaitingPedidosMain"
+        Me.lblWaitingPedidosMain.Size = New System.Drawing.Size(175, 57)
+        Me.lblWaitingPedidosMain.TabIndex = 1
+        Me.lblWaitingPedidosMain.Text = "0"
+        Me.lblWaitingPedidosMain.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label13
         '
@@ -620,13 +588,13 @@ Partial Class FormHome
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(175, 34)
         Me.Label13.TabIndex = 0
-        Me.Label13.Text = "LUCRO MENSAL"
+        Me.Label13.Text = "PEDIDOS ESPERA"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(142, Byte), Integer))
-        Me.Panel4.Controls.Add(Me.Label8)
+        Me.Panel4.Controls.Add(Me.lbl_lucroA)
         Me.Panel4.Controls.Add(Me.Label9)
         Me.Panel4.Controls.Add(Me.Label10)
         Me.Panel4.Location = New System.Drawing.Point(504, 84)
@@ -635,17 +603,17 @@ Partial Class FormHome
         Me.Panel4.Size = New System.Drawing.Size(182, 186)
         Me.Panel4.TabIndex = 17
         '
-        'Label8
+        'lbl_lucroA
         '
-        Me.Label8.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(2, 100)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(175, 34)
-        Me.Label8.TabIndex = 2
-        Me.Label8.Text = "200000"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lbl_lucroA.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_lucroA.ForeColor = System.Drawing.Color.White
+        Me.lbl_lucroA.Location = New System.Drawing.Point(2, 100)
+        Me.lbl_lucroA.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl_lucroA.Name = "lbl_lucroA"
+        Me.lbl_lucroA.Size = New System.Drawing.Size(175, 34)
+        Me.lbl_lucroA.TabIndex = 2
+        Me.lbl_lucroA.Text = "0"
+        Me.lbl_lucroA.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label9
         '
@@ -668,13 +636,13 @@ Partial Class FormHome
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(175, 34)
         Me.Label10.TabIndex = 0
-        Me.Label10.Text = "LUCRO MENSAL"
+        Me.Label10.Text = "LUCRO ANUAL"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(137, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.Label4)
+        Me.Panel3.Controls.Add(Me.lbl_lucroS)
         Me.Panel3.Controls.Add(Me.Label3)
         Me.Panel3.Controls.Add(Me.Label2)
         Me.Panel3.Location = New System.Drawing.Point(42, 84)
@@ -683,17 +651,17 @@ Partial Class FormHome
         Me.Panel3.Size = New System.Drawing.Size(182, 182)
         Me.Panel3.TabIndex = 15
         '
-        'Label4
+        'lbl_lucroS
         '
-        Me.Label4.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(2, 100)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(175, 34)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = "200000"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lbl_lucroS.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_lucroS.ForeColor = System.Drawing.Color.White
+        Me.lbl_lucroS.Location = New System.Drawing.Point(2, 100)
+        Me.lbl_lucroS.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl_lucroS.Name = "lbl_lucroS"
+        Me.lbl_lucroS.Size = New System.Drawing.Size(175, 34)
+        Me.lbl_lucroS.TabIndex = 2
+        Me.lbl_lucroS.Text = "0"
+        Me.lbl_lucroS.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label3
         '
@@ -721,20 +689,18 @@ Partial Class FormHome
         '
         'panelHomePedidos
         '
+        Me.panelHomePedidos.Controls.Add(Me.dtGridPedidos)
         Me.panelHomePedidos.Controls.Add(Me.Panel9)
-        Me.panelHomePedidos.Controls.Add(Me.DataGridView1)
         Me.panelHomePedidos.Controls.Add(Me.Label21)
-        Me.panelHomePedidos.Controls.Add(Me.RadioButton5)
-        Me.panelHomePedidos.Controls.Add(Me.RadioButton4)
-        Me.panelHomePedidos.Controls.Add(Me.RadioButton3)
-        Me.panelHomePedidos.Controls.Add(Me.RadioButton2)
-        Me.panelHomePedidos.Controls.Add(Me.RadioButton1)
+        Me.panelHomePedidos.Controls.Add(Me.rbtnMovelPedido)
+        Me.panelHomePedidos.Controls.Add(Me.rbtnClientePedido)
+        Me.panelHomePedidos.Controls.Add(Me.rbtnNPedido)
         Me.panelHomePedidos.Controls.Add(Me.panelSearchPedidos)
         Me.panelHomePedidos.Controls.Add(Me.Label20)
         Me.panelHomePedidos.Controls.Add(Me.Panel10)
         Me.panelHomePedidos.Controls.Add(Me.Panel13)
         Me.panelHomePedidos.Controls.Add(Me.Panel14)
-        Me.panelHomePedidos.Location = New System.Drawing.Point(2660, 48)
+        Me.panelHomePedidos.Location = New System.Drawing.Point(266, 48)
         Me.panelHomePedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.panelHomePedidos.Name = "panelHomePedidos"
         Me.panelHomePedidos.Size = New System.Drawing.Size(730, 652)
@@ -749,15 +715,6 @@ Partial Class FormHome
         Me.Panel9.Size = New System.Drawing.Size(705, 2)
         Me.Panel9.TabIndex = 19
         '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(19, 389)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(693, 250)
-        Me.DataGridView1.TabIndex = 26
-        '
         'Label21
         '
         Me.Label21.AutoSize = True
@@ -769,70 +726,80 @@ Partial Class FormHome
         Me.Label21.TabIndex = 25
         Me.Label21.Text = "Total: 4"
         '
-        'RadioButton5
+        'rbtnMovelPedido
         '
-        Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.Font = New System.Drawing.Font("Raleway Light", 12.0!)
-        Me.RadioButton5.Location = New System.Drawing.Point(630, 127)
-        Me.RadioButton5.Margin = New System.Windows.Forms.Padding(2)
-        Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(60, 26)
-        Me.RadioButton5.TabIndex = 24
-        Me.RadioButton5.TabStop = True
-        Me.RadioButton5.Text = "TEL."
-        Me.RadioButton5.UseVisualStyleBackColor = True
+        Me.rbtnMovelPedido.AutoSize = True
+        Me.rbtnMovelPedido.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.rbtnMovelPedido.Location = New System.Drawing.Point(483, 126)
+        Me.rbtnMovelPedido.Margin = New System.Windows.Forms.Padding(2)
+        Me.rbtnMovelPedido.Name = "rbtnMovelPedido"
+        Me.rbtnMovelPedido.Size = New System.Drawing.Size(84, 26)
+        Me.rbtnMovelPedido.TabIndex = 22
+        Me.rbtnMovelPedido.TabStop = True
+        Me.rbtnMovelPedido.Text = "MÓVEL"
+        Me.rbtnMovelPedido.UseVisualStyleBackColor = True
         '
-        'RadioButton4
+        'rbtnClientePedido
         '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Font = New System.Drawing.Font("Raleway Light", 12.0!)
-        Me.RadioButton4.Location = New System.Drawing.Point(511, 127)
-        Me.RadioButton4.Margin = New System.Windows.Forms.Padding(2)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(61, 26)
-        Me.RadioButton4.TabIndex = 23
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "CEL."
-        Me.RadioButton4.UseVisualStyleBackColor = True
+        Me.rbtnClientePedido.AutoSize = True
+        Me.rbtnClientePedido.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.rbtnClientePedido.Location = New System.Drawing.Point(329, 126)
+        Me.rbtnClientePedido.Margin = New System.Windows.Forms.Padding(2)
+        Me.rbtnClientePedido.Name = "rbtnClientePedido"
+        Me.rbtnClientePedido.Size = New System.Drawing.Size(94, 26)
+        Me.rbtnClientePedido.TabIndex = 21
+        Me.rbtnClientePedido.TabStop = True
+        Me.rbtnClientePedido.Text = "CLIENTE"
+        Me.rbtnClientePedido.UseVisualStyleBackColor = True
         '
-        'RadioButton3
+        'rbtnNPedido
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Font = New System.Drawing.Font("Raleway Light", 12.0!)
-        Me.RadioButton3.Location = New System.Drawing.Point(369, 127)
-        Me.RadioButton3.Margin = New System.Windows.Forms.Padding(2)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(84, 26)
-        Me.RadioButton3.TabIndex = 22
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "MÓVEL"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.rbtnNPedido.AutoSize = True
+        Me.rbtnNPedido.Font = New System.Drawing.Font("Raleway Light", 12.0!)
+        Me.rbtnNPedido.Location = New System.Drawing.Point(158, 124)
+        Me.rbtnNPedido.Margin = New System.Windows.Forms.Padding(2)
+        Me.rbtnNPedido.Name = "rbtnNPedido"
+        Me.rbtnNPedido.Size = New System.Drawing.Size(112, 26)
+        Me.rbtnNPedido.TabIndex = 20
+        Me.rbtnNPedido.TabStop = True
+        Me.rbtnNPedido.Text = "N°PEDIDOS"
+        Me.rbtnNPedido.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'panelSearchPedidos
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Font = New System.Drawing.Font("Raleway Light", 12.0!)
-        Me.RadioButton2.Location = New System.Drawing.Point(215, 127)
-        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(2)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(94, 26)
-        Me.RadioButton2.TabIndex = 21
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "CLIENTE"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.panelSearchPedidos.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.panelSearchPedidos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.panelSearchPedidos.Controls.Add(Me.txtSearchPedidos)
+        Me.panelSearchPedidos.Controls.Add(Me.btnSearchPedidos)
+        Me.panelSearchPedidos.Location = New System.Drawing.Point(42, 70)
+        Me.panelSearchPedidos.Margin = New System.Windows.Forms.Padding(2)
+        Me.panelSearchPedidos.Name = "panelSearchPedidos"
+        Me.panelSearchPedidos.Size = New System.Drawing.Size(651, 48)
+        Me.panelSearchPedidos.TabIndex = 19
         '
-        'RadioButton1
+        'txtSearchPedidos
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Font = New System.Drawing.Font("Raleway Light", 12.0!)
-        Me.RadioButton1.Location = New System.Drawing.Point(44, 125)
-        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(2)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(112, 26)
-        Me.RadioButton1.TabIndex = 20
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "N°PEDIDOS"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.txtSearchPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.txtSearchPedidos.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtSearchPedidos.Font = New System.Drawing.Font("Arial", 16.0!)
+        Me.txtSearchPedidos.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.txtSearchPedidos.Location = New System.Drawing.Point(47, 9)
+        Me.txtSearchPedidos.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtSearchPedidos.Name = "txtSearchPedidos"
+        Me.txtSearchPedidos.Size = New System.Drawing.Size(593, 25)
+        Me.txtSearchPedidos.TabIndex = 21
+        '
+        'btnSearchPedidos
+        '
+        Me.btnSearchPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.btnSearchPedidos.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.btnSearchPedidos.Location = New System.Drawing.Point(7, 9)
+        Me.btnSearchPedidos.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnSearchPedidos.Name = "btnSearchPedidos"
+        Me.btnSearchPedidos.Size = New System.Drawing.Size(30, 30)
+        Me.btnSearchPedidos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnSearchPedidos.TabIndex = 20
+        Me.btnSearchPedidos.TabStop = False
         '
         'Label20
         '
@@ -848,8 +815,7 @@ Partial Class FormHome
         'Panel10
         '
         Me.Panel10.BackColor = System.Drawing.Color.FromArgb(CType(CType(124, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(231, Byte), Integer))
-        Me.Panel10.Controls.Add(Me.Label23)
-        Me.Panel10.Controls.Add(Me.Label24)
+        Me.Panel10.Controls.Add(Me.lblPedidosMensais)
         Me.Panel10.Controls.Add(Me.Label25)
         Me.Panel10.Location = New System.Drawing.Point(278, 166)
         Me.Panel10.Margin = New System.Windows.Forms.Padding(2)
@@ -857,29 +823,17 @@ Partial Class FormHome
         Me.Panel10.Size = New System.Drawing.Size(182, 182)
         Me.Panel10.TabIndex = 16
         '
-        'Label23
+        'lblPedidosMensais
         '
-        Me.Label23.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.ForeColor = System.Drawing.Color.White
-        Me.Label23.Location = New System.Drawing.Point(2, 100)
-        Me.Label23.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(175, 34)
-        Me.Label23.TabIndex = 2
-        Me.Label23.Text = "200000"
-        Me.Label23.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label24
-        '
-        Me.Label24.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.ForeColor = System.Drawing.Color.White
-        Me.Label24.Location = New System.Drawing.Point(2, 41)
-        Me.Label24.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(175, 57)
-        Me.Label24.TabIndex = 1
-        Me.Label24.Text = "R$"
-        Me.Label24.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblPedidosMensais.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPedidosMensais.ForeColor = System.Drawing.Color.White
+        Me.lblPedidosMensais.Location = New System.Drawing.Point(2, 72)
+        Me.lblPedidosMensais.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblPedidosMensais.Name = "lblPedidosMensais"
+        Me.lblPedidosMensais.Size = New System.Drawing.Size(175, 57)
+        Me.lblPedidosMensais.TabIndex = 1
+        Me.lblPedidosMensais.Text = "0"
+        Me.lblPedidosMensais.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label25
         '
@@ -890,14 +844,13 @@ Partial Class FormHome
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(175, 34)
         Me.Label25.TabIndex = 0
-        Me.Label25.Text = "LUCRO MENSAL"
+        Me.Label25.Text = "PEDIDOS MÊS"
         Me.Label25.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Panel13
         '
         Me.Panel13.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Panel13.Controls.Add(Me.Label33)
-        Me.Panel13.Controls.Add(Me.Label34)
+        Me.Panel13.Controls.Add(Me.lblPedidosAno)
         Me.Panel13.Controls.Add(Me.Label35)
         Me.Panel13.Location = New System.Drawing.Point(509, 166)
         Me.Panel13.Margin = New System.Windows.Forms.Padding(2)
@@ -905,47 +858,34 @@ Partial Class FormHome
         Me.Panel13.Size = New System.Drawing.Size(182, 186)
         Me.Panel13.TabIndex = 17
         '
-        'Label33
+        'lblPedidosAno
         '
-        Me.Label33.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label33.ForeColor = System.Drawing.Color.White
-        Me.Label33.Location = New System.Drawing.Point(2, 100)
-        Me.Label33.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(175, 34)
-        Me.Label33.TabIndex = 2
-        Me.Label33.Text = "200000"
-        Me.Label33.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label34
-        '
-        Me.Label34.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label34.ForeColor = System.Drawing.Color.White
-        Me.Label34.Location = New System.Drawing.Point(2, 41)
-        Me.Label34.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(175, 57)
-        Me.Label34.TabIndex = 1
-        Me.Label34.Text = "R$"
-        Me.Label34.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblPedidosAno.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPedidosAno.ForeColor = System.Drawing.Color.White
+        Me.lblPedidosAno.Location = New System.Drawing.Point(3, 76)
+        Me.lblPedidosAno.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblPedidosAno.Name = "lblPedidosAno"
+        Me.lblPedidosAno.Size = New System.Drawing.Size(175, 57)
+        Me.lblPedidosAno.TabIndex = 1
+        Me.lblPedidosAno.Text = "0"
+        Me.lblPedidosAno.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label35
         '
         Me.Label35.Font = New System.Drawing.Font("Raleway Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label35.ForeColor = System.Drawing.Color.White
-        Me.Label35.Location = New System.Drawing.Point(2, 2)
+        Me.Label35.Location = New System.Drawing.Point(4, 3)
         Me.Label35.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(175, 34)
         Me.Label35.TabIndex = 0
-        Me.Label35.Text = "LUCRO MENSAL"
+        Me.Label35.Text = "PEDIDOS ANUAIS"
         Me.Label35.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Panel14
         '
         Me.Panel14.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(238, Byte), Integer))
-        Me.Panel14.Controls.Add(Me.Label36)
-        Me.Panel14.Controls.Add(Me.Label37)
+        Me.Panel14.Controls.Add(Me.lblWaitingPedidos)
         Me.Panel14.Controls.Add(Me.Label38)
         Me.Panel14.Location = New System.Drawing.Point(47, 166)
         Me.Panel14.Margin = New System.Windows.Forms.Padding(2)
@@ -953,29 +893,17 @@ Partial Class FormHome
         Me.Panel14.Size = New System.Drawing.Size(182, 182)
         Me.Panel14.TabIndex = 15
         '
-        'Label36
+        'lblWaitingPedidos
         '
-        Me.Label36.Font = New System.Drawing.Font("Raleway Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label36.ForeColor = System.Drawing.Color.White
-        Me.Label36.Location = New System.Drawing.Point(2, 100)
-        Me.Label36.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(175, 34)
-        Me.Label36.TabIndex = 2
-        Me.Label36.Text = "200000"
-        Me.Label36.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label37
-        '
-        Me.Label37.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label37.ForeColor = System.Drawing.Color.White
-        Me.Label37.Location = New System.Drawing.Point(2, 41)
-        Me.Label37.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(175, 57)
-        Me.Label37.TabIndex = 1
-        Me.Label37.Text = "R$"
-        Me.Label37.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblWaitingPedidos.Font = New System.Drawing.Font("Raleway Light", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWaitingPedidos.ForeColor = System.Drawing.Color.White
+        Me.lblWaitingPedidos.Location = New System.Drawing.Point(2, 76)
+        Me.lblWaitingPedidos.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblWaitingPedidos.Name = "lblWaitingPedidos"
+        Me.lblWaitingPedidos.Size = New System.Drawing.Size(175, 57)
+        Me.lblWaitingPedidos.TabIndex = 1
+        Me.lblWaitingPedidos.Text = "0"
+        Me.lblWaitingPedidos.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label38
         '
@@ -986,7 +914,7 @@ Partial Class FormHome
         Me.Label38.Name = "Label38"
         Me.Label38.Size = New System.Drawing.Size(175, 34)
         Me.Label38.TabIndex = 0
-        Me.Label38.Text = "LUCRO SEMANAL"
+        Me.Label38.Text = "PEDIDOS ESPERA"
         Me.Label38.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'panelHomeCliente
@@ -1024,6 +952,17 @@ Partial Class FormHome
         Me.rbtnCepCliente.Text = "CEP"
         Me.rbtnCepCliente.UseVisualStyleBackColor = True
         '
+        'btnCadasterCliente
+        '
+        Me.btnCadasterCliente.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.btn_plus
+        Me.btnCadasterCliente.Location = New System.Drawing.Point(681, 14)
+        Me.btnCadasterCliente.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnCadasterCliente.Name = "btnCadasterCliente"
+        Me.btnCadasterCliente.Size = New System.Drawing.Size(40, 41)
+        Me.btnCadasterCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnCadasterCliente.TabIndex = 28
+        Me.btnCadasterCliente.TabStop = False
+        '
         'Panel11
         '
         Me.Panel11.BackColor = System.Drawing.Color.Black
@@ -1037,29 +976,29 @@ Partial Class FormHome
         '
         Me.dtGridCliente.AllowUserToAddRows = False
         Me.dtGridCliente.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridCliente.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridCliente.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
         Me.dtGridCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridCliente.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridCliente.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.dtGridCliente.ColumnHeadersHeight = 29
         Me.dtGridCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridCliente.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridCliente.DefaultCellStyle = DataGridViewCellStyle7
         Me.dtGridCliente.EnableHeadersVisualStyles = False
         Me.dtGridCliente.Location = New System.Drawing.Point(19, 389)
         Me.dtGridCliente.Margin = New System.Windows.Forms.Padding(2)
@@ -1067,14 +1006,14 @@ Partial Class FormHome
         Me.dtGridCliente.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         Me.dtGridCliente.RowHeadersWidth = 20
         Me.dtGridCliente.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle4.NullValue = "(sem dados)"
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridCliente.RowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle8.NullValue = "(sem dados)"
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridCliente.RowsDefaultCellStyle = DataGridViewCellStyle8
         Me.dtGridCliente.Size = New System.Drawing.Size(693, 250)
         Me.dtGridCliente.TabIndex = 26
         '
@@ -1153,6 +1092,42 @@ Partial Class FormHome
         Me.rbtnIdCliente.TabStop = True
         Me.rbtnIdCliente.Text = "ID"
         Me.rbtnIdCliente.UseVisualStyleBackColor = True
+        '
+        'Panel12
+        '
+        Me.Panel12.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel12.Controls.Add(Me.txtSearchCliente)
+        Me.Panel12.Controls.Add(Me.btnSearchCliente)
+        Me.Panel12.Location = New System.Drawing.Point(42, 70)
+        Me.Panel12.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(651, 48)
+        Me.Panel12.TabIndex = 19
+        '
+        'txtSearchCliente
+        '
+        Me.txtSearchCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.txtSearchCliente.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtSearchCliente.Font = New System.Drawing.Font("Arial", 16.0!)
+        Me.txtSearchCliente.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.txtSearchCliente.Location = New System.Drawing.Point(47, 14)
+        Me.txtSearchCliente.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtSearchCliente.Name = "txtSearchCliente"
+        Me.txtSearchCliente.Size = New System.Drawing.Size(593, 25)
+        Me.txtSearchCliente.TabIndex = 21
+        '
+        'btnSearchCliente
+        '
+        Me.btnSearchCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.btnSearchCliente.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSearchCliente.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.btnSearchCliente.Location = New System.Drawing.Point(7, 9)
+        Me.btnSearchCliente.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnSearchCliente.Name = "btnSearchCliente"
+        Me.btnSearchCliente.Size = New System.Drawing.Size(30, 30)
+        Me.btnSearchCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnSearchCliente.TabIndex = 20
+        Me.btnSearchCliente.TabStop = False
         '
         'Label26
         '
@@ -1251,11 +1226,22 @@ Partial Class FormHome
         Me.panelHomeMoveis.Controls.Add(Me.Label49)
         Me.panelHomeMoveis.Controls.Add(Me.Panel25)
         Me.panelHomeMoveis.Controls.Add(Me.Panel26)
-        Me.panelHomeMoveis.Location = New System.Drawing.Point(2660, 48)
+        Me.panelHomeMoveis.Location = New System.Drawing.Point(266, 48)
         Me.panelHomeMoveis.Margin = New System.Windows.Forms.Padding(2)
         Me.panelHomeMoveis.Name = "panelHomeMoveis"
         Me.panelHomeMoveis.Size = New System.Drawing.Size(730, 652)
         Me.panelHomeMoveis.TabIndex = 17
+        '
+        'btnCadasterMovel
+        '
+        Me.btnCadasterMovel.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.btn_plus
+        Me.btnCadasterMovel.Location = New System.Drawing.Point(681, 14)
+        Me.btnCadasterMovel.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnCadasterMovel.Name = "btnCadasterMovel"
+        Me.btnCadasterMovel.Size = New System.Drawing.Size(40, 41)
+        Me.btnCadasterMovel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnCadasterMovel.TabIndex = 27
+        Me.btnCadasterMovel.TabStop = False
         '
         'Panel27
         '
@@ -1415,6 +1401,41 @@ Partial Class FormHome
         Me.RadioButton15.TabStop = True
         Me.RadioButton15.Text = "N°PEDIDOS"
         Me.RadioButton15.UseVisualStyleBackColor = True
+        '
+        'Panel20
+        '
+        Me.Panel20.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel20.Controls.Add(Me.TextBox1)
+        Me.Panel20.Controls.Add(Me.PictureBox3)
+        Me.Panel20.Location = New System.Drawing.Point(42, 70)
+        Me.Panel20.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel20.Name = "Panel20"
+        Me.Panel20.Size = New System.Drawing.Size(651, 48)
+        Me.Panel20.TabIndex = 19
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox1.Font = New System.Drawing.Font("Raleway Light", 16.0!)
+        Me.TextBox1.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.TextBox1.Location = New System.Drawing.Point(47, 9)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(593, 26)
+        Me.TextBox1.TabIndex = 21
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.PictureBox3.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.PictureBox3.Location = New System.Drawing.Point(7, 9)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 20
+        Me.PictureBox3.TabStop = False
         '
         'Label30
         '
@@ -1577,45 +1598,45 @@ Partial Class FormHome
         Me.dtGridMovel.AllowUserToDeleteRows = False
         Me.dtGridMovel.AllowUserToResizeRows = False
         Me.dtGridMovel.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridMovel.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridMovel.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
         Me.dtGridMovel.ColumnHeadersHeight = 29
         Me.dtGridMovel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridMovel.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridMovel.DefaultCellStyle = DataGridViewCellStyle10
         Me.dtGridMovel.EnableHeadersVisualStyles = False
         Me.dtGridMovel.Location = New System.Drawing.Point(19, 389)
         Me.dtGridMovel.Margin = New System.Windows.Forms.Padding(2)
         Me.dtGridMovel.Name = "dtGridMovel"
         Me.dtGridMovel.ReadOnly = True
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridMovel.RowHeadersDefaultCellStyle = DataGridViewCellStyle7
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridMovel.RowsDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridMovel.RowHeadersDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridMovel.RowsDefaultCellStyle = DataGridViewCellStyle12
         Me.dtGridMovel.Size = New System.Drawing.Size(693, 250)
         Me.dtGridMovel.TabIndex = 26
         '
@@ -1681,6 +1702,42 @@ Partial Class FormHome
         Me.rbtnIdMovel.TabStop = True
         Me.rbtnIdMovel.Text = "ID"
         Me.rbtnIdMovel.UseVisualStyleBackColor = True
+        '
+        'Panel24
+        '
+        Me.Panel24.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel24.Controls.Add(Me.txtSearchMoveis)
+        Me.Panel24.Controls.Add(Me.btnSearchMoveis)
+        Me.Panel24.Location = New System.Drawing.Point(42, 70)
+        Me.Panel24.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel24.Name = "Panel24"
+        Me.Panel24.Size = New System.Drawing.Size(651, 48)
+        Me.Panel24.TabIndex = 19
+        '
+        'txtSearchMoveis
+        '
+        Me.txtSearchMoveis.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.txtSearchMoveis.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtSearchMoveis.Font = New System.Drawing.Font("Arial", 16.0!)
+        Me.txtSearchMoveis.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.txtSearchMoveis.Location = New System.Drawing.Point(47, 13)
+        Me.txtSearchMoveis.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtSearchMoveis.Name = "txtSearchMoveis"
+        Me.txtSearchMoveis.Size = New System.Drawing.Size(593, 25)
+        Me.txtSearchMoveis.TabIndex = 21
+        '
+        'btnSearchMoveis
+        '
+        Me.btnSearchMoveis.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.btnSearchMoveis.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSearchMoveis.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.btnSearchMoveis.Location = New System.Drawing.Point(7, 9)
+        Me.btnSearchMoveis.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnSearchMoveis.Name = "btnSearchMoveis"
+        Me.btnSearchMoveis.Size = New System.Drawing.Size(30, 30)
+        Me.btnSearchMoveis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnSearchMoveis.TabIndex = 20
+        Me.btnSearchMoveis.TabStop = False
         '
         'Label49
         '
@@ -1776,11 +1833,22 @@ Partial Class FormHome
         Me.panelHomeDesigners.Controls.Add(Me.Panel36)
         Me.panelHomeDesigners.Controls.Add(Me.Label70)
         Me.panelHomeDesigners.Controls.Add(Me.Panel38)
-        Me.panelHomeDesigners.Location = New System.Drawing.Point(2660, 48)
+        Me.panelHomeDesigners.Location = New System.Drawing.Point(266, 48)
         Me.panelHomeDesigners.Margin = New System.Windows.Forms.Padding(2)
         Me.panelHomeDesigners.Name = "panelHomeDesigners"
         Me.panelHomeDesigners.Size = New System.Drawing.Size(730, 652)
         Me.panelHomeDesigners.TabIndex = 18
+        '
+        'btnCadasterDesigner
+        '
+        Me.btnCadasterDesigner.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.btn_plus
+        Me.btnCadasterDesigner.Location = New System.Drawing.Point(681, 14)
+        Me.btnCadasterDesigner.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnCadasterDesigner.Name = "btnCadasterDesigner"
+        Me.btnCadasterDesigner.Size = New System.Drawing.Size(40, 41)
+        Me.btnCadasterDesigner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnCadasterDesigner.TabIndex = 28
+        Me.btnCadasterDesigner.TabStop = False
         '
         'Panel29
         '
@@ -1905,6 +1973,41 @@ Partial Class FormHome
         Me.RadioButton24.TabStop = True
         Me.RadioButton24.Text = "N°PEDIDOS"
         Me.RadioButton24.UseVisualStyleBackColor = True
+        '
+        'Panel32
+        '
+        Me.Panel32.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel32.Controls.Add(Me.TextBox2)
+        Me.Panel32.Controls.Add(Me.PictureBox4)
+        Me.Panel32.Location = New System.Drawing.Point(42, 70)
+        Me.Panel32.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel32.Name = "Panel32"
+        Me.Panel32.Size = New System.Drawing.Size(651, 48)
+        Me.Panel32.TabIndex = 19
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox2.Font = New System.Drawing.Font("Raleway Light", 16.0!)
+        Me.TextBox2.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.TextBox2.Location = New System.Drawing.Point(47, 9)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(593, 26)
+        Me.TextBox2.TabIndex = 21
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.PictureBox4.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.PictureBox4.Location = New System.Drawing.Point(7, 9)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 20
+        Me.PictureBox4.TabStop = False
         '
         'Label59
         '
@@ -2067,46 +2170,46 @@ Partial Class FormHome
         Me.dtGridDesigner.AllowUserToDeleteRows = False
         Me.dtGridDesigner.AllowUserToResizeRows = False
         Me.dtGridDesigner.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridDesigner.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle13.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridDesigner.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
         Me.dtGridDesigner.ColumnHeadersHeight = 29
         Me.dtGridDesigner.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridDesigner.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridDesigner.DefaultCellStyle = DataGridViewCellStyle14
         Me.dtGridDesigner.EnableHeadersVisualStyles = False
         Me.dtGridDesigner.Location = New System.Drawing.Point(19, 389)
         Me.dtGridDesigner.Margin = New System.Windows.Forms.Padding(2)
         Me.dtGridDesigner.Name = "dtGridDesigner"
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridDesigner.RowHeadersDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridDesigner.RowHeadersDefaultCellStyle = DataGridViewCellStyle15
         Me.dtGridDesigner.RowHeadersWidth = 20
         Me.dtGridDesigner.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridDesigner.RowsDefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle16.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridDesigner.RowsDefaultCellStyle = DataGridViewCellStyle16
         Me.dtGridDesigner.Size = New System.Drawing.Size(693, 250)
         Me.dtGridDesigner.TabIndex = 26
         '
@@ -2159,6 +2262,42 @@ Partial Class FormHome
         Me.rbtnIdDesigner.TabStop = True
         Me.rbtnIdDesigner.Text = "ID"
         Me.rbtnIdDesigner.UseVisualStyleBackColor = True
+        '
+        'Panel36
+        '
+        Me.Panel36.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel36.Controls.Add(Me.txtSearchDesigners)
+        Me.Panel36.Controls.Add(Me.btnSearchDesigner)
+        Me.Panel36.Location = New System.Drawing.Point(42, 70)
+        Me.Panel36.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel36.Name = "Panel36"
+        Me.Panel36.Size = New System.Drawing.Size(651, 48)
+        Me.Panel36.TabIndex = 19
+        '
+        'txtSearchDesigners
+        '
+        Me.txtSearchDesigners.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.txtSearchDesigners.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtSearchDesigners.Font = New System.Drawing.Font("Arial", 16.0!)
+        Me.txtSearchDesigners.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.txtSearchDesigners.Location = New System.Drawing.Point(47, 13)
+        Me.txtSearchDesigners.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtSearchDesigners.Name = "txtSearchDesigners"
+        Me.txtSearchDesigners.Size = New System.Drawing.Size(593, 25)
+        Me.txtSearchDesigners.TabIndex = 21
+        '
+        'btnSearchDesigner
+        '
+        Me.btnSearchDesigner.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.btnSearchDesigner.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSearchDesigner.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.btnSearchDesigner.Location = New System.Drawing.Point(7, 9)
+        Me.btnSearchDesigner.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnSearchDesigner.Name = "btnSearchDesigner"
+        Me.btnSearchDesigner.Size = New System.Drawing.Size(30, 30)
+        Me.btnSearchDesigner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnSearchDesigner.TabIndex = 20
+        Me.btnSearchDesigner.TabStop = False
         '
         'Label70
         '
@@ -2221,7 +2360,7 @@ Partial Class FormHome
         Me.panelHomeFuncionarios.Controls.Add(Me.Panel44)
         Me.panelHomeFuncionarios.Controls.Add(Me.Label83)
         Me.panelHomeFuncionarios.Controls.Add(Me.Panel45)
-        Me.panelHomeFuncionarios.Location = New System.Drawing.Point(2660, 48)
+        Me.panelHomeFuncionarios.Location = New System.Drawing.Point(266, 48)
         Me.panelHomeFuncionarios.Margin = New System.Windows.Forms.Padding(2)
         Me.panelHomeFuncionarios.Name = "panelHomeFuncionarios"
         Me.panelHomeFuncionarios.Size = New System.Drawing.Size(730, 652)
@@ -2239,6 +2378,17 @@ Partial Class FormHome
         Me.rbtnEmailFuncionario.TabStop = True
         Me.rbtnEmailFuncionario.Text = "EMAIL"
         Me.rbtnEmailFuncionario.UseVisualStyleBackColor = True
+        '
+        'btnCadasterFuncionario
+        '
+        Me.btnCadasterFuncionario.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.btn_plus
+        Me.btnCadasterFuncionario.Location = New System.Drawing.Point(681, 16)
+        Me.btnCadasterFuncionario.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnCadasterFuncionario.Name = "btnCadasterFuncionario"
+        Me.btnCadasterFuncionario.Size = New System.Drawing.Size(40, 41)
+        Me.btnCadasterFuncionario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnCadasterFuncionario.TabIndex = 29
+        Me.btnCadasterFuncionario.TabStop = False
         '
         'Panel28
         '
@@ -2363,6 +2513,41 @@ Partial Class FormHome
         Me.RadioButton33.TabStop = True
         Me.RadioButton33.Text = "N°PEDIDOS"
         Me.RadioButton33.UseVisualStyleBackColor = True
+        '
+        'Panel40
+        '
+        Me.Panel40.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel40.Controls.Add(Me.TextBox3)
+        Me.Panel40.Controls.Add(Me.PictureBox6)
+        Me.Panel40.Location = New System.Drawing.Point(42, 70)
+        Me.Panel40.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel40.Name = "Panel40"
+        Me.Panel40.Size = New System.Drawing.Size(651, 48)
+        Me.Panel40.TabIndex = 19
+        '
+        'TextBox3
+        '
+        Me.TextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox3.Font = New System.Drawing.Font("Raleway Light", 16.0!)
+        Me.TextBox3.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.TextBox3.Location = New System.Drawing.Point(47, 9)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(593, 26)
+        Me.TextBox3.TabIndex = 21
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.PictureBox6.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.PictureBox6.Location = New System.Drawing.Point(7, 9)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 20
+        Me.PictureBox6.TabStop = False
         '
         'Label57
         '
@@ -2525,44 +2710,44 @@ Partial Class FormHome
         Me.dtGridFuncionario.AllowUserToDeleteRows = False
         Me.dtGridFuncionario.AllowUserToResizeRows = False
         Me.dtGridFuncionario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridFuncionario.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle17.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridFuncionario.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle17
         Me.dtGridFuncionario.ColumnHeadersHeight = 29
         Me.dtGridFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridFuncionario.DefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle18.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridFuncionario.DefaultCellStyle = DataGridViewCellStyle18
         Me.dtGridFuncionario.EnableHeadersVisualStyles = False
         Me.dtGridFuncionario.Location = New System.Drawing.Point(19, 389)
         Me.dtGridFuncionario.Margin = New System.Windows.Forms.Padding(2)
         Me.dtGridFuncionario.Name = "dtGridFuncionario"
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridFuncionario.RowHeadersDefaultCellStyle = DataGridViewCellStyle15
-        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle16.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridFuncionario.RowsDefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle19.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridFuncionario.RowHeadersDefaultCellStyle = DataGridViewCellStyle19
+        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle20.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridFuncionario.RowsDefaultCellStyle = DataGridViewCellStyle20
         Me.dtGridFuncionario.Size = New System.Drawing.Size(693, 250)
         Me.dtGridFuncionario.TabIndex = 26
         '
@@ -2629,6 +2814,43 @@ Partial Class FormHome
         Me.rbtnIdFuncionario.Text = "ID"
         Me.rbtnIdFuncionario.UseVisualStyleBackColor = True
         '
+        'Panel44
+        '
+        Me.Panel44.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
+        Me.Panel44.Controls.Add(Me.txtSearchFuncionarios)
+        Me.Panel44.Controls.Add(Me.btnSearchFuncionarios)
+        Me.Panel44.Location = New System.Drawing.Point(42, 70)
+        Me.Panel44.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel44.Name = "Panel44"
+        Me.Panel44.Size = New System.Drawing.Size(651, 48)
+        Me.Panel44.TabIndex = 19
+        '
+        'txtSearchFuncionarios
+        '
+        Me.txtSearchFuncionarios.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.txtSearchFuncionarios.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtSearchFuncionarios.Font = New System.Drawing.Font("Arial", 16.0!)
+        Me.txtSearchFuncionarios.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.txtSearchFuncionarios.Location = New System.Drawing.Point(47, 12)
+        Me.txtSearchFuncionarios.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtSearchFuncionarios.Name = "txtSearchFuncionarios"
+        Me.txtSearchFuncionarios.Size = New System.Drawing.Size(593, 25)
+        Me.txtSearchFuncionarios.TabIndex = 21
+        '
+        'btnSearchFuncionarios
+        '
+        Me.btnSearchFuncionarios.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.btnSearchFuncionarios.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSearchFuncionarios.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
+        Me.btnSearchFuncionarios.Location = New System.Drawing.Point(7, 9)
+        Me.btnSearchFuncionarios.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnSearchFuncionarios.Name = "btnSearchFuncionarios"
+        Me.btnSearchFuncionarios.Size = New System.Drawing.Size(30, 30)
+        Me.btnSearchFuncionarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnSearchFuncionarios.TabIndex = 20
+        Me.btnSearchFuncionarios.TabStop = False
+        Me.btnSearchFuncionarios.Tag = "2"
+        '
         'Label83
         '
         Me.Label83.AutoSize = True
@@ -2675,336 +2897,6 @@ Partial Class FormHome
         Me.Label85.Text = "REG. TOTAL"
         Me.Label85.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'btnCadasterFuncionario
-        '
-        Me.btnCadasterFuncionario.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.btn_plus
-        Me.btnCadasterFuncionario.Location = New System.Drawing.Point(681, 16)
-        Me.btnCadasterFuncionario.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnCadasterFuncionario.Name = "btnCadasterFuncionario"
-        Me.btnCadasterFuncionario.Size = New System.Drawing.Size(40, 41)
-        Me.btnCadasterFuncionario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnCadasterFuncionario.TabIndex = 29
-        Me.btnCadasterFuncionario.TabStop = False
-        '
-        'Panel40
-        '
-        Me.Panel40.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
-        Me.Panel40.Controls.Add(Me.TextBox3)
-        Me.Panel40.Controls.Add(Me.PictureBox6)
-        Me.Panel40.Location = New System.Drawing.Point(42, 70)
-        Me.Panel40.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel40.Name = "Panel40"
-        Me.Panel40.Size = New System.Drawing.Size(651, 48)
-        Me.Panel40.TabIndex = 19
-        '
-        'TextBox3
-        '
-        Me.TextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox3.Font = New System.Drawing.Font("Raleway Light", 16.0!)
-        Me.TextBox3.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.TextBox3.Location = New System.Drawing.Point(47, 9)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(593, 26)
-        Me.TextBox3.TabIndex = 21
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.PictureBox6.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
-        Me.PictureBox6.Location = New System.Drawing.Point(7, 9)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(2)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(30, 30)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 20
-        Me.PictureBox6.TabStop = False
-        '
-        'Panel44
-        '
-        Me.Panel44.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
-        Me.Panel44.Controls.Add(Me.txtSearchFuncionarios)
-        Me.Panel44.Controls.Add(Me.btnSearchFuncionarios)
-        Me.Panel44.Location = New System.Drawing.Point(42, 70)
-        Me.Panel44.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel44.Name = "Panel44"
-        Me.Panel44.Size = New System.Drawing.Size(651, 48)
-        Me.Panel44.TabIndex = 19
-        '
-        'txtSearchFuncionarios
-        '
-        Me.txtSearchFuncionarios.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.txtSearchFuncionarios.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtSearchFuncionarios.Font = New System.Drawing.Font("Arial", 16.0!)
-        Me.txtSearchFuncionarios.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.txtSearchFuncionarios.Location = New System.Drawing.Point(47, 12)
-        Me.txtSearchFuncionarios.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtSearchFuncionarios.Name = "txtSearchFuncionarios"
-        Me.txtSearchFuncionarios.Size = New System.Drawing.Size(593, 25)
-        Me.txtSearchFuncionarios.TabIndex = 21
-        '
-        'btnSearchFuncionarios
-        '
-        Me.btnSearchFuncionarios.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnSearchFuncionarios.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnSearchFuncionarios.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
-        Me.btnSearchFuncionarios.Location = New System.Drawing.Point(7, 9)
-        Me.btnSearchFuncionarios.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnSearchFuncionarios.Name = "btnSearchFuncionarios"
-        Me.btnSearchFuncionarios.Size = New System.Drawing.Size(30, 30)
-        Me.btnSearchFuncionarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnSearchFuncionarios.TabIndex = 20
-        Me.btnSearchFuncionarios.TabStop = False
-        Me.btnSearchFuncionarios.Tag = "2"
-        '
-        'panelSearchPedidos
-        '
-        Me.panelSearchPedidos.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
-        Me.panelSearchPedidos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.panelSearchPedidos.Controls.Add(Me.txtSearchPedidos)
-        Me.panelSearchPedidos.Controls.Add(Me.PictureBox2)
-        Me.panelSearchPedidos.Location = New System.Drawing.Point(42, 70)
-        Me.panelSearchPedidos.Margin = New System.Windows.Forms.Padding(2)
-        Me.panelSearchPedidos.Name = "panelSearchPedidos"
-        Me.panelSearchPedidos.Size = New System.Drawing.Size(651, 48)
-        Me.panelSearchPedidos.TabIndex = 19
-        '
-        'txtSearchPedidos
-        '
-        Me.txtSearchPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.txtSearchPedidos.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtSearchPedidos.Font = New System.Drawing.Font("Arial", 16.0!)
-        Me.txtSearchPedidos.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.txtSearchPedidos.Location = New System.Drawing.Point(47, 9)
-        Me.txtSearchPedidos.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtSearchPedidos.Name = "txtSearchPedidos"
-        Me.txtSearchPedidos.Size = New System.Drawing.Size(593, 25)
-        Me.txtSearchPedidos.TabIndex = 21
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.PictureBox2.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
-        Me.PictureBox2.Location = New System.Drawing.Point(7, 9)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(30, 30)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 20
-        Me.PictureBox2.TabStop = False
-        '
-        'btnCadasterDesigner
-        '
-        Me.btnCadasterDesigner.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.btn_plus
-        Me.btnCadasterDesigner.Location = New System.Drawing.Point(681, 14)
-        Me.btnCadasterDesigner.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnCadasterDesigner.Name = "btnCadasterDesigner"
-        Me.btnCadasterDesigner.Size = New System.Drawing.Size(40, 41)
-        Me.btnCadasterDesigner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnCadasterDesigner.TabIndex = 28
-        Me.btnCadasterDesigner.TabStop = False
-        '
-        'Panel32
-        '
-        Me.Panel32.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
-        Me.Panel32.Controls.Add(Me.TextBox2)
-        Me.Panel32.Controls.Add(Me.PictureBox4)
-        Me.Panel32.Location = New System.Drawing.Point(42, 70)
-        Me.Panel32.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel32.Name = "Panel32"
-        Me.Panel32.Size = New System.Drawing.Size(651, 48)
-        Me.Panel32.TabIndex = 19
-        '
-        'TextBox2
-        '
-        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Font = New System.Drawing.Font("Raleway Light", 16.0!)
-        Me.TextBox2.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.TextBox2.Location = New System.Drawing.Point(47, 9)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(593, 26)
-        Me.TextBox2.TabIndex = 21
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.PictureBox4.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
-        Me.PictureBox4.Location = New System.Drawing.Point(7, 9)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(2)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(30, 30)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 20
-        Me.PictureBox4.TabStop = False
-        '
-        'Panel36
-        '
-        Me.Panel36.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
-        Me.Panel36.Controls.Add(Me.txtSearchDesigners)
-        Me.Panel36.Controls.Add(Me.btnSearchDesigner)
-        Me.Panel36.Location = New System.Drawing.Point(42, 70)
-        Me.Panel36.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel36.Name = "Panel36"
-        Me.Panel36.Size = New System.Drawing.Size(651, 48)
-        Me.Panel36.TabIndex = 19
-        '
-        'txtSearchDesigners
-        '
-        Me.txtSearchDesigners.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.txtSearchDesigners.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtSearchDesigners.Font = New System.Drawing.Font("Arial", 16.0!)
-        Me.txtSearchDesigners.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.txtSearchDesigners.Location = New System.Drawing.Point(47, 13)
-        Me.txtSearchDesigners.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtSearchDesigners.Name = "txtSearchDesigners"
-        Me.txtSearchDesigners.Size = New System.Drawing.Size(593, 25)
-        Me.txtSearchDesigners.TabIndex = 21
-        '
-        'btnSearchDesigner
-        '
-        Me.btnSearchDesigner.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnSearchDesigner.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnSearchDesigner.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
-        Me.btnSearchDesigner.Location = New System.Drawing.Point(7, 9)
-        Me.btnSearchDesigner.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnSearchDesigner.Name = "btnSearchDesigner"
-        Me.btnSearchDesigner.Size = New System.Drawing.Size(30, 30)
-        Me.btnSearchDesigner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnSearchDesigner.TabIndex = 20
-        Me.btnSearchDesigner.TabStop = False
-        '
-        'btnCadasterMovel
-        '
-        Me.btnCadasterMovel.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.btn_plus
-        Me.btnCadasterMovel.Location = New System.Drawing.Point(681, 14)
-        Me.btnCadasterMovel.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnCadasterMovel.Name = "btnCadasterMovel"
-        Me.btnCadasterMovel.Size = New System.Drawing.Size(40, 41)
-        Me.btnCadasterMovel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnCadasterMovel.TabIndex = 27
-        Me.btnCadasterMovel.TabStop = False
-        '
-        'Panel20
-        '
-        Me.Panel20.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
-        Me.Panel20.Controls.Add(Me.TextBox1)
-        Me.Panel20.Controls.Add(Me.PictureBox3)
-        Me.Panel20.Location = New System.Drawing.Point(42, 70)
-        Me.Panel20.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel20.Name = "Panel20"
-        Me.Panel20.Size = New System.Drawing.Size(651, 48)
-        Me.Panel20.TabIndex = 19
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Raleway Light", 16.0!)
-        Me.TextBox1.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.TextBox1.Location = New System.Drawing.Point(47, 9)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(593, 26)
-        Me.TextBox1.TabIndex = 21
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.PictureBox3.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
-        Me.PictureBox3.Location = New System.Drawing.Point(7, 9)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(30, 30)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 20
-        Me.PictureBox3.TabStop = False
-        '
-        'Panel24
-        '
-        Me.Panel24.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
-        Me.Panel24.Controls.Add(Me.txtSearchMoveis)
-        Me.Panel24.Controls.Add(Me.btnSearchMoveis)
-        Me.Panel24.Location = New System.Drawing.Point(42, 70)
-        Me.Panel24.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel24.Name = "Panel24"
-        Me.Panel24.Size = New System.Drawing.Size(651, 48)
-        Me.Panel24.TabIndex = 19
-        '
-        'txtSearchMoveis
-        '
-        Me.txtSearchMoveis.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.txtSearchMoveis.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtSearchMoveis.Font = New System.Drawing.Font("Arial", 16.0!)
-        Me.txtSearchMoveis.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.txtSearchMoveis.Location = New System.Drawing.Point(47, 13)
-        Me.txtSearchMoveis.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtSearchMoveis.Name = "txtSearchMoveis"
-        Me.txtSearchMoveis.Size = New System.Drawing.Size(593, 25)
-        Me.txtSearchMoveis.TabIndex = 21
-        '
-        'btnSearchMoveis
-        '
-        Me.btnSearchMoveis.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnSearchMoveis.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnSearchMoveis.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
-        Me.btnSearchMoveis.Location = New System.Drawing.Point(7, 9)
-        Me.btnSearchMoveis.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnSearchMoveis.Name = "btnSearchMoveis"
-        Me.btnSearchMoveis.Size = New System.Drawing.Size(30, 30)
-        Me.btnSearchMoveis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnSearchMoveis.TabIndex = 20
-        Me.btnSearchMoveis.TabStop = False
-        '
-        'btnCadasterCliente
-        '
-        Me.btnCadasterCliente.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.btn_plus
-        Me.btnCadasterCliente.Location = New System.Drawing.Point(681, 14)
-        Me.btnCadasterCliente.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnCadasterCliente.Name = "btnCadasterCliente"
-        Me.btnCadasterCliente.Size = New System.Drawing.Size(40, 41)
-        Me.btnCadasterCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnCadasterCliente.TabIndex = 28
-        Me.btnCadasterCliente.TabStop = False
-        '
-        'Panel12
-        '
-        Me.Panel12.BackgroundImage = Global.ArquivoVivo_Desktop.My.Resources.Resources.backSearch
-        Me.Panel12.Controls.Add(Me.txtSearchCliente)
-        Me.Panel12.Controls.Add(Me.btnSearchCliente)
-        Me.Panel12.Location = New System.Drawing.Point(42, 70)
-        Me.Panel12.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(651, 48)
-        Me.Panel12.TabIndex = 19
-        '
-        'txtSearchCliente
-        '
-        Me.txtSearchCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.txtSearchCliente.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtSearchCliente.Font = New System.Drawing.Font("Arial", 16.0!)
-        Me.txtSearchCliente.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.txtSearchCliente.Location = New System.Drawing.Point(47, 14)
-        Me.txtSearchCliente.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtSearchCliente.Name = "txtSearchCliente"
-        Me.txtSearchCliente.Size = New System.Drawing.Size(593, 25)
-        Me.txtSearchCliente.TabIndex = 21
-        '
-        'btnSearchCliente
-        '
-        Me.btnSearchCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnSearchCliente.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnSearchCliente.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.lupa
-        Me.btnSearchCliente.Location = New System.Drawing.Point(7, 9)
-        Me.btnSearchCliente.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnSearchCliente.Name = "btnSearchCliente"
-        Me.btnSearchCliente.Size = New System.Drawing.Size(30, 30)
-        Me.btnSearchCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnSearchCliente.TabIndex = 20
-        Me.btnSearchCliente.TabStop = False
-        '
         'btnMinimize
         '
         Me.btnMinimize.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.minimize
@@ -3027,28 +2919,62 @@ Partial Class FormHome
         Me.btnEnd.TabIndex = 12
         Me.btnEnd.TabStop = False
         '
-        'btnHome
+        'dtGridPedidos
         '
-        Me.btnHome.Image = Global.ArquivoVivo_Desktop.My.Resources.Resources.logo_home
-        Me.btnHome.Location = New System.Drawing.Point(56, 18)
-        Me.btnHome.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnHome.Name = "btnHome"
-        Me.btnHome.Size = New System.Drawing.Size(149, 148)
-        Me.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnHome.TabIndex = 0
-        Me.btnHome.TabStop = False
+        Me.dtGridPedidos.AllowUserToAddRows = False
+        Me.dtGridPedidos.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridPedidos.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.dtGridPedidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridPedidos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.dtGridPedidos.ColumnHeadersHeight = 29
+        Me.dtGridPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridPedidos.DefaultCellStyle = DataGridViewCellStyle3
+        Me.dtGridPedidos.EnableHeadersVisualStyles = False
+        Me.dtGridPedidos.Location = New System.Drawing.Point(19, 389)
+        Me.dtGridPedidos.Margin = New System.Windows.Forms.Padding(2)
+        Me.dtGridPedidos.Name = "dtGridPedidos"
+        Me.dtGridPedidos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        Me.dtGridPedidos.RowHeadersWidth = 20
+        Me.dtGridPedidos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle4.NullValue = "(sem dados)"
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridPedidos.RowsDefaultCellStyle = DataGridViewCellStyle4
+        Me.dtGridPedidos.Size = New System.Drawing.Size(693, 250)
+        Me.dtGridPedidos.TabIndex = 27
         '
         'FormHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(21.0!, 50.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1001, 700)
-        Me.Controls.Add(Me.panelHomeFuncionarios)
         Me.Controls.Add(Me.panelHomePedidos)
-        Me.Controls.Add(Me.panelHomeDesigners)
-        Me.Controls.Add(Me.panelHomeMoveis)
         Me.Controls.Add(Me.panelHomeCliente)
         Me.Controls.Add(Me.panelMainPage)
+        Me.Controls.Add(Me.panelHomeFuncionarios)
+        Me.Controls.Add(Me.panelHomeDesigners)
+        Me.Controls.Add(Me.panelHomeMoveis)
         Me.Controls.Add(Me.btnMinimize)
         Me.Controls.Add(Me.btnEnd)
         Me.Controls.Add(Me.btnFuncionario)
@@ -3064,6 +2990,7 @@ Partial Class FormHome
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormHome"
         Me.Panel1.ResumeLayout(False)
+        CType(Me.btnHome, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panelMainPage.ResumeLayout(False)
         Me.panelMainPage.PerformLayout()
         Me.Panel7.ResumeLayout(False)
@@ -3074,78 +3001,77 @@ Partial Class FormHome
         Me.Panel3.ResumeLayout(False)
         Me.panelHomePedidos.ResumeLayout(False)
         Me.panelHomePedidos.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panelSearchPedidos.ResumeLayout(False)
+        Me.panelSearchPedidos.PerformLayout()
+        CType(Me.btnSearchPedidos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel10.ResumeLayout(False)
         Me.Panel13.ResumeLayout(False)
         Me.Panel14.ResumeLayout(False)
         Me.panelHomeCliente.ResumeLayout(False)
         Me.panelHomeCliente.PerformLayout()
+        CType(Me.btnCadasterCliente, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dtGridCliente, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel12.ResumeLayout(False)
+        Me.Panel12.PerformLayout()
+        CType(Me.btnSearchCliente, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel15.ResumeLayout(False)
         Me.Panel16.ResumeLayout(False)
         Me.panelHomeMoveis.ResumeLayout(False)
         Me.panelHomeMoveis.PerformLayout()
+        CType(Me.btnCadasterMovel, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel27.ResumeLayout(False)
         Me.Panel18.ResumeLayout(False)
         Me.Panel18.PerformLayout()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel20.ResumeLayout(False)
+        Me.Panel20.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel21.ResumeLayout(False)
         Me.Panel22.ResumeLayout(False)
         Me.Panel23.ResumeLayout(False)
         CType(Me.dtGridMovel, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel24.ResumeLayout(False)
+        Me.Panel24.PerformLayout()
+        CType(Me.btnSearchMoveis, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel25.ResumeLayout(False)
         Me.Panel26.ResumeLayout(False)
         Me.panelHomeDesigners.ResumeLayout(False)
         Me.panelHomeDesigners.PerformLayout()
+        CType(Me.btnCadasterDesigner, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel30.ResumeLayout(False)
         Me.Panel30.PerformLayout()
         CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel32.ResumeLayout(False)
+        Me.Panel32.PerformLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel33.ResumeLayout(False)
         Me.Panel34.ResumeLayout(False)
         Me.Panel35.ResumeLayout(False)
         CType(Me.dtGridDesigner, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel36.ResumeLayout(False)
+        Me.Panel36.PerformLayout()
+        CType(Me.btnSearchDesigner, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel38.ResumeLayout(False)
         Me.panelHomeFuncionarios.ResumeLayout(False)
         Me.panelHomeFuncionarios.PerformLayout()
+        CType(Me.btnCadasterFuncionario, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel37.ResumeLayout(False)
         Me.Panel37.PerformLayout()
         CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel40.ResumeLayout(False)
+        Me.Panel40.PerformLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel41.ResumeLayout(False)
         Me.Panel42.ResumeLayout(False)
         Me.Panel43.ResumeLayout(False)
         CType(Me.dtGridFuncionario, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel45.ResumeLayout(False)
-        CType(Me.btnCadasterFuncionario, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel40.ResumeLayout(False)
-        Me.Panel40.PerformLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel44.ResumeLayout(False)
         Me.Panel44.PerformLayout()
         CType(Me.btnSearchFuncionarios, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.panelSearchPedidos.ResumeLayout(False)
-        Me.panelSearchPedidos.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnCadasterDesigner, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel32.ResumeLayout(False)
-        Me.Panel32.PerformLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel36.ResumeLayout(False)
-        Me.Panel36.PerformLayout()
-        CType(Me.btnSearchDesigner, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnCadasterMovel, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel20.ResumeLayout(False)
-        Me.Panel20.PerformLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel24.ResumeLayout(False)
-        Me.Panel24.PerformLayout()
-        CType(Me.btnSearchMoveis, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnCadasterCliente, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel12.ResumeLayout(False)
-        Me.Panel12.PerformLayout()
-        CType(Me.btnSearchCliente, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel45.ResumeLayout(False)
         CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnEnd, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnHome, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtGridPedidos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -3161,55 +3087,46 @@ Partial Class FormHome
     Friend WithEvents btnEnd As PictureBox
     Friend WithEvents panelMainPage As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Label5 As Label
+    Friend WithEvents lbl_lucroM As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents Label4 As Label
+    Friend WithEvents lbl_lucroS As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents Label8 As Label
+    Friend WithEvents lbl_lucroA As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
+    Friend WithEvents lblWaitingPedidosMain As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Panel6 As Panel
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label15 As Label
+    Friend WithEvents lblClienteMesMain As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Panel7 As Panel
-    Friend WithEvents Label17 As Label
-    Friend WithEvents Label18 As Label
+    Friend WithEvents lblWithoutStorageMain As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents panelHomePedidos As Panel
     Friend WithEvents Label20 As Label
     Friend WithEvents Panel10 As Panel
-    Friend WithEvents Label23 As Label
-    Friend WithEvents Label24 As Label
+    Friend WithEvents lblPedidosMensais As Label
     Friend WithEvents Label25 As Label
     Friend WithEvents Panel13 As Panel
-    Friend WithEvents Label33 As Label
-    Friend WithEvents Label34 As Label
+    Friend WithEvents lblPedidosAno As Label
     Friend WithEvents Label35 As Label
     Friend WithEvents Panel14 As Panel
-    Friend WithEvents Label36 As Label
-    Friend WithEvents Label37 As Label
+    Friend WithEvents lblWaitingPedidos As Label
     Friend WithEvents Label38 As Label
     Friend WithEvents panelSearchPedidos As Panel
     Friend WithEvents Panel9 As Panel
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents btnSearchPedidos As PictureBox
     Friend WithEvents txtSearchPedidos As TextBox
-    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Label21 As Label
-    Friend WithEvents RadioButton5 As RadioButton
-    Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents rbtnMovelPedido As RadioButton
+    Friend WithEvents rbtnClientePedido As RadioButton
+    Friend WithEvents rbtnNPedido As RadioButton
     Friend WithEvents panelHomeCliente As Panel
     Friend WithEvents Panel11 As Panel
     Friend WithEvents dtGridCliente As DataGridView
@@ -3360,4 +3277,5 @@ Partial Class FormHome
     Friend WithEvents btnCadasterFuncionario As PictureBox
     Friend WithEvents rbtnCepCliente As RadioButton
     Friend WithEvents rbtnEmailFuncionario As RadioButton
+    Friend WithEvents dtGridPedidos As DataGridView
 End Class

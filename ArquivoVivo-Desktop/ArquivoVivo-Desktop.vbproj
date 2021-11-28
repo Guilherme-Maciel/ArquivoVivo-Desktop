@@ -80,9 +80,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>arquivovivomvDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="arquivovivomvDataSet.vb">
-      <DependentUpon>arquivovivomvDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +91,24 @@
       <DependentUpon>FormAlterCliente.vb</DependentUpon>
     </Compile>
     <Compile Include="FormAlterCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterDesigner.Designer.vb">
+      <DependentUpon>FormAlterDesigner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterDesigner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterFuncionario.Designer.vb">
+      <DependentUpon>FormAlterFuncionario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterFuncionario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterMovel.Designer.vb">
+      <DependentUpon>FormAlterMovel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterMovel.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormCadaster.Designer.vb">
@@ -169,6 +184,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAlterCliente.resx">
       <DependentUpon>FormAlterCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterDesigner.resx">
+      <DependentUpon>FormAlterDesigner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterFuncionario.resx">
+      <DependentUpon>FormAlterFuncionario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterMovel.resx">
+      <DependentUpon>FormAlterMovel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCadaster.resx">
       <DependentUpon>FormCadaster.vb</DependentUpon>

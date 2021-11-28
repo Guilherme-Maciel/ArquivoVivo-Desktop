@@ -219,6 +219,8 @@ Public Class FormNewPedido2
         End If
     End Sub
     Private Sub btnCommit_Click(sender As Object, e As EventArgs) Handles btnCommit.Click
+        FormNewPedido3.Show()
+        Me.Close()
 
     End Sub
     Private Sub btnFill_Click(sender As Object, e As EventArgs) Handles btnFill.Click
@@ -289,7 +291,23 @@ Public Class FormNewPedido2
         End Using
     End Sub
 
-
+    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+        Using con As MySqlConnection = GetConnectionMysql()
+            Try
+                con.Open()
+                Dim cmd As MySqlCommand = New MySqlCommand("DELETE FROM pedidos WHERE p_nPedido = '" & nPedido & "'", con)
+                Dim reader As MySqlDataReader = cmd.ExecuteReader
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            Finally
+                con.Close()
+            End Try
+        End Using
+        idQuery = Nothing
+        nPedido = Nothing
+        FormHome.Show()
+        Me.Close()
+    End Sub
 
     Public Sub comboBoxQtd()
         cboxQtd.Items.Clear()
