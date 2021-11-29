@@ -10,7 +10,7 @@ Public Class FormHome
                       FROM moveis, categoria, designers 
                       WHERE designers.d_id = moveis.d_id AND moveis.ct_id = categoria.ct_id"
         queryFuncionario = "SELECT f_id AS 'ID', f_nome AS 'FUNCIONÁRIO', f_telCel AS 'CELULAR', f_telFixo AS 'FIXO', f_email AS 'EMAIL' FROM funcionarios"
-        queryPedido = "SELECT p_nPedido AS NUM, p_tipos AS TIPOS, c_nome AS CLIENTE, p_movel AS MOVEL, p_qtd AS QTD, CONCAT('R$', p_preco) AS PRECO, CONCAT(DAY(p_dtReg), '/', MONTH(p_dtReg), '/', YEAR(p_dtReg)) AS 'DATA' 
+        queryPedido = "SELECT p_nPedido AS 'NUM', p_tipos AS TIPOS, c_nome AS CLIENTE, p_movel AS MOVEL, p_qtd AS QTD, CONCAT('R$', p_preco) AS PRECO, CONCAT(DAY(p_dtReg), '/', MONTH(p_dtReg), '/', YEAR(p_dtReg)) AS 'DATA' 
                        FROM pedidos AS p, cliente AS c
                        WHERE c.c_id = p.c_id ORDER BY p_id DESC"
 
@@ -493,10 +493,9 @@ Public Class FormHome
     End Sub
 
 
-
-    Private Sub dtGridPedidos_RowHeaderMouseDoubleClick(sender As Object, e As DataGridViewCellMouseEventArgs)
-        idQuery = CType(dtGridFuncionario.Item(0, e.RowIndex).Value, Integer)
-        FormAlterFuncionario.Show()
+    Private Sub dtGridPedidos_RowHeaderMouseDoubleClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dtGridPedidos.RowHeaderMouseDoubleClick
+        nPedido = dtGridPedidos.CurrentRow.Cells(0).Value.ToString()
+        FormAlterPedido.Show()
         Me.Close()
     End Sub
     'DEFAULT SUB

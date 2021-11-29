@@ -22,6 +22,10 @@ Partial Class FormHome
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -38,10 +42,6 @@ Partial Class FormHome
         Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnHome = New System.Windows.Forms.PictureBox()
         Me.btnPedidos = New System.Windows.Forms.Button()
@@ -73,6 +73,7 @@ Partial Class FormHome
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.panelHomePedidos = New System.Windows.Forms.Panel()
+        Me.dtGridPedidos = New System.Windows.Forms.DataGridView()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.rbtnMovelPedido = New System.Windows.Forms.RadioButton()
@@ -243,7 +244,6 @@ Partial Class FormHome
         Me.Label85 = New System.Windows.Forms.Label()
         Me.btnMinimize = New System.Windows.Forms.PictureBox()
         Me.btnEnd = New System.Windows.Forms.PictureBox()
-        Me.dtGridPedidos = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
         CType(Me.btnHome, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelMainPage.SuspendLayout()
@@ -254,6 +254,7 @@ Partial Class FormHome
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.panelHomePedidos.SuspendLayout()
+        CType(Me.dtGridPedidos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelSearchPedidos.SuspendLayout()
         CType(Me.btnSearchPedidos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel10.SuspendLayout()
@@ -309,7 +310,6 @@ Partial Class FormHome
         Me.Panel45.SuspendLayout()
         CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnEnd, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dtGridPedidos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -705,6 +705,51 @@ Partial Class FormHome
         Me.panelHomePedidos.Name = "panelHomePedidos"
         Me.panelHomePedidos.Size = New System.Drawing.Size(730, 652)
         Me.panelHomePedidos.TabIndex = 15
+        '
+        'dtGridPedidos
+        '
+        Me.dtGridPedidos.AllowUserToAddRows = False
+        Me.dtGridPedidos.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridPedidos.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.dtGridPedidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridPedidos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.dtGridPedidos.ColumnHeadersHeight = 29
+        Me.dtGridPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridPedidos.DefaultCellStyle = DataGridViewCellStyle3
+        Me.dtGridPedidos.EnableHeadersVisualStyles = False
+        Me.dtGridPedidos.Location = New System.Drawing.Point(19, 389)
+        Me.dtGridPedidos.Margin = New System.Windows.Forms.Padding(2)
+        Me.dtGridPedidos.Name = "dtGridPedidos"
+        Me.dtGridPedidos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        Me.dtGridPedidos.RowHeadersWidth = 20
+        Me.dtGridPedidos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
+        DataGridViewCellStyle4.NullValue = "(sem dados)"
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtGridPedidos.RowsDefaultCellStyle = DataGridViewCellStyle4
+        Me.dtGridPedidos.Size = New System.Drawing.Size(693, 250)
+        Me.dtGridPedidos.TabIndex = 27
         '
         'Panel9
         '
@@ -2919,59 +2964,14 @@ Partial Class FormHome
         Me.btnEnd.TabIndex = 12
         Me.btnEnd.TabStop = False
         '
-        'dtGridPedidos
-        '
-        Me.dtGridPedidos.AllowUserToAddRows = False
-        Me.dtGridPedidos.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridPedidos.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.dtGridPedidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridPedidos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.dtGridPedidos.ColumnHeadersHeight = 29
-        Me.dtGridPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridPedidos.DefaultCellStyle = DataGridViewCellStyle3
-        Me.dtGridPedidos.EnableHeadersVisualStyles = False
-        Me.dtGridPedidos.Location = New System.Drawing.Point(19, 389)
-        Me.dtGridPedidos.Margin = New System.Windows.Forms.Padding(2)
-        Me.dtGridPedidos.Name = "dtGridPedidos"
-        Me.dtGridPedidos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        Me.dtGridPedidos.RowHeadersWidth = 20
-        Me.dtGridPedidos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
-        DataGridViewCellStyle4.NullValue = "(sem dados)"
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtGridPedidos.RowsDefaultCellStyle = DataGridViewCellStyle4
-        Me.dtGridPedidos.Size = New System.Drawing.Size(693, 250)
-        Me.dtGridPedidos.TabIndex = 27
-        '
         'FormHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(21.0!, 50.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1001, 700)
+        Me.Controls.Add(Me.panelMainPage)
         Me.Controls.Add(Me.panelHomePedidos)
         Me.Controls.Add(Me.panelHomeCliente)
-        Me.Controls.Add(Me.panelMainPage)
         Me.Controls.Add(Me.panelHomeFuncionarios)
         Me.Controls.Add(Me.panelHomeDesigners)
         Me.Controls.Add(Me.panelHomeMoveis)
@@ -3001,6 +3001,7 @@ Partial Class FormHome
         Me.Panel3.ResumeLayout(False)
         Me.panelHomePedidos.ResumeLayout(False)
         Me.panelHomePedidos.PerformLayout()
+        CType(Me.dtGridPedidos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panelSearchPedidos.ResumeLayout(False)
         Me.panelSearchPedidos.PerformLayout()
         CType(Me.btnSearchPedidos, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3071,7 +3072,6 @@ Partial Class FormHome
         Me.Panel45.ResumeLayout(False)
         CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnEnd, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dtGridPedidos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

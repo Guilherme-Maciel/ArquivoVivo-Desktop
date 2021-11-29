@@ -111,6 +111,12 @@
     <Compile Include="FormAlterMovel.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormAlterPedido.Designer.vb">
+      <DependentUpon>FormAlterPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterPedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormCadaster.Designer.vb">
       <DependentUpon>FormCadaster.vb</DependentUpon>
     </Compile>
@@ -193,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAlterMovel.resx">
       <DependentUpon>FormAlterMovel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterPedido.resx">
+      <DependentUpon>FormAlterPedido.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCadaster.resx">
       <DependentUpon>FormCadaster.vb</DependentUpon>
