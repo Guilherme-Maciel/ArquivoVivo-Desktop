@@ -3,6 +3,9 @@ Imports MySql.Data.MySqlClient
 Public Class FormHome
     Dim queryCliente, queryPedido, queryDesigner, queryMovel, queryFuncionario As String
     Private Sub FormHome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        lblWelcome.Text = "BEM VINDO(A), " & funcName_SESSION
+
         'querys
         queryDesigner = "SELECT d_id AS 'ID', d_nome AS 'NOME', d_bio AS 'BIOGRAFIA' FROM designers"
         queryCliente = "SELECT c_id AS 'ID', CONCAT(c_nome,' ',c_sobrenome) AS 'CLIENTE', c_telCel AS 'CELULAR', c_telFixo AS 'FIXO', c_email AS 'EMAIL', c_cep AS 'CEP' FROM cliente"
@@ -169,7 +172,9 @@ Public Class FormHome
                 Dim reader As MySqlDataReader = cmd.ExecuteReader
 
                 While reader.Read()
-                    label.Text = reader("total").ToString
+                    If Not DBNull.Value.Equals(reader("total")) Then
+                        label.Text = reader("total").ToString
+                    End If
                 End While
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -189,7 +194,9 @@ Public Class FormHome
                 Dim reader As MySqlDataReader = cmd.ExecuteReader
 
                 While reader.Read()
-                    label.Text = reader("total").ToString
+                    If Not DBNull.Value.Equals(reader("total")) Then
+                        label.Text = reader("total").ToString
+                    End If
                 End While
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -210,7 +217,9 @@ Public Class FormHome
                 Dim reader As MySqlDataReader = cmd.ExecuteReader
 
                 While reader.Read()
-                    label.Text = reader("total").ToString
+                    If Not DBNull.Value.Equals(reader("total")) Then
+                        label.Text = reader("total").ToString
+                    End If
                 End While
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -231,8 +240,10 @@ Public Class FormHome
                 Dim reader As MySqlDataReader = cmd.ExecuteReader
 
                 While reader.Read()
-                    lblCountWithoutStorageMovel.Text = reader("total").ToString
-                    lblWithoutStorageMain.Text = reader("total").ToString
+                    If Not DBNull.Value.Equals(reader("total")) Then
+                        lblCountWithoutStorageMovel.Text = reader("total").ToString
+                        lblWithoutStorageMain.Text = reader("total").ToString
+                    End If
                 End While
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -253,8 +264,10 @@ Public Class FormHome
                 Dim reader As MySqlDataReader = cmd.ExecuteReader
 
                 While reader.Read()
-                    lblWaitingPedidos.Text = reader("total").ToString
-                    lblWaitingPedidosMain.Text = reader("total").ToString
+                    If Not DBNull.Value.Equals(reader("total")) Then
+                        lblWaitingPedidos.Text = reader("total").ToString
+                        lblWaitingPedidosMain.Text = reader("total").ToString
+                    End If
                 End While
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -276,7 +289,9 @@ Public Class FormHome
                 Dim reader As MySqlDataReader = cmd.ExecuteReader
 
                 While reader.Read()
-                    lbl_lucroS.Text = reader("lucroS").ToString
+                    If Not DBNull.Value.Equals(reader("lucroS")) Then
+                        lbl_lucroS.Text = reader("lucroS").ToString
+                    End If
                 End While
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -296,7 +311,9 @@ Public Class FormHome
                 Dim reader As MySqlDataReader = cmd.ExecuteReader
 
                 While reader.Read()
-                    lbl_lucroM.Text = reader("lucroM").ToString
+                    If Not DBNull.Value.Equals(reader("lucroM")) Then
+                        lbl_lucroM.Text = reader("lucroM").ToString
+                    End If
                 End While
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -317,7 +334,9 @@ Public Class FormHome
                 Dim reader As MySqlDataReader = cmd.ExecuteReader
 
                 While reader.Read()
-                    lbl_lucroA.Text = Convert.ToDouble(reader("lucroA")).ToString
+                    If Not DBNull.Value.Equals(reader("lucroA")) Then
+                        lbl_lucroA.Text = Convert.ToDouble(reader("lucroA")).ToString
+                    End If
                 End While
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -491,7 +510,6 @@ Public Class FormHome
         FormAlterFuncionario.Show()
         Me.Close()
     End Sub
-
 
     Private Sub dtGridPedidos_RowHeaderMouseDoubleClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dtGridPedidos.RowHeaderMouseDoubleClick
         nPedido = dtGridPedidos.CurrentRow.Cells(0).Value.ToString()

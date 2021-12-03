@@ -36,6 +36,7 @@ Public Class FormCadaster
 
         comboBoxQtd()
         cboxCatItems()
+
     End Sub
     'MÓVEL
     Private Sub btnImage_Click(sender As Object, e As EventArgs) Handles btnImageMovel.Click
@@ -199,7 +200,7 @@ Public Class FormCadaster
         lastName = txtSobreCliente.Text
         email = txtEmailCliente.Text
         cel = txtCelCliente.Text
-        fix = txtFixCliente.Text
+        fix = txtFix.Text
         estado = txtEstadoCliente.Text
         cidade = txtCidadeCliente.Text
         rua = txtRuaCliente.Text
@@ -250,7 +251,7 @@ Public Class FormCadaster
                 txtSobreCliente.Clear()
                 txtEmailCliente.Clear()
                 txtCelCliente.Clear()
-                txtFixCliente.Clear()
+                txtFix.Clear()
                 txtEstadoCliente.Clear()
                 txtCidadeCliente.Clear()
                 txtRuaCliente.Clear()
@@ -314,6 +315,11 @@ Public Class FormCadaster
                 txtFixFuncionario.Clear()
             End Try
         End Using
+    End Sub
+
+    Private Sub btnCancelFuncionario_Click(sender As Object, e As EventArgs) Handles btnCancelFuncionario.Click
+        FormHome.Show()
+        Me.Close()
     End Sub
 
     'Procedimento de atribuição do método textBoxMoeda()

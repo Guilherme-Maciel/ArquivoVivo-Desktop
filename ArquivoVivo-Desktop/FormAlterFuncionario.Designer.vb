@@ -23,9 +23,10 @@ Partial Class FormAlterFuncionario
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.panelFuncionario = New System.Windows.Forms.Panel()
+        Me.rbtnAtivo = New System.Windows.Forms.RadioButton()
+        Me.rbtnArquivado = New System.Windows.Forms.RadioButton()
         Me.txtSenhaFuncionario = New System.Windows.Forms.TextBox()
         Me.Label34 = New System.Windows.Forms.Label()
-        Me.txtFixFuncionario = New System.Windows.Forms.TextBox()
         Me.Label39 = New System.Windows.Forms.Label()
         Me.txtCelFuncionario = New System.Windows.Forms.TextBox()
         Me.Label40 = New System.Windows.Forms.Label()
@@ -39,18 +40,17 @@ Partial Class FormAlterFuncionario
         Me.txtNomeFuncionario = New System.Windows.Forms.TextBox()
         Me.Label44 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.rbtnAtivo = New System.Windows.Forms.RadioButton()
-        Me.rbtnArquivado = New System.Windows.Forms.RadioButton()
+        Me.txtFixFuncionario = New System.Windows.Forms.MaskedTextBox()
         Me.panelFuncionario.SuspendLayout()
         Me.SuspendLayout()
         '
         'panelFuncionario
         '
+        Me.panelFuncionario.Controls.Add(Me.txtFixFuncionario)
         Me.panelFuncionario.Controls.Add(Me.rbtnAtivo)
         Me.panelFuncionario.Controls.Add(Me.rbtnArquivado)
         Me.panelFuncionario.Controls.Add(Me.txtSenhaFuncionario)
         Me.panelFuncionario.Controls.Add(Me.Label34)
-        Me.panelFuncionario.Controls.Add(Me.txtFixFuncionario)
         Me.panelFuncionario.Controls.Add(Me.Label39)
         Me.panelFuncionario.Controls.Add(Me.txtCelFuncionario)
         Me.panelFuncionario.Controls.Add(Me.Label40)
@@ -69,6 +69,30 @@ Partial Class FormAlterFuncionario
         Me.panelFuncionario.Size = New System.Drawing.Size(1000, 700)
         Me.panelFuncionario.TabIndex = 45
         '
+        'rbtnAtivo
+        '
+        Me.rbtnAtivo.AutoSize = True
+        Me.rbtnAtivo.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbtnAtivo.Location = New System.Drawing.Point(12, 21)
+        Me.rbtnAtivo.Name = "rbtnAtivo"
+        Me.rbtnAtivo.Size = New System.Drawing.Size(75, 26)
+        Me.rbtnAtivo.TabIndex = 58
+        Me.rbtnAtivo.TabStop = True
+        Me.rbtnAtivo.Text = "ATIVO"
+        Me.rbtnAtivo.UseVisualStyleBackColor = True
+        '
+        'rbtnArquivado
+        '
+        Me.rbtnArquivado.AutoSize = True
+        Me.rbtnArquivado.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbtnArquivado.Location = New System.Drawing.Point(120, 21)
+        Me.rbtnArquivado.Name = "rbtnArquivado"
+        Me.rbtnArquivado.Size = New System.Drawing.Size(121, 26)
+        Me.rbtnArquivado.TabIndex = 59
+        Me.rbtnArquivado.TabStop = True
+        Me.rbtnArquivado.Text = "ARQUIVADO"
+        Me.rbtnArquivado.UseVisualStyleBackColor = True
+        '
         'txtSenhaFuncionario
         '
         Me.txtSenhaFuncionario.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -86,14 +110,6 @@ Partial Class FormAlterFuncionario
         Me.Label34.Size = New System.Drawing.Size(113, 44)
         Me.Label34.TabIndex = 56
         Me.Label34.Text = "senha:"
-        '
-        'txtFixFuncionario
-        '
-        Me.txtFixFuncionario.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFixFuncionario.Location = New System.Drawing.Point(556, 449)
-        Me.txtFixFuncionario.Name = "txtFixFuncionario"
-        Me.txtFixFuncionario.Size = New System.Drawing.Size(278, 35)
-        Me.txtFixFuncionario.TabIndex = 47
         '
         'Label39
         '
@@ -219,29 +235,14 @@ Partial Class FormAlterFuncionario
         Me.Panel6.Size = New System.Drawing.Size(1000, 2)
         Me.Panel6.TabIndex = 22
         '
-        'rbtnAtivo
+        'txtFixFuncionario
         '
-        Me.rbtnAtivo.AutoSize = True
-        Me.rbtnAtivo.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rbtnAtivo.Location = New System.Drawing.Point(12, 21)
-        Me.rbtnAtivo.Name = "rbtnAtivo"
-        Me.rbtnAtivo.Size = New System.Drawing.Size(75, 26)
-        Me.rbtnAtivo.TabIndex = 58
-        Me.rbtnAtivo.TabStop = True
-        Me.rbtnAtivo.Text = "ATIVO"
-        Me.rbtnAtivo.UseVisualStyleBackColor = True
-        '
-        'rbtnArquivado
-        '
-        Me.rbtnArquivado.AutoSize = True
-        Me.rbtnArquivado.Font = New System.Drawing.Font("Raleway Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rbtnArquivado.Location = New System.Drawing.Point(120, 21)
-        Me.rbtnArquivado.Name = "rbtnArquivado"
-        Me.rbtnArquivado.Size = New System.Drawing.Size(121, 26)
-        Me.rbtnArquivado.TabIndex = 59
-        Me.rbtnArquivado.TabStop = True
-        Me.rbtnArquivado.Text = "ARQUIVADO"
-        Me.rbtnArquivado.UseVisualStyleBackColor = True
+        Me.txtFixFuncionario.Font = New System.Drawing.Font("Arial Narrow", 18.0!)
+        Me.txtFixFuncionario.Location = New System.Drawing.Point(556, 449)
+        Me.txtFixFuncionario.Mask = "(00) 0000-0000"
+        Me.txtFixFuncionario.Name = "txtFixFuncionario"
+        Me.txtFixFuncionario.Size = New System.Drawing.Size(278, 35)
+        Me.txtFixFuncionario.TabIndex = 60
         '
         'FormAlterFuncionario
         '
@@ -262,7 +263,6 @@ Partial Class FormAlterFuncionario
     Friend WithEvents panelFuncionario As Panel
     Friend WithEvents txtSenhaFuncionario As TextBox
     Friend WithEvents Label34 As Label
-    Friend WithEvents txtFixFuncionario As TextBox
     Friend WithEvents Label39 As Label
     Friend WithEvents txtCelFuncionario As TextBox
     Friend WithEvents Label40 As Label
@@ -278,4 +278,5 @@ Partial Class FormAlterFuncionario
     Friend WithEvents Panel6 As Panel
     Friend WithEvents rbtnAtivo As RadioButton
     Friend WithEvents rbtnArquivado As RadioButton
+    Friend WithEvents txtFixFuncionario As MaskedTextBox
 End Class

@@ -27,8 +27,8 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnLogar = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtSenha = New System.Windows.Forms.TextBox()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.btnMinimize = New System.Windows.Forms.PictureBox()
         Me.btnEnd = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
@@ -89,24 +89,24 @@ Partial Class Form1
         Me.btnLogar.Text = "ENTRAR"
         Me.btnLogar.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtSenha
         '
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(258, 451)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(504, 22)
-        Me.TextBox1.TabIndex = 8
-        Me.TextBox1.UseSystemPasswordChar = True
+        Me.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtSenha.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSenha.Location = New System.Drawing.Point(258, 451)
+        Me.txtSenha.Name = "txtSenha"
+        Me.txtSenha.Size = New System.Drawing.Size(504, 22)
+        Me.txtSenha.TabIndex = 8
+        Me.txtSenha.UseSystemPasswordChar = True
         '
-        'TextBox2
+        'txtEmail
         '
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(258, 324)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(504, 22)
-        Me.TextBox2.TabIndex = 9
+        Me.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtEmail.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmail.Location = New System.Drawing.Point(258, 324)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(504, 22)
+        Me.txtEmail.TabIndex = 9
         '
         'btnMinimize
         '
@@ -164,8 +164,8 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(1000, 700)
         Me.Controls.Add(Me.btnMinimize)
         Me.Controls.Add(Me.btnEnd)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtEmail)
+        Me.Controls.Add(Me.txtSenha)
         Me.Controls.Add(Me.btnLogar)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.Label3)
@@ -199,8 +199,8 @@ Partial Class Form1
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label3 As Label
     Friend WithEvents btnLogar As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtSenha As TextBox
+    Friend WithEvents txtEmail As TextBox
     Friend WithEvents btnEnd As PictureBox
     Friend WithEvents btnMinimize As PictureBox
 End Class

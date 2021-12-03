@@ -61,6 +61,8 @@ Partial Class FormCadaster
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.panelCliente = New System.Windows.Forms.Panel()
+        Me.txtCepCliente = New System.Windows.Forms.MaskedTextBox()
+        Me.txtFix = New System.Windows.Forms.MaskedTextBox()
         Me.txtCompleCliente = New System.Windows.Forms.TextBox()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.txtNumResCliente = New System.Windows.Forms.TextBox()
@@ -69,13 +71,11 @@ Partial Class FormCadaster
         Me.Label24 = New System.Windows.Forms.Label()
         Me.txtRuaCliente = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.txtCepCliente = New System.Windows.Forms.TextBox()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.txtCidadeCliente = New System.Windows.Forms.TextBox()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.txtEstadoCliente = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
-        Me.txtFixCliente = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.txtCelCliente = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -92,11 +92,11 @@ Partial Class FormCadaster
         Me.CategoriaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.CategoriaTableAdapter = New ArquivoVivo_Desktop.arquivovivomvDataSetTableAdapters.categoriaTableAdapter()
         Me.panelFuncionario = New System.Windows.Forms.Panel()
+        Me.txtCelFuncionario = New System.Windows.Forms.MaskedTextBox()
+        Me.txtFixFuncionario = New System.Windows.Forms.MaskedTextBox()
         Me.txtSenhaFuncionario = New System.Windows.Forms.TextBox()
         Me.Label34 = New System.Windows.Forms.Label()
-        Me.txtFixFuncionario = New System.Windows.Forms.TextBox()
         Me.Label39 = New System.Windows.Forms.Label()
-        Me.txtCelFuncionario = New System.Windows.Forms.TextBox()
         Me.Label40 = New System.Windows.Forms.Label()
         Me.txtEmailFuncionario = New System.Windows.Forms.TextBox()
         Me.Label41 = New System.Windows.Forms.Label()
@@ -498,6 +498,8 @@ Partial Class FormCadaster
         '
         'panelCliente
         '
+        Me.panelCliente.Controls.Add(Me.txtCepCliente)
+        Me.panelCliente.Controls.Add(Me.txtFix)
         Me.panelCliente.Controls.Add(Me.txtCompleCliente)
         Me.panelCliente.Controls.Add(Me.Label25)
         Me.panelCliente.Controls.Add(Me.txtNumResCliente)
@@ -506,13 +508,11 @@ Partial Class FormCadaster
         Me.panelCliente.Controls.Add(Me.Label24)
         Me.panelCliente.Controls.Add(Me.txtRuaCliente)
         Me.panelCliente.Controls.Add(Me.Label23)
-        Me.panelCliente.Controls.Add(Me.txtCepCliente)
         Me.panelCliente.Controls.Add(Me.Label22)
         Me.panelCliente.Controls.Add(Me.txtCidadeCliente)
         Me.panelCliente.Controls.Add(Me.Label20)
         Me.panelCliente.Controls.Add(Me.txtEstadoCliente)
         Me.panelCliente.Controls.Add(Me.Label21)
-        Me.panelCliente.Controls.Add(Me.txtFixCliente)
         Me.panelCliente.Controls.Add(Me.Label13)
         Me.panelCliente.Controls.Add(Me.txtCelCliente)
         Me.panelCliente.Controls.Add(Me.Label12)
@@ -530,6 +530,24 @@ Partial Class FormCadaster
         Me.panelCliente.Name = "panelCliente"
         Me.panelCliente.Size = New System.Drawing.Size(1000, 747)
         Me.panelCliente.TabIndex = 43
+        '
+        'txtCepCliente
+        '
+        Me.txtCepCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!)
+        Me.txtCepCliente.Location = New System.Drawing.Point(186, 411)
+        Me.txtCepCliente.Mask = "00000-000"
+        Me.txtCepCliente.Name = "txtCepCliente"
+        Me.txtCepCliente.Size = New System.Drawing.Size(191, 35)
+        Me.txtCepCliente.TabIndex = 63
+        '
+        'txtFix
+        '
+        Me.txtFix.Font = New System.Drawing.Font("Arial Narrow", 18.0!)
+        Me.txtFix.Location = New System.Drawing.Point(556, 259)
+        Me.txtFix.Mask = "(00) 0000-0000"
+        Me.txtFix.Name = "txtFix"
+        Me.txtFix.Size = New System.Drawing.Size(278, 35)
+        Me.txtFix.TabIndex = 62
         '
         'txtCompleCliente
         '
@@ -603,14 +621,6 @@ Partial Class FormCadaster
         Me.Label23.TabIndex = 54
         Me.Label23.Text = "rua:"
         '
-        'txtCepCliente
-        '
-        Me.txtCepCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCepCliente.Location = New System.Drawing.Point(186, 411)
-        Me.txtCepCliente.Name = "txtCepCliente"
-        Me.txtCepCliente.Size = New System.Drawing.Size(191, 35)
-        Me.txtCepCliente.TabIndex = 53
-        '
         'Label22
         '
         Me.Label22.AutoSize = True
@@ -656,14 +666,6 @@ Partial Class FormCadaster
         Me.Label21.Size = New System.Drawing.Size(126, 44)
         Me.Label21.TabIndex = 48
         Me.Label21.Text = "estado:"
-        '
-        'txtFixCliente
-        '
-        Me.txtFixCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFixCliente.Location = New System.Drawing.Point(556, 259)
-        Me.txtFixCliente.Name = "txtFixCliente"
-        Me.txtFixCliente.Size = New System.Drawing.Size(278, 35)
-        Me.txtFixCliente.TabIndex = 47
         '
         'Label13
         '
@@ -800,11 +802,11 @@ Partial Class FormCadaster
         '
         'panelFuncionario
         '
+        Me.panelFuncionario.Controls.Add(Me.txtCelFuncionario)
+        Me.panelFuncionario.Controls.Add(Me.txtFixFuncionario)
         Me.panelFuncionario.Controls.Add(Me.txtSenhaFuncionario)
         Me.panelFuncionario.Controls.Add(Me.Label34)
-        Me.panelFuncionario.Controls.Add(Me.txtFixFuncionario)
         Me.panelFuncionario.Controls.Add(Me.Label39)
-        Me.panelFuncionario.Controls.Add(Me.txtCelFuncionario)
         Me.panelFuncionario.Controls.Add(Me.Label40)
         Me.panelFuncionario.Controls.Add(Me.txtEmailFuncionario)
         Me.panelFuncionario.Controls.Add(Me.Label41)
@@ -821,6 +823,23 @@ Partial Class FormCadaster
         Me.panelFuncionario.Size = New System.Drawing.Size(1000, 700)
         Me.panelFuncionario.TabIndex = 44
         '
+        'txtCelFuncionario
+        '
+        Me.txtCelFuncionario.Font = New System.Drawing.Font("Arial Narrow", 18.0!)
+        Me.txtCelFuncionario.Location = New System.Drawing.Point(186, 449)
+        Me.txtCelFuncionario.Name = "txtCelFuncionario"
+        Me.txtCelFuncionario.Size = New System.Drawing.Size(278, 35)
+        Me.txtCelFuncionario.TabIndex = 59
+        '
+        'txtFixFuncionario
+        '
+        Me.txtFixFuncionario.Font = New System.Drawing.Font("Arial Narrow", 18.0!)
+        Me.txtFixFuncionario.Location = New System.Drawing.Point(556, 449)
+        Me.txtFixFuncionario.Mask = "(00) 0000-0000"
+        Me.txtFixFuncionario.Name = "txtFixFuncionario"
+        Me.txtFixFuncionario.Size = New System.Drawing.Size(278, 35)
+        Me.txtFixFuncionario.TabIndex = 58
+        '
         'txtSenhaFuncionario
         '
         Me.txtSenhaFuncionario.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -828,6 +847,7 @@ Partial Class FormCadaster
         Me.txtSenhaFuncionario.Name = "txtSenhaFuncionario"
         Me.txtSenhaFuncionario.Size = New System.Drawing.Size(648, 35)
         Me.txtSenhaFuncionario.TabIndex = 57
+        Me.txtSenhaFuncionario.UseSystemPasswordChar = True
         '
         'Label34
         '
@@ -839,14 +859,6 @@ Partial Class FormCadaster
         Me.Label34.TabIndex = 56
         Me.Label34.Text = "senha:"
         '
-        'txtFixFuncionario
-        '
-        Me.txtFixFuncionario.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFixFuncionario.Location = New System.Drawing.Point(556, 449)
-        Me.txtFixFuncionario.Name = "txtFixFuncionario"
-        Me.txtFixFuncionario.Size = New System.Drawing.Size(278, 35)
-        Me.txtFixFuncionario.TabIndex = 47
-        '
         'Label39
         '
         Me.Label39.AutoSize = True
@@ -856,14 +868,6 @@ Partial Class FormCadaster
         Me.Label39.Size = New System.Drawing.Size(75, 44)
         Me.Label39.TabIndex = 46
         Me.Label39.Text = "fixo:"
-        '
-        'txtCelFuncionario
-        '
-        Me.txtCelFuncionario.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCelFuncionario.Location = New System.Drawing.Point(186, 449)
-        Me.txtCelFuncionario.Name = "txtCelFuncionario"
-        Me.txtCelFuncionario.Size = New System.Drawing.Size(278, 35)
-        Me.txtCelFuncionario.TabIndex = 45
         '
         'Label40
         '
@@ -938,7 +942,7 @@ Partial Class FormCadaster
         '
         Me.Label43.AutoSize = True
         Me.Label43.Font = New System.Drawing.Font("Raleway", 24.0!)
-        Me.Label43.Location = New System.Drawing.Point(430, 10)
+        Me.Label43.Location = New System.Drawing.Point(386, 10)
         Me.Label43.Name = "Label43"
         Me.Label43.Size = New System.Drawing.Size(261, 44)
         Me.Label43.TabIndex = 23
@@ -976,9 +980,9 @@ Partial Class FormCadaster
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1000, 700)
-        Me.Controls.Add(Me.panelMovel)
         Me.Controls.Add(Me.panelFuncionario)
         Me.Controls.Add(Me.panelCliente)
+        Me.Controls.Add(Me.panelMovel)
         Me.Controls.Add(Me.panelDesigner)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormCadaster"
@@ -1045,7 +1049,6 @@ Partial Class FormCadaster
     Friend WithEvents Label20 As Label
     Friend WithEvents txtEstadoCliente As TextBox
     Friend WithEvents Label21 As Label
-    Friend WithEvents txtFixCliente As TextBox
     Friend WithEvents Label13 As Label
     Friend WithEvents txtCelCliente As TextBox
     Friend WithEvents Label12 As Label
@@ -1059,7 +1062,6 @@ Partial Class FormCadaster
     Friend WithEvents txtNameCliente As TextBox
     Friend WithEvents Label18 As Label
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents txtCepCliente As TextBox
     Friend WithEvents Label22 As Label
     Friend WithEvents txtBairroCliente As TextBox
     Friend WithEvents Label24 As Label
@@ -1072,9 +1074,7 @@ Partial Class FormCadaster
     Friend WithEvents panelFuncionario As Panel
     Friend WithEvents txtSenhaFuncionario As TextBox
     Friend WithEvents Label34 As Label
-    Friend WithEvents txtFixFuncionario As TextBox
     Friend WithEvents Label39 As Label
-    Friend WithEvents txtCelFuncionario As TextBox
     Friend WithEvents Label40 As Label
     Friend WithEvents txtEmailFuncionario As TextBox
     Friend WithEvents Label41 As Label
@@ -1086,4 +1086,8 @@ Partial Class FormCadaster
     Friend WithEvents txtNomeFuncionario As TextBox
     Friend WithEvents Label44 As Label
     Friend WithEvents Panel6 As Panel
+    Friend WithEvents txtCelFuncionario As MaskedTextBox
+    Friend WithEvents txtFixFuncionario As MaskedTextBox
+    Friend WithEvents txtCepCliente As MaskedTextBox
+    Friend WithEvents txtFix As MaskedTextBox
 End Class

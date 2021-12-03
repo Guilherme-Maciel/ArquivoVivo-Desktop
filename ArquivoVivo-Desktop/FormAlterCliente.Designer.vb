@@ -34,13 +34,11 @@ Partial Class formAlterCliente
         Me.Label24 = New System.Windows.Forms.Label()
         Me.txtRuaCliente = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.txtCepCliente = New System.Windows.Forms.TextBox()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.txtCidadeCliente = New System.Windows.Forms.TextBox()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.txtEstadoCliente = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
-        Me.txtFixCliente = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.txtCelCliente = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -54,12 +52,16 @@ Partial Class formAlterCliente
         Me.txtNameCliente = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.txtFixCliente = New System.Windows.Forms.MaskedTextBox()
+        Me.txtCepCliente = New System.Windows.Forms.MaskedTextBox()
         Me.panelCliente.SuspendLayout()
         CType(Me.btnNewPedido, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'panelCliente
         '
+        Me.panelCliente.Controls.Add(Me.txtCepCliente)
+        Me.panelCliente.Controls.Add(Me.txtFixCliente)
         Me.panelCliente.Controls.Add(Me.btnNewPedido)
         Me.panelCliente.Controls.Add(Me.rbtnAtivo)
         Me.panelCliente.Controls.Add(Me.rbtnArquivado)
@@ -71,13 +73,11 @@ Partial Class formAlterCliente
         Me.panelCliente.Controls.Add(Me.Label24)
         Me.panelCliente.Controls.Add(Me.txtRuaCliente)
         Me.panelCliente.Controls.Add(Me.Label23)
-        Me.panelCliente.Controls.Add(Me.txtCepCliente)
         Me.panelCliente.Controls.Add(Me.Label22)
         Me.panelCliente.Controls.Add(Me.txtCidadeCliente)
         Me.panelCliente.Controls.Add(Me.Label20)
         Me.panelCliente.Controls.Add(Me.txtEstadoCliente)
         Me.panelCliente.Controls.Add(Me.Label21)
-        Me.panelCliente.Controls.Add(Me.txtFixCliente)
         Me.panelCliente.Controls.Add(Me.Label13)
         Me.panelCliente.Controls.Add(Me.txtCelCliente)
         Me.panelCliente.Controls.Add(Me.Label12)
@@ -202,14 +202,6 @@ Partial Class formAlterCliente
         Me.Label23.TabIndex = 54
         Me.Label23.Text = "rua:"
         '
-        'txtCepCliente
-        '
-        Me.txtCepCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCepCliente.Location = New System.Drawing.Point(186, 411)
-        Me.txtCepCliente.Name = "txtCepCliente"
-        Me.txtCepCliente.Size = New System.Drawing.Size(191, 35)
-        Me.txtCepCliente.TabIndex = 53
-        '
         'Label22
         '
         Me.Label22.AutoSize = True
@@ -255,14 +247,6 @@ Partial Class formAlterCliente
         Me.Label21.Size = New System.Drawing.Size(126, 44)
         Me.Label21.TabIndex = 48
         Me.Label21.Text = "estado:"
-        '
-        'txtFixCliente
-        '
-        Me.txtFixCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFixCliente.Location = New System.Drawing.Point(556, 259)
-        Me.txtFixCliente.Name = "txtFixCliente"
-        Me.txtFixCliente.Size = New System.Drawing.Size(278, 35)
-        Me.txtFixCliente.TabIndex = 47
         '
         'Label13
         '
@@ -388,6 +372,24 @@ Partial Class formAlterCliente
         Me.Panel3.Size = New System.Drawing.Size(1000, 2)
         Me.Panel3.TabIndex = 22
         '
+        'txtFixCliente
+        '
+        Me.txtFixCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!)
+        Me.txtFixCliente.Location = New System.Drawing.Point(556, 259)
+        Me.txtFixCliente.Mask = "(00) 0000-0000"
+        Me.txtFixCliente.Name = "txtFixCliente"
+        Me.txtFixCliente.Size = New System.Drawing.Size(278, 35)
+        Me.txtFixCliente.TabIndex = 63
+        '
+        'txtCepCliente
+        '
+        Me.txtCepCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!)
+        Me.txtCepCliente.Location = New System.Drawing.Point(186, 411)
+        Me.txtCepCliente.Mask = "00000-000"
+        Me.txtCepCliente.Name = "txtCepCliente"
+        Me.txtCepCliente.Size = New System.Drawing.Size(191, 35)
+        Me.txtCepCliente.TabIndex = 64
+        '
         'formAlterCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -414,13 +416,11 @@ Partial Class formAlterCliente
     Friend WithEvents Label24 As Label
     Friend WithEvents txtRuaCliente As TextBox
     Friend WithEvents Label23 As Label
-    Friend WithEvents txtCepCliente As TextBox
     Friend WithEvents Label22 As Label
     Friend WithEvents txtCidadeCliente As TextBox
     Friend WithEvents Label20 As Label
     Friend WithEvents txtEstadoCliente As TextBox
     Friend WithEvents Label21 As Label
-    Friend WithEvents txtFixCliente As TextBox
     Friend WithEvents Label13 As Label
     Friend WithEvents txtCelCliente As TextBox
     Friend WithEvents Label12 As Label
@@ -437,4 +437,6 @@ Partial Class formAlterCliente
     Friend WithEvents rbtnAtivo As RadioButton
     Friend WithEvents rbtnArquivado As RadioButton
     Friend WithEvents btnNewPedido As PictureBox
+    Friend WithEvents txtFixCliente As MaskedTextBox
+    Friend WithEvents txtCepCliente As MaskedTextBox
 End Class

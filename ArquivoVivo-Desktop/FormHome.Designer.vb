@@ -60,7 +60,7 @@ Partial Class FormHome
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.lblClienteMesMain = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblWelcome = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.lblWaitingPedidosMain = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -418,7 +418,7 @@ Partial Class FormHome
         Me.panelMainPage.Controls.Add(Me.Panel7)
         Me.panelMainPage.Controls.Add(Me.Panel2)
         Me.panelMainPage.Controls.Add(Me.Panel6)
-        Me.panelMainPage.Controls.Add(Me.Label1)
+        Me.panelMainPage.Controls.Add(Me.lblWelcome)
         Me.panelMainPage.Controls.Add(Me.Panel5)
         Me.panelMainPage.Controls.Add(Me.Panel4)
         Me.panelMainPage.Controls.Add(Me.Panel3)
@@ -546,15 +546,15 @@ Partial Class FormHome
         Me.Label16.Text = "CLIENTES MÊS"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label1
+        'lblWelcome
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(2, 2)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(523, 50)
-        Me.Label1.TabIndex = 15
-        Me.Label1.Text = "BEM VINDO(A), GUILHERGINA"
+        Me.lblWelcome.AutoSize = True
+        Me.lblWelcome.Location = New System.Drawing.Point(2, 2)
+        Me.lblWelcome.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblWelcome.Name = "lblWelcome"
+        Me.lblWelcome.Size = New System.Drawing.Size(523, 50)
+        Me.lblWelcome.TabIndex = 15
+        Me.lblWelcome.Text = "BEM VINDO(A), GUILHERGINA"
         '
         'Panel5
         '
@@ -3090,7 +3090,7 @@ Partial Class FormHome
     Friend WithEvents lbl_lucroM As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblWelcome As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents lbl_lucroS As Label
     Friend WithEvents Label3 As Label
