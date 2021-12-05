@@ -232,6 +232,8 @@ Partial Class FormMoveisAmbiente1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.Name = "FormMoveisAmbiente1"
+        Me.ShowIcon = False
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormMoveisAmbiente1"
         Me.panelMovel.ResumeLayout(False)

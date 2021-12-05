@@ -87,7 +87,7 @@ Public Class FormMoveisAmbiente2
             Try
                 'conexão com o banco pela variável con que recebe a função GetConnectionMysql()
                 con.Open()
-                Dim sql As String = "INSERT INTO moveis(m_titulo, m_desc, ct_id, m_valUni, m_qtdEstoque, m_imagem, m_typeImg, m_dtReg, m_assoc) VALUES(@title, @desc, @cat, @value, @qtd, @image, @type, @date, @assoc)"
+                Dim sql As String = "INSERT INTO moveis(m_titulo, m_desc, ct_id, m_valUni, m_qtdEstoque, m_imagem, m_typeImg, m_dtReg, m_assoc, m_designers, d_id, f_id) VALUES(@title, @desc, @cat, @value, @qtd, @image, @type, @date, @assoc, 'Desconhecido', '1', '" & funcId_SESSION & "')"
                 Dim cmd As MySqlCommand = New MySqlCommand(sql, con)
 
                 'Atribuição dos parâmetros

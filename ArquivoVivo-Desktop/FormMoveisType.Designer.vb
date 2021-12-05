@@ -81,6 +81,8 @@ Partial Class FormMoveisType
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(7, 8, 7, 8)
         Me.Name = "FormMoveisType"
+        Me.ShowIcon = False
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormMoveisType"
         CType(Me.btnAmbiente, System.ComponentModel.ISupportInitialize).EndInit()

@@ -37,24 +37,24 @@ Partial Class FormAlterMovel
         Me.txtValueMovel = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cboxDesignersMovel = New System.Windows.Forms.ComboBox()
+        Me.DesignersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ArquivovivomvDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ArquivovivomvDataSet = New ArquivoVivo_Desktop.arquivovivomvDataSet()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.cboxCatMovel = New System.Windows.Forms.ComboBox()
+        Me.CategoriaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label83 = New System.Windows.Forms.Label()
         Me.txtTitleMovel = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel28 = New System.Windows.Forms.Panel()
-        Me.ArquivovivomvDataSet = New ArquivoVivo_Desktop.arquivovivomvDataSet()
-        Me.ArquivovivomvDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DesignersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DesignersTableAdapter = New ArquivoVivo_Desktop.arquivovivomvDataSetTableAdapters.designersTableAdapter()
-        Me.CategoriaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.CategoriaTableAdapter = New ArquivoVivo_Desktop.arquivovivomvDataSetTableAdapters.categoriaTableAdapter()
         Me.panelMovel.SuspendLayout()
         CType(Me.picboxImageUploadMovel, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ArquivovivomvDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ArquivovivomvDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DesignersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ArquivovivomvDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ArquivovivomvDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CategoriaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -217,6 +217,21 @@ Partial Class FormAlterMovel
         Me.cboxDesignersMovel.TabIndex = 29
         Me.cboxDesignersMovel.ValueMember = "d_id"
         '
+        'DesignersBindingSource
+        '
+        Me.DesignersBindingSource.DataMember = "designers"
+        Me.DesignersBindingSource.DataSource = Me.ArquivovivomvDataSetBindingSource
+        '
+        'ArquivovivomvDataSetBindingSource
+        '
+        Me.ArquivovivomvDataSetBindingSource.DataSource = Me.ArquivovivomvDataSet
+        Me.ArquivovivomvDataSetBindingSource.Position = 0
+        '
+        'ArquivovivomvDataSet
+        '
+        Me.ArquivovivomvDataSet.DataSetName = "arquivovivomvDataSet"
+        Me.ArquivovivomvDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -238,6 +253,11 @@ Partial Class FormAlterMovel
         Me.cboxCatMovel.Size = New System.Drawing.Size(304, 35)
         Me.cboxCatMovel.TabIndex = 27
         Me.cboxCatMovel.ValueMember = "ct_id"
+        '
+        'CategoriaBindingSource
+        '
+        Me.CategoriaBindingSource.DataMember = "categoria"
+        Me.CategoriaBindingSource.DataSource = Me.ArquivovivomvDataSetBindingSource
         '
         'Label2
         '
@@ -285,29 +305,9 @@ Partial Class FormAlterMovel
         Me.Panel28.Size = New System.Drawing.Size(1000, 2)
         Me.Panel28.TabIndex = 22
         '
-        'ArquivovivomvDataSet
-        '
-        Me.ArquivovivomvDataSet.DataSetName = "arquivovivomvDataSet"
-        Me.ArquivovivomvDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'ArquivovivomvDataSetBindingSource
-        '
-        Me.ArquivovivomvDataSetBindingSource.DataSource = Me.ArquivovivomvDataSet
-        Me.ArquivovivomvDataSetBindingSource.Position = 0
-        '
-        'DesignersBindingSource
-        '
-        Me.DesignersBindingSource.DataMember = "designers"
-        Me.DesignersBindingSource.DataSource = Me.ArquivovivomvDataSetBindingSource
-        '
         'DesignersTableAdapter
         '
         Me.DesignersTableAdapter.ClearBeforeFill = True
-        '
-        'CategoriaBindingSource
-        '
-        Me.CategoriaBindingSource.DataMember = "categoria"
-        Me.CategoriaBindingSource.DataSource = Me.ArquivovivomvDataSetBindingSource
         '
         'CategoriaTableAdapter
         '
@@ -321,14 +321,16 @@ Partial Class FormAlterMovel
         Me.Controls.Add(Me.panelMovel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormAlterMovel"
+        Me.ShowIcon = False
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormAlterMovel"
         Me.panelMovel.ResumeLayout(False)
         Me.panelMovel.PerformLayout()
         CType(Me.picboxImageUploadMovel, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ArquivovivomvDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ArquivovivomvDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DesignersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ArquivovivomvDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ArquivovivomvDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CategoriaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

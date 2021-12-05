@@ -42,6 +42,7 @@ Partial Class FormHome
         Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormHome))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnHome = New System.Windows.Forms.PictureBox()
         Me.btnPedidos = New System.Windows.Forms.Button()
@@ -2985,10 +2986,11 @@ Partial Class FormHome
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Raleway Light", 27.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(9, 11, 9, 11)
         Me.Name = "FormHome"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FormHome"
+        Me.Text = "Home"
         Me.Panel1.ResumeLayout(False)
         CType(Me.btnHome, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panelMainPage.ResumeLayout(False)

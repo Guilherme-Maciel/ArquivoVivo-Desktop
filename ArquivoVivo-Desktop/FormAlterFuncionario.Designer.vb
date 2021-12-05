@@ -23,6 +23,7 @@ Partial Class FormAlterFuncionario
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.panelFuncionario = New System.Windows.Forms.Panel()
+        Me.txtFixFuncionario = New System.Windows.Forms.MaskedTextBox()
         Me.rbtnAtivo = New System.Windows.Forms.RadioButton()
         Me.rbtnArquivado = New System.Windows.Forms.RadioButton()
         Me.txtSenhaFuncionario = New System.Windows.Forms.TextBox()
@@ -40,7 +41,6 @@ Partial Class FormAlterFuncionario
         Me.txtNomeFuncionario = New System.Windows.Forms.TextBox()
         Me.Label44 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.txtFixFuncionario = New System.Windows.Forms.MaskedTextBox()
         Me.panelFuncionario.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -68,6 +68,15 @@ Partial Class FormAlterFuncionario
         Me.panelFuncionario.Name = "panelFuncionario"
         Me.panelFuncionario.Size = New System.Drawing.Size(1000, 700)
         Me.panelFuncionario.TabIndex = 45
+        '
+        'txtFixFuncionario
+        '
+        Me.txtFixFuncionario.Font = New System.Drawing.Font("Arial Narrow", 18.0!)
+        Me.txtFixFuncionario.Location = New System.Drawing.Point(556, 449)
+        Me.txtFixFuncionario.Mask = "(00) 0000-0000"
+        Me.txtFixFuncionario.Name = "txtFixFuncionario"
+        Me.txtFixFuncionario.Size = New System.Drawing.Size(278, 35)
+        Me.txtFixFuncionario.TabIndex = 60
         '
         'rbtnAtivo
         '
@@ -235,15 +244,6 @@ Partial Class FormAlterFuncionario
         Me.Panel6.Size = New System.Drawing.Size(1000, 2)
         Me.Panel6.TabIndex = 22
         '
-        'txtFixFuncionario
-        '
-        Me.txtFixFuncionario.Font = New System.Drawing.Font("Arial Narrow", 18.0!)
-        Me.txtFixFuncionario.Location = New System.Drawing.Point(556, 449)
-        Me.txtFixFuncionario.Mask = "(00) 0000-0000"
-        Me.txtFixFuncionario.Name = "txtFixFuncionario"
-        Me.txtFixFuncionario.Size = New System.Drawing.Size(278, 35)
-        Me.txtFixFuncionario.TabIndex = 60
-        '
         'FormAlterFuncionario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -252,6 +252,8 @@ Partial Class FormAlterFuncionario
         Me.Controls.Add(Me.panelFuncionario)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormAlterFuncionario"
+        Me.ShowIcon = False
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormAlterFuncionario"
         Me.panelFuncionario.ResumeLayout(False)

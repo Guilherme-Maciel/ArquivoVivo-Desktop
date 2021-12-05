@@ -27,6 +27,7 @@ Partial Class FormAlterPedido
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.panelMovel = New System.Windows.Forms.Panel()
+        Me.lblStatus = New System.Windows.Forms.Label()
         Me.dtGridPedido = New System.Windows.Forms.DataGridView()
         Me.panelPedido = New System.Windows.Forms.Panel()
         Me.lblEmail = New System.Windows.Forms.Label()
@@ -54,7 +55,6 @@ Partial Class FormAlterPedido
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.Label83 = New System.Windows.Forms.Label()
         Me.Panel28 = New System.Windows.Forms.Panel()
-        Me.lblStatus = New System.Windows.Forms.Label()
         Me.panelMovel.SuspendLayout()
         CType(Me.dtGridPedido, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelPedido.SuspendLayout()
@@ -75,6 +75,15 @@ Partial Class FormAlterPedido
         Me.panelMovel.Name = "panelMovel"
         Me.panelMovel.Size = New System.Drawing.Size(1000, 700)
         Me.panelMovel.TabIndex = 32
+        '
+        'lblStatus
+        '
+        Me.lblStatus.AutoSize = True
+        Me.lblStatus.Font = New System.Drawing.Font("Raleway Light", 20.0!)
+        Me.lblStatus.Location = New System.Drawing.Point(819, 16)
+        Me.lblStatus.Name = "lblStatus"
+        Me.lblStatus.Size = New System.Drawing.Size(0, 37)
+        Me.lblStatus.TabIndex = 48
         '
         'dtGridPedido
         '
@@ -390,15 +399,6 @@ Partial Class FormAlterPedido
         Me.Panel28.Size = New System.Drawing.Size(1000, 2)
         Me.Panel28.TabIndex = 22
         '
-        'lblStatus
-        '
-        Me.lblStatus.AutoSize = True
-        Me.lblStatus.Font = New System.Drawing.Font("Raleway Light", 20.0!)
-        Me.lblStatus.Location = New System.Drawing.Point(819, 16)
-        Me.lblStatus.Name = "lblStatus"
-        Me.lblStatus.Size = New System.Drawing.Size(0, 37)
-        Me.lblStatus.TabIndex = 48
-        '
         'FormAlterPedido
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -407,6 +407,8 @@ Partial Class FormAlterPedido
         Me.Controls.Add(Me.panelMovel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormAlterPedido"
+        Me.ShowIcon = False
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormAlterPedido"
         Me.panelMovel.ResumeLayout(False)

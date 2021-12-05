@@ -4,7 +4,7 @@ Public Class FormHome
     Dim queryCliente, queryPedido, queryDesigner, queryMovel, queryFuncionario As String
     Private Sub FormHome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        lblWelcome.Text = "BEM VINDO(A), " & funcName_SESSION
+        lblWelcome.Text = "BEM VINDO(A), " & funcName_SESSION.ToUpper
 
         'querys
         queryDesigner = "SELECT d_id AS 'ID', d_nome AS 'NOME', d_bio AS 'BIOGRAFIA' FROM designers"

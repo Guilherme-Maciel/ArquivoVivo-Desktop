@@ -186,6 +186,8 @@ Partial Class FormAlterDesigner
         Me.Controls.Add(Me.panelDesigner)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormAlterDesigner"
+        Me.ShowIcon = False
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormAlterDesigner"
         Me.panelDesigner.ResumeLayout(False)

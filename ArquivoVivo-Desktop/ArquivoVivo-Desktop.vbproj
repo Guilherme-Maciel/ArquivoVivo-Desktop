@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <StartupObject>ArquivoVivo_Desktop.My.MyApplication</StartupObject>
     <RootNamespace>ArquivoVivo_Desktop</RootNamespace>
-    <AssemblyName>ArquivoVivo-Desktop</AssemblyName>
+    <AssemblyName>ArquivoVivoOnline</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>ArquivoVivo-Desktop.xml</DocumentationFile>
+    <DocumentationFile>ArquivoVivoOnline.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>ArquivoVivo-Desktop.xml</DocumentationFile>
+    <DocumentationFile>ArquivoVivoOnline.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -46,6 +46,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo-Tcc.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
@@ -293,6 +296,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btnNewPedido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo-Tcc.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

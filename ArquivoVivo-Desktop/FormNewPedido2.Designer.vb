@@ -405,6 +405,8 @@ Partial Class FormNewPedido2
         Me.Controls.Add(Me.panelMovel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormNewPedido2"
+        Me.ShowIcon = False
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormNewPedido2"
         Me.panelMovel.ResumeLayout(False)

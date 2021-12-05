@@ -986,6 +986,8 @@ Partial Class FormCadaster
         Me.Controls.Add(Me.panelDesigner)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormCadaster"
+        Me.ShowIcon = False
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormCadaster"
         Me.panelMovel.ResumeLayout(False)

@@ -23,6 +23,8 @@ Partial Class formAlterCliente
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.panelCliente = New System.Windows.Forms.Panel()
+        Me.txtCepCliente = New System.Windows.Forms.MaskedTextBox()
+        Me.txtFixCliente = New System.Windows.Forms.MaskedTextBox()
         Me.btnNewPedido = New System.Windows.Forms.PictureBox()
         Me.rbtnAtivo = New System.Windows.Forms.RadioButton()
         Me.rbtnArquivado = New System.Windows.Forms.RadioButton()
@@ -52,8 +54,6 @@ Partial Class formAlterCliente
         Me.txtNameCliente = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.txtFixCliente = New System.Windows.Forms.MaskedTextBox()
-        Me.txtCepCliente = New System.Windows.Forms.MaskedTextBox()
         Me.panelCliente.SuspendLayout()
         CType(Me.btnNewPedido, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -95,6 +95,24 @@ Partial Class formAlterCliente
         Me.panelCliente.Name = "panelCliente"
         Me.panelCliente.Size = New System.Drawing.Size(1000, 700)
         Me.panelCliente.TabIndex = 44
+        '
+        'txtCepCliente
+        '
+        Me.txtCepCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!)
+        Me.txtCepCliente.Location = New System.Drawing.Point(186, 411)
+        Me.txtCepCliente.Mask = "00000-000"
+        Me.txtCepCliente.Name = "txtCepCliente"
+        Me.txtCepCliente.Size = New System.Drawing.Size(191, 35)
+        Me.txtCepCliente.TabIndex = 64
+        '
+        'txtFixCliente
+        '
+        Me.txtFixCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!)
+        Me.txtFixCliente.Location = New System.Drawing.Point(556, 259)
+        Me.txtFixCliente.Mask = "(00) 0000-0000"
+        Me.txtFixCliente.Name = "txtFixCliente"
+        Me.txtFixCliente.Size = New System.Drawing.Size(278, 35)
+        Me.txtFixCliente.TabIndex = 63
         '
         'btnNewPedido
         '
@@ -372,24 +390,6 @@ Partial Class formAlterCliente
         Me.Panel3.Size = New System.Drawing.Size(1000, 2)
         Me.Panel3.TabIndex = 22
         '
-        'txtFixCliente
-        '
-        Me.txtFixCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!)
-        Me.txtFixCliente.Location = New System.Drawing.Point(556, 259)
-        Me.txtFixCliente.Mask = "(00) 0000-0000"
-        Me.txtFixCliente.Name = "txtFixCliente"
-        Me.txtFixCliente.Size = New System.Drawing.Size(278, 35)
-        Me.txtFixCliente.TabIndex = 63
-        '
-        'txtCepCliente
-        '
-        Me.txtCepCliente.Font = New System.Drawing.Font("Arial Narrow", 18.0!)
-        Me.txtCepCliente.Location = New System.Drawing.Point(186, 411)
-        Me.txtCepCliente.Mask = "00000-000"
-        Me.txtCepCliente.Name = "txtCepCliente"
-        Me.txtCepCliente.Size = New System.Drawing.Size(191, 35)
-        Me.txtCepCliente.TabIndex = 64
-        '
         'formAlterCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -398,6 +398,8 @@ Partial Class formAlterCliente
         Me.Controls.Add(Me.panelCliente)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "formAlterCliente"
+        Me.ShowIcon = False
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "formAlterCliente"
         Me.panelCliente.ResumeLayout(False)
