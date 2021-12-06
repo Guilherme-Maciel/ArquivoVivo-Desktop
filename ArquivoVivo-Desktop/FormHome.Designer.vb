@@ -76,7 +76,6 @@ Partial Class FormHome
         Me.panelHomePedidos = New System.Windows.Forms.Panel()
         Me.dtGridPedidos = New System.Windows.Forms.DataGridView()
         Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Label21 = New System.Windows.Forms.Label()
         Me.rbtnMovelPedido = New System.Windows.Forms.RadioButton()
         Me.rbtnClientePedido = New System.Windows.Forms.RadioButton()
         Me.rbtnNPedido = New System.Windows.Forms.RadioButton()
@@ -98,7 +97,6 @@ Partial Class FormHome
         Me.btnCadasterCliente = New System.Windows.Forms.PictureBox()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.dtGridCliente = New System.Windows.Forms.DataGridView()
-        Me.Label22 = New System.Windows.Forms.Label()
         Me.rbtnEmailCliente = New System.Windows.Forms.RadioButton()
         Me.rbtnTelCliente = New System.Windows.Forms.RadioButton()
         Me.rbtnCelCliente = New System.Windows.Forms.RadioButton()
@@ -146,7 +144,6 @@ Partial Class FormHome
         Me.Label46 = New System.Windows.Forms.Label()
         Me.Label47 = New System.Windows.Forms.Label()
         Me.dtGridMovel = New System.Windows.Forms.DataGridView()
-        Me.Label48 = New System.Windows.Forms.Label()
         Me.rbtnCategoriaMovel = New System.Windows.Forms.RadioButton()
         Me.rbtnDesignerMovel = New System.Windows.Forms.RadioButton()
         Me.rbtnTituloMovel = New System.Windows.Forms.RadioButton()
@@ -190,7 +187,6 @@ Partial Class FormHome
         Me.Label67 = New System.Windows.Forms.Label()
         Me.Label68 = New System.Windows.Forms.Label()
         Me.dtGridDesigner = New System.Windows.Forms.DataGridView()
-        Me.Label69 = New System.Windows.Forms.Label()
         Me.rbtnBioDesigner = New System.Windows.Forms.RadioButton()
         Me.rbtnNomeDesigner = New System.Windows.Forms.RadioButton()
         Me.rbtnIdDesigner = New System.Windows.Forms.RadioButton()
@@ -231,7 +227,6 @@ Partial Class FormHome
         Me.Label80 = New System.Windows.Forms.Label()
         Me.Label81 = New System.Windows.Forms.Label()
         Me.dtGridFuncionario = New System.Windows.Forms.DataGridView()
-        Me.Label82 = New System.Windows.Forms.Label()
         Me.rbtnFixFuncionario = New System.Windows.Forms.RadioButton()
         Me.rbtnCelFuncionario = New System.Windows.Forms.RadioButton()
         Me.rbtnNomeFuncionario = New System.Windows.Forms.RadioButton()
@@ -692,7 +687,6 @@ Partial Class FormHome
         '
         Me.panelHomePedidos.Controls.Add(Me.dtGridPedidos)
         Me.panelHomePedidos.Controls.Add(Me.Panel9)
-        Me.panelHomePedidos.Controls.Add(Me.Label21)
         Me.panelHomePedidos.Controls.Add(Me.rbtnMovelPedido)
         Me.panelHomePedidos.Controls.Add(Me.rbtnClientePedido)
         Me.panelHomePedidos.Controls.Add(Me.rbtnNPedido)
@@ -760,17 +754,6 @@ Partial Class FormHome
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(705, 2)
         Me.Panel9.TabIndex = 19
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Raleway Light", 12.0!)
-        Me.Label21.Location = New System.Drawing.Point(14, 364)
-        Me.Label21.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(61, 22)
-        Me.Label21.TabIndex = 25
-        Me.Label21.Text = "Total: 4"
         '
         'rbtnMovelPedido
         '
@@ -969,7 +952,6 @@ Partial Class FormHome
         Me.panelHomeCliente.Controls.Add(Me.btnCadasterCliente)
         Me.panelHomeCliente.Controls.Add(Me.Panel11)
         Me.panelHomeCliente.Controls.Add(Me.dtGridCliente)
-        Me.panelHomeCliente.Controls.Add(Me.Label22)
         Me.panelHomeCliente.Controls.Add(Me.rbtnEmailCliente)
         Me.panelHomeCliente.Controls.Add(Me.rbtnTelCliente)
         Me.panelHomeCliente.Controls.Add(Me.rbtnCelCliente)
@@ -1062,17 +1044,6 @@ Partial Class FormHome
         Me.dtGridCliente.RowsDefaultCellStyle = DataGridViewCellStyle8
         Me.dtGridCliente.Size = New System.Drawing.Size(693, 250)
         Me.dtGridCliente.TabIndex = 26
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("Raleway Light", 12.0!)
-        Me.Label22.Location = New System.Drawing.Point(14, 364)
-        Me.Label22.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(61, 22)
-        Me.Label22.TabIndex = 25
-        Me.Label22.Text = "Total: 4"
         '
         'rbtnEmailCliente
         '
@@ -1263,7 +1234,6 @@ Partial Class FormHome
         Me.panelHomeMoveis.Controls.Add(Me.Panel17)
         Me.panelHomeMoveis.Controls.Add(Me.Panel18)
         Me.panelHomeMoveis.Controls.Add(Me.dtGridMovel)
-        Me.panelHomeMoveis.Controls.Add(Me.Label48)
         Me.panelHomeMoveis.Controls.Add(Me.rbtnCategoriaMovel)
         Me.panelHomeMoveis.Controls.Add(Me.rbtnDesignerMovel)
         Me.panelHomeMoveis.Controls.Add(Me.rbtnTituloMovel)
@@ -1686,17 +1656,6 @@ Partial Class FormHome
         Me.dtGridMovel.Size = New System.Drawing.Size(693, 250)
         Me.dtGridMovel.TabIndex = 26
         '
-        'Label48
-        '
-        Me.Label48.AutoSize = True
-        Me.Label48.Font = New System.Drawing.Font("Raleway Light", 12.0!)
-        Me.Label48.Location = New System.Drawing.Point(14, 364)
-        Me.Label48.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label48.Name = "Label48"
-        Me.Label48.Size = New System.Drawing.Size(61, 22)
-        Me.Label48.TabIndex = 25
-        Me.Label48.Text = "Total: 4"
-        '
         'rbtnCategoriaMovel
         '
         Me.rbtnCategoriaMovel.AutoSize = True
@@ -1872,7 +1831,6 @@ Partial Class FormHome
         Me.panelHomeDesigners.Controls.Add(Me.Panel29)
         Me.panelHomeDesigners.Controls.Add(Me.Panel30)
         Me.panelHomeDesigners.Controls.Add(Me.dtGridDesigner)
-        Me.panelHomeDesigners.Controls.Add(Me.Label69)
         Me.panelHomeDesigners.Controls.Add(Me.rbtnBioDesigner)
         Me.panelHomeDesigners.Controls.Add(Me.rbtnNomeDesigner)
         Me.panelHomeDesigners.Controls.Add(Me.rbtnIdDesigner)
@@ -2259,17 +2217,6 @@ Partial Class FormHome
         Me.dtGridDesigner.Size = New System.Drawing.Size(693, 250)
         Me.dtGridDesigner.TabIndex = 26
         '
-        'Label69
-        '
-        Me.Label69.AutoSize = True
-        Me.Label69.Font = New System.Drawing.Font("Raleway Light", 12.0!)
-        Me.Label69.Location = New System.Drawing.Point(14, 364)
-        Me.Label69.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label69.Name = "Label69"
-        Me.Label69.Size = New System.Drawing.Size(61, 22)
-        Me.Label69.TabIndex = 25
-        Me.Label69.Text = "Total: 4"
-        '
         'rbtnBioDesigner
         '
         Me.rbtnBioDesigner.AutoSize = True
@@ -2398,7 +2345,6 @@ Partial Class FormHome
         Me.panelHomeFuncionarios.Controls.Add(Me.Panel28)
         Me.panelHomeFuncionarios.Controls.Add(Me.Panel37)
         Me.panelHomeFuncionarios.Controls.Add(Me.dtGridFuncionario)
-        Me.panelHomeFuncionarios.Controls.Add(Me.Label82)
         Me.panelHomeFuncionarios.Controls.Add(Me.rbtnFixFuncionario)
         Me.panelHomeFuncionarios.Controls.Add(Me.rbtnCelFuncionario)
         Me.panelHomeFuncionarios.Controls.Add(Me.rbtnNomeFuncionario)
@@ -2797,17 +2743,6 @@ Partial Class FormHome
         Me.dtGridFuncionario.Size = New System.Drawing.Size(693, 250)
         Me.dtGridFuncionario.TabIndex = 26
         '
-        'Label82
-        '
-        Me.Label82.AutoSize = True
-        Me.Label82.Font = New System.Drawing.Font("Raleway Light", 12.0!)
-        Me.Label82.Location = New System.Drawing.Point(14, 364)
-        Me.Label82.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label82.Name = "Label82"
-        Me.Label82.Size = New System.Drawing.Size(61, 22)
-        Me.Label82.TabIndex = 25
-        Me.Label82.Text = "Total: 4"
-        '
         'rbtnFixFuncionario
         '
         Me.rbtnFixFuncionario.AutoSize = True
@@ -2970,12 +2905,12 @@ Partial Class FormHome
         Me.AutoScaleDimensions = New System.Drawing.SizeF(21.0!, 50.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1001, 700)
-        Me.Controls.Add(Me.panelMainPage)
         Me.Controls.Add(Me.panelHomePedidos)
-        Me.Controls.Add(Me.panelHomeCliente)
+        Me.Controls.Add(Me.panelHomeMoveis)
         Me.Controls.Add(Me.panelHomeFuncionarios)
         Me.Controls.Add(Me.panelHomeDesigners)
-        Me.Controls.Add(Me.panelHomeMoveis)
+        Me.Controls.Add(Me.panelHomeCliente)
+        Me.Controls.Add(Me.panelMainPage)
         Me.Controls.Add(Me.btnMinimize)
         Me.Controls.Add(Me.btnEnd)
         Me.Controls.Add(Me.btnFuncionario)
@@ -3125,14 +3060,12 @@ Partial Class FormHome
     Friend WithEvents Panel9 As Panel
     Friend WithEvents btnSearchPedidos As PictureBox
     Friend WithEvents txtSearchPedidos As TextBox
-    Friend WithEvents Label21 As Label
     Friend WithEvents rbtnMovelPedido As RadioButton
     Friend WithEvents rbtnClientePedido As RadioButton
     Friend WithEvents rbtnNPedido As RadioButton
     Friend WithEvents panelHomeCliente As Panel
     Friend WithEvents Panel11 As Panel
     Friend WithEvents dtGridCliente As DataGridView
-    Friend WithEvents Label22 As Label
     Friend WithEvents rbtnEmailCliente As RadioButton
     Friend WithEvents rbtnTelCliente As RadioButton
     Friend WithEvents rbtnCelCliente As RadioButton
@@ -3179,7 +3112,6 @@ Partial Class FormHome
     Friend WithEvents Label46 As Label
     Friend WithEvents Label47 As Label
     Friend WithEvents dtGridMovel As DataGridView
-    Friend WithEvents Label48 As Label
     Friend WithEvents rbtnCategoriaMovel As RadioButton
     Friend WithEvents rbtnDesignerMovel As RadioButton
     Friend WithEvents rbtnTituloMovel As RadioButton
@@ -3222,7 +3154,6 @@ Partial Class FormHome
     Friend WithEvents Label67 As Label
     Friend WithEvents Label68 As Label
     Friend WithEvents dtGridDesigner As DataGridView
-    Friend WithEvents Label69 As Label
     Friend WithEvents rbtnBioDesigner As RadioButton
     Friend WithEvents rbtnNomeDesigner As RadioButton
     Friend WithEvents rbtnIdDesigner As RadioButton
@@ -3261,7 +3192,6 @@ Partial Class FormHome
     Friend WithEvents Label80 As Label
     Friend WithEvents Label81 As Label
     Friend WithEvents dtGridFuncionario As DataGridView
-    Friend WithEvents Label82 As Label
     Friend WithEvents rbtnFixFuncionario As RadioButton
     Friend WithEvents rbtnCelFuncionario As RadioButton
     Friend WithEvents rbtnNomeFuncionario As RadioButton

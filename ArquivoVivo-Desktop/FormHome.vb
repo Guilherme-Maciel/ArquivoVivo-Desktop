@@ -7,7 +7,7 @@ Public Class FormHome
         lblWelcome.Text = "BEM VINDO(A), " & funcName_SESSION.ToUpper
 
         'querys
-        queryDesigner = "SELECT d_id AS 'ID', d_nome AS 'NOME', d_bio AS 'BIOGRAFIA' FROM designers"
+        queryDesigner = "SELECT d_id AS 'ID', d_nome AS 'NOME', d_bio AS 'BIOGRAFIA' FROM designers WHERE designers.d_id != 1"
         queryCliente = "SELECT c_id AS 'ID', CONCAT(c_nome,' ',c_sobrenome) AS 'CLIENTE', c_telCel AS 'CELULAR', c_telFixo AS 'FIXO', c_email AS 'EMAIL', c_cep AS 'CEP' FROM cliente"
         queryMovel = "SELECT m_id AS 'ID', m_titulo AS 'TITULO', d_nome AS 'DESIGNER', m_qtdEstoque AS 'QTD', ct_nome AS 'CATEGORIA', CONCAT('R$ ', m_valUni) AS 'VALOR UNI.'
                       FROM moveis, categoria, designers 
@@ -380,7 +380,7 @@ Public Class FormHome
         Dim search As String
         search = txtSearchDesigners.Text
         If search = "" Then
-            queryDesigner = "SELECT d_id AS 'ID', d_nome AS 'NOME', d_bio AS 'BIOGRAFIA' FROM designers"
+            queryDesigner = "SELECT d_id AS 'ID', d_nome AS 'NOME', d_bio AS 'BIOGRAFIA' FROM designers WHERE designers.d_id != 1"
             LoadDataMysql(queryDesigner, dtGridDesigner)
         End If
         If rbtnIdDesigner.Checked Then
@@ -465,7 +465,7 @@ Public Class FormHome
             queryPedido = "SELECT p_nPedido AS NUM, p_tipos AS TIPOS, c_nome AS CLIENTE, p_movel AS MOVEL, p_qtd AS QTD, 
                            CONCAT('R$', p_preco) AS PRECO, CONCAT(DAY(p_dtReg), '/', MONTH(p_dtReg), '/', YEAR(p_dtReg)) AS 'DATA' 
                            FROM pedidos AS p, cliente AS c
-                           WHERE c.c_id = p.c_id ORDER BY p_id DESC"
+                           WHERE c.c_id = p.c_id  ORDER BY p_id DESC"
             LoadDataMysql(queryPedido, dtGridPedidos)
         End If
         If rbtnNPedido.Checked Then
