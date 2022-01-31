@@ -73,6 +73,14 @@ de agilizar os processos da empresa Arquivo Vivo Móveis por meio de sistemas in
 
 ## Tecnologias e Ferramentas
 
+
+<div align="center">
+  
+
+| [<div align="center"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github" height="50px"><p>GITHUB</p></div></a>](https://github.com/) | [<div align="center"><img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="git" height="50px"><p>GIT</p></div></a>](https://git-scm.com/) | [<div align="center"><img src="https://cdn.worldvectorlogo.com/logos/laragon.svg" alt="laragon" height="50px"><p>LARAGON</p></div></a>](https://laragon.org/) | [<div align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/3/32/HeidiSQL_logo_image.png" alt="heidsql" height="50px"><p>HEIDISQL</p></div></a>](https://www.heidisql.com/) | [<div align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Visual_Studio_2017_Logo.svg/1024px-Visual_Studio_2017_Logo.svg.png" alt="vs2017" height="50px"><p>VS 2017</p></div></a>](https://visualstudio.microsoft.com/pt-br/) | [<div align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/2048px-.NET_Core_Logo.svg.png" alt=".net" height="50px"><p>.NET FRAMEWORK</p></div></a>](https://dotnet.microsoft.com/en-us/download/dotnet-framework) | [<div align="center"><img src="https://www.blogson.com.br/wp-content/uploads/2020/12/logo-mysql-mysql-logo-png-images-are-download-crazypng-211.png" alt="mysql" height="50px"><p>MySQL</p></div>](https://dev.mysql.com/doc/) | [<div align="center"><img src="https://wikiimg.tojsiabtv.com/wikipedia/commons/thumb/4/40/VB.NET_Logo.svg/1200px-VB.NET_Logo.svg.png" alt="vb.net" height="50px"><p>VB.NET</p></div>](https://docs.microsoft.com/pt-br/dotnet/visual-basic/) |
+|--------|--------|--------|--------|--------|--------|--------|--------|
+</div>
+
 ## Clonando o projeto
 1. Abra seu Visual Studio 2017
 2. Clique em: `Exibir > Team Explorer`
